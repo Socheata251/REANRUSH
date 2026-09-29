@@ -28,7 +28,7 @@ window.ReanRushPage = { init: function () {
       var active = selected && selected.html === screen.html;
       return '<button class="screen-item" type="button" data-screen-url="' + screen.html + '" aria-pressed="' + Boolean(active) + '"><img loading="lazy" src="' + screen.image + '" alt=""><span><strong>' + screen.label + '</strong><small>' + screen.groupLabel + '</small></span></button>';
     }).join('') || '<p class="muted">No screens match that search.</p>');
-    if (!selected && filtered.length) show(filtered[0]);
+    if (filtered.length && (!selected || !filtered.some(function (screen) { return screen.html === selected.html; }))) show(filtered[0]);
   }
   function show(screen) {
     selected = screen;
