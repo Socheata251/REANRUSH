@@ -1,0 +1,4 @@
+.welcome { padding: clamp(26px, 6vw, 64px); background: var(--navy); color: var(--white); }
+.welcome h1 { max-width: 700px; font-size: clamp(2.6rem, 7vw, 5rem); }
+.welcome p { max-width: 620px; color: #e0e8f4; font-size: 1.1rem; }
+.welcome .display { color: var(--gold); }

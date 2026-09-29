@@ -1,0 +1,3 @@
+.auth-panel { max-width: 520px; }
+.auth-panel .row { justify-content: space-between; }
+.auth-panel a { font-weight: 700; color: var(--blue); }

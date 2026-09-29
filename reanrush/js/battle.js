@@ -1,0 +1,1 @@
+window.ReanRushPage = { init: function () { var seconds = 30; var timer = window.setInterval(function () { seconds -= 1; $('#battle-timer').text('00:' + String(Math.max(seconds, 0)).padStart(2, '0')); if (seconds <= 0) window.clearInterval(timer); }, 1000); } };

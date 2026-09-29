@@ -1,0 +1,582 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#aec6ff","on-error":"#ffffff","outline-variant":"#c4c6d0","on-primary-fixed":"#001a42","on-tertiary-fixed-variant":"#5f4100","tertiary":"#221500","tertiary-fixed-dim":"#f8bd4d","surface-variant":"#f1dfd8","error":"#ba1a1a","primary":"#00163a","on-secondary-fixed-variant":"#0038b7","on-primary-container":"#7a93ca","secondary-container":"#3966fe","on-tertiary-container":"#be8a1b","on-surface-variant":"#44474f","background":"#fff8f6","primary-fixed-dim":"#aec6ff","primary-fixed":"#d8e2ff","surface-bright":"#fff8f6","surface-container-low":"#fff1ec","on-error-container":"#93000a","on-surface":"#231915","surface-dim":"#e9d6cf","outline":"#747780","inverse-surface":"#392e2a","secondary-fixed-dim":"#b7c4ff","surface-tint":"#455e91","primary-container":"#0b2a5b","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdeaa","on-primary":"#ffffff","surface-container":"#fdeae3","secondary":"#0d4be4","on-tertiary-fixed":"#271900","on-background":"#231915","inverse-on-surface":"#ffede7","surface-container-highest":"#f1dfd8","surface":"#fff8f6","on-secondary-fixed":"#001452","on-secondary":"#ffffff","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#2c4678","tertiary-container":"#3c2800","surface-container-high":"#f7e4dd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"2rem","gutter":"1.5rem","margin-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem"},"fontFamily":{"display-hero":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"headline-lg-mobile":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"badge-arcade":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"display-hero-mobile":["\"Baloo 2\""],"label-bold":["Kantumruy Pro"],"body-lg":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"headline-lg":["\"Baloo 2\""]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8wW0JscbppE"><span class="font-title-card text-title-card text-on-primary tracking-wide hidden sm:inline-block">ReanRush</span></a><nav class="hidden lg:flex items-center gap-space-sm ml-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-label-bold rounded-lg border-2 border-primary"><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="games" href="#">Games</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-secondary-container text-on-secondary-container font-label-bold rounded-lg border-2 border-primary" data-path="blog" href="#">Blog</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="pricing" href="#">Pricing</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="class-pin" href="#">Class PIN</a></nav></div><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="arena-lobby" href="#">Join</a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-surface-container-lowest text-primary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="sign-up" href="#">Sign up</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full h-2.5 bg-primary overflow-hidden flex items-center justify-center"><div class="w-full flex justify-around text-tertiary-fixed-dim text-[9px] tracking-[6px] select-none leading-none">❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Top Marquee / Live Ticker Strip -->
+<section class="w-full bg-primary-container text-on-primary py-2 px-margin-mobile lg:px-margin border-b-[3px] border-primary">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-space-sm text-xs font-label-bold">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="text-tertiary-fixed-dim uppercase tracking-wider font-badge-arcade text-badge-arcade">ARENA BROADCAST</span>
+<span class="hidden md:inline text-primary-fixed">• Latest BACII mock battle pack released for Grade 12 Math (វិទ្យាសាស្ត្រពិត)!</span>
+</div>
+<div class="flex items-center gap-space-sm font-badge-arcade text-tertiary-fixed-dim">
+<span>🏆 28,450 STUDENTS DRILLING NOW</span>
+<span class="hidden sm:inline">❖ PHNOM PENH • SIEM REAP • BATTAMBANG</span>
+</div>
+</div>
+</section>
+<!-- Hero Header & Search Section -->
+<section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Top Pill & Meta Header -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs self-start px-3 py-1 bg-surface-container-lowest border-[3px] border-primary rounded-full shadow-[3px_3px_0px_#00163a]">
+<span class="material-symbols-outlined text-secondary text-base">bolt</span>
+<span class="font-badge-arcade text-badge-arcade text-primary uppercase tracking-wider">KHMER HIGH SCHOOL ARENA DISPATCH</span>
+<span class="text-xs text-on-surface-variant font-label-bold font-bold">| ប្លក់ &amp; គន្លឹះប្រឡងបាក់ឌុប</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-[44px] lg:leading-[52px] text-primary tracking-tight">
+            Academic Battle Tactics &amp; BACII Mastery Hub
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Exam strategies, high-speed classroom quiz tactics, and MoEYS BACII curriculum guides designed for Cambodian high school champions and visionary educators.
+          </p>
+</div>
+<!-- Rushy Mascot Badge & Speech Balloon -->
+<div class="lg:col-span-4 flex items-center justify-start lg:justify-end">
+<div class="relative flex items-center gap-3 bg-surface-container-lowest border-[3px] border-primary rounded-xl p-space-sm shadow-[6px_6px_0px_#00163a] max-w-sm">
+<div class="relative shrink-0 w-20 h-20 bg-secondary-fixed rounded-lg border-[2px] border-primary overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-contain p-1" data-alt="Playful cute blue elephant mascot named Rushy wearing a navy baseball cap with a gold lightning bolt icon, giving a cheerful thumbs up salute in a vibrant clean neo-brutalist arcade vector style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZS_suAs5tug-tPro5BPp2SHCUwKJ2uLHsBAqRswrfFTy8clDwIoG_d2GaoOiuYsg9QaGengDbGFNkoue-sHw9P9fG1Nw0-SnZpv6YHGR2mqYlPa2dYhhCJ4TvwcZtojd1fpA-Z93L_MPNMhaQOvYT5TDy63bhqb-cLFQGDyyq8gmb-OvdvBC67YcTQ3SXzJWpUyVWzKUBYdMZLTEMMcu6aAz4XbRtOtyuTJ9dAck_tnU3YDRhKFI2">
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-title-card text-title-card text-primary text-sm">Rushy The Mascot</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-sm">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface text-xs leading-snug">
+                "Level up your study squad! Read battle tactics from top scorers! ⚡🐘"
+              </p>
+<span class="font-badge-arcade text-[10px] text-secondary font-bold uppercase mt-1">Classroom Coach V2.4</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Search Bar & Filters -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="relative w-full max-w-3xl">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary text-2xl">search</span>
+</div>
+<input class="w-full pl-12 pr-32 py-3.5 bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] text-primary placeholder-on-surface-variant/70 font-body-md text-body-md focus:outline-none focus:ring-0 focus:translate-x-[2px] focus:translate-y-[2px] transition-all" placeholder="Search study hacks, physics formulas, literature summaries, MoEYS tips..." type="text">
+<button class="absolute right-2 top-2 bottom-2 px-space-md bg-secondary-container text-on-secondary-container font-title-card text-sm rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1">
+<span>Search</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Filter Chips with Khmer Counterparts -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 bg-secondary-container text-on-secondary-container font-label-bold text-label-bold rounded-lg border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-base">apps</span>
+<span>All Posts / ទាំងអស់ (28)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold rounded-lg border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-base text-secondary">school</span>
+<span>BACII Exam Hacks / គន្លឹះបាក់ឌុប (12)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold rounded-lg border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-base text-primary">co_present</span>
+<span>Teacher Arena Guides / សម្រាប់លោកគ្រូអ្នកគ្រូ (8)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold rounded-lg border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-base text-tertiary-fixed-dim">sports_esports</span>
+<span>Gamified Study Tactics / យុទ្ធសាស្ត្រប្រកួត (5)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold rounded-lg border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-base text-primary-container">update</span>
+<span>Product Updates / ព័ត៌មានថ្មីៗ (3)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Epic Article (Bento 2-Column Hero Card) -->
+<section class="w-full py-space-lg px-margin-mobile lg:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-secondary-container border border-primary rounded-sm"></span>
+<h2 class="font-headline-md text-headline-md text-primary uppercase tracking-wide">Featured Arena Breakdown</h2>
+</div>
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant">ISSUE #42 • FALL 2025</span>
+</div>
+<article class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[6px_6px_0px_#00163a] overflow-hidden flex flex-col lg:flex-row transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0px_#00163a]">
+<!-- Left: Image & Visual Badge Zone -->
+<div class="lg:w-1/2 relative bg-surface-container-high border-b-[3px] lg:border-b-0 lg:border-r-[3px] border-primary overflow-hidden min-h-[320px] lg:min-h-[440px] flex flex-col justify-between p-space-md">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern Cambodian classroom at Sisowath High School Phnom Penh, energetic students looking up at a massive projection screen showing colorful gamified physics quiz questions, cheerful high school teens collaborating in uniforms with blue and white arcade interfaces." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTVeHYlcXp_HCGAFhQe_RjhctSjpKQ9eKAEm6F1yUfzoUoeRA1ZMEf5QEMoqtdaWRKOP0Q42An3S4tpMW6QX9KRlsSODt6Fiq3AJ7kHwwInER-NrcHL0ZMrHQmnCfS-szNzswpFX_HR3y9jT_NkqXcW_7n63QJ55--xRMqjc60ZCrDza4tDM8Rf7xhUVjnexpgfSuPPcIzgP6lNornOfYZMPJ9pl_Y58Gp9OWwc0lhnQbDYTReukpv')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<!-- Top Chips over image -->
+<div class="relative z-10 flex flex-wrap gap-2">
+<span class="px-space-sm py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a]">
+              🔥 MUST READ FOR GRADE 12 • បាក់ឌុប ២០២៥
+            </span>
+<span class="px-space-sm py-1 bg-tertiary-fixed-dim border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a]">
+              CASE STUDY
+            </span>
+</div>
+<!-- Bottom Metric Overlay -->
+<div class="relative z-10 grid grid-cols-3 gap-2 bg-surface-container-lowest/95 backdrop-blur-sm border-[2px] border-primary rounded-lg p-space-xs text-primary shadow-[3px_3px_0px_#00163a]">
+<div class="flex flex-col items-center justify-center p-1 border-r border-outline-variant">
+<span class="font-headline-md text-headline-md leading-none text-secondary">+35%</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant uppercase">BACII Physics</span>
+</div>
+<div class="flex flex-col items-center justify-center p-1 border-r border-outline-variant">
+<span class="font-headline-md text-headline-md leading-none text-primary">60</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant uppercase">Students / Match</span>
+</div>
+<div class="flex flex-col items-center justify-center p-1">
+<span class="font-headline-md text-headline-md leading-none text-secondary-container">100%</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant uppercase">Attention Rate</span>
+</div>
+</div>
+</div>
+<!-- Right: Content & Read CTA -->
+<div class="lg:w-1/2 p-space-md lg:p-space-lg flex flex-col justify-between gap-space-md bg-surface-container-lowest">
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs text-xs font-label-bold text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">person</span>
+                Lokkru Vichea Kem (Bak Touk High)
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                5 min read
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+                Oct 24, 2025
+              </span>
+<span>•</span>
+<span class="px-2 py-0.5 bg-surface-container rounded border border-primary text-primary font-bold">1,420 Plays</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg lg:text-[32px] lg:leading-[40px] text-primary tracking-tight">
+              How Sisowath High School Uses ReanRush Team Battles to Boost Physics &amp; Math Scores by 35%
+            </h3>
+<p class="font-title-card text-title-card text-secondary font-bold">
+              របៀបដែលសិស្សវិទ្យាល័យព្រះស៊ីសុវត្ថិប្រើ ReanRush ដណ្តើមនិទ្ទេស A មុខវិជ្ជាគណិត និងរូបវិទ្យា
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A deep dive into using 3-minute Revenge Rounds and Bayon-to-Angkor difficulty scaling right before the national baccalaureate exams. Learn how peer-pressure transformed into cooperative squad triumphs across 4 morning study sections.
+            </p>
+<!-- Key Takeaways Pill Box -->
+<div class="flex flex-col gap-1.5 p-space-sm bg-surface-container-low border-[2px] border-primary rounded-lg">
+<span class="font-badge-arcade text-badge-arcade text-primary uppercase">Tactical Highlights:</span>
+<ul class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Bypassing projector latency using 4-quadrant tactile phone answers
+                </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Pairing Grade 12 national syllabus formulas with 15-second timed buzzer tension
+                </li>
+</ul>
+</div>
+</div>
+<!-- Bottom Action Bar -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm border-t-[2px] border-surface-container-high">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" href="#">
+<span>Read Full Guide / អានបន្ត</span>
+<span class="material-symbols-outlined text-lg">bolt</span>
+</a>
+<div class="flex items-center gap-2 text-xs font-label-bold text-on-surface-variant">
+<span>Share tactic:</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container border-[2px] border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-[2px_2px_0px_#00163a]" title="Telegram Share">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container border-[2px] border-primary flex items-center justify-center text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-[2px_2px_0px_#00163a]" title="Bookmark">
+<span class="material-symbols-outlined text-sm">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 3: Grid of Recent Articles -->
+<section class="w-full py-space-xl px-margin-mobile lg:px-margin">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Section Title & Category Filter Badges -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm border-b-[3px] border-primary pb-space-sm">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-secondary uppercase tracking-widest">TACTICS ARCHIVE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Classroom Intel &amp; Exam Strategy</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 6 High-Impact Guides</span>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+</div>
+</div>
+<!-- 3-Column Responsive Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Article 1: Literature Tricks -->
+<article class="flex flex-col justify-between bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] overflow-hidden transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a]">
+<div>
+<div class="relative h-48 bg-surface-container-high border-b-[3px] border-primary overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Classic Khmer literature study notes, ink pen, vintage books depicting Kolab Pailin and Tum Teav stories beside modern colorful flashcards and quiz app illustrations on a wooden study table in Cambodia." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGE6xDvK9IAA9jzA4yyperWSs6iZ82TW_VpYqRJCSodOdHah-khTP7mkeaiaS7st_6L86UDaXYUbwFZTQEg6uo36E5ZeolkxvgNN7NyOeNZpIPqmlhnhxVKxrJgpEPSsgU_nuQftlnCepH9608bZkPC3sqNhPGQ9G6Uy5-4tI-uLALYy6ta-MSBN9BZ_ZTDzuxDSXkJuXAsgtc6BRwgoBJ6ErLPbtU9MYOGJcP20V63DnEls83YLfs')"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  KHMER LITERATURE • អក្សរសាស្ត្រខ្មែរ
+                </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-xs font-label-bold text-on-surface-variant">
+<span>By Neakkru Bopha Seng</span>
+<span>• 4 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">
+                5 Lightning Memorization Tricks for Khmer Literature (រឿងកូឡាបប៉ៃលិន &amp; ទុំទាវ)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Fast mnemonic triggers and character arc flowcharts customized for Grade 10–12 exams. How to recall key poetic verses under strict 2-hour BACII writing constraints.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between border-t border-surface-container-high mt-space-sm">
+<span class="font-badge-arcade text-[11px] text-secondary font-bold">GRADE 12 REVISION</span>
+<a class="inline-flex items-center gap-1 text-primary font-title-card text-sm hover:text-secondary transition-colors font-bold" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 2: Classroom Battles Ta Prohm -->
+<article class="flex flex-col justify-between bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] overflow-hidden transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a]">
+<div>
+<div class="relative h-48 bg-surface-container-high border-b-[3px] border-primary overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Dramatic projection of an arcade style boss battle raid inside a Cambodian high school classroom with glowing digital stone temple visuals representing Angkor and Bayon, students cheering in rows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAl6JWf0nASF3k0KIoPxC3LdmOrchxX2GQYPDSFvEbcSHVYbkXx42BMMW_wjOYpDDV4fcsloKeuG6OaKRNXx3rKqsbCBbvKYxJLDLldMuUpFdefWXgOrCvqoEx22j1zb3er4OOWw6BU54iqNcj6VNHpxWUjH9MD43N0DivRJOcr3xOKPNI4iA5r6UchaK_s94XQy49bsj5fFR1FbdtHqE0ovB8yx1KnelIBpO1GNiqflZ1XyK7VCx5X')"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  TEACHER ARENA • គ្រូបង្រៀន
+                </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-xs font-label-bold text-on-surface-variant">
+<span>By Lokkru Chanrith Ly</span>
+<span>• 7 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">
+                Ta Prohm vs Angkor Boss: Designing Matches That Keep 60 Students Glued
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Practical tips for teachers hosting live room PIN matches on single low-lumen projectors. Avoid wifi bottlenecks and structure 4-team pod competitions seamlessly.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between border-t border-surface-container-high mt-space-sm">
+<span class="font-badge-arcade text-[11px] text-error font-bold">PROJECTOR STRATEGY</span>
+<a class="inline-flex items-center gap-1 text-primary font-title-card text-sm hover:text-secondary transition-colors font-bold" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 3: Rapid Buzzer Drills -->
+<article class="flex flex-col justify-between bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] overflow-hidden transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a]">
+<div>
+<div class="relative h-48 bg-surface-container-high border-b-[3px] border-primary overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Split screen digital graphic of an arcade stopwatch countdown set to 15 seconds with math symbols, geometric formulas, and glowing neon blue neo-brutalist buttons." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAEnPGADpF7CWQF3ibbvQ5aqO6N-FZBfv4cUYImnZ5lD3kV5MQWYZpuuSQ62ImQMXLXK1htO-Pv7_qZa3a0HZ6QTeG3TqU-jR-sdDhGPR9qDzzYOGLLaO_HnJVPPmepNN4drRVa61NCsdXe9LazrzC21FULMehTXXOMycBrVXwqvWCR1ylA9EROaJiWouKsCqn2nDb-RxYHvtiJlCAM0gNqCZNn33faDEJ9ZlRXd6_4zimiS3iX7OB')"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  COGNITIVE SCIENCE • វិទ្យាសាស្ត្រ
+                </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-xs font-label-bold text-on-surface-variant">
+<span>By Dr. Sothea Vann (CADT EdTech)</span>
+<span>• 6 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">
+                Why Answering in 15 Seconds Trains High-Stakes Exam Composure
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Cognitive benefits of rapid buzzer drills without negative marking anxiety. How quick intuition reduces math formula hesitation during the actual BACII session.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between border-t border-surface-container-high mt-space-sm">
+<span class="font-badge-arcade text-[11px] text-secondary font-bold">NEUROSCIENCE</span>
+<a class="inline-flex items-center gap-1 text-primary font-title-card text-sm hover:text-secondary transition-colors font-bold" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 4: Student Spotlight -->
+<article class="flex flex-col justify-between bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] overflow-hidden transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a]">
+<div>
+<div class="relative h-48 bg-surface-container-high border-b-[3px] border-primary overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Portrait of a four high school Cambodian student team in Siem Reap celebrating their quiz victory with trophy pins, high fives, smiling faces in front of a school yard courtyard." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDO8txtAXgTroFknbemEDHQHnl7I4m0qxaH874qXaQU5cJk7HFRW0Zh8qgxlkWtTJMyxDQXYN78LwEq9hOMe3E1vrOnn6lM-DTeiKeKig503fPPGiVDFtcFBNKdvl5hm53Fbh6eMNo6Wv3lRE3Hqp4d4yl7AqGBgIpNQFPzygv0O18feZFUxPHEqI3YAqeD--P2GIAkDB5rnIOHR7fuUXBbo_yM4NkRWy8bdhLs34B9P19XNxvunDu8')"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                  STUDENT SPOTLIGHT • បទសម្ភាសន៍
+                </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-xs font-label-bold text-on-surface-variant">
+<span>By ReanRush Media Team</span>
+<span>• 5 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">
+                Meet the Siem Reap Grade 11 Team That Won 25 Consecutive Boss Raids
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Team "Angkor Thunder" breaks down their role delegation: 1 rapid formula calculator, 1 fact checker, and 2 streak multipliers. Read their daily 20-minute routine.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between border-t border-surface-container-high mt-space-sm">
+<span class="font-badge-arcade text-[11px] text-tertiary-fixed-dim font-bold">25 WIN STREAK</span>
+<a class="inline-flex items-center gap-1 text-primary font-title-card text-sm hover:text-secondary transition-colors font-bold" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 5: Excel Import Tutorial -->
+<article class="flex flex-col justify-between bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] overflow-hidden transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a]">
+<div>
+<div class="relative h-48 bg-surface-container-high border-b-[3px] border-primary overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Laptop screen showing teacher dashboard with Excel spreadsheet formulas converting directly into colorful four-choice arcade quiz cards with Khmer unicode fonts clearly formatted." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB105bccpXk6FQfLP0ozUy6vVriPfUcA63_CJz-23fYs5ubJpt1DB84A6cGub6dGApRkMoYrai3SuCRpTHxCpZvVfr-fwDnJ00Omqf96alJwJiRzqdADHugRjCXfcJmzVqScsIUB-ozndERpaTpGWyOolraleoFE8dR7Vq6x2x99kXAeI44n4a9qOrVmvJ1Rg8Q7MksHF-HF7kULUsLrwBK6wdaKTLGLDaCoPGXcsTaDm7D2vgIbUmk')"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  TUTORIAL • មេរៀនអនុវត្ត
+                </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-xs font-label-bold text-on-surface-variant">
+<span>By ReanRush Engineering</span>
+<span>• 3 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">
+                How to Import BACII Past Exam Papers from Excel in Under 60 Seconds
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Download our free MoEYS question format .xlsx template. Bulk populate 50 multiple choice questions with automated answer randomizing and instant point values.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between border-t border-surface-container-high mt-space-sm">
+<span class="font-badge-arcade text-[11px] text-primary font-bold">TEMPLATE INCLUDED</span>
+<a class="inline-flex items-center gap-1 text-primary font-title-card text-sm hover:text-secondary transition-colors font-bold" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 6: Rushy's Mistake Vault -->
+<article class="flex flex-col justify-between bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] overflow-hidden transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a]">
+<div>
+<div class="relative h-48 bg-surface-container-high border-b-[3px] border-primary overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Playful cartoon concept illustration of a golden safe vault with study notebooks and glowing light bulbs coming out, with digital data charts showing 80 percent retention rate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVDbKEMOf6yjNUxHMxlFGWTYqHesEOsc_fPafom5GrnxOjRd6B9GQQPEo9vNUHHus0k9MavCQ6V1TxhTBEkgX1i9alL0GIgMidNgGlz4p7x944J07DHL-qCgSd-rMx0YUPOLEeWbNoWacp9Tun1vU9YvOsLlZofDI886BHq5mNnzxhSENtbJl4IG6PMuWhsVjjW-ebnpHwFDgAkZ4WzKQePqM9_2cpQpYyzCFXuj7kT-m1R5ee43LY')"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 bg-surface-container-lowest border-[2px] border-primary text-primary font-badge-arcade text-badge-arcade rounded shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  LEARNING PSYCHOLOGY • ការចងចាំ
+                </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-xs font-label-bold text-on-surface-variant">
+<span>By Sovannara Lim (Curriculum Lead)</span>
+<span>• 5 min read</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">
+                The Psychology of Rushy's Mistake Vault: Why Reviewing Wrong Answers Yields 80% Retention
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Learning science behind our spaced repetition review. When students retry failed quiz questions within 24 hours in "Revenge Mode", exam anxiety drops significantly.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between border-t border-surface-container-high mt-space-sm">
+<span class="font-badge-arcade text-[11px] text-secondary font-bold">SPACED REPETITION</span>
+<a class="inline-flex items-center gap-1 text-primary font-title-card text-sm hover:text-secondary transition-colors font-bold" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Pagination / Load More Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md border-t-[2px] border-surface-container-high">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Showing <span class="font-bold text-primary">1 - 6</span> of 28 Published Articles
+        </p>
+<div class="flex items-center gap-2">
+<button class="px-space-md py-2 bg-surface-container-lowest text-primary font-label-bold rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a] opacity-50 cursor-not-allowed">
+            Previous
+          </button>
+<button class="w-10 h-10 bg-secondary-container text-on-secondary-container font-title-card rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a]">
+            1
+          </button>
+<button class="w-10 h-10 bg-surface-container-lowest text-primary font-title-card rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a] hover:bg-surface-container">
+            2
+          </button>
+<button class="w-10 h-10 bg-surface-container-lowest text-primary font-title-card rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a] hover:bg-surface-container">
+            3
+          </button>
+<button class="px-space-md py-2 bg-surface-container-lowest text-primary font-label-bold rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a] hover:bg-surface-container active:translate-x-0.5 active:translate-y-0.5">
+            Next Page
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Strategy Widget: BACII Countdown & Rushy's Daily Tip -->
+<section class="w-full py-space-lg px-margin-mobile lg:px-margin bg-surface-container">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Countdown Widget -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">timer</span>
+<h4 class="font-title-card text-title-card text-primary">BACII Exam 2025</h4>
+</div>
+<span class="px-2 py-0.5 bg-error text-on-error font-badge-arcade text-[10px] rounded">NATIONAL EXAM</span>
+</div>
+<div class="py-space-md grid grid-cols-4 gap-2 text-center">
+<div class="p-2 bg-surface-container border-[2px] border-primary rounded-lg">
+<span class="font-headline-lg text-headline-lg text-primary leading-none block">246</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant">DAYS</span>
+</div>
+<div class="p-2 bg-surface-container border-[2px] border-primary rounded-lg">
+<span class="font-headline-lg text-headline-lg text-primary leading-none block">14</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant">HOURS</span>
+</div>
+<div class="p-2 bg-surface-container border-[2px] border-primary rounded-lg">
+<span class="font-headline-lg text-headline-lg text-secondary leading-none block">32</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant">MINS</span>
+</div>
+<div class="p-2 bg-surface-container border-[2px] border-primary rounded-lg">
+<span class="font-headline-lg text-headline-lg text-tertiary-fixed-dim leading-none block">18</span>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant">SECS</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+          Target: Complete 15 Math &amp; Chemistry mock decks to guarantee Grade A readiness.
+        </p>
+</div>
+<!-- Rushy's Daily Wisdom -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">lightbulb</span>
+<h4 class="font-title-card text-title-card text-primary">Rushy's Pro Strategy #18</h4>
+</div>
+<span class="font-badge-arcade text-[10px] text-secondary font-bold">DAILY FLASH</span>
+</div>
+<div class="py-space-sm flex flex-col gap-2">
+<p class="font-title-card text-title-card text-primary text-base">
+            "Don't change your first answer in multiple choice unless you can write the proof formula!"
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "កុំប្តូរចម្លើយដំបូងរបស់អ្នកក្នុងការប្រឡង ប្រសិនបើអ្នកមិនទាន់ឃើញរូបមន្តផ្ទៀងផ្ទាត់ច្បាស់លាស់!"
+          </p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high text-xs font-label-bold text-on-surface-variant">
+<span>Validated by 84 Grade A alumni</span>
+<span class="text-secondary font-bold">⚡ +15 Streak pts</span>
+</div>
+</div>
+<!-- Quick Question Deck Request -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">add_circle</span>
+<h4 class="font-title-card text-title-card text-primary">Request an Exam Deck</h4>
+</div>
+<span class="font-badge-arcade text-[10px] text-on-surface-variant uppercase">MoEYS G10-12</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant py-2">
+          Missing a specific chapter in History, Earth Science, or Bio? Tell our curriculum editors and we will build a 25-question arena deck within 48h.
+        </p>
+<a class="w-full py-2 bg-surface-container text-primary font-title-card text-sm rounded-lg border-[2px] border-primary shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-high text-center transition-all" href="#">
+          Submit Chapter Request / ស្នើសុំកម្រងសំណួរ
+        </a>
+</div>
+</div>
+</section>
+<!-- Newsletter & Teacher Community Callout Card -->
+<section class="w-full py-space-xl px-margin-mobile lg:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="relative bg-surface-container-lowest border-[3px] border-primary rounded-xl p-space-lg lg:p-space-xl shadow-[8px_8px_0px_#00163a] overflow-hidden">
+<!-- Gold Accent Strip at Top of Card -->
+<div class="absolute top-0 left-0 right-0 h-3 bg-tertiary-fixed-dim border-b-[2px] border-primary"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center pt-2">
+<!-- Left Text Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container border-[2px] border-primary rounded-full self-start">
+<span class="material-symbols-outlined text-secondary text-sm">mark_email_unread</span>
+<span class="font-badge-arcade text-badge-arcade text-primary uppercase">WEEKLY ARENA DECK DISPATCH</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Get Weekly High School Quiz Decks in Your Inbox
+            </h3>
+<p class="font-title-card text-title-card text-secondary font-bold">
+              ទទួលបានកម្រងសំណួរ និងគន្លឹះបង្រៀនប្រចាំសប្តាហ៍សម្រាប់ថ្នាក់រៀនរបស់អ្នក
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+              Delivered every Sunday morning: 3 ready-to-run BACII quiz decks, 1 pedagogy spotlight for teachers, and sprint challenge codes directly compatible with ReanRush room PINs.
+            </p>
+<div class="flex flex-wrap items-center gap-space-md pt-2 text-xs font-label-bold text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+                Supports @moeys.gov.kh &amp; school domains
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+                Zero spam • Unsubscribe anytime
+              </span>
+</div>
+</div>
+<!-- Right Form Column -->
+<div class="lg:col-span-5 bg-surface-container p-space-md rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] flex flex-col gap-space-sm">
+<label class="font-label-bold text-label-bold text-primary flex items-center justify-between">
+<span>Enter your teacher or student email:</span>
+<span class="text-xs font-normal text-on-surface-variant">Bilingual content</span>
+</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-lg">mail</span>
+</span>
+<input class="w-full pl-10 pr-3 py-3 bg-surface-container-lowest border-[2px] border-primary rounded-lg text-primary placeholder-on-surface-variant/60 font-body-md text-body-md focus:outline-none focus:ring-0 focus:shadow-[2px_2px_0px_#00163a]" placeholder="teacher.name@school.edu.kh" type="email">
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<label class="flex items-center gap-2 p-2 bg-surface-container-lowest border border-primary rounded cursor-pointer">
+<input checked="" class="accent-primary" name="role_type" type="radio">
+<span class="font-label-bold text-primary">Student (សិស្ស)</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-lowest border border-primary rounded cursor-pointer">
+<input class="accent-primary" name="role_type" type="radio">
+<span class="font-label-bold text-primary">Teacher (គ្រូ)</span>
+</label>
+</div>
+<button class="w-full py-3 bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-2 mt-1">
+<span>Subscribe Free / ចុះឈ្មោះឥតគិតថ្លៃ</span>
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+<p class="font-body-sm text-[11px] text-center text-on-surface-variant">
+              Join 4,200+ Cambodian educators &amp; top-tier students currently enrolled.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary"><div class="w-full h-2.5 bg-primary overflow-hidden flex items-center justify-center"><div class="w-full flex justify-around text-tertiary-fixed-dim text-[9px] tracking-[6px] select-none leading-none">❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8wW0JscbppE"><span class="font-headline-md text-headline-md text-on-primary">ReanRush</span></div><p class="font-body-sm text-body-sm text-on-primary-container">High-octane quiz battles engineered for Cambodian high school classrooms. Fueling academic competition and collaborative learning.</p><div class="mt-space-sm p-space-sm bg-primary border-[3px] border-primary-container rounded-xl shadow-[3px_3px_0px_#00163a]"><p class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim tracking-wider uppercase">ACADEMIC PRIDE</p><p class="font-body-sm text-body-sm text-on-primary font-bold">Student project at AUB and CADT</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Youth innovation empowering digital education.</p></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Curriculum &amp; Platform</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Khmer Curriculum Quiz Bank</li><li class="text-primary-fixed">Teacher Dashboard</li><li class="text-primary-fixed">Live Arena Battles</li><li class="text-primary-fixed">National Leaderboards</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Safety &amp; Community</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Student Safety Guidelines</li><li class="text-primary-fixed">Classroom Code of Conduct</li><li class="text-primary-fixed">Educator Community</li><li class="text-primary-fixed">Regional Tournaments</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Education Sponsor</h4><div class="p-space-md bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] text-center flex flex-col items-center justify-center gap-space-xs"><div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]">account_balance</span></div><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">ACLEDA BANK</span><span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase tracking-wider text-[11px]">Official Fintech Sponsor</span></div></div></div><div class="pt-space-md border-t-[2px] border-primary/60 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-primary-fixed">Copyright © 2025 ReanRush. Made for Cambodian high school learners.</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Designed with Neo-Brutalist Arcade Precision.</p></div></div></footer></body></html>

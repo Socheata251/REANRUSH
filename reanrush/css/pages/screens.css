@@ -1,0 +1,14 @@
+.screen-tools { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(180px, .55fr) auto; align-items: end; gap: 14px; margin-bottom: 20px; padding: 16px; background: var(--white); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.screen-tools .badge { margin-bottom: 8px; }
+.screen-layout { display: grid; grid-template-columns: minmax(270px, .75fr) minmax(0, 1.5fr); align-items: start; gap: 20px; }
+.screen-list { display: grid; max-height: 76vh; overflow: auto; gap: 10px; padding: 4px 6px 8px 4px; }
+.screen-item { display: grid; grid-template-columns: 90px 1fr; align-items: center; gap: 12px; width: 100%; padding: 8px; color: var(--navy); background: var(--white); border: 2px solid var(--navy); border-radius: 10px; box-shadow: 3px 3px 0 var(--navy); text-align: left; cursor: pointer; }
+.screen-item:hover, .screen-item[aria-pressed='true'] { background: var(--nude); outline: 2px solid var(--blue); }
+.screen-item img { width: 90px; aspect-ratio: 16 / 10; object-fit: cover; border: 1px solid var(--navy); border-radius: 5px; }
+.screen-item strong { display: block; font-family: 'Baloo 2', sans-serif; line-height: 1.15; }
+.screen-item small { display: block; margin-top: 4px; color: var(--ink-soft); }
+.screen-preview { position: sticky; top: 16px; min-width: 0; padding: 14px; }
+.preview-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.preview-heading h2 { margin-top: 3px; }
+#screen-frame { display: block; width: 100%; height: min(72vh, 860px); background: var(--nude); border: 2px solid var(--navy); border-radius: 8px; }
+@media (max-width: 760px) { .screen-tools { grid-template-columns: 1fr; }.screen-tools .badge { justify-self: start; margin: 0; }.screen-layout { grid-template-columns: 1fr; }.screen-list { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-height: 46vh; }.screen-preview { position: static; }.preview-heading { align-items: start; flex-direction: column; }.preview-heading .btn { width: auto; } }

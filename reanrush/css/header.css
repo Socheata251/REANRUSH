@@ -1,0 +1,7 @@
+.site-header { color: var(--white); background: var(--navy); border-bottom: var(--line); }
+.header-inner { width: min(1120px, calc(100% - 32px)); min-height: 72px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font: 800 1.7rem 'Baloo 2', sans-serif; }
+.brand-mark { display: grid; width: 38px; aspect-ratio: 1; place-items: center; color: var(--navy); background: var(--gold); border: 2px solid var(--white); border-radius: 11px; }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.header-actions .btn { min-height: 40px; padding: 6px 12px; border-color: var(--white); box-shadow: 3px 3px 0 var(--blue); }
+@media (max-width: 500px) { .header-inner { width: calc(100% - 20px); min-height: 64px; } .brand { font-size: 1.4rem; } .header-actions .btn { width: auto; } }

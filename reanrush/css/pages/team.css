@@ -1,0 +1,8 @@
+.team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 720px; margin: auto; }
+.team-choice { display: grid; justify-items: center; gap: 8px; padding: 28px 18px; background: var(--white); border: var(--line); border-radius: var(--radius); box-shadow: var(--shadow); cursor: pointer; font-size: 1.15rem; }
+.team-choice input { accent-color: var(--navy); }
+.team-a { color: var(--team-a); }.team-b { color: var(--team-b); }
+.team-icon { display: grid; width: 76px; aspect-ratio: 1; place-items: center; border: var(--line); border-radius: 50%; color: var(--white); background: var(--team-a); font: 800 2.5rem 'Baloo 2', sans-serif; }
+.team-b .team-icon { background: var(--team-b); }
+.team-choice.selected { outline: 4px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 520px) { .team-grid { grid-template-columns: 1fr; } }

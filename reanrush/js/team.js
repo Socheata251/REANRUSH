@@ -1,0 +1,1 @@
+window.ReanRushPage = { init: function () { $('.team-choice input').on('change', function () { $('.team-choice').removeClass('selected'); $(this).closest('.team-choice').addClass('selected'); }); } };

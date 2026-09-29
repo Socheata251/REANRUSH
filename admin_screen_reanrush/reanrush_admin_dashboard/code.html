@@ -1,0 +1,628 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.khmer-diamond-strip{background-color:#E2A93B;background-image:radial-gradient(#0B2A5B 18%,transparent 20%),radial-gradient(#0B2A5B 18%,transparent 20%);background-size:12px 12px;background-position:0 0,6px 6px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary":"#ffffff","surface-dim":"#e9d6cf","on-tertiary-fixed-variant":"#5f4100","primary-fixed-dim":"#aec6ff","background":"#fff8f6","inverse-primary":"#aec6ff","surface-variant":"#f1dfd8","on-primary":"#ffffff","inverse-on-surface":"#ffede7","error":"#ba1a1a","tertiary-container":"#3c2800","surface-container":"#fdeae3","tertiary":"#221500","tertiary-fixed":"#ffdeaa","on-background":"#231915","on-surface":"#231915","on-secondary-fixed":"#001452","tertiary-fixed-dim":"#f8bd4d","surface-bright":"#fff8f6","secondary-fixed":"#dde1ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#be8a1b","secondary":"#0d4be4","on-secondary-container":"#fffbff","on-surface-variant":"#44474f","surface":"#fff8f6","surface-container-low":"#fff1ec","on-secondary-fixed-variant":"#0038b7","outline-variant":"#c4c6d0","on-error-container":"#93000a","surface-container-high":"#f7e4dd","secondary-container":"#3966fe","secondary-fixed-dim":"#b7c4ff","inverse-surface":"#392e2a","outline":"#747780","surface-tint":"#455e91","error-container":"#ffdad6","primary-fixed":"#d8e2ff","primary":"#00163a","on-error":"#ffffff","primary-container":"#0b2a5b","on-primary-fixed-variant":"#2c4678","on-primary-container":"#7a93ca","on-tertiary-fixed":"#271900","surface-container-highest":"#f1dfd8","on-tertiary":"#ffffff","on-primary-fixed":"#001a42"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","margin":"2rem","gutter-mobile":"0.75rem","space-xs":"0.25rem","margin-mobile":"1rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1.5rem","space-md":"1rem"},"fontFamily":{"badge-arcade":["\"Baloo 2\""],"display-hero":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"headline-lg":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"label-bold":["Kantumruy Pro"],"headline-md":["\"Baloo 2\""],"body-md":["Kantumruy Pro"]},"fontSize":{"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-primary-container z-50 flex flex-col border-r-[3px] border-primary-container shadow-[4px_0px_0px_#0B2A5B]"><div class="h-16 flex items-center px-space-md bg-primary-container border-b-[3px] border-primary"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0b2a5b
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFj_B7suWsM3D673uc4I1p2wo5yhcloIyIY7N_4EEkiYch_f_ZmL0Of-pnZbwnJ9wHtqzMpGc0NJZWY9r4SZQYDVdLiI92Z_EuEaKnpi3zmw_WFkzlNPXo_pgKex6X3IpzNXUExwGw9qs1HrKNBmdP2Mg4jrxFpZn6MclyLHHy_pZFkPe9H1j_iCgRnaB8H-JkO75xjZa47CDpIMi_K-I6JeUZ_0jgCWz34zQ5hsMG0oEZjTrfsXDv9Q"><span class="font-headline-md text-headline-md text-on-primary tracking-wide">ReanRush</span></div></div><div class="h-[6px] w-full khmer-diamond-strip border-b-[2px] border-primary"></div><div class="px-space-md py-space-sm"><span class="font-badge-arcade text-badge-arcade text-on-tertiary-container uppercase tracking-wider bg-tertiary px-space-sm py-space-xs rounded border border-on-tertiary-container">Admin Control Hub</span></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-secondary-container text-on-secondary-container shadow-[3px_3px_0px_#00163a] font-label-bold"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg border-[2px] border-transparent transition-all bg-secondary-container text-on-secondary-container shadow-[3px_3px_0px_#00163a] font-label-bold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-bold text-label-bold">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="users" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Users (អ្នកប្រើប្រាស់)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="quizzes" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">Quizzes (កម្រងសំណួរ)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">Reports (របាយការណ៍)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="ai-usage" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md text-body-md">AI Usage (ការប្រើប្រាស់ AI)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="live-games" href="#"><span class="material-symbols-outlined text-[20px]">sports_esports</span><span class="font-body-md text-body-md">Live Games (ការប្រកួតផ្ទាល់)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings (ការកំណត់)</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-primary-fixed hover:bg-primary hover:text-on-primary border-[2px] border-transparent transition-all" data-path="activity-log" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Activity Log (កំណត់ហេតុ)</span></a></nav><div class="p-space-sm bg-primary border-t-[3px] border-primary-container"><div class="bg-primary-container rounded-lg p-space-sm border-[2px] border-primary shadow-[2px_2px_0px_#00163a] flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><div class="w-8 h-8 rounded-full bg-secondary-container border border-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-secondary-container text-[18px]">shield_person</span></div><div class="truncate"><p class="font-label-bold text-label-bold text-on-primary leading-tight truncate">Admin Sovann</p><p class="font-body-sm text-body-sm text-primary-fixed-dim leading-tight truncate">Sisowath Superadmin</p></div></div><button class="p-1.5 rounded bg-primary hover:bg-error hover:text-on-error text-primary-fixed transition-colors border border-primary shadow-[1px_1px_0px_#00163a]" title="Logout" type="button"><span class="material-symbols-outlined text-[18px] block">logout</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-primary-container z-40 border-b-[3px] border-primary shadow-[0_4px_0px_#0B2A5B]"><div class="h-16 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b2a5b
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFj_B7suWsM3D673uc4I1p2wo5yhcloIyIY7N_4EEkiYch_f_ZmL0Of-pnZbwnJ9wHtqzMpGc0NJZWY9r4SZQYDVdLiI92Z_EuEaKnpi3zmw_WFkzlNPXo_pgKex6X3IpzNXUExwGw9qs1HrKNBmdP2Mg4jrxFpZn6MclyLHHy_pZFkPe9H1j_iCgRnaB8H-JkO75xjZa47CDpIMi_K-I6JeUZ_0jgCWz34zQ5hsMG0oEZjTrfsXDv9Q"><span class="font-title-card text-title-card text-on-primary">ReanRush Admin Console</span></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs bg-primary px-space-sm py-1 rounded border border-primary-fixed-dim/20"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-pulse"></span><span class="font-badge-arcade text-badge-arcade text-tertiary-fixed">ARENA SERVER ONLINE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-2 border-primary-fixed-dim"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="h-[6px] w-full khmer-diamond-strip border-b-[2px] border-primary"></div></header><main class="relative pt-16 bg-surface-container min-h-screen px-space-lg py-space-xl"><div class="flex flex-col w-full space-y-space-lg">
+<!-- TOP HEADER & CONTROLS BANNER -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-primary font-badge-arcade text-badge-arcade border-2 border-primary uppercase tracking-wide">
+          CAMBODIA ED-OPS LIVE
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-bold text-body-sm border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-ping"></span>
+          Telemetry V2.4
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary leading-tight tracking-tight">
+        Admin Command Center <span class="text-secondary font-headline-md">/ ផ្ទាំងគ្រប់គ្រងរដ្ឋបាល</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Real-time platform telemetry, user growth, active live classroom battles, and content moderation across high schools in Cambodia.
+      </p>
+</div>
+<!-- Right Utility Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Date Selector Pill -->
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 bg-surface-container-lowest text-primary font-label-bold text-label-bold rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-low transition-all active:translate-x-1 active:translate-y-1 active:shadow-none" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">calendar_today</span>
+<span>Today: Oct 24, 2025</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<!-- Server Status Badge -->
+<div class="inline-flex items-center gap-2 px-space-md py-2.5 bg-surface-container-lowest rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a]">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-bold text-body-sm text-primary">Server: <span class="text-secondary font-bold">99.98%</span> (14ms)</span>
+</div>
+<!-- Action Button -->
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 bg-secondary text-on-secondary font-badge-arcade text-badge-arcade rounded-xl border-[3px] border-primary shadow-[5px_5px_0px_#00163a] hover:bg-secondary-container transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" type="button">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>EXPORT SYSTEM AUDIT</span>
+</button>
+</div>
+</div>
+<!-- TOP 4 KPI CARDS GRID -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Total Users -->
+<div class="relative bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[5px_5px_0px_#00163a] flex flex-col justify-between overflow-hidden">
+<div class="absolute -right-3 -top-3 w-14 h-14 bg-surface-variant rounded-full opacity-40 pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-3">
+<span class="font-body-md text-body-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+            Total Users (អ្នកប្រើប្រាស់សរុប)
+          </span>
+<div class="w-10 h-10 rounded-xl bg-primary-container border-[2px] border-primary flex items-center justify-center text-tertiary-fixed shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-display-hero text-headline-lg text-primary tracking-tight font-extrabold">42,890</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container text-primary font-badge-arcade text-badge-arcade border border-primary">
+            +14.2% wk
+          </span>
+</div>
+</div>
+<div class="pt-2 border-t-2 border-surface-container flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+<span>36,410 Students • 6,480 Educators</span>
+</div>
+</div>
+<!-- KPI 2: Verified Teachers -->
+<div class="relative bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[5px_5px_0px_#00163a] flex flex-col justify-between overflow-hidden">
+<div>
+<div class="flex items-center justify-between gap-2 mb-3">
+<span class="font-body-md text-body-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+            Teachers (គ្រូបង្រៀនបានផ្ទៀងផ្ទាត់)
+          </span>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed border-[2px] border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-display-hero text-headline-lg text-primary tracking-tight font-extrabold">1,420</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-tertiary-fixed-dim text-tertiary font-badge-arcade text-badge-arcade border border-primary">
+            +38 review
+          </span>
+</div>
+</div>
+<div class="pt-2 border-t-2 border-surface-container flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">apartment</span>
+<span>128 Schools (Phnom Penh, Siem Reap)</span>
+</div>
+</div>
+<!-- KPI 3: Games Today -->
+<div class="relative bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[5px_5px_0px_#00163a] flex flex-col justify-between overflow-hidden">
+<div>
+<div class="flex items-center justify-between gap-2 mb-3">
+<span class="font-body-md text-body-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+            Games Today (ការប្រកួតថ្ងៃនេះ)
+          </span>
+<div class="w-10 h-10 rounded-xl bg-secondary-container border-[2px] border-primary flex items-center justify-center text-on-secondary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[22px]">sports_esports</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-display-hero text-headline-lg text-primary tracking-tight font-extrabold">3,842</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-badge-arcade text-badge-arcade border border-primary">
+            +28% yday
+          </span>
+</div>
+</div>
+<div class="pt-2 border-t-2 border-surface-container flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">done_all</span>
+<span>88,360 quiz questions answered</span>
+</div>
+</div>
+<!-- KPI 4: Active Games Now -->
+<div class="relative bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[5px_5px_0px_#00163a] flex flex-col justify-between overflow-hidden">
+<div>
+<div class="flex items-center justify-between gap-2 mb-3">
+<span class="font-body-md text-body-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+            Active Now (កំពុងប្រកួតបច្ចុប្បន្ន)
+          </span>
+<div class="w-10 h-10 rounded-xl bg-error border-[2px] border-primary flex items-center justify-center text-on-error shadow-[2px_2px_0px_#00163a] animate-pulse">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-display-hero text-headline-lg text-primary tracking-tight font-extrabold">156 <span class="text-title-card font-bold text-error">Live</span></span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-error-container text-on-error-container font-badge-arcade text-badge-arcade border border-primary">
+            PEAK HOUR
+          </span>
+</div>
+</div>
+<div class="pt-2 border-t-2 border-surface-container flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-error">cast_connected</span>
+<span>4,680 students on class projectors</span>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE CHARTS SECTION (2 COLUMNS) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- CHART 1: Users Per Week -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[6px_6px_0px_#00163a] flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm border-b-[2px] border-surface-container gap-2">
+<div>
+<span class="font-badge-arcade text-badge-arcade text-secondary uppercase tracking-wider bg-secondary-fixed px-2 py-0.5 rounded border border-primary">
+              CAMPAIGN ANALYTICS
+            </span>
+<h2 class="font-headline-md text-title-card text-primary mt-1">
+              Users Per Week / កំណើនអ្នកប្រើប្រាស់ប្រចាំសប្តាហ៍
+            </h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-primary">
+<span class="w-3 h-3 rounded-sm bg-secondary border border-primary"></span> Students
+            </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-primary">
+<span class="w-3 h-3 rounded-sm bg-tertiary-fixed-dim border border-primary"></span> Teachers
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between my-3 text-body-sm font-label-bold text-on-surface-variant">
+<span>Growth trajectory (Weeks 1 – 7)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary border border-primary font-badge-arcade text-badge-arcade">
+            +5,420 Signups in W7 Peak
+          </span>
+</div>
+<!-- SVG Dual Bar Chart -->
+<div class="w-full bg-surface-container-low rounded-xl p-3 border-[2px] border-primary">
+<svg class="w-full h-48 select-none" viewBox="0 0 540 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line stroke="#f1dfd8" stroke-dasharray="4" stroke-width="1.5" x1="40" x2="520" y1="30" y2="30"></line>
+<line stroke="#f1dfd8" stroke-dasharray="4" stroke-width="1.5" x1="40" x2="520" y1="80" y2="80"></line>
+<line stroke="#f1dfd8" stroke-dasharray="4" stroke-width="1.5" x1="40" x2="520" y1="130" y2="130"></line>
+<line stroke="#00163a" stroke-width="2" x1="40" x2="520" y1="180" y2="180"></line>
+<!-- Y Axis Labels -->
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="34">7k</text>
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="84">5k</text>
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="134">2.5k</text>
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="184">0</text>
+<!-- W1: Stud=90, Teach=25 -->
+<rect fill="#0d4be4" height="45" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="58" y="135"></rect>
+<rect fill="#f8bd4d" height="15" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="79" y="165"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="77" y="198">W1</text>
+<!-- W2: Stud=110, Teach=35 -->
+<rect fill="#0d4be4" height="60" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="124" y="120"></rect>
+<rect fill="#f8bd4d" height="22" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="145" y="158"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="143" y="198">W2</text>
+<!-- W3: Stud=130, Teach=45 -->
+<rect fill="#0d4be4" height="75" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="190" y="105"></rect>
+<rect fill="#f8bd4d" height="30" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="211" y="150"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="209" y="198">W3</text>
+<!-- W4: Stud=150, Teach=55 -->
+<rect fill="#0d4be4" height="90" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="256" y="90"></rect>
+<rect fill="#f8bd4d" height="38" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="277" y="142"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="275" y="198">W4</text>
+<!-- W5: Stud=170, Teach=65 -->
+<rect fill="#0d4be4" height="105" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="322" y="75"></rect>
+<rect fill="#f8bd4d" height="48" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="343" y="132"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="341" y="198">W5</text>
+<!-- W6: Stud=195, Teach=80 -->
+<rect fill="#0d4be4" height="125" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="388" y="55"></rect>
+<rect fill="#f8bd4d" height="58" rx="3" stroke="#00163a" stroke-width="1.5" width="18" x="409" y="122"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="407" y="198">W6</text>
+<!-- W7: BACII Prep Peak! Stud=225, Teach=95 -->
+<rect fill="#3966fe" height="142" rx="3" stroke="#00163a" stroke-width="2" width="18" x="454" y="38"></rect>
+<rect fill="#f8bd4d" height="72" rx="3" stroke="#00163a" stroke-width="2" width="18" x="475" y="108"></rect>
+<text fill="#0d4be4" font-family="'Baloo 2'" font-size="12" font-weight="800" text-anchor="middle" x="473" y="198">W7 🔥</text>
+<!-- Floating tag on W7 -->
+<rect fill="#00163a" height="20" rx="4" width="85" x="430" y="8"></rect>
+<text fill="#ffdeaa" font-family="'Baloo 2'" font-size="10" font-weight="700" text-anchor="middle" x="472" y="22">6,850 BACII</text>
+</svg>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>⚡ Note: Nationwide BACII preparation rush started in Week 6 across 9 provinces.</span>
+<button class="text-secondary font-label-bold hover:underline inline-flex items-center gap-1" type="button">
+          Detailed Cohort <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CHART 2: Games Per Day -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[6px_6px_0px_#00163a] flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm border-b-[2px] border-surface-container gap-2">
+<div>
+<span class="font-badge-arcade text-badge-arcade text-on-tertiary uppercase tracking-wider bg-tertiary-container px-2 py-0.5 rounded border border-primary">
+              ARENA TRAFFIC
+            </span>
+<h2 class="font-headline-md text-title-card text-primary mt-1">
+              Games Per Day / ចំនួនការប្រកួតប្រចាំថ្ងៃ
+            </h2>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-primary">
+<span class="w-3 h-3 rounded-full bg-secondary border border-primary"></span> Solo
+            </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-primary">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim border border-primary"></span> Team Clash
+            </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-primary">
+<span class="w-3 h-3 rounded-full bg-error border border-primary"></span> Boss Raid
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between my-3 text-body-sm font-label-bold text-on-surface-variant">
+<span>Weekly total: <strong class="text-primary font-headline-md text-body-md">24,890 Battles</strong></span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary border border-primary font-badge-arcade text-badge-arcade">
+            Avg 3,555 battles/day
+          </span>
+</div>
+<!-- SVG Stacked / Categorized Column Chart -->
+<div class="w-full bg-surface-container-low rounded-xl p-3 border-[2px] border-primary">
+<svg class="w-full h-48 select-none" viewBox="0 0 540 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line stroke="#f1dfd8" stroke-dasharray="4" stroke-width="1.5" x1="40" x2="520" y1="30" y2="30"></line>
+<line stroke="#f1dfd8" stroke-dasharray="4" stroke-width="1.5" x1="40" x2="520" y1="80" y2="80"></line>
+<line stroke="#f1dfd8" stroke-dasharray="4" stroke-width="1.5" x1="40" x2="520" y1="130" y2="130"></line>
+<line stroke="#00163a" stroke-width="2" x1="40" x2="520" y1="180" y2="180"></line>
+<!-- Y Axis Labels -->
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="34">5k</text>
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="84">3.5k</text>
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="134">1.8k</text>
+<text fill="#747780" font-family="'Baloo 2'" font-size="11" text-anchor="end" x="32" y="184">0</text>
+<!-- Mon: 2,400 (Solo=50, Team=35, Raid=15) -->
+<rect fill="#0d4be4" height="35" stroke="#00163a" stroke-width="1.5" width="28" x="58" y="145"></rect>
+<rect fill="#f8bd4d" height="27" stroke="#00163a" stroke-width="1.5" width="28" x="58" y="118"></rect>
+<rect fill="#ba1a1a" height="14" rx="3" stroke="#00163a" stroke-width="1.5" width="28" x="58" y="104"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="72" y="198">Mon</text>
+<!-- Tue: 2,800 -->
+<rect fill="#0d4be4" height="42" stroke="#00163a" stroke-width="1.5" width="28" x="124" y="138"></rect>
+<rect fill="#f8bd4d" height="32" stroke="#00163a" stroke-width="1.5" width="28" x="124" y="106"></rect>
+<rect fill="#ba1a1a" height="16" rx="3" stroke="#00163a" stroke-width="1.5" width="28" x="124" y="90"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="138" y="198">Tue</text>
+<!-- Wed: 3,200 -->
+<rect fill="#0d4be4" height="50" stroke="#00163a" stroke-width="1.5" width="28" x="190" y="130"></rect>
+<rect fill="#f8bd4d" height="38" stroke="#00163a" stroke-width="1.5" width="28" x="190" y="92"></rect>
+<rect fill="#ba1a1a" height="18" rx="3" stroke="#00163a" stroke-width="1.5" width="28" x="190" y="74"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="204" y="198">Wed</text>
+<!-- Thu: 4,450 (Class Tournament Spike) -->
+<rect fill="#0d4be4" height="68" stroke="#00163a" stroke-width="1.5" width="28" x="256" y="112"></rect>
+<rect fill="#f8bd4d" height="50" stroke="#00163a" stroke-width="1.5" width="28" x="256" y="62"></rect>
+<rect fill="#ba1a1a" height="22" rx="3" stroke="#00163a" stroke-width="1.5" width="28" x="256" y="40"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="800" text-anchor="middle" x="270" y="198">Thu ⚡</text>
+<!-- Fri: 4,920 (Major High School Rush) -->
+<rect fill="#0d4be4" height="78" stroke="#00163a" stroke-width="2" width="28" x="322" y="102"></rect>
+<rect fill="#f8bd4d" height="54" stroke="#00163a" stroke-width="2" width="28" x="322" y="48"></rect>
+<rect fill="#ba1a1a" height="24" rx="3" stroke="#00163a" stroke-width="2" width="28" x="322" y="24"></rect>
+<text fill="#0d4be4" font-family="'Baloo 2'" font-size="12" font-weight="800" text-anchor="middle" x="336" y="198">Fri 🏆</text>
+<!-- Sat: 3,750 -->
+<rect fill="#0d4be4" height="60" stroke="#00163a" stroke-width="1.5" width="28" x="388" y="120"></rect>
+<rect fill="#f8bd4d" height="42" stroke="#00163a" stroke-width="1.5" width="28" x="388" y="78"></rect>
+<rect fill="#ba1a1a" height="18" rx="3" stroke="#00163a" stroke-width="1.5" width="28" x="388" y="60"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="402" y="198">Sat</text>
+<!-- Sun: 3,370 -->
+<rect fill="#0d4be4" height="52" stroke="#00163a" stroke-width="1.5" width="28" x="454" y="128"></rect>
+<rect fill="#f8bd4d" height="42" stroke="#00163a" stroke-width="1.5" width="28" x="454" y="86"></rect>
+<rect fill="#ba1a1a" height="16" rx="3" stroke="#00163a" stroke-width="1.5" width="28" x="454" y="70"></rect>
+<text fill="#00163a" font-family="'Baloo 2'" font-size="12" font-weight="700" text-anchor="middle" x="468" y="198">Sun</text>
+</svg>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>⚡ Friday afternoon peaks coincide with inter-school CADT league matches.</span>
+<button class="text-secondary font-label-bold hover:underline inline-flex items-center gap-1" type="button">
+          Live Arena Monitor <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TABLE SECTION: LATEST REPORTED CONTENT -->
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[6px_6px_0px_#00163a]">
+<!-- Table Top Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between pb-space-md border-b-[2px] border-surface-container gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-error-container text-on-error-container font-badge-arcade text-badge-arcade border border-primary">
+            SECURITY &amp; QUALITY
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Queue: 4 urgent pending</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">
+          Latest Reported Content / មាតិការាយការណ៍ចុងក្រោយ
+        </h2>
+</div>
+<!-- Filter Tabs & Quick Search -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex p-1 bg-surface-container rounded-xl border-[2px] border-primary">
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-bold text-body-sm border border-primary shadow-[2px_2px_0px_#00163a]" type="button">
+            All (7)
+          </button>
+<button class="px-3 py-1 rounded-lg text-on-surface-variant hover:text-primary font-label-bold text-body-sm transition-colors" type="button">
+            Pending Review (4)
+          </button>
+<button class="px-3 py-1 rounded-lg text-on-surface-variant hover:text-primary font-label-bold text-body-sm transition-colors" type="button">
+            Action Taken (3)
+          </button>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="pl-9 pr-4 py-1.5 bg-surface-container-low text-primary font-body-sm text-body-sm rounded-xl border-[2px] border-primary focus:bg-surface-container-lowest focus:outline-none focus:shadow-[2px_2px_0px_#00163a] transition-all" placeholder="Search report or school..." type="text">
+</div>
+</div>
+</div>
+<!-- Neo-Brutalist Table Container -->
+<div class="mt-space-md overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container border-b-[3px] border-primary text-primary font-title-card text-body-sm">
+<th class="py-3 px-4">REPORT ID &amp; TIME</th>
+<th class="py-3 px-4">CONTENT &amp; CREATOR</th>
+<th class="py-3 px-4">REASON FOR REPORT</th>
+<th class="py-3 px-4">REPORTED BY</th>
+<th class="py-3 px-4 text-center">SEVERITY</th>
+<th class="py-3 px-4 text-right">MODERATION ACTIONS</th>
+</tr>
+</thead>
+<tbody class="divide-y-[2px] divide-surface-container font-body-md text-body-sm">
+<!-- Row 1: Grade 12 Physics -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 align-top">
+<span class="font-badge-arcade text-badge-arcade text-primary font-bold">#REP-8941</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">12 mins ago</p>
+</td>
+<td class="py-4 px-4 align-top max-w-xs">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-bold text-[11px] border border-primary">
+                  Question #8
+                </span>
+<span class="font-label-bold text-primary truncate">Grade 12 Physics: Lenz Law</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[13px] mt-0.5">Deck: National BACII Mock Exam • Sisowath High</p>
+</td>
+<td class="py-4 px-4 align-top max-w-sm">
+<span class="text-error font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">error</span> Incorrect Answer Key
+              </span>
+<p class="font-body-sm text-primary text-[13px] mt-0.5 leading-snug">
+                Lenz law opposition direction sign is inverted in options B and D. Confusing students during mock quiz.
+              </p>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed border border-primary">
+<span class="material-symbols-outlined text-[15px]">school</span>
+<span class="font-label-bold text-[12px]">Lokkru Vichea (Physics)</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-error text-on-error font-badge-arcade text-[11px] border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+                CRITICAL
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-variant font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center gap-1" title="Approve Revision" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">edit_note</span>
+<span>Inspect</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-tertiary-fixed text-primary hover:bg-tertiary-fixed-dim font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" title="Dismiss Report" type="button">
+                  Dismiss
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-error text-on-error hover:bg-error-container font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" title="Remove Question" type="button">
+                  Fix / Remove
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Inappropriate Nickname -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 align-top">
+<span class="font-badge-arcade text-badge-arcade text-primary font-bold">#REP-8938</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">34 mins ago</p>
+</td>
+<td class="py-4 px-4 align-top max-w-xs">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-bold text-[11px] border border-primary">
+                  Student Nickname
+                </span>
+<span class="font-label-bold text-primary truncate font-mono">@battle_beast_xxx</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[13px] mt-0.5">Game Room #4091 • Hun Sen Krong Tep High</p>
+</td>
+<td class="py-4 px-4 align-top max-w-sm">
+<span class="text-tertiary-fixed-dim font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">warning</span> Offensive Nickname
+              </span>
+<p class="font-body-sm text-primary text-[13px] mt-0.5 leading-snug">
+                Student broadcasted vulgar pun on the shared classroom projector during live Team Clash.
+              </p>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed border border-primary">
+<span class="material-symbols-outlined text-[15px]">school</span>
+<span class="font-label-bold text-[12px]">Neakkru Chavy (Math)</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-tertiary font-badge-arcade text-[11px] border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+                MODERATE
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-variant font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span>Inspect</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-dim font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+                  Dismiss
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-error text-on-error hover:bg-error-container font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+                  Reset Name
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Exam Cheat Deck -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 align-top">
+<span class="font-badge-arcade text-badge-arcade text-primary font-bold">#REP-8924</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1 hour ago</p>
+</td>
+<td class="py-4 px-4 align-top max-w-xs">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-bold text-[11px] border border-primary">
+                  Quiz Deck
+                </span>
+<span class="font-label-bold text-primary truncate">Grade 11 Chem Exam Cheat</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[13px] mt-0.5">Author: Anonymous • Tuol Tompoung High</p>
+</td>
+<td class="py-4 px-4 align-top max-w-sm">
+<span class="text-error font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">policy</span> Academic Integrity
+              </span>
+<p class="font-body-sm text-primary text-[13px] mt-0.5 leading-snug">
+                Claims to contain actual leaked semester exam questions with misleading answers. Violates community terms.
+              </p>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-tertiary-fixed text-tertiary border border-primary">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span class="font-label-bold text-[12px]">MoEYS Proctor Team</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-error text-on-error font-badge-arcade text-[11px] border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+                CRITICAL
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-variant font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">search</span>
+<span>Inspect</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-dim font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+                  Dismiss
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-error text-on-error hover:bg-error-container font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+                  Unpublish
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Machine Translation -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 align-top">
+<span class="font-badge-arcade text-badge-arcade text-primary font-bold">#REP-8902</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 hours ago</p>
+</td>
+<td class="py-4 px-4 align-top max-w-xs">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-bold text-[11px] border border-primary">
+                  Quiz Deck
+                </span>
+<span class="font-label-bold text-primary truncate">English Vocab Sprint G10</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[13px] mt-0.5">Author: K. Dara • Samdech Techo High</p>
+</td>
+<td class="py-4 px-4 align-top max-w-sm">
+<span class="text-secondary font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">translate</span> AI Translation Error
+              </span>
+<p class="font-body-sm text-primary text-[13px] mt-0.5 leading-snug">
+                Khmer translation definitions appear uncurated with grammatical errors in 6 flashcards.
+              </p>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container text-primary border border-primary">
+<span class="material-symbols-outlined text-[15px]">person</span>
+<span class="font-label-bold text-[12px]">Student Serey (G10)</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-badge-arcade text-[11px] border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+                LOW
+              </span>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-variant font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">spellcheck</span>
+<span>AI Polish</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-dim font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+                  Dismiss
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-tertiary-fixed text-primary hover:bg-tertiary-fixed-dim font-label-bold text-body-sm border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+                  Notify Author
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="mt-space-md pt-3 border-t-[2px] border-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Showing 4 of 7 active pending reports across Cambodia</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container-low text-primary border border-primary font-label-bold disabled:opacity-50" disabled="" type="button">
+          Prev
+        </button>
+<button class="px-3 py-1 rounded bg-secondary text-on-secondary border border-primary font-badge-arcade text-badge-arcade" type="button">
+          1
+        </button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-primary hover:bg-surface-container border border-primary font-badge-arcade text-badge-arcade" type="button">
+          2
+        </button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-primary hover:bg-surface-container border border-primary font-label-bold" type="button">
+          Next
+        </button>
+</div>
+</div>
+</div>
+<!-- RUSHY MASCOT ADVISOR CALLOUT CARD -->
+<div class="relative bg-primary-container text-on-primary rounded-2xl border-[3px] border-primary p-space-md shadow-[6px_6px_0px_#00163a] overflow-hidden">
+<div class="flex flex-col md:flex-row items-center gap-space-md">
+<!-- Mascot Avatar Visual -->
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-2xl bg-secondary-container border-[3px] border-primary flex items-center justify-center shadow-[4px_4px_0px_#00163a] overflow-hidden">
+<div class="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-secondary-container to-primary">
+<span class="material-symbols-outlined text-[48px] text-tertiary-fixed">smart_toy</span>
+<div class="absolute bottom-1 right-1 px-1 rounded bg-tertiary-fixed-dim text-primary font-badge-arcade text-[10px] border border-primary">
+              AI
+            </div>
+</div>
+</div>
+</div>
+<!-- Mascot Guidance Text -->
+<div class="flex-1 text-center md:text-left space-y-1">
+<div class="inline-flex items-center gap-2">
+<span class="font-badge-arcade text-badge-arcade text-tertiary-fixed tracking-wider uppercase bg-primary px-2 py-0.5 rounded border border-primary-fixed-dim/30">
+            RUSHY MASCOT OPS ADVISOR
+          </span>
+<span class="text-tertiary-fixed-dim font-body-sm text-body-sm">• Auto-scaled 4 mins ago</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-primary">
+          Angkor Boss Cluster at 82% CPU load — Projector sync stays butter-smooth!
+        </h3>
+<p class="font-body-md text-body-md text-primary-fixed leading-snug max-w-3xl">
+          “Rushy here! 48 classroom quiz battles just launched simultaneously in Sisowath and Hun Sen Krong Tep. 
+          We have dynamically dispatched 3 CADT Cloud edge instances to maintain 18ms latency.”
+        </p>
+</div>
+<!-- Mascot CTAs -->
+<div class="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0 w-full md:w-auto">
+<button class="px-space-md py-2.5 bg-tertiary-fixed text-primary font-badge-arcade text-badge-arcade rounded-xl border-[2px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-tertiary-fixed-dim active:translate-x-1 active:translate-y-1 active:shadow-none transition-all text-center" type="button">
+          ⚡ SCALE CLUSTER NOW
+        </button>
+<button class="px-space-md py-2 bg-primary text-primary-fixed hover:text-on-primary font-label-bold text-body-sm rounded-xl border-[2px] border-primary-fixed-dim/40 hover:bg-primary-container text-center transition-colors" type="button">
+          View Cloud Cluster Metrics
+        </button>
+</div>
+</div>
+</div>
+</div></main><div class="h-[6px] w-full khmer-diamond-strip border-t-[2px] border-primary"></div><footer class="w-full bg-primary-container border-t-[3px] border-primary py-space-md px-space-lg text-on-primary"><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="px-2.5 py-1 bg-surface-container-lowest rounded border-[2px] border-primary shadow-[2px_2px_0px_#00163a] flex items-center gap-1.5"><span class="font-headline-md text-[12px] font-bold text-primary leading-none">ACLEDA</span><span class="font-body-sm text-[11px] text-on-surface-variant font-semibold">Bank Plc.</span></div><span class="font-body-sm text-body-sm text-primary-fixed-dim font-medium">Official Educational FinTech Partner</span></div><p class="font-body-sm text-body-sm text-primary-fixed text-center">Student project at AUB and CADT • All Rights Reserved © 2025</p></div></footer></div></body></html>
