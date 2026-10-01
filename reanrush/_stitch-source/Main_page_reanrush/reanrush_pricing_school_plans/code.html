@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#aec6ff","on-error":"#ffffff","outline-variant":"#c4c6d0","on-primary-fixed":"#001a42","on-tertiary-fixed-variant":"#5f4100","tertiary":"#221500","tertiary-fixed-dim":"#f8bd4d","surface-variant":"#f1dfd8","error":"#ba1a1a","primary":"#00163a","on-secondary-fixed-variant":"#0038b7","on-primary-container":"#7a93ca","secondary-container":"#3966fe","on-tertiary-container":"#be8a1b","on-surface-variant":"#44474f","background":"#fff8f6","primary-fixed-dim":"#aec6ff","primary-fixed":"#d8e2ff","surface-bright":"#fff8f6","surface-container-low":"#fff1ec","on-error-container":"#93000a","on-surface":"#231915","surface-dim":"#e9d6cf","outline":"#747780","inverse-surface":"#392e2a","secondary-fixed-dim":"#b7c4ff","surface-tint":"#455e91","primary-container":"#0b2a5b","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdeaa","on-primary":"#ffffff","surface-container":"#fdeae3","secondary":"#0d4be4","on-tertiary-fixed":"#271900","on-background":"#231915","inverse-on-surface":"#ffede7","surface-container-highest":"#f1dfd8","surface":"#fff8f6","on-secondary-fixed":"#001452","on-secondary":"#ffffff","on-secondary-container":"#fffbff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#2c4678","tertiary-container":"#3c2800","surface-container-high":"#f7e4dd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"2rem","gutter":"1.5rem","margin-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem"},"fontFamily":{"display-hero":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"headline-lg-mobile":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"badge-arcade":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"display-hero-mobile":["\"Baloo 2\""],"label-bold":["Kantumruy Pro"],"body-lg":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"headline-lg":["\"Baloo 2\""]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8wW0JscbppE"><span class="font-title-card text-title-card text-on-primary tracking-wide hidden sm:inline-block">ReanRush</span></a><nav class="hidden lg:flex items-center gap-space-sm ml-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-label-bold rounded-lg border-2 border-primary"><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="games" href="#">Games</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="blog" href="#">Blog</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-secondary-container text-on-secondary-container font-label-bold rounded-lg border-2 border-primary" data-path="pricing" href="#">Pricing</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="class-pin" href="#">Class PIN</a></nav></div><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="arena-lobby" href="#">Join</a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-surface-container-lowest text-primary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="sign-up" href="#">Sign up</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full h-2.5 bg-primary overflow-hidden flex items-center justify-center"><div class="w-full flex justify-around text-tertiary-fixed-dim text-[9px] tracking-[6px] select-none leading-none">❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Interactive Style Rules for Micro-interactions & Zero-blur Shadows -->
+<style>
+    .brutal-card {
+      border: 3px solid #00163a;
+      box-shadow: 5px 5px 0px #00163a;
+    }
+    .brutal-card-highlight {
+      border: 4px solid #00163a;
+      box-shadow: 7px 7px 0px #00163a;
+    }
+    .brutal-btn-primary {
+      background-color: #3966fe;
+      color: #ffffff;
+      border: 3px solid #00163a;
+      box-shadow: 4px 4px 0px #00163a;
+      transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .brutal-btn-primary:active {
+      transform: translate(4px, 4px);
+      box-shadow: 0px 0px 0px #00163a;
+    }
+    .brutal-btn-white {
+      background-color: #ffffff;
+      color: #00163a;
+      border: 3px solid #00163a;
+      box-shadow: 4px 4px 0px #00163a;
+      transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .brutal-btn-white:active {
+      transform: translate(4px, 4px);
+      box-shadow: 0px 0px 0px #00163a;
+    }
+    .brutal-btn-navy {
+      background-color: #00163a;
+      color: #ffffff;
+      border: 3px solid #00163a;
+      box-shadow: 4px 4px 0px #00163a;
+      transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .brutal-btn-navy:active {
+      transform: translate(4px, 4px);
+      box-shadow: 0px 0px 0px #00163a;
+    }
+    .brutal-badge {
+      border: 2px solid #00163a;
+      box-shadow: 2px 2px 0px #00163a;
+    }
+  </style>
+<!-- Main Hero & Billing Control Section -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl max-w-7xl mx-auto">
+<!-- Top Highlight Badge -->
+<div class="flex justify-center mb-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 bg-tertiary-fixed-dim text-primary brutal-badge rounded-full font-badge-arcade text-badge-arcade tracking-wider uppercase">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>100% FREE FOR ALL CAMBODIAN PUBLIC HIGH SCHOOL STUDENTS</span>
+</div>
+</div>
+<!-- Main Title & Khmer Subhead -->
+<div class="text-center max-w-4xl mx-auto flex flex-col gap-space-xs mb-space-lg">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight leading-tight">
+        Fair &amp; Simple Pricing for Every Classroom
+        <span class="block font-headline-md text-headline-md text-secondary-container mt-1">តម្លៃសមរម្យសម្រាប់គ្រប់ថ្នាក់រៀន</span>
+</h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        Students always study and battle for free. Supercharge your school with unlimited AI quiz generation, full BACII question banks, and projector arena hosting.
+      </p>
+</div>
+<!-- Mascot Speech Bubble & ACLEDA Partnership Banner (Horizontal Ribbon) -->
+<div class="relative max-w-3xl mx-auto mb-space-xl">
+<div class="bg-surface-container-lowest brutal-card rounded-2xl p-space-md flex flex-col sm:flex-row items-center gap-space-md">
+<!-- Elephant Mascot Rushy -->
+<div class="relative shrink-0 flex items-center justify-center">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-primary-fixed border-[3px] border-primary flex items-center justify-center shadow-[3px_3px_0px_#00163a]">
+<img alt="Rushy the playful Cambodian elephant mascot wearing an arcade blue cap with gold lightning bolt" class="w-full h-full object-contain p-1" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+</div>
+<!-- Sparkle accent -->
+<span class="absolute -top-2 -right-2 material-symbols-outlined text-tertiary-fixed-dim text-[24px]">hotel_class</span>
+</div>
+<!-- Speech Content -->
+<div class="flex-1 text-center sm:text-left">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-surface-container-high border-[2px] border-primary text-primary font-badge-arcade text-[12px] uppercase mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+            Rushy's Classroom Guarantee
+          </div>
+<p class="font-title-card text-title-card text-primary leading-snug">
+            “Supported by ACLEDA Bank &amp; CADT to keep student education open &amp; 100% free! 🇰🇭✨”
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            គ្មានកាតធនាគារ គ្មានការទារលុយពីសិស្ស — រៀនសប្បាយ និងត្រៀមប្រឡងបាក់ឌុបដោយឥតគិតថ្លៃ។
+          </p>
+</div>
+<!-- Micro sponsor badge -->
+<div class="hidden md:flex flex-col items-center justify-center pl-space-sm border-l-2 border-primary/20">
+<span class="font-badge-arcade text-[11px] text-on-surface-variant uppercase tracking-wider">Powered by</span>
+<span class="font-headline-md text-primary text-[15px] font-extrabold leading-none mt-1">ACLEDA</span>
+<span class="font-label-bold text-secondary text-[11px] font-bold">Fintech Partner</span>
+</div>
+</div>
+</div>
+<!-- Billing Cycle Switcher Neo-Brutalist -->
+<div class="flex flex-col items-center justify-center gap-space-xs mb-space-xl">
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-1.5 shadow-[4px_4px_0px_#00163a] flex items-center gap-2">
+<button class="px-space-md py-2 rounded-xl font-title-card text-[15px] transition-all bg-primary text-on-primary" id="billing-monthly">
+          Monthly (ប្រចាំខែ)
+        </button>
+<button class="px-space-md py-2 rounded-xl font-title-card text-[15px] transition-all text-primary hover:bg-surface-container flex items-center gap-2" id="billing-annual">
+<span>Annual School Year (ប្រចាំឆ្នាំ)</span>
+<span class="bg-tertiary-fixed-dim text-primary border-[2px] border-primary px-2 py-0.5 rounded-full font-badge-arcade text-[11px] uppercase tracking-wide">
+            សន្សំ 20%
+          </span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+        Flexible for high school teachers. Upgrade or pause anytime with zero penalty.
+      </p>
+</div>
+<!-- 3 PRICING TIERS GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch">
+<!-- TIER 1: Student & Solo Learner -->
+<div class="bg-surface-container-lowest brutal-card rounded-2xl p-space-lg flex flex-col justify-between relative">
+<div>
+<!-- Top Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="inline-block px-3 py-1 bg-surface-container border-[2px] border-primary rounded-lg font-badge-arcade text-badge-arcade text-primary uppercase">
+              STUDENT SOLO / សិស្សទូទៅ
+            </span>
+<div class="w-8 h-8 rounded-lg bg-surface-container border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+</div>
+</div>
+<!-- Price Display -->
+<div class="mb-space-md">
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-lg md:text-[44px] text-primary font-extrabold leading-none">$0</span>
+<span class="font-title-card text-on-surface-variant">/ Forever Free</span>
+</div>
+<p class="font-label-bold text-label-bold text-secondary-container mt-1">ឥតគិតថ្លៃជារៀងរហូត</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pb-space-md border-b-2 border-primary/15">
+            Everything needed to conquer homework, play class battles, and clear the BACII national examination.
+          </p>
+<!-- Feature List -->
+<ul class="flex flex-col gap-space-sm my-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#2FA84F] text-[20px] shrink-0 font-bold">check_circle</span>
+<span><strong>Join unlimited Live Battles</strong> with 6-digit Game PIN</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#2FA84F] text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Solo Flashcard Studio &amp; Spaced Repetition algorithms</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#2FA84F] text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Mistake Vault with unlimited Revenge Practice Rounds</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#2FA84F] text-[20px] shrink-0 font-bold">check_circle</span>
+<span>MoEYS Grade 10-12 public curriculum official decks</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[#2FA84F] text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Cross-platform Mobile Handheld access (iOS &amp; Android)</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm brutal-btn-white rounded-xl font-title-card text-title-card flex items-center justify-center gap-space-xs">
+<span>Start Learning Free</span>
+<span class="font-label-bold text-xs text-on-surface-variant font-medium">(ចាប់ផ្តើម)</span>
+</button>
+<p class="font-body-sm text-[12px] text-center text-on-surface-variant mt-2">No sign-up mandatory to join classroom matches</p>
+</div>
+</div>
+<!-- TIER 2: Teacher Pro (Highlighted Most Popular) -->
+<div class="bg-surface-container-lowest brutal-card-highlight rounded-2xl p-space-lg flex flex-col justify-between relative transform lg:-translate-y-3 bg-gradient-to-b from-[#fffbf4] to-[#ffffff]">
+<!-- Gold Ribbon Tag -->
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 px-space-md py-1 bg-tertiary-fixed-dim text-primary border-[3px] border-primary rounded-full font-badge-arcade text-[13px] tracking-wider uppercase shadow-[3px_3px_0px_#00163a] flex items-center gap-1.5 whitespace-nowrap">
+<span class="material-symbols-outlined text-[17px]">star</span>
+<span>MOST POPULAR FOR TEACHERS / គ្រូបង្រៀនពេញនិយម</span>
+</div>
+<div>
+<!-- Top Tag -->
+<div class="flex items-center justify-between mb-space-sm mt-2">
+<span class="inline-block px-3 py-1 bg-secondary-fixed text-primary border-[2px] border-primary rounded-lg font-badge-arcade text-badge-arcade uppercase">
+              TEACHER PRO / គ្រូអាជីព
+            </span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[20px]">co_present</span>
+</div>
+</div>
+<!-- Price Display -->
+<div class="mb-space-md">
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-lg md:text-[44px] text-primary font-extrabold leading-none" id="price-teacher">$4.99</span>
+<span class="font-title-card text-on-surface-variant" id="period-teacher">/ month</span>
+</div>
+<p class="font-label-bold text-label-bold text-secondary-container mt-1" id="savings-teacher">
+              billed monthly or $39 / year
+            </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pb-space-md border-b-2 border-primary/15">
+            Empower your high school classroom with unlimited live arena hosting, custom quiz creator studio, and AI pedagogical support.
+          </p>
+<!-- Feature List -->
+<ul class="flex flex-col gap-space-sm my-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs font-semibold">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Host live games up to <strong>60 students simultaneously</strong></span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 font-bold">check_circle</span>
+<span><strong>100 Gemini AI Quiz Generations</strong> per day in Khmer &amp; English</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 font-bold">check_circle</span>
+<span><strong>Team Clash</strong> (Team A vs Team B) &amp; Angkor Boss Battle modes</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Export class gradebooks &amp; analytics directly to Excel &amp; PDF</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Unlimited custom quiz decks &amp; CSV / Word question import</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Class PIN persistent management &amp; take-home challenges</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-3 brutal-btn-primary rounded-xl font-title-card text-title-card flex items-center justify-center gap-space-xs">
+<span>Get Teacher Pro / ចាប់ផ្តើមប្រើ</span>
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<div class="flex items-center justify-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[#2FA84F] text-[16px]">verified_user</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Instant KHQR, ABA PAY &amp; ACLEDA Mobile ready</p>
+</div>
+</div>
+</div>
+<!-- TIER 3: School & Institution -->
+<div class="bg-surface-container-lowest brutal-card rounded-2xl p-space-lg flex flex-col justify-between relative">
+<div>
+<!-- Top Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="inline-block px-3 py-1 bg-surface-container border-[2px] border-primary rounded-lg font-badge-arcade text-badge-arcade text-primary uppercase">
+              CAMPUS &amp; ACADEMY / សាលារៀន
+            </span>
+<div class="w-8 h-8 rounded-lg bg-surface-container border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+</div>
+</div>
+<!-- Price Display -->
+<div class="mb-space-md">
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero text-headline-lg md:text-[44px] text-primary font-extrabold leading-none" id="price-school">$199</span>
+<span class="font-title-card text-on-surface-variant">/ year / school</span>
+</div>
+<p class="font-label-bold text-label-bold text-secondary-container mt-1">
+              Custom institution volume tier
+            </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pb-space-md border-b-2 border-primary/15">
+            Built for whole high schools, provincial education departments, and private tutoring networks across Cambodia.
+          </p>
+<!-- Feature List -->
+<ul class="flex flex-col gap-space-sm my-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
+<span><strong>Unlimited teacher accounts</strong> &amp; school-wide rosters</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Centralized MoEYS BACII curriculum deck repository</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Admin Console with live game monitoring &amp; analytics</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Dedicated CADT edge proxy for sub-50ms classroom sync</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Custom school mascot &amp; crest on live battle arenas</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
+<span>Onsite teacher pedagogy training &amp; priority Telegram desk</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-space-sm brutal-btn-navy rounded-xl font-title-card text-title-card flex items-center justify-center gap-space-xs">
+<span>Contact School Team</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="font-body-sm text-[12px] text-center text-on-surface-variant mt-2">Official MoEYS procurement invoice provided</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SPONSORSHIP NOTICE (High-Trust Callout Banner) -->
+<section class="w-full px-margin-mobile lg:px-margin pb-space-xl max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest brutal-card rounded-2xl p-space-lg md:p-space-xl relative overflow-hidden">
+<!-- Decorative Cambodian Phka Chan ribbon accent behind -->
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-secondary-fixed/30 -z-0 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-md text-center sm:text-left">
+<!-- Institutional Logo / Emblem Container -->
+<div class="w-20 h-20 rounded-2xl bg-primary-container border-[3px] border-primary flex flex-col items-center justify-center text-on-primary shrink-0 shadow-[4px_4px_0px_#00163a]">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[32px]">account_balance</span>
+<span class="font-badge-arcade text-[10px] tracking-tight uppercase text-tertiary-fixed-dim mt-0.5">ACLEDA</span>
+</div>
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container border-[2px] border-primary rounded-full font-badge-arcade text-badge-arcade text-primary uppercase mb-2">
+<span class="text-[#2FA84F] font-bold">●</span>
+              MoEYS High School Grant Program
+            </div>
+<h3 class="font-headline-md text-headline-md text-primary">
+              Are you an active Cambodian Public High School Teacher?
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Thanks to our national education partnership with <strong>ACLEDA Bank</strong> and <strong>CADT</strong>, verified public high school educators in Cambodia receive <strong>Teacher Pro 100% sponsored</strong> for the entire academic year. Simply verify your MoEYS official account.
+            </p>
+<div class="flex flex-wrap items-center gap-3 mt-3 text-xs font-label-bold text-on-surface">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[#2FA84F] text-[16px]">check_circle</span> 0 KHR Registration Fee
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[#2FA84F] text-[16px]">check_circle</span> Instant .moeys.gov.kh Verification
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[#2FA84F] text-[16px]">check_circle</span> Provincial Support Included
+              </span>
+</div>
+</div>
+</div>
+<!-- Verification Action CTA -->
+<div class="shrink-0 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-lg py-3 brutal-btn-primary rounded-xl font-title-card text-title-card flex items-center justify-center gap-space-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span>Verify MoEYS School Email / ផ្ទៀងផ្ទាត់អ៊ីមែលក្រសួង</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURES BREAKDOWN MATRIX / BENTO TILES -->
+<section class="w-full px-margin-mobile lg:px-margin pb-space-xl max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-widest text-secondary-container">BUILT FOR CAMBODIAN CONNECTIVITY</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Everything Engineered for High-Speed Learning</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Micro Card 1 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl p-space-md flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">wifi_tethering</span>
+</div>
+<h4 class="font-title-card text-title-card text-primary">Ultra-Low Data Mode</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Optimized for low-bandwidth cellular 4G and classroom routers in provincial high schools. Total game session payloads stay below 2MB.
+        </p>
+</div>
+<!-- Micro Card 2 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl p-space-md flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">qr_code_scanner</span>
+</div>
+<h4 class="font-title-card text-title-card text-primary">Bakong &amp; KHQR Instant</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Activate plans in under 10 seconds with seamless KHQR scanning via ACLEDA mobile, ABA PAY, Wing, or any Bakong banking app.
+        </p>
+</div>
+<!-- Micro Card 3 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl p-space-md flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[#2FA84F] text-[24px]">auto_stories</span>
+</div>
+<h4 class="font-title-card text-title-card text-primary">Official MoEYS Syllabus</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Math, Physics, Chemistry, Biology, Khmer Literature, and History preloaded and indexed strictly against Grade 10 to 12 national criteria.
+        </p>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY ASKED QUESTIONS (Accordion Neo-Brutalist) -->
+<section class="w-full px-margin-mobile lg:px-margin pb-space-xl max-w-5xl mx-auto">
+<div class="text-center mb-space-lg">
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-widest text-primary">GOT QUESTIONS?</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Frequently Asked Questions / សំណួរដែលសួរញឹកញាប់</h2>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-title-card text-title-card text-primary">
+            Is ReanRush really free for high school students? (តើសិស្សរៀនឥតគិតថ្លៃពិតមែនទេ?)
+          </span>
+<span class="faq-icon material-symbols-outlined text-primary text-[28px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 font-body-md text-body-md text-on-surface-variant border-t-2 border-primary/10">
+<p class="pt-2">
+            Yes, 100% free forever for all high school learners. Students do not require a credit card or subscription to enter game lobbies with a 6-digit class PIN, complete take-home assignments, or study solo in the Mistake Vault.
+          </p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-title-card text-title-card text-primary">
+            Can I host games on a projector with slow school Wi-Fi? (ចុះបើអ៊ីនធឺណិតសាលាយឺត?)
+          </span>
+<span class="faq-icon material-symbols-outlined text-primary text-[28px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 font-body-md text-body-md text-on-surface-variant border-t-2 border-primary/10">
+<p class="pt-2">
+            Absolutely! ReanRush is optimized specifically for Cambodian provincial connectivity. Assets are aggressively pre-cached, and live player scores stream over lightweight binary WebSockets hosted on CADT edge servers located directly in Phnom Penh.
+          </p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-title-card text-title-card text-primary">
+            What payment methods are supported? (តើទូទាត់ប្រាក់តាមវិធីណាខ្លះ?)
+          </span>
+<span class="faq-icon material-symbols-outlined text-primary text-[28px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 font-body-md text-body-md text-on-surface-variant border-t-2 border-primary/10">
+<p class="pt-2">
+            We natively support standard national KHQR. You can scan and subscribe in seconds using ACLEDA mobile, ABA PAY, Wing Bank, Sathapana, or any Bakong member app. We also support Visa, Mastercard, and direct bank wire transfers for institutions.
+          </p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest brutal-card rounded-xl overflow-hidden transition-all duration-200">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-title-card text-title-card text-primary">
+            Can multiple teachers share one school account? (តើគ្រូអាចប្រើគណនីរួមគ្នាបានទេ?)
+          </span>
+<span class="faq-icon material-symbols-outlined text-primary text-[28px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 font-body-md text-body-md text-on-surface-variant border-t-2 border-primary/10">
+<p class="pt-2">
+            Under the School &amp; Institution plan, your administrative office receives an Admin Console where you can invite unlimited teachers. Each educator gets their own isolated login, custom quiz decks, and student gradebook tracking under the institution’s unified banner.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CALL TO ACTION BAR -->
+<section class="w-full px-margin-mobile lg:px-margin pb-space-xl max-w-7xl mx-auto">
+<div class="bg-primary text-on-primary rounded-2xl p-space-lg md:p-space-xl border-[4px] border-primary shadow-[7px_7px_0px_#00163a] flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-on-primary">
+          Ready to turn study sessions into epic battles?
+        </h3>
+<p class="font-body-md text-body-md text-primary-fixed">
+          Join over 12,000 students and educators across Cambodia on ReanRush today.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="w-full md:w-auto px-space-lg py-3 brutal-btn-primary rounded-xl font-title-card text-title-card whitespace-nowrap">
+          Launch Classroom Battle
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for Billing Switcher and FAQ Expanders -->
+<script>
+    (function initPricingInteractions() {
+      // 1. Billing Switcher Logic
+      const btnMonthly = document.getElementById('billing-monthly');
+      const btnAnnual = document.getElementById('billing-annual');
+      const priceTeacher = document.getElementById('price-teacher');
+      const periodTeacher = document.getElementById('period-teacher');
+      const savingsTeacher = document.getElementById('savings-teacher');
+      const priceSchool = document.getElementById('price-school');
+
+      let isAnnual = false;
+
+      function updatePricingView() {
+        if (isAnnual) {
+          btnAnnual.classList.add('bg-primary', 'text-on-primary');
+          btnAnnual.classList.remove('hover:bg-surface-container', 'text-primary');
+
+          btnMonthly.classList.remove('bg-primary', 'text-on-primary');
+          btnMonthly.classList.add('text-primary', 'hover:bg-surface-container');
+
+          // Updated Prices (Annualized discount)
+          priceTeacher.textContent = '$3.25';
+          periodTeacher.textContent = '/ month (billed $39/yr)';
+          savingsTeacher.textContent = '⚡ Saved $20.88 with Annual School Year Plan';
+          priceSchool.textContent = '$159';
+        } else {
+          btnMonthly.classList.add('bg-primary', 'text-on-primary');
+          btnMonthly.classList.remove('text-primary', 'hover:bg-surface-container');
+
+          btnAnnual.classList.remove('bg-primary', 'text-on-primary');
+          btnAnnual.classList.add('text-primary', 'hover:bg-surface-container');
+
+          // Standard Monthly
+          priceTeacher.textContent = '$4.99';
+          periodTeacher.textContent = '/ month';
+          savingsTeacher.textContent = 'billed monthly or $39 / year';
+          priceSchool.textContent = '$199';
+        }
+      }
+
+      btnMonthly.addEventListener('click', () => {
+        isAnnual = false;
+        updatePricingView();
+      });
+
+      btnAnnual.addEventListener('click', () => {
+        isAnnual = true;
+        updatePricingView();
+      });
+
+      // 2. FAQ Accordion Toggle
+      const faqButtons = document.querySelectorAll('.faq-btn');
+      faqButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const content = btn.nextElementSibling;
+          const icon = btn.querySelector('.faq-icon');
+          const isClosed = content.classList.contains('hidden');
+
+          // Close all other accordions
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+          if (isClosed) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          } else {
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary"><div class="w-full h-2.5 bg-primary overflow-hidden flex items-center justify-center"><div class="w-full flex justify-around text-tertiary-fixed-dim text-[9px] tracking-[6px] select-none leading-none">❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8wW0JscbppE"><span class="font-headline-md text-headline-md text-on-primary">ReanRush</span></div><p class="font-body-sm text-body-sm text-on-primary-container">High-octane quiz battles engineered for Cambodian high school classrooms. Fueling academic competition and collaborative learning.</p><div class="mt-space-sm p-space-sm bg-primary border-[3px] border-primary-container rounded-xl shadow-[3px_3px_0px_#00163a]"><p class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim tracking-wider uppercase">ACADEMIC PRIDE</p><p class="font-body-sm text-body-sm text-on-primary font-bold">Student project at AUB and CADT</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Youth innovation empowering digital education.</p></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Curriculum &amp; Platform</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Khmer Curriculum Quiz Bank</li><li class="text-primary-fixed">Teacher Dashboard</li><li class="text-primary-fixed">Live Arena Battles</li><li class="text-primary-fixed">National Leaderboards</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Safety &amp; Community</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Student Safety Guidelines</li><li class="text-primary-fixed">Classroom Code of Conduct</li><li class="text-primary-fixed">Educator Community</li><li class="text-primary-fixed">Regional Tournaments</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Education Sponsor</h4><div class="p-space-md bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] text-center flex flex-col items-center justify-center gap-space-xs"><div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]">account_balance</span></div><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">ACLEDA BANK</span><span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase tracking-wider text-[11px]">Official Fintech Sponsor</span></div></div></div><div class="pt-space-md border-t-[2px] border-primary/60 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-primary-fixed">Copyright © 2025 ReanRush. Made for Cambodian high school learners.</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Designed with Neo-Brutalist Arcade Precision.</p></div></div></footer></body></html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img"
+    aria-labelledby="title desc">
+    <title id="title">Screen preview placeholder</title>
+    <desc id="desc">A local placeholder card used when a screen thumbnail is not available.</desc>
+    <defs>
+        <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#eef4ff" />
+            <stop offset="100%" stop-color="#f7e3d9" />
+        </linearGradient>
+    </defs>
+    <rect width="640" height="420" rx="24" fill="url(#bg)" />
+    <rect x="42" y="40" width="556" height="340" rx="18" fill="#ffffff" stroke="#0b2a5b"
+        stroke-width="4" />
+    <rect x="74" y="76" width="190" height="18" rx="9" fill="#0b2a5b" opacity="0.9" />
+    <rect x="74" y="114" width="308" height="14" rx="7" fill="#3b68ff" opacity="0.5" />
+    <rect x="74" y="150" width="482" height="170" rx="16" fill="#eef3ff" stroke="#3b68ff"
+        stroke-width="3" />
+    <rect x="98" y="176" width="180" height="18" rx="9" fill="#0b2a5b" opacity="0.7" />
+    <rect x="98" y="212" width="232" height="12" rx="6" fill="#9fb7ef" />
+    <rect x="98" y="236" width="260" height="12" rx="6" fill="#9fb7ef" />
+    <rect x="98" y="260" width="178" height="12" rx="6" fill="#9fb7ef" />
+    <circle cx="485" cy="246" r="52" fill="#e2a93b" opacity="0.9" />
+    <path d="M461 246l14 14 28-32" fill="none" stroke="#fff" stroke-width="10"
+        stroke-linecap="round" stroke-linejoin="round" />
+    <text x="320" y="367" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="24" font-weight="700" fill="#0b2a5b">Preview unavailable</text>
+</svg>

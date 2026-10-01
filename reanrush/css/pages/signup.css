@@ -1,2 +1,3 @@
 .auth-panel { max-width: 560px; }
 .auth-panel a { color: var(--blue); font-weight: 700; }
+.role-picker .btn { width: auto; flex: 1; }

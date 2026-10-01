@@ -26,7 +26,7 @@ window.ReanRushPage = { init: function () {
     $('#screen-count').text(filtered.length + ' screen' + (filtered.length === 1 ? '' : 's'));
     list.html(filtered.map(function (screen) {
       var active = selected && selected.html === screen.html;
-      return '<button class="screen-item" type="button" data-screen-url="' + screen.html + '" aria-pressed="' + Boolean(active) + '"><img loading="lazy" src="' + screen.image + '" alt=""><span><strong>' + screen.label + '</strong><small>' + screen.groupLabel + '</small></span></button>';
+      return '<button class="screen-item" type="button" data-screen-url="' + screen.html + '" aria-pressed="' + Boolean(active) + '"><img loading="lazy" src="' + screen.image + '" alt="' + screen.label + ' preview" onerror="this.onerror=null;this.src=\'../images/screen-placeholder.svg\';"><span><strong>' + screen.label + '</strong><small>' + screen.groupLabel + '</small></span></button>';
     }).join('') || '<p class="muted">No screens match that search.</p>');
     if (filtered.length && (!selected || !filtered.some(function (screen) { return screen.html === selected.html; }))) show(filtered[0]);
   }

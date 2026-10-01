@@ -1,0 +1,400 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>ReanRush - Classroom Quiz Battle</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.khmer-diamond-ribbon{background-color:#f8bd4d;background-image:radial-gradient(#0b2a5b 18%,transparent 19%),radial-gradient(#0b2a5b 18%,transparent 19%);background-position:0 0,6px 6px;background-size:12px 12px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#dde1ff","on-secondary":"#ffffff","background":"#fff8f6","inverse-on-surface":"#ffede7","outline-variant":"#c4c6d0","surface-container":"#fdeae3","on-secondary-fixed":"#001452","tertiary-fixed":"#ffdeaa","secondary-fixed-dim":"#b7c4ff","on-primary-fixed":"#001a42","error":"#ba1a1a","inverse-primary":"#aec6ff","secondary-container":"#3966fe","on-primary-container":"#7a93ca","on-tertiary-fixed":"#271900","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-surface-variant":"#44474f","primary-fixed":"#d8e2ff","on-primary":"#ffffff","on-primary-fixed-variant":"#2c4678","on-tertiary-fixed-variant":"#5f4100","outline":"#747780","tertiary":"#221500","on-secondary-container":"#fffbff","inverse-surface":"#392e2a","on-surface":"#231915","on-tertiary-container":"#be8a1b","tertiary-container":"#3c2800","primary-container":"#0b2a5b","on-tertiary":"#ffffff","surface":"#fff8f6","primary-fixed-dim":"#aec6ff","on-secondary-fixed-variant":"#0038b7","on-error-container":"#93000a","primary":"#00163a","surface-variant":"#f1dfd8","surface-bright":"#fff8f6","surface-container-highest":"#f1dfd8","surface-container-high":"#f7e4dd","surface-dim":"#e9d6cf","on-error":"#ffffff","on-background":"#231915","secondary":"#0d4be4","surface-tint":"#455e91","tertiary-fixed-dim":"#f8bd4d","surface-container-low":"#fff1ec"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"body-md":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"headline-lg-mobile":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"label-bold":["Kantumruy Pro"],"display-hero":["\"Baloo 2\""],"title-card":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"headline-md":["\"Baloo 2\""],"badge-arcade":["\"Baloo 2\""]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b-[3px] border-primary shadow-[0_4px_0_0_#00163a]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b2a5b
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFj_B7suWsM3D673uc4I1p2wo5yhcloIyIY7N_4EEkiYch_f_ZmL0Of-pnZbwnJ9wHtqzMpGc0NJZWY9r4SZQYDVdLiI92Z_EuEaKnpi3zmw_WFkzlNPXo_pgKex6X3IpzNXUExwGw9qs1HrKNBmdP2Mg4jrxFpZn6MclyLHHy_pZFkPe9H1j_iCgRnaB8H-JkO75xjZa47CDpIMi_K-I6JeUZ_0jgCWz34zQ5hsMG0oEZjTrfsXDv9Q"><span class="font-headline-md text-headline-md text-on-primary tracking-wide hidden sm:inline-block">ReanRush</span><nav class="hidden lg:flex items-center gap-space-xs ml-space-md" data-active-classes="bg-secondary text-on-secondary shadow-[2px_2px_0_0_#00163a]"><a aria-current="page" class="font-label-bold px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all bg-secondary text-on-secondary shadow-[2px_2px_0_0_#00163a]" data-path="classes" href="#">Classes</a><a class="font-label-bold text-label-bold text-primary-fixed hover:text-on-primary px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all" data-path="games" href="#">Games</a><a class="font-label-bold text-label-bold text-primary-fixed hover:text-on-primary px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all" data-path="blog" href="#">Blog</a><a class="font-label-bold text-label-bold text-primary-fixed hover:text-on-primary px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all" data-path="pricing" href="#">Pricing</a></nav></div><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-highest px-space-md py-space-xs rounded-xl border-[3px] border-primary shadow-[3px_3px_0_0_#00163a]"><span class="font-badge-arcade text-badge-arcade text-primary uppercase">PIN</span><span class="font-label-bold text-label-bold text-primary tracking-widest">#4089</span></div><button class="bg-secondary text-on-secondary font-label-bold text-label-bold px-space-md py-space-xs rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[3px_3px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hidden sm:inline-flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[18px]">play_arrow</span>Join Game</button><a class="bg-surface-container-lowest text-primary font-label-bold text-label-bold px-space-md py-space-xs rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[3px_3px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all inline-block" data-path="signup" href="#">Sign up</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-[2px] border-primary-fixed shadow-[2px_2px_0_0_#00163a]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full h-2 khmer-diamond-ribbon border-t-[2px] border-b-[2px] border-primary"></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- Top Breadcrumb & Page Action Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a]">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs w-fit bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-0.5 rounded-full shadow-[2px_2px_0_0_#00163a]">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">groups_3</span>
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-primary">TEACHER &amp; STUDENT SQUADS • បន្ទប់រៀនសកម្ម</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          My Classes <span class="text-secondary font-headline-md">/ ថ្នាក់រៀនរបស់ខ្ញុំ</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Manage your active classroom rosters, launch live projector battles directly with your squad, and share 6-character invite codes.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm sm:gap-space-md shrink-0">
+<button class="bg-surface-container-lowest text-primary font-label-bold text-label-bold px-space-md py-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[3px_3px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">pin</span>
+<span>Join with Code / ចូលតាមកូដ</span>
+</button>
+<button class="bg-secondary-container text-on-secondary font-headline-md text-title-card px-space-lg py-space-sm rounded-xl shadow-[6px_6px_0_0_#00163a] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[7px_7px_0_0_#00163a] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[22px] font-bold">add_circle</span>
+<span>+ Create Class / បង្កើតថ្នាក់ថ្មី</span>
+</button>
+</div>
+</div>
+<!-- Summary Stats Strip -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-sm md:gap-space-md">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed text-primary flex items-center justify-center shrink-0 shadow-[2px_2px_0_0_#00163a]">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-primary leading-tight">6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Active Classes</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed text-primary flex items-center justify-center shrink-0 shadow-[2px_2px_0_0_#00163a]">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-primary leading-tight">218</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Students Enrolled</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed text-on-tertiary-container flex items-center justify-center shrink-0 shadow-[2px_2px_0_0_#00163a]">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-primary leading-tight">142</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">3+ Day Streak 🔥</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed-dim text-secondary flex items-center justify-center shrink-0 shadow-[2px_2px_0_0_#00163a]">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">swords</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-primary leading-tight">8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Today's Live Battles</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[4px_4px_0_0_#00163a] flex flex-col md:flex-row gap-space-md items-stretch md:items-center justify-between">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span>
+<input class="w-full bg-surface pl-10 pr-4 py-2.5 rounded-lg text-primary placeholder-on-surface-variant font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-all" placeholder="Search class by name, grade, or subject (e.g. 12A Physics)..." type="text">
+</div>
+<!-- Grade Filter Chips -->
+<div class="flex flex-wrap items-center gap-space-xs overflow-x-auto pb-1 md:pb-0">
+<button class="bg-primary text-on-primary px-space-md py-1.5 rounded-lg font-label-bold text-body-sm shadow-[2px_2px_0_0_#00163a]" type="button">All Grades</button>
+<button class="bg-surface text-primary hover:bg-surface-container-high px-space-md py-1.5 rounded-lg font-label-bold text-body-sm shadow-[2px_2px_0_0_#00163a] transition-all" type="button">Grade 12 (BACII)</button>
+<button class="bg-surface text-primary hover:bg-surface-container-high px-space-md py-1.5 rounded-lg font-label-bold text-body-sm shadow-[2px_2px_0_0_#00163a] transition-all" type="button">Grade 11</button>
+<button class="bg-surface text-primary hover:bg-surface-container-high px-space-md py-1.5 rounded-lg font-label-bold text-body-sm shadow-[2px_2px_0_0_#00163a] transition-all" type="button">Grade 10</button>
+<button class="bg-surface text-primary hover:bg-surface-container-high px-space-md py-1.5 rounded-lg font-label-bold text-body-sm shadow-[2px_2px_0_0_#00163a] transition-all" type="button">Grade 9</button>
+</div>
+<!-- Status Toggle Pills -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-lg shrink-0">
+<button class="bg-surface-container-lowest text-primary px-space-sm py-1 rounded font-badge-arcade text-badge-arcade shadow-[1px_1px_0_0_#00163a]" type="button">Active (6)</button>
+<button class="text-on-surface-variant hover:text-primary px-space-sm py-1 rounded font-badge-arcade text-badge-arcade" type="button">Archived (2)</button>
+</div>
+</div>
+<!-- Grid of Class Cards (3x2 Desktop Arena) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Class Card 1 -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between gap-space-xs">
+<span class="bg-tertiary-fixed-dim text-tertiary-container font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-md shadow-[2px_2px_0_0_#00163a]">GRADE 12</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">group</span> 38 Students
+            </span>
+</div>
+<!-- Class Title & Khmer Subject -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Grade 12-A • Physics</h2>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold text-body-sm px-space-sm py-0.5 rounded">រូបវិទ្យា</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">BACII Prep • Room 204</span>
+</div>
+</div>
+<!-- Invite Code Snippet -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">Class Pin</span>
+<span class="font-headline-md text-headline-md tracking-wider text-primary">RUSH-849</span>
+</div>
+<button class="bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary font-label-bold text-body-sm px-space-md py-1.5 rounded-lg shadow-[2px_2px_0_0_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" onclick="navigator.clipboard.writeText('RUSH-849'); this.innerText='COPIED!';" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> ចម្លង
+            </button>
+</div>
+<!-- Activity / Streak indicator -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1 text-on-tertiary-container font-label-bold">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> 12d streak avg 🔥
+            </span>
+<span class="text-on-surface-variant font-label-bold">Last played: Today</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-sm">
+<button class="w-full bg-surface text-primary hover:bg-surface-container-high font-label-bold text-body-md py-2 px-space-sm rounded-xl shadow-[3px_3px_0_0_#00163a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all" type="button">
+            View Class / មើលថ្នាក់
+          </button>
+<button class="w-full bg-primary-container text-on-primary hover:bg-primary font-headline-md text-title-card py-2 px-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span> Launch ⚡
+          </button>
+</div>
+</div>
+<!-- Class Card 2 -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between gap-space-xs">
+<span class="bg-tertiary-fixed-dim text-tertiary-container font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-md shadow-[2px_2px_0_0_#00163a]">GRADE 12</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">group</span> 42 Students
+            </span>
+</div>
+<!-- Class Title & Khmer Subject -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Grade 12-B • Chemistry</h2>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold text-body-sm px-space-sm py-0.5 rounded">គីមីវិទ្យា</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Organic Reactions • Lab 1</span>
+</div>
+</div>
+<!-- Invite Code Snippet -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">Class Pin</span>
+<span class="font-headline-md text-headline-md tracking-wider text-primary">RUSH-512</span>
+</div>
+<button class="bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary font-label-bold text-body-sm px-space-md py-1.5 rounded-lg shadow-[2px_2px_0_0_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" onclick="navigator.clipboard.writeText('RUSH-512'); this.innerText='COPIED!';" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> ចម្លង
+            </button>
+</div>
+<!-- Activity / Streak indicator -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1 text-on-tertiary-container font-label-bold">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> 9d streak avg 🔥
+            </span>
+<span class="text-on-surface-variant font-label-bold">Last played: 2h ago</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-sm">
+<button class="w-full bg-surface text-primary hover:bg-surface-container-high font-label-bold text-body-md py-2 px-space-sm rounded-xl shadow-[3px_3px_0_0_#00163a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all" type="button">
+            View Class / មើលថ្នាក់
+          </button>
+<button class="w-full bg-primary-container text-on-primary hover:bg-primary font-headline-md text-title-card py-2 px-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span> Launch ⚡
+          </button>
+</div>
+</div>
+<!-- Class Card 3 -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between gap-space-xs">
+<span class="bg-primary-fixed text-primary font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-md shadow-[2px_2px_0_0_#00163a]">GRADE 11</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">group</span> 36 Students
+            </span>
+</div>
+<!-- Class Title & Khmer Subject -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Grade 11-A • Advanced Math</h2>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold text-body-sm px-space-sm py-0.5 rounded">គណិតវិទ្យា</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Functions &amp; Limits</span>
+</div>
+</div>
+<!-- Invite Code Snippet -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">Class Pin</span>
+<span class="font-headline-md text-headline-md tracking-wider text-primary">RUSH-204</span>
+</div>
+<button class="bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary font-label-bold text-body-sm px-space-md py-1.5 rounded-lg shadow-[2px_2px_0_0_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" onclick="navigator.clipboard.writeText('RUSH-204'); this.innerText='COPIED!';" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> ចម្លង
+            </button>
+</div>
+<!-- Activity / Streak indicator -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1 text-on-tertiary-container font-label-bold">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> 7d streak avg 🔥
+            </span>
+<span class="text-on-surface-variant font-label-bold">Last played: Yesterday</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-sm">
+<button class="w-full bg-surface text-primary hover:bg-surface-container-high font-label-bold text-body-md py-2 px-space-sm rounded-xl shadow-[3px_3px_0_0_#00163a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all" type="button">
+            View Class / មើលថ្នាក់
+          </button>
+<button class="w-full bg-primary-container text-on-primary hover:bg-primary font-headline-md text-title-card py-2 px-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span> Launch ⚡
+          </button>
+</div>
+</div>
+<!-- Class Card 4 -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between gap-space-xs">
+<span class="bg-tertiary-fixed-dim text-tertiary-container font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-md shadow-[2px_2px_0_0_#00163a]">GRADE 12</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">group</span> 34 Students
+            </span>
+</div>
+<!-- Class Title & Khmer Subject -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Grade 12-C • Biology</h2>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold text-body-sm px-space-sm py-0.5 rounded">ជីវវិទ្យា</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Genetics &amp; DNA • Room 102</span>
+</div>
+</div>
+<!-- Invite Code Snippet -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">Class Pin</span>
+<span class="font-headline-md text-headline-md tracking-wider text-primary">RUSH-773</span>
+</div>
+<button class="bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary font-label-bold text-body-sm px-space-md py-1.5 rounded-lg shadow-[2px_2px_0_0_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" onclick="navigator.clipboard.writeText('RUSH-773'); this.innerText='COPIED!';" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> ចម្លង
+            </button>
+</div>
+<!-- Activity / Streak indicator -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1 text-on-tertiary-container font-label-bold">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> 14d streak avg 🔥
+            </span>
+<span class="text-on-surface-variant font-label-bold">Last played: Today</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-sm">
+<button class="w-full bg-surface text-primary hover:bg-surface-container-high font-label-bold text-body-md py-2 px-space-sm rounded-xl shadow-[3px_3px_0_0_#00163a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all" type="button">
+            View Class / មើលថ្នាក់
+          </button>
+<button class="w-full bg-primary-container text-on-primary hover:bg-primary font-headline-md text-title-card py-2 px-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span> Launch ⚡
+          </button>
+</div>
+</div>
+<!-- Class Card 5 -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between gap-space-xs">
+<span class="bg-surface-variant text-primary font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-md shadow-[2px_2px_0_0_#00163a]">GRADE 10</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">group</span> 35 Students
+            </span>
+</div>
+<!-- Class Title & Khmer Subject -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Grade 10-B • Khmer Lit</h2>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold text-body-sm px-space-sm py-0.5 rounded">អក្សរសាស្ត្រខ្មែរ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">រឿងទុំទាវ • Room 301</span>
+</div>
+</div>
+<!-- Invite Code Snippet -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">Class Pin</span>
+<span class="font-headline-md text-headline-md tracking-wider text-primary">RUSH-930</span>
+</div>
+<button class="bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary font-label-bold text-body-sm px-space-md py-1.5 rounded-lg shadow-[2px_2px_0_0_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" onclick="navigator.clipboard.writeText('RUSH-930'); this.innerText='COPIED!';" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> ចម្លង
+            </button>
+</div>
+<!-- Activity / Streak indicator -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1 text-on-tertiary-container font-label-bold">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> 5d streak avg 🔥
+            </span>
+<span class="text-on-surface-variant font-label-bold">Last played: 3d ago</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-sm">
+<button class="w-full bg-surface text-primary hover:bg-surface-container-high font-label-bold text-body-md py-2 px-space-sm rounded-xl shadow-[3px_3px_0_0_#00163a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all" type="button">
+            View Class / មើលថ្នាក់
+          </button>
+<button class="w-full bg-primary-container text-on-primary hover:bg-primary font-headline-md text-title-card py-2 px-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span> Launch ⚡
+          </button>
+</div>
+</div>
+<!-- Class Card 6 -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex flex-col gap-space-sm">
+<!-- Top Badges -->
+<div class="flex items-center justify-between gap-space-xs">
+<span class="bg-tertiary-fixed-dim text-tertiary-container font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-md shadow-[2px_2px_0_0_#00163a]">GRADE 12</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">group</span> 33 Students
+            </span>
+</div>
+<!-- Class Title & Khmer Subject -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Grade 12-D • MoEYS STEM</h2>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold text-body-sm px-space-sm py-0.5 rounded">ក្លឹបវិទ្យាសាស្ត្រ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inter-School League Prep</span>
+</div>
+</div>
+<!-- Invite Code Snippet -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">Class Pin</span>
+<span class="font-headline-md text-headline-md tracking-wider text-primary">RUSH-118</span>
+</div>
+<button class="bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary font-label-bold text-body-sm px-space-md py-1.5 rounded-lg shadow-[2px_2px_0_0_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" onclick="navigator.clipboard.writeText('RUSH-118'); this.innerText='COPIED!';" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> ចម្លង
+            </button>
+</div>
+<!-- Activity / Streak indicator -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs">
+<span class="flex items-center gap-1 text-on-tertiary-container font-label-bold">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">local_fire_department</span> 16d streak avg 🔥
+            </span>
+<span class="text-on-surface-variant font-label-bold">Last played: Today</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-sm">
+<button class="w-full bg-surface text-primary hover:bg-surface-container-high font-label-bold text-body-md py-2 px-space-sm rounded-xl shadow-[3px_3px_0_0_#00163a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all" type="button">
+            View Class / មើលថ្នាក់
+          </button>
+<button class="w-full bg-primary-container text-on-primary hover:bg-primary font-headline-md text-title-card py-2 px-space-sm rounded-xl shadow-[4px_4px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span> Launch ⚡
+          </button>
+</div>
+</div>
+</div>
+<!-- Rushy Mascot Pro-Tip Banner -->
+<div class="relative bg-tertiary-fixed p-space-lg rounded-2xl shadow-[6px_6px_0_0_#00163a] flex flex-col sm:flex-row items-center gap-space-lg overflow-hidden mt-space-md">
+<!-- Mascot image container -->
+<div class="w-28 h-28 sm:w-32 sm:h-32 shrink-0 bg-surface-container-lowest rounded-2xl p-2 shadow-[4px_4px_0_0_#00163a] flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Cute friendly cartoon baby elephant mascot named Rushy wearing a navy backward baseball cap with a gold lightning bolt badge, waving happily with its trunk up, neo-brutalist cartoon illustration style on clean white backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMHbxplCkGFwZELUjEvA8gxUGzqFnVH8gqtC6LvUcnz6vUnBiWwhCEpmZCNtiyssxjLxxU4oD1E3r2RxTBeTVWp6H14o6rHAznGfG1WTEJx8kojGtu6XdACPDri90JSMDHYT7XcV_xl64UsiUatToJZiEy5xFY7gsd5ID09r5Gat1ChI3fRxKa2DdbdUZuioMTfpTyJ07htaON8_vABEcoPDH2zUVSJh0PUIGRevom-yM2CG1x9My2">
+</div>
+<!-- Speech Bubble Content -->
+<div class="flex-1 flex flex-col gap-space-xs text-center sm:text-left">
+<div class="inline-flex items-center justify-center sm:justify-start gap-1">
+<span class="bg-primary text-on-primary font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded shadow-[2px_2px_0_0_#00163a]">RUSHY SAYS:</span>
+<span class="font-headline-md text-headline-md text-primary">Pro Tip for Classrooms • គន្លឹះគ្រូបង្រៀន</span>
+</div>
+<p class="font-body-lg text-body-lg text-tertiary-container font-medium max-w-3xl">
+          “Share your 6-digit class code on the chalkboard! Students enter the code once from their phone to automatically sync their progress for all future live arena battles.”
+        </p>
+</div>
+<!-- Decorative Right Badge -->
+<div class="hidden lg:flex flex-col items-center justify-center bg-surface-container-lowest p-space-md rounded-xl shadow-[3px_3px_0_0_#00163a] shrink-0">
+<span class="material-symbols-outlined text-secondary text-[32px]">cast</span>
+<span class="font-badge-arcade text-badge-arcade text-primary uppercase mt-1">Projector Ready</span>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-primary-container text-on-primary border-t-[3px] border-primary mt-space-xl"><div class="w-full h-2 khmer-diamond-ribbon border-b-[2px] border-primary"></div><div class="max-w-[1280px] mx-auto px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs text-center md:text-left"><div class="flex items-center justify-center md:justify-start gap-space-sm"><span class="font-headline-md text-headline-md text-tertiary-fixed">ReanRush Arena</span><span class="font-badge-arcade text-badge-arcade bg-tertiary-fixed text-primary px-space-xs py-0.5 rounded border border-primary font-bold">EDU-KH</span></div><p class="font-body-sm text-body-sm text-primary-fixed-dim">Student project at AUB and CADT • High School Arcade Learning</p></div><div class="flex items-center gap-space-md"><div class="bg-surface-container-lowest text-primary px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-tertiary-fixed font-headline-md text-title-card">A</div><div class="flex flex-col"><span class="font-badge-arcade text-badge-arcade text-primary uppercase">Official Sponsor</span><span class="font-label-bold text-label-bold text-primary">ACLEDA Bank Plc.</span></div></div></div></div><div class="w-full bg-primary py-space-sm border-t-[2px] border-primary-container"><div class="max-w-[1280px] mx-auto px-gutter text-center font-body-sm text-body-sm text-primary-fixed">© 2025 ReanRush. Engineered for Cambodian high schools &amp; collaborative classroom tournaments.</div></div></footer></body></html>
