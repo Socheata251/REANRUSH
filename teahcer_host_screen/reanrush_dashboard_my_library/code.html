@@ -98,7 +98,8 @@
     }
   }</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@100..900&amp;family=Kantumruy+Pro:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b2a5b
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@100..900&amp;family=Kantumruy+Pro:wght@100..900&amp;display=swap" rel="stylesheet"><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script defer src="../../reanrush/js/reanrush_dashboard_my_library.js"></script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b2a5b
+<button class="bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-space-xs" data-action="join-game" type="button">
 - Font: publicSans
 - Mode: light
 - Roundness: rounded-md
@@ -138,11 +139,11 @@
 </div>
 <!-- Quick Action Controls -->
 <div class="flex flex-wrap items-center gap-space-sm z-10 shrink-0">
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-space-xs" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-space-xs" data-action="display-pin" type="button">
 <span class="material-symbols-outlined text-[20px] text-secondary">qr_code_scanner</span>
           Display PIN
         </button>
-<button class="bg-secondary text-on-secondary font-headline-md text-title-card px-space-lg py-space-sm rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center gap-space-xs group" type="button">
+<button class="bg-secondary text-on-secondary font-headline-md text-title-card px-space-lg py-space-sm rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center gap-space-xs group" data-action="create-deck" type="button">
 <span class="material-symbols-outlined text-[24px] group-hover:rotate-90 transition-transform">add_circle</span>
 <span>+ Create New Game <span class="font-normal opacity-90 text-[14px]">/ បង្កើតល្បែងថ្មី</span></span>
 </button>
@@ -237,21 +238,21 @@
 <div class="flex flex-wrap items-center gap-space-sm">
 <!-- Quick Search -->
 <div class="relative min-w-[240px]">
-<input class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-xl px-space-md py-space-xs text-body-sm text-primary placeholder:text-on-surface-variant/70 focus:outline-none focus:shadow-[4px_4px_0px_#00163a] transition-all" placeholder="Search decks or subject..." type="text">
+<input class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-xl px-space-md py-space-xs text-body-sm text-primary placeholder:text-on-surface-variant/70 focus:outline-none focus:shadow-[4px_4px_0px_#00163a] transition-all" data-action="search" placeholder="Search decks or subject..." type="text">
 <span class="material-symbols-outlined absolute right-3 top-2.5 text-primary text-[18px]">search</span>
 </div>
 <!-- Filter Pills -->
 <div class="flex items-center gap-1.5 overflow-x-auto py-1">
-<button class="bg-primary text-on-primary font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a]">
+<button class="bg-primary text-on-primary font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a]" data-action="filter-all">
               All (6)
             </button>
-<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all">
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all" data-action="filter-grade">
               Grade 12 BACII
             </button>
-<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all">
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all" data-action="filter-stem">
               Physics &amp; STEM
             </button>
-<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all">
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all" data-action="filter-khmer">
               Khmer Literature
             </button>
 </div>
@@ -315,11 +316,11 @@
 </div>
 <!-- Action Buttons Quad-Touch -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" data-action="host-battle" type="button">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" data-action="edit-deck" type="button">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -379,11 +380,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" data-action="host-battle" type="button">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" data-action="edit-deck" type="button">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -443,11 +444,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" data-action="host-battle" type="button">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" data-action="edit-deck" type="button">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -507,11 +508,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" data-action="host-battle" type="button">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" data-action="edit-deck" type="button">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -571,11 +572,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" data-action="host-battle" type="button">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" data-action="edit-deck" type="button">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -592,7 +593,7 @@
               Upload CSV, convert Quizlet links, or draft questions with AI BACII generator.
             </p>
 </div>
-<button class="mt-2 bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-2 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] group-hover:bg-primary group-hover:text-on-primary transition-colors" type="button">
+<button class="mt-2 bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-2 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] group-hover:bg-primary group-hover:text-on-primary transition-colors" data-action="builder" type="button">
             Fast Builder ⚡
           </button>
 </div>
@@ -612,7 +613,7 @@
 </div>
 </div>
 <div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
-<button class="bg-primary text-on-primary font-headline-md text-badge-arcade uppercase px-space-md py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-1" type="button">
+<button class="bg-primary text-on-primary font-headline-md text-badge-arcade uppercase px-space-md py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-1" data-action="launch-arena" type="button">
 <span class="material-symbols-outlined text-[18px]">sports_esports</span>
           Launch Battle Arena Mode
         </button>

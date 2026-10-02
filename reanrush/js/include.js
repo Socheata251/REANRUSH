@@ -18,8 +18,8 @@ $(function () {
       { mount: 'bottom-nav', file: 'bottom-nav-student.html' }
     ],
     teacher: [
-      { mount: 'header', file: 'header-public.html' },
-      { mount: 'sidebar', file: 'sidebar-teacher.html' }
+      { mount: 'header-teacher', file: 'header-teacher.html' },
+      { mount: 'sidebar-teacher', file: 'sidebar-teacher.html' }
     ],
     admin: [{ mount: 'sidebar', file: 'sidebar-admin.html' }]
   };
@@ -39,7 +39,7 @@ $(function () {
 
     mount = $('<div>').attr('data-include', name);
     var main = $('main').first();
-    if (name === 'header' || name === 'nav' || name === 'sidebar' || name === 'khmer-strip') {
+    if (name === 'header' || name === 'header-teacher' || name === 'nav' || name === 'sidebar' || name === 'sidebar-teacher' || name === 'khmer-strip') {
       if (main.length) mount.insertBefore(main);
       else mount.prependTo('body');
     } else {

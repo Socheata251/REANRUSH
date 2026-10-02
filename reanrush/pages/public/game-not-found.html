@@ -1,0 +1,87 @@
+
+</head>
+<body data-root="../.." data-layout="stitch-error">
+	<div data-include="header"></div>
+	<main class="w-full pt-20 bg-surface-container min-h-screen">
+		<div class="flex flex-col w-full">
+			<div class="w-full relative overflow-hidden py-space-lg md:py-space-xl flex items-center justify-center">
+				<div class="absolute -top-12 -left-12 w-48 h-48 rounded-full bg-tertiary-fixed-dim/30 pointer-events-none transform rotate-12 blur-sm"></div>
+				<div class="absolute top-1/4 -right-16 w-60 h-60 rounded-full bg-secondary-fixed/50 pointer-events-none"></div>
+				<div class="absolute bottom-8 left-10 w-24 h-24 rounded-2xl bg-tertiary-fixed/40 rotate-45 pointer-events-none"></div>
+				<div class="w-full max-w-[680px] mx-auto px-margin-mobile md:px-margin relative z-10">
+					<div class="bg-surface-container-lowest rounded-xl shadow-[8px_8px_0px_#00163a] p-space-md md:p-space-xl relative">
+						<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed shadow-[3px_3px_0px_#00163a] -mt-8 mb-space-md">
+							<span class="material-symbols-outlined text-[18px] font-bold text-error">warning</span>
+							<span class="font-badge-arcade text-badge-arcade tracking-wide uppercase">GAME PIN ERROR • កូដបន្ទប់ប្រកួតមិនត្រឹមត្រូវ</span>
+						</div>
+						<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-md mb-space-lg">
+							<div class="relative shrink-0">
+								<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-secondary-fixed overflow-hidden shadow-[4px_4px_0px_#00163a] flex items-center justify-center">
+									<img alt="Rushy the elephant mascot wearing blue lightning cap" class="w-full h-full object-contain p-1 transform transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+								</div>
+								<div class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary px-2 py-0.5 rounded-md font-badge-arcade text-[11px] shadow-[2px_2px_0px_#00163a] flex items-center gap-1"><span>RUSHY</span><span class="material-symbols-outlined text-[12px]">bolt</span></div>
+							</div>
+							<div class="relative bg-surface-container-high rounded-xl p-space-md text-on-surface shadow-[4px_4px_0px_#00163a] w-full">
+								<div class="hidden sm:block absolute -left-3 top-6 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-r-[12px] border-r-surface-container-high"></div>
+								<p class="font-headline-md text-title-card text-primary mb-1">"Hmm, I can't find that battle room!" 🐘⚡</p>
+								<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">ខ្ញុំរកមិនឃើញបន្ទប់ប្រកួតនេះទេ! សូមពិនិត្យកូដ 6 ខ្ទង់ម្តងទៀត ដើម្បីចូលរួមការប្រកួតដ៏ក្តៅគគុក!</p>
+							</div>
+						</div>
+						<div class="text-center sm:text-left mb-space-lg space-y-1">
+							<div class="inline-flex items-center gap-2"><h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Game Not Found</h1><span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-bold text-label-bold">404 PIN</span></div>
+							<p class="font-headline-md text-headline-md text-secondary tracking-normal">រកមិនឃើញការប្រកួត</p>
+							<p class="font-body-md text-body-md text-on-surface-variant pt-1">Check your PIN and try again / សូមពិនិត្យលេខកូដ PIN របស់អ្នក ហើយសាកល្បងម្តងទៀត</p>
+						</div>
+						<div class="mb-space-lg">
+							<div class="flex items-center justify-between mb-space-xs">
+								<label class="font-label-bold text-label-bold text-primary flex items-center gap-1" for="pin-input-master"><span class="material-symbols-outlined text-[18px] text-secondary">dialpad</span>Enter 6-digit Game PIN / បញ្ចូលកូដហ្គេម ៦ ខ្ទង់</label>
+								<span class="font-badge-arcade text-badge-arcade text-outline" id="pin-char-counter">0 / 6 DIGITS</span>
+							</div>
+							<input aria-label="Enter six digit battle pin" autofocus class="sr-only" id="pin-input-master" inputmode="numeric" maxlength="6" pattern="[0-9]*" type="tel">
+							<div class="grid grid-cols-6 gap-2 sm:gap-3 cursor-pointer select-none" id="pin-boxes-container" aria-label="Six digit game PIN entry">
+								<div class="pin-box h-16 sm:h-20 rounded-xl bg-surface-container-lowest flex items-center justify-center font-display-hero text-headline-lg text-primary shadow-[4px_4px_0px_#00163a] transition-all" data-index="0"><span class="w-6 h-1 rounded-full bg-outline animate-pulse"></span></div>
+								<div class="pin-box h-16 sm:h-20 rounded-xl bg-surface-container-lowest flex items-center justify-center font-display-hero text-headline-lg text-outline-variant shadow-[4px_4px_0px_#00163a] transition-all" data-index="1"><span class="w-5 h-1 rounded-full bg-outline-variant/60"></span></div>
+								<div class="pin-box h-16 sm:h-20 rounded-xl bg-surface-container-lowest flex items-center justify-center font-display-hero text-headline-lg text-outline-variant shadow-[4px_4px_0px_#00163a] transition-all" data-index="2"><span class="w-5 h-1 rounded-full bg-outline-variant/60"></span></div>
+								<div class="pin-box h-16 sm:h-20 rounded-xl bg-surface-container-lowest flex items-center justify-center font-display-hero text-headline-lg text-outline-variant shadow-[4px_4px_0px_#00163a] transition-all" data-index="3"><span class="w-5 h-1 rounded-full bg-outline-variant/60"></span></div>
+								<div class="pin-box h-16 sm:h-20 rounded-xl bg-surface-container-lowest flex items-center justify-center font-display-hero text-headline-lg text-outline-variant shadow-[4px_4px_0px_#00163a] transition-all" data-index="4"><span class="w-5 h-1 rounded-full bg-outline-variant/60"></span></div>
+								<div class="pin-box h-16 sm:h-20 rounded-xl bg-surface-container-lowest flex items-center justify-center font-display-hero text-headline-lg text-outline-variant shadow-[4px_4px_0px_#00163a] transition-all" data-index="5"><span class="w-5 h-1 rounded-full bg-outline-variant/60"></span></div>
+							</div>
+							<div class="mt-space-sm p-space-sm rounded-lg bg-error-container text-on-error-container flex items-center gap-space-sm" id="pin-error-toast" role="status" aria-live="polite">
+								<span class="material-symbols-outlined text-[20px] text-error">error</span>
+								<p class="font-body-sm text-body-sm font-medium" id="pin-error-message">PIN incomplete (0/6 digits). Ask your teacher for the 6-digit room code!</p>
+							</div>
+						</div>
+						<button class="w-full py-space-md px-space-lg rounded-xl bg-secondary text-on-secondary font-headline-md text-headline-md shadow-[6px_6px_0px_#00163a] hover:bg-secondary-container active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center justify-center gap-space-sm group mb-space-md" id="btn-verify-pin" type="button">
+							<span class="material-symbols-outlined text-[28px] group-hover:rotate-12 transition-transform">rocket_launch</span><span>Join Battle Room / ចូលរួមប្រកួត</span>
+						</button>
+						<div class="p-space-md rounded-xl bg-surface-container text-on-surface shadow-[4px_4px_0px_#00163a] mb-space-lg flex items-start gap-space-sm">
+							<div class="p-2 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed shrink-0 shadow-[2px_2px_0px_#00163a]"><span class="material-symbols-outlined text-[20px]">co_present</span></div>
+							<div class="space-y-0.5"><h4 class="font-label-bold text-label-bold text-primary">Need the PIN? • ត្រូវការកូដបន្ទប់?</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Ask your teacher or game host for the live room code displayed on the classroom projector screen.</p></div>
+						</div>
+						<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+							  <a class="inline-flex items-center gap-space-xs font-label-bold text-label-bold text-primary hover:text-secondary transition-colors underline decoration-2 underline-offset-4" href="../../index.html"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span>Go back to Home / ត្រឡប់ទៅទំព័រដើម</span></a>
+							<div class="flex items-center gap-space-xs">
+								<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-headline-md text-title-card shadow-[3px_3px_0px_#00163a] hover:bg-surface-dim active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all flex items-center gap-1" id="btn-clear-pin" type="button"><span class="material-symbols-outlined text-[18px]">backspace</span><span>Clear</span></button>
+								<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-headline-md text-title-card shadow-[3px_3px_0px_#00163a] hover:bg-surface-container-low active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all flex items-center gap-1" id="btn-host-help" type="button"><span class="material-symbols-outlined text-[18px]">help</span><span>Host Help</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="mt-space-lg p-space-sm rounded-xl bg-primary text-on-primary shadow-[4px_4px_0px_#00163a] flex items-center justify-between gap-space-md">
+						<div class="flex items-center gap-2 overflow-hidden"><span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim animate-ping shrink-0"></span><span class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim uppercase tracking-wider shrink-0">ARENA STATUS:</span><span class="font-body-sm text-body-sm text-on-primary-fixed truncate">1,420 High School Classrooms currently battling in Khmer History &amp; STEM Clash!</span></div>
+						<div class="hidden md:flex items-center gap-1 shrink-0 font-badge-arcade text-badge-arcade text-on-primary-container"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">wifi</span><span>SERVERS ONLINE</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div data-include="footer"></div>
+	<div data-include="toast"></div>
+	<script src="../../js/jquery-3.7.1.min.js"></script>
+	<script defer src="../../js/data.js"></script>
+	<script defer src="../../js/toast.js"></script>
+	<script defer src="../../js/game-state.js"></script>
+	<script defer src="../../js/game-not-found.js"></script>
+	<script defer src="../../js/main.js"></script>
+	<script defer src="../../js/include.js"></script>
+</body>
+</html>

@@ -1,28 +1,59 @@
-window.ReanRushPage = { init: function () {
-  // Accept a 6-digit PIN only and route invalid values to the not-found screen.
-  var form = $('#pin-form');
-  var input = $('#pin-input');
+(function ($) {
+  'use strict';
 
-  input.trigger('focus').on('input', function () {
-    this.value = this.value.replace(/\D/g, '').slice(0, 6);
-  });
+  $(function () {
+    var pin = '';
+    var $slots = $('.pin-slot');
+    var $submit = $('#btn-enter');
 
-  form.on('submit', function (event) {
-    event.preventDefault();
-    var pin = input.val().trim();
-
-    if (!/^\d{6}$/.test(pin)) {
-      window.showToast('Enter a valid 6-digit PIN.', 'error');
-      return;
+    function render() {
+      $slots.each(function (index) {
+        var $slot = $(this);
+        $slot.text(pin[index] || '');
+        $slot.toggleClass('bg-surface-container-lowest text-secondary', index < pin.length);
+        $slot.toggleClass('bg-surface-container-low text-primary', index >= pin.length);
+        $slot.toggleClass('border-secondary', index === pin.length);
+      });
+      $submit.prop('disabled', pin.length !== 6);
     }
 
-    if (pin === '123456') {
-      window.localStorage.setItem('reanrush_last_pin', pin);
-      window.location.href = 'nickname.html';
-      return;
+    function enterDigit(digit) {
+      if (/^\d$/.test(digit) && pin.length < 6) {
+        pin += digit;
+        render();
+      }
     }
 
-    window.localStorage.setItem('reanrush_last_pin', pin);
-    window.location.href = 'game-not-found.html';
+    function submitPin() {
+      if (pin.length !== 6) return;
+      var game = window.ReanRushGame.load();
+      game.pin = pin;
+      game.hostStarted = false;
+      window.ReanRushGame.save(game);
+      window.location.href = pin === '123456' ? 'nickname.html' : '../public/game-not-found.html';
+    }
+
+    $('[data-action="pin-digit"]').on('click', function () {
+      enterDigit($(this).text().trim());
+    });
+    $('[data-action="pin-backspace"]').on('click', function () {
+      pin = pin.slice(0, -1);
+      render();
+    });
+    $('[data-action="pin-clear"]').on('click', function () {
+      pin = '';
+      render();
+    });
+    $submit.on('click', submitPin);
+    $(document).on('keydown', function (event) {
+      if (/^\d$/.test(event.key)) enterDigit(event.key);
+      else if (event.key === 'Backspace') pin = pin.slice(0, -1);
+      else if (event.key === 'Enter') submitPin();
+      else return;
+      event.preventDefault();
+      render();
+    });
+
+    render();
   });
-} };
+})(jQuery);

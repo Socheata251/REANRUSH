@@ -1,0 +1,150 @@
+</head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b2a5b
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFj_B7suWsM3D673uc4I1p2wo5yhcloIyIY7N_4EEkiYch_f_ZmL0Of-pnZbwnJ9wHtqzMpGc0NJZWY9r4SZQYDVdLiI92Z_EuEaKnpi3zmw_WFkzlNPXo_pgKex6X3IpzNXUExwGw9qs1HrKNBmdP2Mg4jrxFpZn6MclyLHHy_pZFkPe9H1j_iCgRnaB8H-JkO75xjZa47CDpIMi_K-I6JeUZ_0jgCWz34zQ5hsMG0oEZjTrfsXDv9Q"><span class="font-headline-md text-headline-md text-on-primary tracking-wide">ReanRush</span></div><nav class="hidden md:flex items-center gap-gutter" data-active-classes="text-tertiary-fixed font-bold underline decoration-tertiary-fixed decoration-2 underline-offset-8"><a class="font-label-bold text-label-bold text-on-primary-container hover:text-on-primary transition-colors" data-path="join-a-class" href="../student/join-pin.html">Join Class</a><a class="font-label-bold text-label-bold text-on-primary-container hover:text-on-primary transition-colors" data-path="games" href="../student/join-pin.html">Games</a><a class="font-label-bold text-label-bold text-on-primary-container hover:text-on-primary transition-colors" data-path="avatar-gear-shop" href="../student/avatar-shop.html">Shop</a><a class="font-label-bold text-label-bold text-on-primary-container hover:text-on-primary transition-colors" data-path="blog" href="blog.html">Blog</a><a class="font-label-bold text-label-bold text-on-primary-container hover:text-on-primary transition-colors" data-path="pricing" href="pricing.html">Pricing</a>
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary p-space-md shadow-[6px_6px_0px_#00163a] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-badge-arcade text-badge-arcade text-secondary uppercase">Connected Partner</span>
+<span class="bg-[#2FA84F]/10 text-[#2FA84F] font-badge-arcade text-[10px] px-2 py-0.5 rounded border border-[#2FA84F]">ACTIVE PASS</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container border-2 border-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[28px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-title-card text-primary leading-tight">ACLEDA Student Pass</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Free 5G School Quiz Data</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Sokha’s device enjoys prioritized low-latency socket syncing on CADT/AUB high school networks.
+          </p>
+<a class="inline-flex items-center justify-between mt-2 p-2 bg-surface-container rounded-lg border-2 border-primary font-label-bold text-label-bold text-primary hover:bg-surface-container-high transition-colors" href="../student/avatar-shop.html">
+<span>Manage Academic Perks</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Help & Support Neo-Card -->
+<div class="bg-surface-container-low rounded-2xl border-[3px] border-primary p-space-md shadow-[4px_4px_0px_#00163a] flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">support_agent</span>
+<div>
+<div class="font-headline-md text-body-md text-primary">Need Help in Class?</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Telegram @ReanRushSupport</div>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest border-2 border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast / Live Feedback Snackbar (Hidden by default, triggered via JS) -->
+<div class="fixed bottom-6 right-6 z-50 bg-[#2FA84F] text-white border-[3px] border-primary px-space-md py-space-sm rounded-xl shadow-[6px_6px_0px_#00163a] font-headline-md text-body-md flex items-center gap-space-xs transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-message">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span id="toast-text">Preferences saved successfully! / បានរក្សាទុករួចរាល់!</span>
+</div>
+</div>
+</div>
+<script>
+  // Interactive UI Script for Toggles, BGM Slider, and Feedback toasts
+  (function() {
+    const bgmSlider = document.getElementById('bgm-slider');
+    const bgmValue = document.getElementById('bgm-value');
+    const saveBtn = document.getElementById('btn-save-prefs');
+    const resetBtn = document.getElementById('btn-reset-defaults');
+    const clearCacheBtn = document.getElementById('btn-clear-cache');
+    const diagBtn = document.getElementById('btn-run-diag');
+    const logoutBtn = document.getElementById('btn-logout');
+    const toast = document.getElementById('toast-message');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(msg, isAlert = false) {
+      if (!toast) return;
+      toastText.innerText = msg;
+      if (isAlert) {
+        toast.classList.remove('bg-[#2FA84F]');
+        toast.classList.add('bg-[#D9382B]');
+      } else {
+        toast.classList.remove('bg-[#D9382B]');
+        toast.classList.add('bg-[#2FA84F]');
+      }
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 2600);
+    }
+
+    if (bgmSlider && bgmValue) {
+      bgmSlider.addEventListener('input', function(e) {
+        bgmValue.innerText = e.target.value + '%';
+      });
+    }
+
+    // Language Segment Switcher
+    const langOptions = document.querySelectorAll('.lang-option');
+    langOptions.forEach(opt => {
+      opt.addEventListener('click', function() {
+        langOptions.forEach(o => {
+          o.classList.remove('bg-secondary-fixed/40');
+          o.classList.add('bg-surface-container-lowest');
+          const circle = o.querySelector('.material-symbols-outlined');
+          if (circle) {
+            circle.parentElement.innerHTML = '<span class="w-5 h-5 rounded-full border-2 border-primary bg-surface"></span>';
+          }
+        });
+        this.classList.add('bg-secondary-fixed/40');
+        this.classList.remove('bg-surface-container-lowest');
+        const markerContainer = this.querySelector('.flex.items-center.justify-between');
+        if (markerContainer) {
+          const lastEl = markerContainer.lastElementChild;
+          if (lastEl) {
+            lastEl.outerHTML = '<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: \'FILL\' 1;">check_circle</span>';
+          }
+        }
+        showToast('Language updated! / ភាសាត្រូវបានជ្រើសរើស!');
+      });
+    });
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        showToast('All battle preferences saved! / ការកំណត់ត្រូវបានរក្សាទុក!');
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        if (bgmSlider && bgmValue) {
+          bgmSlider.value = 70;
+          bgmValue.innerText = '70%';
+        }
+        document.querySelectorAll('.toggle-input').forEach(chk => {
+          chk.checked = true;
+        });
+        showToast('Restored standard classroom defaults! / បានកំណត់ឡើងវិញ!');
+      });
+    }
+
+    if (clearCacheBtn) {
+      clearCacheBtn.addEventListener('click', () => {
+        showToast('Local offline quiz cache purged (14.8MB freed)!');
+      });
+    }
+
+    if (diagBtn) {
+      diagBtn.addEventListener('click', () => {
+        showToast('Connection stable: 24ms ping to Phnom Penh Node.');
+      });
+    }
+
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', () => {
+        const confirmLogout = confirm('Are you sure you want to log out from Sokha Chan (Gr. 12)?');
+        if (confirmLogout) {
+          showToast('Logging out of arena...', true);
+        }
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-primary-container border-t-[3px] border-primary mt-auto"><div class="h-2.5 w-full bg-primary flex items-center justify-around overflow-hidden border-b border-primary/50 text-tertiary-fixed text-[10px] select-none tracking-widest"><span>◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆</span></div><div class="max-w-7xl mx-auto px-margin py-space-xl text-on-primary flex flex-col md:flex-row items-center justify-between gap-gutter"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-title-card text-tertiary-fixed">ReanRush Arena</span><span class="bg-secondary-container text-on-secondary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary">SEA K-12</span></div><p class="font-body-sm text-body-sm text-on-primary-container max-w-sm text-center md:text-left">Tactile, high-octane quiz battles engineered for competitive collaborative learning in Cambodia.</p><p class="font-body-sm text-body-sm text-on-primary-container/80 mt-space-sm">© 2025 ReanRush EduTech. All rights reserved.</p></div><div class="bg-surface-container-lowest border-[3px] border-primary p-space-md rounded-xl shadow-[6px_6px_0px_#00163a] flex items-center gap-space-md text-on-surface"><div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-secondary text-[28px]">account_balance</span></div><div class="flex flex-col"><span class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-secondary">Official Sponsor</span><span class="font-headline-md text-title-card text-primary leading-tight">ACLEDA Bank</span><span class="font-body-sm text-body-sm text-on-surface-variant">Student project at AUB and CADT</span></div></div></div></footer></body></html>
