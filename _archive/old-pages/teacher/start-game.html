@@ -1,0 +1,98 @@
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="home" href="dashboard.html"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8pW0JscbppE"><span class="font-title-card text-title-card text-on-primary tracking-wide hidden sm:inline-block">ReanRush</span></a><nav class="hidden lg:flex items-center gap-space-sm ml-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-label-bold rounded-lg border-2 border-primary"><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="games" href="discover.html">Games</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="blog" href="../public/blog.html">Blog</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="pricing" href="../public/pricing.html">Pricing</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors flex items-center gap-1" data-path="class-pin" href="start-game.html"><span class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-1.5 py-0.5 rounded text-[11px] font-bold border border-primary">PIN</span>Class PIN</a></nav></div><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="arena-lobby" href="start-game.html">Join Game</a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-surface-container-lowest text-primary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="sign-up" href="../public/signup.html">Sign up</a>
+<div class="flex flex-col sm:flex-row lg:flex-col justify-center gap-space-sm min-w-[320px]">
+<button class="inline-flex items-center justify-center gap-2 px-space-md py-space-sm bg-surface-container-lowest text-primary font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[22px]">visibility</span>
+<span>Preview Quiz Deck (10 Qs)</span>
+</button>
+<a class="inline-flex items-center justify-center gap-3 px-space-lg py-4 bg-secondary-container text-on-secondary-container font-headline-md text-headline-md rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_#00163a] active:translate-x-1.5 active:translate-y-1.5 active:shadow-none transition-all text-center" data-path="arena-lobby" href="host-lobby.html">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="leading-none">Open Lobby / បើកបន្ទប់ →</span>
+</a>
+</div>
+</div>
+<!-- Mini Bottom Info Bar -->
+<div class="flex items-center justify-between text-xs text-on-surface-variant font-label-bold pt-2 border-t border-primary/20">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#2FA84F]"></span> Server Phnom Penh-01: Low Latency (&lt;24ms)</span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline">ACLEDA Education Cloud Sync Enabled</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono">HOST: Dr. Sokha Chem (Toul Tompoung High School)</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for Game Mode Cards
+  const modeCards = document.querySelectorAll('.mode-card');
+  modeCards.forEach(card => {
+    card.addEventListener('click', () => {
+      modeCards.forEach(c => {
+        c.classList.remove('ring-2', 'ring-secondary-container', 'bg-blue-50/20', 'shadow-[6px_6px_0px_#00163a]');
+        c.classList.add('shadow-[4px_4px_0px_#00163a]', 'opacity-90');
+        const radio = c.querySelector('.mode-radio');
+        radio.classList.remove('bg-secondary-container', 'text-on-primary');
+        radio.classList.add('bg-surface-container-lowest', 'text-transparent');
+      });
+      card.classList.add('ring-2', 'ring-secondary-container', 'bg-blue-50/20', 'shadow-[6px_6px_0px_#00163a]');
+      card.classList.remove('opacity-90', 'shadow-[4px_4px_0px_#00163a]');
+      const activeRadio = card.querySelector('.mode-radio');
+      activeRadio.classList.add('bg-secondary-container', 'text-on-primary');
+      activeRadio.classList.remove('bg-surface-container-lowest', 'text-transparent');
+    });
+  });
+
+  // Toggle Switches Functionality
+  const toggles = document.querySelectorAll('.toggle-btn');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const isChecked = toggle.getAttribute('aria-checked') === 'true';
+      const thumb = toggle.querySelector('.toggle-thumb');
+      if (isChecked) {
+        toggle.setAttribute('aria-checked', 'false');
+        toggle.classList.remove('bg-[#2FA84F]');
+        toggle.classList.add('bg-outline-variant');
+        thumb.classList.remove('translate-x-6');
+        thumb.classList.add('translate-x-1');
+      } else {
+        toggle.setAttribute('aria-checked', 'true');
+        toggle.classList.add('bg-[#2FA84F]');
+        toggle.classList.remove('bg-outline-variant');
+        thumb.classList.add('translate-x-6');
+        thumb.classList.remove('translate-x-1');
+      }
+    });
+  });
+
+  // Questions Stepper
+  const questionCount = document.getElementById('questionCount');
+  const minusQBtn = document.getElementById('minusQBtn');
+  const plusQBtn = document.getElementById('plusQBtn');
+  let count = 10;
+
+  minusQBtn.addEventListener('click', () => {
+    if (count > 5) {
+      count -= 5;
+      questionCount.textContent = count;
+    }
+  });
+
+  plusQBtn.addEventListener('click', () => {
+    if (count < 30) {
+      count += 5;
+      questionCount.textContent = count;
+    }
+  });
+
+  // Timer Pills Selector
+  const timerPills = document.querySelectorAll('.timer-pill');
+  timerPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      timerPills.forEach(p => {
+        p.className = 'timer-pill py-2.5 px-3 bg-surface-container-lowest text-primary rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] font-title-card text-[15px] flex flex-col items-center hover:bg-surface-container transition-all';
+      });
+      pill.className = 'timer-pill py-2.5 px-3 bg-secondary-container text-on-secondary-container rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] font-title-card text-[15px] flex flex-col items-center ring-2 ring-primary';
+    });
+  });
+</script></main><footer class="w-full bg-primary-container text-on-primary"><div class="w-full h-2.5 bg-primary overflow-hidden flex items-center justify-center"><div class="w-full flex justify-around text-tertiary-fixed-dim text-[9px] tracking-[6px] select-none leading-none">❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8pW0JscbppE"><span class="font-headline-md text-headline-md text-on-primary">ReanRush</span></div><p class="font-body-sm text-body-sm text-on-primary-container">High-octane quiz battles engineered for Cambodian high school classrooms. Fueling academic competition and collaborative learning.</p><div class="mt-space-sm p-space-sm bg-primary border-[3px] border-primary-container rounded-xl shadow-[3px_3px_0px_#00163a]"><p class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim tracking-wider uppercase">ACADEMIC PRIDE</p><p class="font-body-sm text-body-sm text-on-primary font-bold">Student project at AUB and CADT</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Youth innovation empowering digital education.</p></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Curriculum &amp; Platform</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Khmer Curriculum Quiz Bank</li><li class="text-primary-fixed">Teacher Dashboard</li><li class="text-primary-fixed">Live Arena Battles</li><li class="text-primary-fixed">National Leaderboards</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Safety &amp; Community</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Student Safety Guidelines</li><li class="text-primary-fixed">Classroom Code of Conduct</li><li class="text-primary-fixed">Educator Community</li><li class="text-primary-fixed">Regional Tournaments</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Education Sponsor</h4><div class="p-space-md bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] text-center flex flex-col items-center justify-center gap-space-xs"><div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]">account_balance</span></div><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">ACLEDA BANK</span><span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase tracking-wider text-[11px]">Official Fintech Sponsor</span></div></div></div><div class="pt-space-md border-t-[2px] border-primary/60 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-primary-fixed">Copyright © 2025 ReanRush. Made for Cambodian high school learners.</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Designed with Neo-Brutalist Arcade Precision.</p></div></div></footer></body></html>

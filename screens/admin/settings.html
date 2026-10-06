@@ -1,0 +1,540 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed-variant":"#5f4100","outline":"#747780","inverse-surface":"#392e2a","on-surface":"#231915","inverse-on-surface":"#ffede7","on-primary-fixed-variant":"#2c4678","on-secondary-fixed-variant":"#0038b7","surface-container":"#fdeae3","surface-container-low":"#fff1ec","on-surface-variant":"#44474f","on-secondary-fixed":"#001452","tertiary-container":"#3c2800","on-primary-container":"#7a93ca","primary-fixed-dim":"#aec6ff","surface":"#fff8f6","surface-variant":"#f1dfd8","on-secondary":"#ffffff","on-tertiary":"#ffffff","tertiary":"#221500","surface-container-high":"#f7e4dd","secondary-fixed":"#dde1ff","on-secondary-container":"#fffbff","primary-container":"#0b2a5b","surface-dim":"#e9d6cf","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-primary":"#ffffff","on-tertiary-fixed":"#271900","background":"#fff8f6","tertiary-fixed-dim":"#f8bd4d","on-background":"#231915","surface-container-highest":"#f1dfd8","secondary-container":"#3966fe","tertiary-fixed":"#ffdeaa","error-container":"#ffdad6","primary-fixed":"#d8e2ff","error":"#ba1a1a","secondary-fixed-dim":"#b7c4ff","inverse-primary":"#aec6ff","on-tertiary-container":"#be8a1b","secondary":"#0d4be4","on-error":"#ffffff","on-primary-fixed":"#001a42","surface-bright":"#fff8f6","primary":"#00163a","outline-variant":"#c4c6d0","surface-tint":"#455e91"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem",margin:"2rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-xl":"2.5rem","space-md":"1rem",gutter:"1.5rem"},fontFamily:{"body-lg":["Kantumruy Pro"],"label-bold":["Kantumruy Pro"],"display-hero":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"badge-arcade":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"title-card":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"body-sm":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""]},fontSize:{"body-lg":["18px",{lineHeight:"28px",fontWeight:"500"}],"label-bold":["14px",{lineHeight:"18px",fontWeight:"700"}],"display-hero":["56px",{lineHeight:"64px",fontWeight:"800"}],"headline-lg-mobile":["26px",{lineHeight:"32px",fontWeight:"700"}],"badge-arcade":["13px",{lineHeight:"16px",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"700"}],"display-hero-mobile":["36px",{lineHeight:"42px",fontWeight:"800"}],"title-card":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",fontWeight:"700"}]}}}}</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface antialiased"><div class="pl-72 flex flex-col min-h-screen"><main class="w-full flex-1 pt-16 bg-surface p-space-md lg:p-margin"><div class="flex flex-col w-full gap-y-space-lg pb-space-xl">
+<!-- Top Banner & Section Header -->
+<div class="w-full flex flex-col lg:flex-row lg:items-end justify-between gap-space-md border-[3px] border-primary-container bg-surface-container-lowest p-space-md lg:p-space-lg rounded-2xl shadow-[6px_6px_0px_#0b2a5b]">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed border-2 border-primary-container font-badge-arcade text-badge-arcade uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+          SYSTEM ARCHITECTURE &amp; GLOBAL POLICIES
+        </span>
+<span class="font-label-bold text-label-bold text-outline">/ ការកំណត់ប្រព័ន្ធ</span>
+<span class="text-tertiary-fixed-dim text-xs select-none">❖ ❖ ❖</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1 leading-none">
+        System Settings <span class="font-headline-md text-headline-md text-on-surface-variant font-normal">/ ការកំណត់ប្រព័ន្ធ</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Global configurations, localized regional languages, upload payload quotas, classroom battle constraints, and emergency maintenance controls.
+      </p>
+</div>
+<!-- Quick Status & Global Action Bar -->
+<div class="flex flex-wrap items-center gap-space-sm pt-2 lg:pt-0">
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container border-[3px] border-primary-container shadow-[2px_2px_0px_#0b2a5b]">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-[#2FA84F]"></span>
+</span>
+<span class="font-badge-arcade text-badge-arcade text-primary uppercase">Nodes: Operational</span>
+</div>
+<button class="group flex items-center gap-2 bg-secondary-container hover:bg-secondary text-on-secondary px-space-lg py-2.5 rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0b2a5b] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all cursor-pointer" id="save-all-btn" type="button">
+<span class="material-symbols-outlined text-title-card group-hover:rotate-12 transition-transform">cloud_done</span>
+<span class="font-title-card text-title-card leading-none">Save All Changes / រក្សាទុក</span>
+</button>
+</div>
+</div>
+<!-- Rushy Elephant Tactical Advisory Callout -->
+<div class="relative w-full rounded-2xl bg-surface-container border-[3px] border-primary-container shadow-[6px_6px_0px_#0b2a5b] p-space-md lg:p-space-lg overflow-hidden">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="relative shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-2xl border-[3px] border-primary-container bg-surface-container-lowest p-1.5 shadow-[4px_4px_0px_#0b2a5b] flex items-center justify-center">
+<img alt="Rushy the Elephant mascot wearing a blue cap with a lightning bolt, happily waving" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+<span class="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed border-2 border-primary-container font-badge-arcade text-badge-arcade">
+            RUSH-BOT
+          </span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-badge-arcade text-badge-arcade text-secondary uppercase tracking-wider">Rushy High-Speed System Tip</span>
+<span class="text-tertiary-fixed-dim text-xs select-none">❖ ❖</span>
+</div>
+<p class="font-title-card text-title-card text-primary leading-snug">
+            “Limiting image size to <span class="text-secondary underline decoration-2">5 MB</span> keeps projector loading latency under <span class="text-secondary">400ms</span> on provincial Cambodia high school Wi-Fi! ⚡🇰🇭”
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            អនុសាសន៍សម្រាប់ការប្រកួតប្រជែង៖ កំណត់ទំហំរូបភាពល្មមជួយបង្កើនល្បឿនអ៊ីនធឺណិតក្នុងបន្ទប់រៀនទូទាំងប្រទេស។
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-2 bg-surface-container-lowest text-primary hover:bg-surface-container-high px-space-md py-2.5 rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer" id="reset-moeys-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim">verified_user</span>
+<span class="font-label-bold text-label-bold leading-tight">Reset to MoEYS Defaults</span>
+</button>
+</div>
+</div>
+<!-- Khmer Diamond Graphic Watermark -->
+<div class="absolute -bottom-8 -right-8 pointer-events-none opacity-10 select-none text-primary font-display-hero text-8xl tracking-widest">
+      ❖❖❖
+    </div>
+</div>
+<!-- Primary 2x2 Bento Arena Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- CARD 1: PLATFORM LANGUAGES & LOCALIZATION -->
+<div class="flex flex-col bg-surface-container-lowest border-[3px] border-primary-container rounded-2xl shadow-[6px_6px_0px_#0b2a5b] p-space-md lg:p-space-lg justify-between gap-space-md relative">
+<div class="absolute -top-3.5 left-space-md px-3 py-0.5 bg-tertiary-fixed border-2 border-primary-container rounded-full font-badge-arcade text-badge-arcade text-on-tertiary-fixed shadow-[2px_2px_0px_#0b2a5b]">
+        MODULE 01 ❖ LOCALIZATION
+      </div>
+<div class="flex flex-col gap-space-md mt-1">
+<div class="flex items-center justify-between border-b-2 border-surface-container-highest pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-card">translate</span>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">
+              Platform Languages <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ ភាសាប្រព័ន្ធ</span>
+</h2>
+</div>
+<span class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim uppercase">KH / EN / FR</span>
+</div>
+<!-- Default System Language -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-bold text-label-bold text-on-surface flex items-center justify-between">
+<span>Primary Interface Language (ភាសាដើម)</span>
+<span class="text-xs text-outline font-normal">Required for arena lobby</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest border-[3px] border-primary-container rounded-xl px-space-md py-2.5 font-label-bold text-label-bold text-primary focus:outline-none focus:shadow-[4px_4px_0px_#0b2a5b] cursor-pointer">
+<option selected="" value="km">Khmer (ភាសាខ្មែរ) — Default Platform Standard</option>
+<option value="en">English (UK/US International)</option>
+<option value="bi">Bilingual Mode (ភាសាខ្មែរ + English Split Display)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-primary">arrow_drop_down</span>
+</div>
+</div>
+<!-- Supported Regional Language Options -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-bold text-label-bold text-on-surface">Supported Curriculum Toggles (ជម្រើសភាសាក្នុងកម្មវិធី)</span>
+<div class="flex flex-col gap-2">
+<!-- Khmer (Enforced) -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container border-2 border-primary-container">
+<div class="flex items-center gap-3">
+<div class="w-7 h-5 rounded border border-primary-container bg-[#0b2a5b] flex flex-col justify-between overflow-hidden shadow-sm">
+<div class="h-1 bg-[#0b2a5b]"></div>
+<div class="h-2 bg-[#d9382b] flex items-center justify-center">
+<span class="text-[6px] text-surface font-bold leading-none">🏛️</span>
+</div>
+<div class="h-1 bg-[#0b2a5b]"></div>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-none">Khmer (ភាសាខ្មែរ)</p>
+<p class="font-body-sm text-body-sm text-outline">Enforced Primary Core Standard</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-[#2FA84F] text-on-primary border-2 border-primary-container font-badge-arcade text-badge-arcade uppercase shadow-[2px_2px_0px_#0b2a5b]">
+                ENFORCED
+              </span>
+</div>
+<!-- English (Active) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest border-2 border-primary-container hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-7 h-5 rounded border border-primary-container bg-[#3966fe] flex items-center justify-center text-[10px] text-white font-bold overflow-hidden shadow-sm">
+                  🇬🇧
+                </div>
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-none">English</p>
+<p class="font-body-sm text-body-sm text-outline">Bilingual STEM &amp; Computer Science Quizzes</p>
+</div>
+</div>
+<input checked="" class="w-5 h-5 accent-secondary-container border-2 border-primary-container rounded cursor-pointer" type="checkbox">
+</label>
+<!-- French (Optional) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest border-2 border-primary-container hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-7 h-5 rounded border border-primary-container bg-surface flex overflow-hidden shadow-sm">
+<span class="w-1/3 bg-[#00163a]"></span>
+<span class="w-1/3 bg-white"></span>
+<span class="w-1/3 bg-[#ba1a1a]"></span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-none">French (ភាសាបារាំង)</p>
+<p class="font-body-sm text-body-sm text-outline">Secondary High School Dual-Language Track</p>
+</div>
+</div>
+<input class="w-5 h-5 accent-secondary-container border-2 border-primary-container rounded cursor-pointer" type="checkbox">
+</label>
+</div>
+</div>
+<!-- AI Auto Translation Toggle -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low border-2 border-primary-container">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center border-2 border-primary-container">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-tight">Gemini Flash AI Auto-Translation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live translation of quiz prompts into Khmer for students</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-dim border-2 border-primary-container peer-checked:bg-secondary-container rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-2 after:border-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between text-xs text-outline font-label-bold pt-1 border-t border-surface-container-highest">
+<span>ISO: km_KH / en_US / fr_FR</span>
+<span class="text-tertiary-fixed-dim">❖ ❖ ❖</span>
+</div>
+</div>
+<!-- CARD 2: MEDIA & STORAGE PAYLOAD LIMITS -->
+<div class="flex flex-col bg-surface-container-lowest border-[3px] border-primary-container rounded-2xl shadow-[6px_6px_0px_#0b2a5b] p-space-md lg:p-space-lg justify-between gap-space-md relative">
+<div class="absolute -top-3.5 left-space-md px-3 py-0.5 bg-tertiary-fixed border-2 border-primary-container rounded-full font-badge-arcade text-badge-arcade text-on-tertiary-fixed shadow-[2px_2px_0px_#0b2a5b]">
+        MODULE 02 ❖ CDN &amp; MEDIA
+      </div>
+<div class="flex flex-col gap-space-md mt-1">
+<div class="flex items-center justify-between border-b-2 border-surface-container-highest pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-card">perm_media</span>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">
+              Storage &amp; Payloads <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ ទំហំរូបភាព</span>
+</h2>
+</div>
+<span class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim uppercase">CADT S3 CDN</span>
+</div>
+<!-- Max Image Upload Size Selector -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-bold text-label-bold text-on-surface">Max Image Upload Limit per Question</label>
+<span class="font-badge-arcade text-badge-arcade text-secondary bg-secondary-fixed px-2 py-0.5 rounded border border-primary-container" id="current-payload-badge">5 MB SELECTED</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="payload-btn py-2 px-1 text-center rounded-xl border-2 border-primary-container font-label-bold text-label-bold bg-surface-container hover:bg-surface-container-high transition-all" data-size="2 MB" type="button">
+              2 MB
+            </button>
+<button class="payload-btn py-2 px-1 text-center rounded-xl border-2 border-primary-container font-label-bold text-label-bold bg-secondary-container text-on-secondary shadow-[3px_3px_0px_#0b2a5b] -translate-y-0.5 transition-all" data-size="5 MB" type="button">
+              5 MB <span class="block text-[10px] font-normal leading-none mt-0.5 text-secondary-fixed">Rec.</span>
+</button>
+<button class="payload-btn py-2 px-1 text-center rounded-xl border-2 border-primary-container font-label-bold text-label-bold bg-surface-container hover:bg-surface-container-high transition-all" data-size="10 MB" type="button">
+              10 MB
+            </button>
+<button class="payload-btn py-2 px-1 text-center rounded-xl border-2 border-primary-container font-label-bold text-label-bold bg-surface-container hover:bg-surface-container-high transition-all" data-size="20 MB" type="button">
+              20 MB
+            </button>
+</div>
+</div>
+<!-- Supported Image Formats -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-bold text-label-bold text-on-surface">Allowed Arena Graphics Formats</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container border-2 border-primary-container cursor-pointer select-none">
+<span class="font-badge-arcade text-badge-arcade text-primary">.PNG</span>
+<span class="material-symbols-outlined text-[18px] text-[#2FA84F]">check_circle</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container border-2 border-primary-container cursor-pointer select-none">
+<span class="font-badge-arcade text-badge-arcade text-primary">.JPG/.JPEG</span>
+<span class="material-symbols-outlined text-[18px] text-[#2FA84F]">check_circle</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container border-2 border-primary-container cursor-pointer select-none">
+<span class="font-badge-arcade text-badge-arcade text-primary">.WEBP</span>
+<span class="material-symbols-outlined text-[18px] text-[#2FA84F]">check_circle</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container border-2 border-primary-container cursor-pointer select-none">
+<span class="font-badge-arcade text-badge-arcade text-primary">.SVG</span>
+<span class="material-symbols-outlined text-[18px] text-[#2FA84F]">check_circle</span>
+</label>
+</div>
+</div>
+<!-- CADT Storage Usage Meter -->
+<div class="flex flex-col gap-1.5 p-3 rounded-xl bg-surface-container-low border-2 border-primary-container">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_queue</span>
+              CADT High-Speed Cloud Bucket
+            </span>
+<span class="font-badge-arcade text-badge-arcade text-primary">34.2 GB / 100 GB (34.2%)</span>
+</div>
+<!-- Neo-brutalist gauge bar -->
+<div class="w-full h-4 rounded-full bg-surface-container-lowest border-2 border-primary-container overflow-hidden p-0.5">
+<div class="h-full bg-secondary-container rounded-full" style="width: 34.2%"></div>
+</div>
+<div class="flex justify-between items-center text-xs text-on-surface-variant pt-1">
+<span>Asset cache: Edge PoP Phnom Penh</span>
+<span class="text-[#2FA84F] font-bold">● Healthy</span>
+</div>
+</div>
+</div>
+<!-- Maintenance Purge Action -->
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-highest">
+<button class="w-full flex items-center justify-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-primary px-space-md py-2.5 rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer" id="purge-cache-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">cached</span>
+<span class="font-label-bold text-label-bold">Purge Cached Question Thumbnails / សម្អាត Cache</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: QUIZ DECK & CLASSROOM BATTLE LIMITS -->
+<div class="flex flex-col bg-surface-container-lowest border-[3px] border-primary-container rounded-2xl shadow-[6px_6px_0px_#0b2a5b] p-space-md lg:p-space-lg justify-between gap-space-md relative">
+<div class="absolute -top-3.5 left-space-md px-3 py-0.5 bg-tertiary-fixed border-2 border-primary-container rounded-full font-badge-arcade text-badge-arcade text-on-tertiary-fixed shadow-[2px_2px_0px_#0b2a5b]">
+        MODULE 03 ❖ ARENA LIMITS
+      </div>
+<div class="flex flex-col gap-space-md mt-1">
+<div class="flex items-center justify-between border-b-2 border-surface-container-highest pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-title-card">sports_esports</span>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">
+              Classroom Battle Limits <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ ដែនកំណត់</span>
+</h2>
+</div>
+<span class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim uppercase">BACII COMPATIBLE</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Question Stepper -->
+<div class="flex flex-col gap-1.5 p-3 rounded-xl bg-surface-container border-2 border-primary-container">
+<span class="font-label-bold text-label-bold text-primary">Max Questions / Deck</span>
+<div class="flex items-center justify-between bg-surface-container-lowest border-2 border-primary-container rounded-lg p-1">
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high border border-primary-container flex items-center justify-center font-bold text-primary active:scale-95 transition-transform" id="q-minus-btn" type="button">−</button>
+<span class="font-headline-md text-headline-md text-primary leading-none" id="deck-questions-val">40</span>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high border border-primary-container flex items-center justify-center font-bold text-primary active:scale-95 transition-transform" id="q-plus-btn" type="button">+</button>
+</div>
+<span class="text-xs text-outline text-center">Allowable range: 5 to 100</span>
+</div>
+<!-- Question Duration Presets -->
+<div class="flex flex-col gap-1.5 p-3 rounded-xl bg-surface-container border-2 border-primary-container">
+<span class="font-label-bold text-label-bold text-primary">Default Timer / Question</span>
+<div class="grid grid-cols-4 gap-1">
+<button class="timer-btn py-1.5 text-center rounded border border-primary-container text-xs font-bold bg-surface-container-lowest hover:bg-surface-container" data-time="15s" type="button">15s</button>
+<button class="timer-btn py-1.5 text-center rounded border border-primary-container text-xs font-bold bg-surface-container-lowest hover:bg-surface-container" data-time="20s" type="button">20s</button>
+<button class="timer-btn py-1.5 text-center rounded border-2 border-primary-container text-xs font-bold bg-secondary-container text-on-secondary shadow-sm" data-time="30s" type="button">30s</button>
+<button class="timer-btn py-1.5 text-center rounded border border-primary-container text-xs font-bold bg-surface-container-lowest hover:bg-surface-container" data-time="60s" type="button">60s</button>
+</div>
+<span class="text-xs text-outline text-center">Configured default: 30 Seconds</span>
+</div>
+</div>
+<!-- Room Capacity Constraints -->
+<div class="flex flex-col gap-2 p-3 rounded-xl bg-surface-container-low border-2 border-primary-container">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-tight">Max Concurrent Players Per Room</p>
+<p class="font-body-sm text-body-sm text-outline">Optimized for Cambodian Public High School Hall sizing</p>
+</div>
+<div class="px-3 py-1 bg-tertiary-fixed border-2 border-primary-container rounded-lg font-title-card text-title-card text-on-tertiary-fixed leading-none">
+              60 Students
+            </div>
+</div>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-[#2FA84F]">groups</span>
+<span>Allows 30 vs 30 Team Dual Battles or Free-For-All Sprint</span>
+</div>
+</div>
+<!-- Answer Palette Quadrants -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-bold text-label-bold text-primary">Classroom Push Target Slots</span>
+<div class="grid grid-cols-4 gap-2">
+<div class="flex items-center justify-center gap-1.5 p-2 rounded-xl bg-[#d9382b] text-white border-2 border-primary-container shadow-[2px_2px_0px_#0b2a5b]">
+<span class="text-xs">▲</span>
+<span class="font-badge-arcade text-badge-arcade">RED</span>
+</div>
+<div class="flex items-center justify-center gap-1.5 p-2 rounded-xl bg-[#3966fe] text-white border-2 border-primary-container shadow-[2px_2px_0px_#0b2a5b]">
+<span class="text-xs">●</span>
+<span class="font-badge-arcade text-badge-arcade">BLUE</span>
+</div>
+<div class="flex items-center justify-center gap-1.5 p-2 rounded-xl bg-tertiary-fixed-dim text-primary border-2 border-primary-container shadow-[2px_2px_0px_#0b2a5b]">
+<span class="text-xs">■</span>
+<span class="font-badge-arcade text-badge-arcade">GOLD</span>
+</div>
+<div class="flex items-center justify-center gap-1.5 p-2 rounded-xl bg-[#2fa84f] text-white border-2 border-primary-container shadow-[2px_2px_0px_#0b2a5b]">
+<span class="text-xs">★</span>
+<span class="font-badge-arcade text-badge-arcade">GREEN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-xs text-outline font-label-bold pt-1 border-t border-surface-container-highest">
+<span>Latency target: &lt; 85ms</span>
+<span class="text-tertiary-fixed-dim">❖ ❖ ❖</span>
+</div>
+</div>
+<!-- CARD 4: CRITICAL EMERGENCY MAINTENANCE CONTROLS -->
+<div class="flex flex-col bg-surface-container-lowest border-[3px] border-[#ba1a1a] rounded-2xl shadow-[6px_6px_0px_#ba1a1a] p-space-md lg:p-space-lg justify-between gap-space-md relative overflow-hidden">
+<!-- Warning Accent Strip Header -->
+<div class="absolute -top-3.5 left-space-md px-3 py-0.5 bg-[#ba1a1a] text-on-error border-2 border-primary-container rounded-full font-badge-arcade text-badge-arcade shadow-[2px_2px_0px_#0b2a5b]">
+        CRITICAL SHUTDOWN CONTROLS
+      </div>
+<div class="flex flex-col gap-space-md mt-1">
+<div class="flex items-center justify-between border-b-2 border-error-container pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ba1a1a] text-title-card">fmd_bad</span>
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">
+              Emergency Maintenance <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ របៀបថែទាំ</span>
+</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container text-[#ba1a1a] font-badge-arcade text-badge-arcade border border-[#ba1a1a]">SUPERADMIN ONLY</span>
+</div>
+<!-- Big Toggle Bar -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-[#fff1ec] border-2 border-[#ba1a1a]">
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-primary">Global Maintenance Lock</span>
+<span class="font-badge-arcade text-badge-arcade text-[#2fa84f]" id="maintenance-status-label">STATUS: OFF (NORMAL LIVE OPERATIONS)</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="maintenance-toggle" type="checkbox">
+<div class="w-14 h-8 bg-surface-dim border-[3px] border-primary-container peer-checked:bg-[#ba1a1a] rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-primary-container after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-2 after:border-primary-container after:rounded-full after:h-6 after:w-6 after:transition-all shadow-inner"></div>
+</label>
+</div>
+<!-- Broadcast Message Textarea -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-bold text-label-bold text-primary flex items-center justify-between">
+<span>Student &amp; Teacher Broadcast Alert Message</span>
+<span class="text-xs text-outline">Bilingual banner notification</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest border-[3px] border-primary-container rounded-xl p-3 font-body-sm text-body-sm text-primary focus:outline-none focus:shadow-[4px_4px_0px_#ba1a1a] resize-none" rows="3">ReanRush is currently undergoing scheduled server upgrades for BACII exam battle servers. We will be back online at 06:00 PM Phnom Penh time! / ប្រព័ន្ធកំពុងធ្វើបច្ចុប្បន្នភាពម៉ាស៊ីនមេ...</textarea>
+</div>
+<!-- Whitelist MoEYS Exemption -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container border-2 border-primary-container cursor-pointer select-none">
+<input checked="" class="w-5 h-5 accent-secondary-container border-2 border-primary-container rounded cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-bold text-label-bold text-primary leading-tight">Allow Teacher / MoEYS Whitelist Login During Lock</span>
+<span class="font-body-sm text-body-sm text-outline">Educators can preview and craft exam questions while student entry is locked</span>
+</div>
+</label>
+</div>
+<!-- Action Simulation Strip -->
+<div class="flex items-center justify-between pt-2 border-t border-error-container">
+<button class="w-full flex items-center justify-center gap-2 bg-[#ffdad6] hover:bg-[#ffb4ab] text-on-error-container px-space-md py-2.5 rounded-xl border-[3px] border-[#ba1a1a] shadow-[4px_4px_0px_#ba1a1a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer" id="simulate-banner-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span class="font-label-bold text-label-bold">Simulate Maintenance Banner on Arena / មើលផ្ទាំងជូនដំណឹង</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Toast Container (Hidden by default) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notify">
+<div class="flex items-center gap-3 bg-surface-container-lowest border-[3px] border-primary-container rounded-xl p-space-md shadow-[6px_6px_0px_#0b2a5b]">
+<div class="w-8 h-8 rounded-lg bg-[#2fa84f] text-white flex items-center justify-center border-2 border-primary-container font-bold">
+        ✓
+      </div>
+<div>
+<p class="font-label-bold text-label-bold text-primary" id="toast-title">Changes Synchronized!</p>
+<p class="font-body-sm text-body-sm text-outline" id="toast-desc">Configuration broadcasted to all Phnom Penh cluster nodes.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // UI Interactive micro-interactions for Arena Admin Settings
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Toast notification helper
+    const toast = document.getElementById('toast-notify');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+
+    function showToast(title, desc) {
+      if (!toast) return;
+      toastTitle.textContent = title;
+      toastDesc.textContent = desc;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3000);
+    }
+
+    // 2. Save All Changes
+    const saveBtn = document.getElementById('save-all-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        saveBtn.classList.add('opacity-80');
+        setTimeout(() => {
+          saveBtn.classList.remove('opacity-80');
+          showToast('Changes Saved! / បានរក្សាទុក', 'Platform rules & storage limits updated across all game arenas.');
+        }, 350);
+      });
+    }
+
+    // 3. Reset to MoEYS Defaults
+    const resetMoEYSBtn = document.getElementById('reset-moeys-btn');
+    const deckQuestionsVal = document.getElementById('deck-questions-val');
+    if (resetMoEYSBtn) {
+      resetMoEYSBtn.addEventListener('click', () => {
+        if (deckQuestionsVal) deckQuestionsVal.textContent = '40';
+        showToast('MoEYS Standards Applied', 'Config restored: 40 questions, 30s timers, 5MB upload ceilings.');
+      });
+    }
+
+    // 4. Stepper for Max Questions
+    const minusBtn = document.getElementById('q-minus-btn');
+    const plusBtn = document.getElementById('q-plus-btn');
+
+    if (minusBtn && plusBtn && deckQuestionsVal) {
+      minusBtn.addEventListener('click', () => {
+        let current = parseInt(deckQuestionsVal.textContent, 10);
+        if (current > 5) {
+          deckQuestionsVal.textContent = current - 5;
+        }
+      });
+
+      plusBtn.addEventListener('click', () => {
+        let current = parseInt(deckQuestionsVal.textContent, 10);
+        if (current < 100) {
+          deckQuestionsVal.textContent = current + 5;
+        }
+      });
+    }
+
+    // 5. Payload limits selector buttons
+    const payloadBtns = document.querySelectorAll('.payload-btn');
+    const payloadBadge = document.getElementById('current-payload-badge');
+    payloadBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        payloadBtns.forEach(b => {
+          b.className = 'payload-btn py-2 px-1 text-center rounded-xl border-2 border-primary-container font-label-bold text-label-bold bg-surface-container hover:bg-surface-container-high transition-all cursor-pointer';
+        });
+        btn.className = 'payload-btn py-2 px-1 text-center rounded-xl border-2 border-primary-container font-label-bold text-label-bold bg-secondary-container text-on-secondary shadow-[3px_3px_0px_#0b2a5b] -translate-y-0.5 transition-all cursor-pointer';
+        if (payloadBadge) {
+          payloadBadge.textContent = `${btn.getAttribute('data-size')} SELECTED`;
+        }
+      });
+    });
+
+    // 6. Timer presets
+    const timerBtns = document.querySelectorAll('.timer-btn');
+    timerBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        timerBtns.forEach(b => {
+          b.className = 'timer-btn py-1.5 text-center rounded border border-primary-container text-xs font-bold bg-surface-container-lowest hover:bg-surface-container cursor-pointer';
+        });
+        btn.className = 'timer-btn py-1.5 text-center rounded border-2 border-primary-container text-xs font-bold bg-secondary-container text-on-secondary shadow-sm cursor-pointer';
+      });
+    });
+
+    // 7. Purge Cache Button
+    const purgeBtn = document.getElementById('purge-cache-btn');
+    if (purgeBtn) {
+      purgeBtn.addEventListener('click', () => {
+        showToast('CDN Cache Purged! / សម្អាតរួចរាល់', '2,410 cached thumbnails cleared from Phnom Penh S3 Edge bucket.');
+      });
+    }
+
+    // 8. Maintenance Mode Toggle Logic
+    const maintenanceToggle = document.getElementById('maintenance-toggle');
+    const maintenanceStatusLabel = document.getElementById('maintenance-status-label');
+    if (maintenanceToggle && maintenanceStatusLabel) {
+      maintenanceToggle.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          maintenanceStatusLabel.textContent = 'STATUS: ACTIVE (ARENA LOCKDOWN ACTIVATED)';
+          maintenanceStatusLabel.className = 'font-badge-arcade text-badge-arcade text-[#ba1a1a]';
+          showToast('⚠️ ARENA LOCKDOWN ACTIVE', 'Public high school battle lobbies locked for scheduled maintenance.');
+        } else {
+          maintenanceStatusLabel.textContent = 'STATUS: OFF (NORMAL LIVE OPERATIONS)';
+          maintenanceStatusLabel.className = 'font-badge-arcade text-badge-arcade text-[#2fa84f]';
+          showToast('Arena Restored / បើកដំណើរការឡើងវិញ', 'Normal gaming traffic resumed across Cambodia.');
+        }
+      });
+    }
+
+    // 9. Simulate Banner Button
+    const simulateBtn = document.getElementById('simulate-banner-btn');
+    if (simulateBtn) {
+      simulateBtn.addEventListener('click', () => {
+        showToast('Banner Simulation Triggered', 'Displaying live maintenance preview modal to admin user.');
+      });
+    }
+  });
+</script></main></div>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

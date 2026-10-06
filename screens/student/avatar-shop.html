@@ -1,0 +1,639 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#001452","tertiary-fixed-dim":"#f8bd4d","tertiary-fixed":"#ffdeaa","on-tertiary-fixed":"#271900","on-secondary":"#ffffff","tertiary-container":"#3c2800","on-surface-variant":"#44474f","inverse-primary":"#aec6ff","inverse-on-surface":"#ffede7","on-primary":"#ffffff","surface-variant":"#f1dfd8","tertiary":"#221500","on-error-container":"#93000a","surface-dim":"#e9d6cf","primary-fixed-dim":"#aec6ff","on-tertiary":"#ffffff","surface-bright":"#fff8f6","surface":"#fff8f6","surface-container-lowest":"#ffffff","surface-container-high":"#f7e4dd","primary-fixed":"#d8e2ff","on-secondary-container":"#fffbff","outline":"#747780","on-primary-container":"#7a93ca","outline-variant":"#c4c6d0","on-tertiary-fixed-variant":"#5f4100","surface-container":"#fdeae3","surface-container-low":"#fff1ec","secondary-fixed-dim":"#b7c4ff","surface-container-highest":"#f1dfd8","secondary-container":"#3966fe","on-primary-fixed":"#001a42","error-container":"#ffdad6","error":"#ba1a1a","background":"#fff8f6","on-secondary-fixed-variant":"#0038b7","secondary":"#0d4be4","on-tertiary-container":"#be8a1b","surface-tint":"#455e91","on-background":"#231915","inverse-surface":"#392e2a","primary-container":"#0b2a5b","on-error":"#ffffff","on-primary-fixed-variant":"#2c4678","secondary-fixed":"#dde1ff","primary":"#00163a","on-surface":"#231915"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-mobile":"0.75rem","gutter":"1.5rem","space-md":"1rem","margin":"2rem"},"fontFamily":{"badge-arcade":["\"Baloo 2\""],"label-bold":["Kantumruy Pro"],"body-md":["Kantumruy Pro"],"display-hero-mobile":["\"Baloo 2\""],"title-card":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"headline-lg":["\"Baloo 2\""],"display-hero":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"body-lg":["Kantumruy Pro"]},"fontSize":{"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}]}}}};</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col"><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Top Banner & Student Economy HUD -->
+<div class="flex flex-col lg:flex-row items-stretch justify-between gap-space-md">
+<!-- Title & Context -->
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="inline-flex items-center gap-space-xs self-start bg-tertiary-fixed text-on-tertiary-fixed px-space-sm py-1 rounded-full border-[3px] border-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-wider">Battle Locker &amp; Reward Shop • ហាងរង្វាន់ និងសំលៀកបំពាក់</span>
+</div>
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero text-primary tracking-tight leading-none mt-space-xs">
+          Avatar &amp; Locker Shop
+          <span class="block font-headline-md text-headline-md text-secondary mt-1">ហាងតុបតែងតួអង្គ និងសម្ភារៈ</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+          Customize your classroom battle persona! Earn Rush Coins by answering daily quizzes, defeating Angkor Bosses, and maintaining high-octane study streaks.
+        </p>
+</div>
+<!-- Live Currency HUD & Mascot Tip -->
+<div class="flex flex-col gap-space-sm lg:w-[420px] shrink-0">
+<!-- Balance Card -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[6px_6px_0px_#00163a] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm border-b-[2px] border-surface-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center border-[2px] border-primary shadow-[2px_2px_0px_#00163a]">
+<span class="text-[22px]">🪙</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-bold leading-none">Your Rush Coins</span>
+<span class="font-display-hero text-headline-md text-primary leading-tight mt-0.5" id="user-coin-balance">2,450 🪙</span>
+</div>
+</div>
+<button class="bg-secondary-container hover:bg-secondary text-on-secondary font-headline-md text-label-bold px-space-sm py-1.5 rounded-xl border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>+ Earn</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">school</span>
+<span class="font-label-bold text-label-bold">BACII Mastery XP:</span>
+</div>
+<div class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-0.5 rounded-lg border border-primary/30">
+<span class="font-headline-md text-title-card text-primary">4,250</span>
+<span class="font-badge-arcade text-badge-arcade text-secondary">XP</span>
+</div>
+</div>
+</div>
+<!-- Mascot Speech Bubble -->
+<div class="bg-tertiary-fixed/90 border-[3px] border-primary rounded-xl p-space-sm shadow-[4px_4px_0px_#00163a] flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center shrink-0">
+<span class="text-[20px]">🐘</span>
+</div>
+<p class="font-label-bold text-body-sm text-on-tertiary-fixed leading-tight">
+            Rushy says: <span class="font-normal">"Dress up your squad avatar before the next Bayon Speed Round! 🐘✨"</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Battle Arena Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Live Dressing Room & Preview Stage (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky lg:top-24">
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-lg shadow-[6px_6px_0px_#00163a] flex flex-col gap-space-md relative overflow-hidden">
+<!-- Category Ribbon Pin -->
+<div class="absolute -top-1 left-6 bg-secondary-container text-on-secondary border-[2px] border-primary px-space-sm py-0.5 rounded-b-lg font-badge-arcade text-badge-arcade shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">checkroom</span>
+<span>LIVE FITTING ROOM</span>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">Character Preview</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">មើលរូបភាពផ្ទាល់</span>
+</div>
+<div class="bg-surface-container px-space-xs py-1 rounded-lg border border-primary/40 font-badge-arcade text-badge-arcade text-primary">
+              TEAM A
+            </div>
+</div>
+<!-- Avatar Visual Stage -->
+<div class="relative w-full aspect-square bg-gradient-to-b from-surface-container-high to-surface-variant rounded-2xl border-[3px] border-primary overflow-hidden flex items-center justify-center shadow-inner group">
+<!-- Traditional Kbach Ribbon Backdrop Overlay -->
+<div class="absolute inset-0 opacity-15 flex flex-col justify-around pointer-events-none select-none text-[10px] text-primary">
+<div class="tracking-[0.4em] text-center">❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖</div>
+<div class="tracking-[0.4em] text-center">◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆</div>
+<div class="tracking-[0.4em] text-center">❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖</div>
+<div class="tracking-[0.4em] text-center">◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆ ❖ ◆</div>
+</div>
+<!-- Avatar Frame Aura (Equipped Frame Effect) -->
+<div class="absolute inset-4 rounded-full border-[6px] border-dashed border-tertiary-fixed-dim/90 animate-spin" id="preview-frame-aura" style="animation-duration: 35s;"></div>
+<!-- Circular Stage Podium -->
+<div class="relative w-48 h-48 rounded-full bg-surface-container-lowest border-[4px] border-primary shadow-[0_8px_0px_#00163a] flex items-center justify-center p-2 z-10">
+<!-- Hat Slot (Equipped Over Head) -->
+<div class="absolute -top-6 z-20 transition-all duration-300 transform scale-110" id="preview-hat-layer">
+<span class="text-[52px] filter drop-shadow-[0_4px_0_#00163a]">👑</span>
+</div>
+<!-- Main Avatar Base Icon/Vector -->
+<div class="w-36 h-36 rounded-full bg-primary-container flex items-center justify-center border-[3px] border-primary overflow-hidden" id="preview-avatar-base">
+<!-- Mascot / Student Avatar Representation -->
+<div class="flex flex-col items-center justify-center text-center">
+<span class="text-[64px] select-none">🧑‍🎓</span>
+</div>
+</div>
+<!-- Team Badge Pinned to Stage -->
+<div class="absolute -bottom-2 bg-secondary text-on-secondary px-space-sm py-0.5 rounded-full border-[2px] border-primary font-badge-arcade text-[11px] shadow-[2px_2px_0px_#00163a]">
+                KIRIROM WING
+              </div>
+</div>
+<!-- Live Status HUD Pill -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm border-[2px] border-primary rounded-xl px-space-sm py-1.5 flex items-center justify-between text-body-sm shadow-[2px_2px_0px_#00163a] z-10">
+<span class="flex items-center gap-1 font-label-bold text-label-bold text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+                Sokha (Gr. 12)
+              </span>
+<span class="font-badge-arcade text-badge-arcade text-secondary">LVL 48</span>
+</div>
+</div>
+<!-- Equipped Setup Manifest -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-sm rounded-xl border-[2px] border-primary">
+<span class="font-badge-arcade text-[11px] uppercase tracking-wider text-on-surface-variant">Locker Loadout / សម្ភារៈបច្ចុប្បន្ន</span>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">face</span> Base:
+              </span>
+<span class="font-label-bold text-primary" id="equipped-base-name">Kbach Scholar Sokha</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">military_tech</span> Headgear:
+              </span>
+<span class="font-label-bold text-secondary" id="equipped-hat-name">Angkor Guardian Crown 👑</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_vintage</span> Border:
+              </span>
+<span class="font-label-bold text-tertiary-container" id="equipped-frame-name">Golden Kbach Neon ✨</span>
+</div>
+</div>
+<!-- Fitting Room CTA Controls -->
+<div class="flex flex-col gap-space-sm">
+<button class="w-full bg-secondary-container hover:bg-secondary text-on-secondary font-headline-md text-headline-md py-space-sm px-space-md rounded-xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center justify-center gap-space-xs" id="preview-action-btn">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>Equip Loadout / ប្រើប្រាស់</span>
+</button>
+<button class="w-full bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-md text-label-bold py-2.5 px-space-md rounded-xl border-[2px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1" id="preview-reset-btn">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset to Default / កំណត់ដើមឡើងវិញ</span>
+</button>
+</div>
+<!-- Live Battle Deployment Notice -->
+<div class="bg-surface-bright border border-primary/20 rounded-lg p-2.5 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">swords</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">
+              Equipped cosmetics immediately reflect across classroom projector big screens &amp; team duel scoreboards.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Catalog, Filters & Items Grid (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Top Controls: Category Tabs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm">
+<!-- Filter Navigation Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0" id="category-tabs">
+<button class="cat-btn active bg-primary text-on-primary font-headline-md text-label-bold px-space-md py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] transition-all whitespace-nowrap" data-filter="all">
+              All Items (24)
+            </button>
+<button class="cat-btn bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-md text-label-bold px-space-md py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] transition-all whitespace-nowrap" data-filter="avatar">
+              Avatars / តួអង្គ (8)
+            </button>
+<button class="cat-btn bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-md text-label-bold px-space-md py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] transition-all whitespace-nowrap" data-filter="hat">
+              Hats / មួក (8)
+            </button>
+<button class="cat-btn bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-md text-label-bold px-space-md py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] transition-all whitespace-nowrap" data-filter="frame">
+              Frames / ស៊ុម (8)
+            </button>
+</div>
+<!-- Secondary Sub-Filter Dropdown -->
+<div class="relative shrink-0">
+<select class="w-full sm:w-auto appearance-none bg-surface-container-lowest font-label-bold text-label-bold text-primary pl-space-md pr-10 py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] focus:outline-none cursor-pointer">
+<option>All Statuses (ទាំងអស់)</option>
+<option>Owned / មានរួចហើយ</option>
+<option>Available with Coins / ទិញបាន</option>
+<option>Locked / ចាក់សោ (Challenges)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Catalog Card Matrix (Neo-Brutalist Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-space-md" id="catalog-grid">
+<!-- CARD 1: Rushy's Lightning Cap (Owned & Equipped) -->
+<div class="item-card bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative hover:-translate-y-1 hover:shadow-[6px_6px_0px_#00163a] transition-all" data-icon="⚡" data-name="Rushy's Lightning Cap" data-status="owned" data-type="hat">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg">
+                Rare • កម្រ
+              </span>
+<span class="bg-surface-container text-secondary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                HEADGEAR
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-surface-container rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center text-[44px] shadow-[2px_2px_0px_#00163a] group-hover:scale-110 transition-transform">
+                ⚡
+              </div>
+<div class="absolute bottom-1 right-2 font-badge-arcade text-[10px] text-on-surface-variant uppercase">
+                #HAT-01
+              </div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Rushy's Lightning Cap ⚡</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Tactile navy cap with electrified gold bolt badge.</p>
+</div>
+<!-- Status & Action Button -->
+<div class="flex flex-col gap-space-xs mt-auto">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="text-secondary font-label-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> OWNED
+                </span>
+<span class="font-badge-arcade text-badge-arcade text-on-surface-variant">Default Vault</span>
+</div>
+<button class="equip-btn w-full bg-surface-container-high hover:bg-surface-container text-primary font-headline-md text-label-bold py-2 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">touch_app</span>
+<span>Equip / ជ្រើសរើស</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Angkor Guardian Crown (Purchasable Epic) -->
+<div class="item-card bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative hover:-translate-y-1 hover:shadow-[6px_6px_0px_#00163a] transition-all" data-cost="650" data-icon="👑" data-name="Angkor Guardian Crown" data-type="hat">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-primary text-on-primary border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg">
+                Epic • អស្ចារ្យ
+              </span>
+<span class="bg-surface-container text-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                HEADGEAR
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-tertiary-fixed/40 rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center text-[44px] shadow-[2px_2px_0px_#00163a] group-hover:scale-110 transition-transform">
+                👑
+              </div>
+<div class="absolute bottom-1 right-2 font-badge-arcade text-[10px] text-on-surface-variant uppercase">
+                #HAT-09
+              </div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Angkor Guardian Crown 👑</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Classic golden tiered Mokot worn by arena champions.</p>
+</div>
+<!-- Price & Buy Action -->
+<div class="flex flex-col gap-space-xs mt-auto">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-badge-arcade text-label-bold text-primary flex items-center gap-1">
+<span>🪙 650 Rush Coins</span>
+</span>
+<span class="text-tertiary font-body-sm text-[12px] font-bold">In Stock</span>
+</div>
+<button class="buy-btn w-full bg-secondary-container hover:bg-secondary text-on-secondary font-headline-md text-label-bold py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1" data-name="Angkor Guardian Crown 👑" data-price="650">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Buy for 650 🪙</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Golden Kbach Victory Frame (Legendary Frame) -->
+<div class="item-card bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative hover:-translate-y-1 hover:shadow-[6px_6px_0px_#00163a] transition-all" data-cost="1200" data-name="Golden Kbach Frame" data-type="frame">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stars</span> Legendary • វីរភាព
+              </span>
+<span class="bg-surface-container text-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                FRAME
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-primary-container rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm group">
+<div class="w-20 h-20 rounded-full border-[4px] border-dashed border-tertiary-fixed flex items-center justify-center text-[28px] text-tertiary-fixed bg-primary group-hover:rotate-45 transition-transform duration-500">
+                ✨
+              </div>
+<div class="absolute bottom-1 right-2 font-badge-arcade text-[10px] text-tertiary-fixed uppercase">
+                #FRAME-04
+              </div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Golden Kbach Victory Frame ✨</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Rotating sacred lotus border with golden neon particle aura.</p>
+</div>
+<!-- Price & Buy Action -->
+<div class="flex flex-col gap-space-xs mt-auto">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-badge-arcade text-label-bold text-primary flex items-center gap-1">
+<span>🪙 1,200 Rush Coins</span>
+</span>
+<span class="text-secondary font-body-sm text-[12px] font-bold">Hot Item</span>
+</div>
+<button class="buy-btn w-full bg-secondary-container hover:bg-secondary text-on-secondary font-headline-md text-label-bold py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1" data-name="Golden Kbach Frame ✨" data-price="1200">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Buy for 1,200 🪙</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Angkor Boss Slayer Helmet (Locked Challenge) -->
+<div class="item-card bg-surface-container border-[3px] border-primary/80 rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative opacity-95" data-status="locked" data-type="hat">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-error-container text-on-error-container border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Challenge Locked
+              </span>
+<span class="bg-surface-container-high text-on-surface-variant font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                HEADGEAR
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-surface-variant rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm grayscale contrast-125">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center text-[44px]">
+                🛡️
+              </div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-primary text-[36px]">lock</span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Angkor Boss Slayer Helmet 🛡️</h3>
+<!-- Unlock Criteria Box -->
+<div class="mt-1 bg-surface-container-lowest border border-primary/40 p-2 rounded-lg">
+<p class="font-body-sm text-[12px] text-primary font-medium leading-tight">
+                  🔒 Defeat Angkor Boss 5 times in Class Co-op.
+                </p>
+<div class="w-full bg-surface-variant h-2 rounded-full border border-primary/40 mt-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full w-[60%]"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-badge-arcade text-on-surface-variant mt-0.5">
+<span>Progress</span>
+<span class="font-bold text-primary">3 / 5 Defeated</span>
+</div>
+</div>
+</div>
+<!-- Disabled Action -->
+<div class="mt-auto">
+<button class="w-full bg-surface-dim text-on-surface-variant/70 font-headline-md text-label-bold py-2 rounded-xl border-[2px] border-outline cursor-not-allowed flex items-center justify-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Locked / ចាក់សោ</span>
+</button>
+</div>
+</div>
+<!-- CARD 5: Bokor Mist Cyber Visor (Locked Streak Challenge) -->
+<div class="item-card bg-surface-container border-[3px] border-primary/80 rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative opacity-95" data-status="locked" data-type="hat">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-error-container text-on-error-container border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Challenge Locked
+              </span>
+<span class="bg-surface-container-high text-on-surface-variant font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                ACCESSORY
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-surface-variant rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm grayscale">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center text-[44px]">
+                🕶️
+              </div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-primary text-[36px]">lock</span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Bokor Mist Cyber Visor 🕶️</h3>
+<!-- Unlock Criteria Box -->
+<div class="mt-1 bg-surface-container-lowest border border-primary/40 p-2 rounded-lg">
+<p class="font-body-sm text-[12px] text-primary font-medium leading-tight">
+                  🔒 Reach 10-Day Daily Rush Quiz Streak.
+                </p>
+<div class="w-full bg-surface-variant h-2 rounded-full border border-primary/40 mt-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full w-[70%]"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-badge-arcade text-on-surface-variant mt-0.5">
+<span>Streak</span>
+<span class="font-bold text-primary">7 / 10 Days</span>
+</div>
+</div>
+</div>
+<!-- Disabled Action -->
+<div class="mt-auto">
+<button class="w-full bg-surface-dim text-on-surface-variant/70 font-headline-md text-label-bold py-2 rounded-xl border-[2px] border-outline cursor-not-allowed flex items-center justify-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Locked / ចាក់សោ</span>
+</button>
+</div>
+</div>
+<!-- CARD 6: Bayon Speedster Robot (Purchasable Base Avatar) -->
+<div class="item-card bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative hover:-translate-y-1 hover:shadow-[6px_6px_0px_#00163a] transition-all" data-cost="850" data-icon="🤖" data-name="Bayon Speedster Robot" data-type="avatar">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-primary text-on-primary border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg">
+                Epic • អស្ចារ្យ
+              </span>
+<span class="bg-surface-container text-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                AVATAR BASE
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-primary-container rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center text-[44px] shadow-[2px_2px_0px_#00163a] group-hover:scale-110 transition-transform">
+                🤖
+              </div>
+<div class="absolute bottom-1 right-2 font-badge-arcade text-[10px] text-tertiary-fixed uppercase">
+                #BASE-07
+              </div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Bayon Speedster Robot 🤖</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">High-tech mech wearing an iconic red-and-white Cambodian Krama scarf.</p>
+</div>
+<!-- Price & Buy Action -->
+<div class="flex flex-col gap-space-xs mt-auto">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-badge-arcade text-label-bold text-primary flex items-center gap-1">
+<span>🪙 850 Rush Coins</span>
+</span>
+<span class="text-secondary font-body-sm text-[12px] font-bold">Available</span>
+</div>
+<button class="buy-btn w-full bg-secondary-container hover:bg-secondary text-on-secondary font-headline-md text-label-bold py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1" data-name="Bayon Speedster Robot 🤖" data-price="850">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Buy for 850 🪙</span>
+</button>
+</div>
+</div>
+<!-- CARD 7: Ta Prohm Nature Spirit (Purchasable Base Avatar) -->
+<div class="item-card bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative hover:-translate-y-1 hover:shadow-[6px_6px_0px_#00163a] transition-all" data-cost="500" data-icon="🌿" data-name="Ta Prohm Nature Spirit" data-type="avatar">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg">
+                Rare • កម្រ
+              </span>
+<span class="bg-surface-container text-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                AVATAR BASE
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-surface-container rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm group">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center text-[44px] shadow-[2px_2px_0px_#00163a] group-hover:scale-110 transition-transform">
+                🌿
+              </div>
+<div class="absolute bottom-1 right-2 font-badge-arcade text-[10px] text-on-surface-variant uppercase">
+                #BASE-03
+              </div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">Ta Prohm Nature Spirit 🌿</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Forest guardian infused with ancient sacred banyan tree energy.</p>
+</div>
+<!-- Price & Buy Action -->
+<div class="flex flex-col gap-space-xs mt-auto">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-badge-arcade text-label-bold text-primary flex items-center gap-1">
+<span>🪙 500 Rush Coins</span>
+</span>
+<span class="text-secondary font-body-sm text-[12px] font-bold">Available</span>
+</div>
+<button class="buy-btn w-full bg-secondary-container hover:bg-secondary text-on-secondary font-headline-md text-label-bold py-2 rounded-xl border-[3px] border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1" data-name="Ta Prohm Nature Spirit 🌿" data-price="500">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Buy for 500 🪙</span>
+</button>
+</div>
+</div>
+<!-- CARD 8: National BACII Grade A Laureate Frame (Locked Honor Achievement) -->
+<div class="item-card bg-surface-container border-[3px] border-primary/80 rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative opacity-95" data-status="locked" data-type="frame">
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed border-[2px] border-primary font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">emoji_events</span> Academic Prestige
+              </span>
+<span class="bg-surface-container-high text-on-surface-variant font-badge-arcade text-badge-arcade px-space-xs py-0.5 rounded border border-primary/40">
+                FRAME
+              </span>
+</div>
+<!-- Graphic Display Box -->
+<div class="h-32 bg-surface-variant rounded-xl border-[2px] border-primary flex items-center justify-center relative overflow-hidden mb-space-sm grayscale">
+<div class="w-20 h-20 rounded-full border-[3px] border-primary bg-surface-container-lowest flex items-center justify-center text-[44px]">
+                🏆
+              </div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-primary text-[36px]">lock</span>
+</div>
+</div>
+<!-- Metadata -->
+<div class="flex flex-col mb-space-sm">
+<h3 class="font-headline-md text-title-card text-primary leading-tight">BACII Grade A Frame 🏆</h3>
+<!-- Unlock Criteria Box -->
+<div class="mt-1 bg-surface-container-lowest border border-primary/40 p-2 rounded-lg">
+<p class="font-body-sm text-[12px] text-primary font-medium leading-tight">
+                  🔒 Score 100% in 3 consecutive Revenge Rounds.
+                </p>
+<div class="w-full bg-surface-variant h-2 rounded-full border border-primary/40 mt-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full w-[33%]"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-badge-arcade text-on-surface-variant mt-0.5">
+<span>Criteria</span>
+<span class="font-bold text-primary">1 / 3 Completed</span>
+</div>
+</div>
+</div>
+<!-- Disabled Action -->
+<div class="mt-auto">
+<button class="w-full bg-surface-dim text-on-surface-variant/70 font-headline-md text-label-bold py-2 rounded-xl border-[2px] border-outline cursor-not-allowed flex items-center justify-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Locked / ចាក់សោ</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Fair Play & Pedagogical Integrity Certified Footer Banner -->
+<div class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col sm:flex-row items-center justify-between gap-space-md mt-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center border-[2px] border-primary shrink-0 shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-primary font-label-bold">Fair Play Certified for High Schools:</strong> All locker gear &amp; avatar ornaments are strictly cosmetic. They do not increase question timer intervals or provide an unfair competitive advantage in live classroom battles.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-badge-arcade text-badge-arcade text-secondary bg-secondary-fixed px-space-sm py-1 rounded-lg border border-primary">
+          CAMBODIA K-12 SAFE
+        </span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple client-side micro-interactions for catalog filtering and preview updating
+  document.addEventListener('DOMContentLoaded', () => {
+    let coins = 2450;
+    const coinDisplay = document.getElementById('user-coin-balance');
+    const previewHatLayer = document.getElementById('preview-hat-layer');
+    const equippedHatName = document.getElementById('equipped-hat-name');
+    const previewActionBtn = document.getElementById('preview-action-btn');
+
+    // Filter Tabs
+    const catButtons = document.querySelectorAll('.cat-btn');
+    const cards = document.querySelectorAll('.item-card');
+
+    catButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        catButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-lowest', 'text-primary');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary');
+
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-type') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Purchase Interaction
+    const buyButtons = document.querySelectorAll('.buy-btn');
+    buyButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const cost = parseInt(btn.getAttribute('data-price') || '0', 10);
+        const name = btn.getAttribute('data-name');
+        
+        if (coins >= cost) {
+          coins -= cost;
+          coinDisplay.textContent = coins.toLocaleString() + ' 🪙';
+          
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Owned`;
+          btn.classList.remove('bg-secondary-container', 'hover:bg-secondary', 'text-on-secondary');
+          btn.classList.add('bg-surface-container', 'text-secondary', 'pointer-events-none');
+          
+          // Flash toast or feedback in button
+          alert(`🎉 Congratulation! You successfully purchased "${name}". You can equip it now from your dressing room!`);
+        } else {
+          alert('⚠️ Not enough Rush Coins! Answer more quizzes and defeat Angkor Bosses to earn more.');
+        }
+      });
+    });
+
+    // Equip interaction
+    const equipButtons = document.querySelectorAll('.equip-btn');
+    equipButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.item-card');
+        const icon = card.getAttribute('data-icon') || '⚡';
+        const name = card.getAttribute('data-name') || 'Equipped Item';
+        
+        previewHatLayer.innerHTML = `<span class="text-[52px] filter drop-shadow-[0_4px_0_#00163a]">${icon}</span>`;
+        equippedHatName.textContent = `${name} ${icon}`;
+
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Equipped`;
+        btn.classList.add('bg-secondary-container', 'text-on-secondary');
+      });
+    });
+
+    // Reset interaction
+    const resetBtn = document.getElementById('preview-reset-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        previewHatLayer.innerHTML = `<span class="text-[52px] filter drop-shadow-[0_4px_0_#00163a]">👑</span>`;
+        equippedHatName.textContent = 'Angkor Guardian Crown 👑';
+      });
+    }
+
+    if (previewActionBtn) {
+      previewActionBtn.addEventListener('click', () => {
+        alert('✨ Loadout successfully synchronized to live arena match!');
+      });
+    }
+  });
+</script></main>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

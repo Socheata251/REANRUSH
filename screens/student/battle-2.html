@@ -1,0 +1,531 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary":"#ffffff","secondary-container":"#3966fe","surface-tint":"#455e91","primary-fixed-dim":"#aec6ff","on-secondary-container":"#fffbff","on-error-container":"#93000a","on-tertiary-fixed":"#271900","tertiary-container":"#3c2800","surface-container-highest":"#f1dfd8","secondary-fixed-dim":"#b7c4ff","inverse-primary":"#aec6ff","tertiary-fixed-dim":"#f8bd4d","on-background":"#231915","surface-container-high":"#f7e4dd","on-primary-container":"#7a93ca","on-primary-fixed-variant":"#2c4678","tertiary-fixed":"#ffdeaa","on-tertiary-container":"#be8a1b","surface-variant":"#f1dfd8","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary":"#0d4be4","primary-fixed":"#d8e2ff","error":"#ba1a1a","surface-bright":"#fff8f6","outline":"#747780","outline-variant":"#c4c6d0","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#5f4100","on-secondary-fixed":"#001452","primary":"#00163a","primary-container":"#0b2a5b","on-surface-variant":"#44474f","surface-container-low":"#fff1ec","on-surface":"#231915","background":"#fff8f6","on-secondary-fixed-variant":"#0038b7","secondary-fixed":"#dde1ff","surface-container":"#fdeae3","surface":"#fff8f6","surface-dim":"#e9d6cf","surface-container-lowest":"#ffffff","on-error":"#ffffff","tertiary":"#221500","on-primary-fixed":"#001a42","inverse-surface":"#392e2a","error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"2rem","space-xl":"2.5rem","gutter-mobile":"0.75rem","space-lg":"1.5rem"},"fontFamily":{"display-hero":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"label-bold":["Kantumruy Pro"],"badge-arcade":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface antialiased" data-page="battle-2"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- ARENA MAIN WRAPPER -->
+<div class="w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-md flex flex-col gap-space-md">
+<!-- 1. TOP ARENA HUD & LIVE SCORES -->
+<header class="w-full flex flex-col gap-space-xs">
+<!-- Round Info & Status Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs bg-surface-container-highest border-[3px] border-primary px-space-md py-space-xs rounded-xl shadow-[4px_4px_0px_#00163a]">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 bg-primary text-on-primary font-badge-arcade text-badge-arcade rounded-lg">
+<span class="w-2 h-2 rounded-full bg-[#f8bd4d] animate-ping"></span>
+            LIVE ARENA
+          </span>
+<h1 class="font-title-card text-title-card text-primary flex items-center gap-2">
+<span>ROUND 02: TA PROHM</span>
+<span class="text-on-surface-variant font-label-bold text-label-bold hidden md:inline">• មធ្យម (Medium BACII)</span>
+</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-space-sm py-0.5 bg-surface-container-lowest border-2 border-primary rounded-lg font-badge-arcade text-badge-arcade text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-[#0d4be4]">sports_esports</span>
+            QUESTION <span class="text-secondary font-extrabold text-[15px]">08</span> / 15
+          </div>
+<div class="px-space-sm py-0.5 bg-surface-container-lowest border-2 border-primary rounded-lg font-badge-arcade text-badge-arcade text-primary hidden sm:flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-[#f8bd4d]">wifi_tethering</span>
+            ROOM #BK-902
+          </div>
+</div>
+</div>
+<!-- Teams Duel Scoreboard + Dynamic Central Timer Gauge -->
+<div class="grid grid-cols-12 gap-space-sm items-center">
+<!-- Team A Pod (Bak Touk Tigers) -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-sm shadow-[5px_5px_0px_#00163a] flex items-center justify-between relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-2.5 bg-[#2FA84F]"></div>
+<div class="flex items-center gap-space-sm pl-2">
+<div class="w-12 h-12 rounded-xl bg-[#2FA84F] border-[2px] border-primary flex items-center justify-center text-on-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">cruelty_free</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-[18px] leading-tight text-primary">Bak Touk Tigers</span>
+<span class="px-1.5 py-0.2 bg-[#2FA84F]/20 text-[#2FA84F] border border-[#2FA84F] font-badge-arcade text-[10px] rounded">SQUAD A</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-[#2FA84F]">group</span> 14 Tigers Active
+              </p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-lg text-[28px] leading-none text-primary tracking-tight">4,850</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-bold text-[#2FA84F] bg-[#2FA84F]/15 px-2 py-0.5 rounded-full border border-[#2FA84F]">
+              3x Streak 🔥
+            </div>
+</div>
+</div>
+<!-- Center Clash Tug-of-War Bar & Round Stopwatch -->
+<div class="col-span-12 lg:col-span-4 flex flex-col items-center justify-center gap-1">
+<!-- Circular Countdown Timer Badge -->
+<div class="relative flex items-center justify-center -mt-2 mb-1">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest border-[3px] border-primary shadow-[0_0_0_4px_#f8bd4d,4px_4px_0_#00163a] flex flex-col items-center justify-center z-10 animate-pulse">
+<span class="font-display-hero text-[24px] leading-none text-error" id="arena-timer">08s</span>
+<span class="font-badge-arcade text-[9px] text-primary uppercase leading-tight">រហ័ស!</span>
+</div>
+</div>
+<!-- Tug-of-war Bar with Center Lightning Slider -->
+<div class="w-full flex flex-col gap-1 px-1">
+<div class="flex justify-between items-center text-[11px] font-bold font-badge-arcade text-primary">
+<span class="text-[#2FA84F] flex items-center gap-0.5"><span class="w-2 h-2 rounded-full bg-[#2FA84F]"></span> 52% MOMENTUM</span>
+<span class="text-[#ba1a1a] flex items-center gap-0.5">48% MOMENTUM <span class="w-2 h-2 rounded-full bg-[#ba1a1a]"></span></span>
+</div>
+<div class="relative w-full h-5 bg-surface-container-high border-[3px] border-primary rounded-full overflow-visible flex items-center">
+<!-- Left Team A Track -->
+<div class="h-full bg-[#2FA84F] rounded-l-full" style="width: 52%;"></div>
+<!-- Right Team B Track -->
+<div class="h-full bg-[#ba1a1a] rounded-r-full" style="width: 48%;"></div>
+<!-- Center Slider Token -->
+<div class="absolute left-[52%] -translate-x-1/2 w-7 h-7 bg-tertiary-fixed-dim border-2 border-primary rounded-full flex items-center justify-center shadow-[1px_1px_0px_#00163a] z-10">
+<span class="material-symbols-outlined text-[15px] text-primary font-black">bolt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Team B Pod (CADT Rhinos) -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-sm shadow-[5px_5px_0px_#00163a] flex items-center justify-between relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-2.5 bg-[#ba1a1a]"></div>
+<div class="text-left pr-2">
+<div class="font-headline-lg text-[28px] leading-none text-primary tracking-tight">4,620</div>
+<div class="inline-flex items-center gap-1 text-[11px] font-bold text-[#ba1a1a] bg-[#ba1a1a]/15 px-2 py-0.5 rounded-full border border-[#ba1a1a]">
+              2x Streak ⚡
+            </div>
+</div>
+<div class="flex items-center gap-space-sm pr-2">
+<div class="text-right">
+<div class="flex items-center justify-end gap-1.5">
+<span class="px-1.5 py-0.2 bg-[#ba1a1a]/20 text-[#ba1a1a] border border-[#ba1a1a] font-badge-arcade text-[10px] rounded">SQUAD B</span>
+<span class="font-headline-md text-[18px] leading-tight text-primary">CADT Rhinos</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant flex items-center justify-end gap-1">
+                14 Rhinos Active <span class="material-symbols-outlined text-[13px] text-[#ba1a1a]">shield</span>
+</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-[#ba1a1a] border-[2px] border-primary flex items-center justify-center text-on-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- 2. MAIN BATTLE ARENA GRID (Left 8 Cols: Quiz Canvas / Right 4 Cols: Tactical Deck) -->
+<div class="grid grid-cols-12 gap-space-md items-start">
+<!-- LEFT COLUMN: QUESTION + 4 ARCADE TARGET CHOICES (8 Cols) -->
+<section class="col-span-12 lg:col-span-8 flex flex-col gap-space-md">
+<!-- Big Neo-Brutalist Question Surface -->
+<article class="relative bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md lg:p-space-lg shadow-[6px_6px_0px_#00163a]">
+<!-- Overhanging Badge Tag -->
+<div class="absolute -top-3.5 left-6 flex items-center gap-2">
+<span class="px-space-sm py-1 bg-tertiary-fixed-dim text-primary border-[2px] border-primary rounded-lg font-badge-arcade text-badge-arcade uppercase shadow-[2px_2px_0px_#00163a] flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+              Physics &amp; Electromagnetism • រូបវិទ្យា
+            </span>
+<span class="px-space-sm py-1 bg-secondary-container text-on-secondary-container border-[2px] border-primary rounded-lg font-badge-arcade text-[12px] shadow-[2px_2px_0px_#00163a]">
+              +250 PTS (+100 Speed Bonus)
+            </span>
+</div>
+<!-- Bilingual Question Prompt -->
+<div class="mt-space-sm flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-primary leading-snug">
+              What happens to the magnetic field strength (<span class="italic font-serif">B</span>) inside a solenoid if the number of turns (<span class="italic font-serif">N</span>) is doubled while current (<span class="italic font-serif">I</span>) remains constant?
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-medium">
+              តើកម្លាំងដែនម៉ាញ៉េទិច (<span class="italic font-serif">B</span>) ក្នុងស៊ីឡាំងនឹងប្រែប្រួលយ៉ាងណា ប្រសិនបើចំនួនរង្វង់ (<span class="italic font-serif">N</span>) កើនឡើងទ្វេដង ហើយចរន្តអគ្គិសនី (<span class="italic font-serif">I</span>) នៅថេរ?
+            </p>
+</div>
+<!-- Physics Solenoid Vector Diagram Visualizer -->
+<div class="mt-space-sm w-full bg-surface-container-low border-[2px] border-primary rounded-xl p-space-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Inline Technical Solenoid SVG Schematics -->
+<div class="w-full md:w-2/3 h-40 flex items-center justify-center bg-surface-container-lowest border-2 border-primary/40 rounded-lg p-2 relative overflow-hidden">
+<svg class="w-full h-full max-h-36" fill="none" viewBox="0 0 460 140" xmlns="http://www.w3.org/2000/svg">
+<!-- Center Core Axis -->
+<line stroke="#c4c6d0" stroke-dasharray="4 4" stroke-width="1.5" x1="20" x2="440" y1="70" y2="70"></line>
+<!-- Magnetic Flux Lines inside & looping outside -->
+<path d="M 60 40 C 140 15, 320 15, 400 40" fill="none" stroke="#3966fe" stroke-dasharray="3 3" stroke-width="2"></path>
+<path d="M 60 100 C 140 125, 320 125, 400 100" fill="none" stroke="#3966fe" stroke-dasharray="3 3" stroke-width="2"></path>
+<line marker-end="url(#arrow)" stroke="#3966fe" stroke-width="3" x1="70" x2="390" y1="70" y2="70"></line>
+<!-- Solenoid Coils (Front & Back Turns) -->
+<g fill="none" stroke="#00163a" stroke-linecap="round" stroke-width="3.5">
+<path d="M 80 100 C 70 60, 95 35, 115 35 C 135 35, 125 105, 145 105"></path>
+<path d="M 145 105 C 135 35, 165 35, 185 35 C 205 35, 195 105, 215 105"></path>
+<path d="M 215 105 C 205 35, 235 35, 255 35 C 275 35, 265 105, 285 105"></path>
+<path d="M 285 105 C 275 35, 305 35, 325 35 C 345 35, 335 105, 355 105"></path>
+<path d="M 355 105 C 345 35, 375 35, 395 35"></path>
+</g>
+<!-- Current Vector Terminals -->
+<path d="M 80 100 L 70 125" stroke="#ba1a1a" stroke-linecap="round" stroke-width="3"></path>
+<text fill="#ba1a1a" font-family="Baloo 2" font-size="14" font-weight="700" x="50" y="130">+ I</text>
+<path d="M 395 35 L 415 15" stroke="#00163a" stroke-linecap="round" stroke-width="3"></path>
+<text fill="#00163a" font-family="Baloo 2" font-size="14" font-weight="700" x="422" y="20">-</text>
+<!-- Dimension Length L -->
+<line stroke="#00163a" stroke-width="1.5" x1="80" x2="395" y1="120" y2="120"></line>
+<circle cx="80" cy="120" fill="#00163a" r="3"></circle>
+<circle cx="395" cy="120" fill="#00163a" r="3"></circle>
+<text fill="#00163a" font-family="Kantumruy Pro" font-size="12" font-weight="bold" text-anchor="middle" x="230" y="133">Length = L</text>
+<!-- B Field vector tag -->
+<rect fill="#0b2a5b" height="24" rx="4" stroke="#3966fe" stroke-width="1.5" width="60" x="200" y="55"></rect>
+<text fill="#ffffff" font-family="Baloo 2" font-size="13" font-weight="bold" text-anchor="middle" x="230" y="72">Vector B ➔</text>
+</svg>
+</div>
+<!-- Law Formula Pill & Parameter Checklist -->
+<div class="w-full md:w-1/3 flex flex-col justify-between gap-1 border-l-0 md:border-l-2 border-primary/20 md:pl-space-sm">
+<div class="bg-surface-container border-2 border-primary p-2 rounded-lg">
+<span class="font-badge-arcade text-[11px] text-tertiary-container block uppercase">Ampère's Formula</span>
+<span class="font-display-hero text-[18px] text-primary block leading-tight font-black">B = μ₀ · (N / L) · I</span>
+</div>
+<ul class="text-[12px] font-body-sm text-on-surface flex flex-col gap-0.5">
+<li class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> <strong>N</strong> = Number of Turns (2x)</li>
+<li class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> <strong>I</strong> = Current (Constant)</li>
+<li class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> <strong>L</strong> = Coil Length (Fixed)</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- 4 LARGE SHAPE-CODED ANSWER BUTTONS (2x2 Quad Arena Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="answers-container">
+<!-- OPTION A: Red Triangle -->
+<button class="group answer-card relative w-full text-left bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0px_#00163a] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex flex-col justify-between gap-space-sm focus:outline-none" type="button">
+<div class="flex items-start justify-between w-full">
+<!-- Shape Avatar -->
+<div class="w-12 h-12 rounded-xl bg-[#ba1a1a] border-2 border-primary flex items-center justify-center shadow-[2px_2px_0px_#00163a] shrink-0">
+<span class="text-on-primary font-headline-md text-[24px] leading-none">▲</span>
+</div>
+<!-- Live Squad Tally Pill -->
+<div class="px-2.5 py-1 bg-surface-container border border-primary rounded-full flex items-center gap-1.5 shadow-[1px_1px_0px_#00163a]">
+<span class="w-2 h-2 rounded-full bg-[#2FA84F]"></span>
+<span class="font-label-bold text-[12px] text-primary">6 Squad Votes</span>
+</div>
+</div>
+<div>
+<span class="font-badge-arcade text-[12px] text-[#ba1a1a] uppercase font-bold tracking-wider">Option A • ជម្រើស ក</span>
+<p class="font-title-card text-[18px] text-primary leading-tight mt-0.5">
+                The magnetic field doubles in strength.
+              </p>
+<p class="font-body-sm text-[13px] text-on-surface-variant">
+                កម្លាំងដែនម៉ាញ៉េទិចកើនឡើងទ្វេដង (2x B)
+              </p>
+</div>
+<!-- Progress mini bar representing squad confidence -->
+<div class="w-full bg-surface-container-high h-2 rounded-full border border-primary/50 overflow-hidden">
+<div class="bg-[#ba1a1a] h-full rounded-full" style="width: 65%;"></div>
+</div>
+</button>
+<!-- OPTION B: Blue Circle -->
+<button class="group answer-card relative w-full text-left bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0px_#00163a] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex flex-col justify-between gap-space-sm focus:outline-none" type="button">
+<div class="flex items-start justify-between w-full">
+<!-- Shape Avatar -->
+<div class="w-12 h-12 rounded-xl bg-secondary-container border-2 border-primary flex items-center justify-center shadow-[2px_2px_0px_#00163a] shrink-0">
+<span class="text-on-secondary-container font-headline-md text-[24px] leading-none">●</span>
+</div>
+<!-- Live Squad Tally Pill -->
+<div class="px-2.5 py-1 bg-surface-container border border-primary rounded-full flex items-center gap-1.5 shadow-[1px_1px_0px_#00163a]">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-bold text-[12px] text-primary">2 Squad Votes</span>
+</div>
+</div>
+<div>
+<span class="font-badge-arcade text-[12px] text-secondary uppercase font-bold tracking-wider">Option B • ជម្រើស ខ</span>
+<p class="font-title-card text-[18px] text-primary leading-tight mt-0.5">
+                The magnetic field is halved.
+              </p>
+<p class="font-body-sm text-[13px] text-on-surface-variant">
+                កម្លាំងដែនម៉ាញ៉េទិចថយចុះពាក់កណ្តាល (B/2)
+              </p>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full border border-primary/50 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 20%;"></div>
+</div>
+</button>
+<!-- OPTION C: Gold Square -->
+<button class="group answer-card relative w-full text-left bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0px_#00163a] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex flex-col justify-between gap-space-sm focus:outline-none" type="button">
+<div class="flex items-start justify-between w-full">
+<!-- Shape Avatar -->
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim border-2 border-primary flex items-center justify-center shadow-[2px_2px_0px_#00163a] shrink-0">
+<span class="text-primary font-headline-md text-[24px] leading-none">■</span>
+</div>
+<!-- Live Squad Tally Pill -->
+<div class="px-2.5 py-1 bg-surface-container border border-primary rounded-full flex items-center gap-1.5 shadow-[1px_1px_0px_#00163a]">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-bold text-[12px] text-primary">1 Squad Vote</span>
+</div>
+</div>
+<div>
+<span class="font-badge-arcade text-[12px] text-on-tertiary-container uppercase font-bold tracking-wider">Option C • ជម្រើស គ</span>
+<p class="font-title-card text-[18px] text-primary leading-tight mt-0.5">
+                The magnetic field remains unchanged.
+              </p>
+<p class="font-body-sm text-[13px] text-on-surface-variant">
+                កម្លាំងដែនម៉ាញ៉េទិចនៅដដែល មិនប្រែប្រួល (B)
+              </p>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full border border-primary/50 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 10%;"></div>
+</div>
+</button>
+<!-- OPTION D: Green Star -->
+<button class="group answer-card relative w-full text-left bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0px_#00163a] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex flex-col justify-between gap-space-sm focus:outline-none" type="button">
+<div class="flex items-start justify-between w-full">
+<!-- Shape Avatar -->
+<div class="w-12 h-12 rounded-xl bg-[#2FA84F] border-2 border-primary flex items-center justify-center shadow-[2px_2px_0px_#00163a] shrink-0">
+<span class="text-on-primary font-headline-md text-[24px] leading-none">★</span>
+</div>
+<!-- Live Squad Tally Pill -->
+<div class="px-2.5 py-1 bg-surface-container border border-primary rounded-full flex items-center gap-1.5 shadow-[1px_1px_0px_#00163a]">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="font-label-bold text-[12px] text-primary">0 Squad Votes</span>
+</div>
+</div>
+<div>
+<span class="font-badge-arcade text-[12px] text-[#2FA84F] uppercase font-bold tracking-wider">Option D • ជម្រើស ឃ</span>
+<p class="font-title-card text-[18px] text-primary leading-tight mt-0.5">
+                The magnetic field drops to zero immediately.
+              </p>
+<p class="font-body-sm text-[13px] text-on-surface-variant">
+                កម្លាំងដែនម៉ាញ៉េទិចធ្លាក់ចុះដល់សូន្យ (B = 0)
+              </p>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full border border-primary/50 overflow-hidden">
+<div class="bg-[#2FA84F] h-full rounded-full" style="width: 5%;"></div>
+</div>
+</button>
+</div>
+</section>
+<!-- RIGHT COLUMN: SIDEBAR / TACTICAL BATTLE DECK (4 Cols) -->
+<aside class="col-span-12 lg:col-span-4 flex flex-col gap-space-md">
+<!-- MASCOT SPEECH & ENCOURAGEMENT BOX -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-sm shadow-[5px_5px_0px_#00163a] flex items-center gap-space-sm relative overflow-hidden">
+<!-- Rushy Mascot Avatar -->
+<div class="relative w-20 h-20 shrink-0 bg-primary-fixed border-2 border-primary rounded-2xl overflow-hidden shadow-[2px_2px_0px_#00163a] flex items-center justify-center">
+<img alt="Rushy the playful elephant mascot cheering on student team" class="w-full h-full object-contain p-1" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+</div>
+<!-- Speech Balloon -->
+<div class="flex-1 bg-surface-container-low border-2 border-primary rounded-xl p-2.5 relative shadow-[2px_2px_0px_#00163a]">
+<div class="font-badge-arcade text-[11px] text-secondary font-black uppercase flex items-center gap-1">
+<span>RUSHY CHEERING</span>
+<span class="material-symbols-outlined text-[14px]">campaign</span>
+</div>
+<p class="font-body-sm text-[13px] text-primary leading-snug font-medium">
+              "Remember Ampère’s law: <strong class="text-secondary font-bold">B ∝ N</strong>! Don't let CADT Rhinos catch up! 🐘⚡"
+            </p>
+</div>
+</div>
+<!-- SQUAD SKILL POWER-UP DECK (4 Tactical Battle Cards) -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-sm shadow-[5px_5px_0px_#00163a] flex flex-col gap-space-xs">
+<div class="flex items-center justify-between pb-1 border-b-2 border-primary/20">
+<span class="font-title-card text-[16px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary">flash_on</span>
+              Squad Tactical Power-ups
+            </span>
+<span class="font-badge-arcade text-[11px] bg-tertiary-fixed-dim text-primary px-2 py-0.5 rounded border border-primary font-bold">4 CARDS</span>
+</div>
+<!-- Power-up Card 1: Shield (ACTIVE) -->
+<div class="p-space-xs bg-surface-container-lowest border-2 border-primary rounded-xl shadow-[3px_3px_0px_#00163a] flex items-center justify-between gap-2 bg-gradient-to-r from-[#2FA84F]/10 to-transparent">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-[#2FA84F] border-2 border-primary flex items-center justify-center text-on-primary font-bold shadow-[1px_1px_0px_#00163a]">
+                🛡️
+              </div>
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-tight">Shield • ខែលការពារ</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Absorbs 1 wrong penalty</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-[#2FA84F] text-on-primary font-badge-arcade text-[10px] rounded-md border border-primary animate-pulse">
+              ACTIVE
+            </span>
+</div>
+<!-- Power-up Card 2: Steal (READY) -->
+<div class="p-space-xs bg-surface-container-lowest border-2 border-primary rounded-xl shadow-[3px_3px_0px_#00163a] flex items-center justify-between gap-2 hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-secondary-container border-2 border-primary flex items-center justify-center text-on-secondary-container font-bold shadow-[1px_1px_0px_#00163a] group-hover:scale-105 transition-transform">
+                ⚡
+              </div>
+<div>
+<p class="font-label-bold text-label-bold text-primary leading-tight">Points Steal • លួចពិន្ទុ</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">+50 pts from CADT</p>
+</div>
+</div>
+<button class="px-2 py-1 bg-secondary text-on-secondary font-badge-arcade text-[10px] rounded-md border border-primary shadow-[2px_2px_0px_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none">
+              DEPLOY
+            </button>
+</div>
+<!-- Power-up Card 3: 2x Multiplier (COOLDOWN) -->
+<div class="p-space-xs bg-surface-container-low border-2 border-outline-variant rounded-xl flex items-center justify-between gap-2 opacity-80">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-dim border-2 border-outline flex items-center justify-center text-on-surface font-bold">
+                🔥
+              </div>
+<div>
+<p class="font-label-bold text-label-bold text-on-surface-variant leading-tight">2x Boost • គុណ២</p>
+<p class="font-body-sm text-[11px] text-outline">Cooldown: 1 round left</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant font-badge-arcade text-[10px] rounded border border-outline">
+              1 RD
+            </span>
+</div>
+<!-- Power-up Card 4: Peek (LOCKED) -->
+<div class="p-space-xs bg-surface-container-low border-2 border-outline-variant rounded-xl flex items-center justify-between gap-2 opacity-60">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-dim border-2 border-outline flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-outline leading-tight">Master Peek • មើលចម្លើយ</p>
+<p class="font-body-sm text-[11px] text-outline">Angkor Boss Round</p>
+</div>
+</div>
+<span class="font-badge-arcade text-[10px] text-outline">
+              LOCKED
+            </span>
+</div>
+</div>
+<!-- 10-SECOND TEAM HUDDLE CHAT & REACTION SPAM -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-sm shadow-[5px_5px_0px_#00163a] flex flex-col gap-space-xs">
+<div class="flex items-center justify-between border-b-2 border-primary/20 pb-1">
+<div class="flex items-center gap-1 font-title-card text-[15px] text-primary">
+<span class="material-symbols-outlined text-[#2FA84F] text-[18px]">forum</span>
+<span>10s Squad Huddle • ពិភាក្សា</span>
+</div>
+<span class="font-badge-arcade text-[10px] text-secondary uppercase bg-secondary-fixed px-1.5 py-0.5 rounded border border-primary">
+              Bak Touk Tigers
+            </span>
+</div>
+<!-- Chat Stream Messages -->
+<div class="flex flex-col gap-1.5 max-h-36 overflow-y-auto pr-1">
+<!-- Message 1 -->
+<div class="p-1.5 bg-surface-container-low rounded-lg border border-primary/30 flex items-start gap-1.5">
+<div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-[9px] shrink-0 border border-primary">
+                S
+              </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-[11px] text-primary">Sokha_Speed</span>
+<span class="text-[9px] text-outline">just now</span>
+</div>
+<p class="font-body-sm text-[12px] text-primary font-medium leading-tight">
+                  Go with Option A! <span class="bg-surface-container-lowest px-1 rounded border border-primary/40 font-mono text-[10px]">B = μ₀·(N/L)·I</span>
+</p>
+</div>
+</div>
+<!-- Message 2 -->
+<div class="p-1.5 bg-surface-container-low rounded-lg border border-primary/30 flex items-start gap-1.5">
+<div class="w-5 h-5 rounded-full bg-[#2FA84F] text-on-primary flex items-center justify-center font-bold text-[9px] shrink-0 border border-primary">
+                B
+              </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-[11px] text-primary">Bopha_STEM</span>
+<span class="text-[9px] text-outline">3s ago</span>
+</div>
+<p class="font-body-sm text-[12px] text-primary font-medium leading-tight">
+                  Agreed! It is directly proportional to N! 🔥
+                </p>
+</div>
+</div>
+<!-- Message 3 -->
+<div class="p-1.5 bg-[#2FA84F]/10 rounded-lg border border-[#2FA84F] flex items-start gap-1.5">
+<div class="w-5 h-5 rounded-full bg-[#f8bd4d] text-primary flex items-center justify-center font-bold text-[9px] shrink-0 border border-primary">
+                D
+              </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-[11px] text-primary">Dara_Khmer</span>
+<span class="text-[9px] text-[#2FA84F] font-bold">VOTED</span>
+</div>
+<p class="font-body-sm text-[12px] text-primary font-bold leading-tight">
+                  Locked in Option A! 🚀 100% confidence!
+                </p>
+</div>
+</div>
+</div>
+<!-- Quick Team Emoji Spam Bar -->
+<div class="pt-1 border-t-2 border-primary/10 flex items-center justify-between gap-1">
+<button class="emoji-btn flex-1 py-1 bg-surface-container rounded-lg border border-primary text-center font-title-card text-[14px] hover:bg-secondary-fixed active:translate-y-0.5 transition-all shadow-[1px_1px_0px_#00163a]">
+              ⚡ <span class="text-[10px] font-bold text-primary">+14</span>
+</button>
+<button class="emoji-btn flex-1 py-1 bg-surface-container rounded-lg border border-primary text-center font-title-card text-[14px] hover:bg-secondary-fixed active:translate-y-0.5 transition-all shadow-[1px_1px_0px_#00163a]">
+              🎯 <span class="text-[10px] font-bold text-primary">+8</span>
+</button>
+<button class="emoji-btn flex-1 py-1 bg-surface-container rounded-lg border border-primary text-center font-title-card text-[14px] hover:bg-secondary-fixed active:translate-y-0.5 transition-all shadow-[1px_1px_0px_#00163a]">
+              🔥 <span class="text-[10px] font-bold text-primary">+21</span>
+</button>
+<button class="emoji-btn flex-1 py-1 bg-surface-container rounded-lg border border-primary text-center font-title-card text-[14px] hover:bg-secondary-fixed active:translate-y-0.5 transition-all shadow-[1px_1px_0px_#00163a]">
+              💡 <span class="text-[10px] font-bold text-primary">+5</span>
+</button>
+<button class="emoji-btn flex-1 py-1 bg-surface-container rounded-lg border border-primary text-center font-title-card text-[14px] hover:bg-secondary-fixed active:translate-y-0.5 transition-all shadow-[1px_1px_0px_#00163a]">
+              🛡️
+            </button>
+</div>
+</div>
+</aside>
+</div>
+<!-- 3. FOOTER QUICK CONTROLS / AUDIENCE PROJECTOR STATS -->
+<footer class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-xl px-space-md py-space-xs shadow-[4px_4px_0px_#00163a] flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#2FA84F]"></span>
+<span class="font-body-sm text-[13px] text-primary">Classroom Mode: <strong class="font-label-bold">Grade 12 STEM A &amp; B</strong></span>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="material-symbols-outlined text-[16px]">podium</span>
+          National Leaderboard Rank: <strong class="text-primary font-bold">#04 Bak Touk High School</strong>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-sm py-1 bg-surface-container border-2 border-primary rounded-lg font-badge-arcade text-[12px] text-primary shadow-[2px_2px_0px_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">fullscreen</span> Projector View
+        </button>
+<button class="px-space-sm py-1 bg-[#ba1a1a] text-on-primary border-2 border-primary rounded-lg font-badge-arcade text-[12px] shadow-[2px_2px_0px_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pause_circle</span> Pause Match
+        </button>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  (function() {
+    // Interactive Answer Selection
+    const answerCards = document.querySelectorAll('.answer-card');
+    answerCards.forEach(card => {
+      card.addEventListener('click', () => {
+        answerCards.forEach(c => {
+          c.classList.remove('ring-4', 'ring-primary', 'bg-primary-fixed/20');
+        });
+        card.classList.add('ring-4', 'ring-primary', 'bg-primary-fixed/20');
+      });
+    });
+
+    // Simple countdown timer tick down animation simulation
+    let secondsLeft = 8;
+    const timerElem = document.getElementById('arena-timer');
+    const interval = setInterval(() => {
+      if (secondsLeft > 1) {
+        secondsLeft--;
+        timerElem.textContent = '0' + secondsLeft + 's';
+      } else {
+        timerElem.textContent = '00s';
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    // Quick Emoji button micro-increment
+    const emojiBtns = document.querySelectorAll('.emoji-btn');
+    emojiBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const textSpan = btn.querySelector('span');
+        if (textSpan) {
+          let count = parseInt(textSpan.textContent.replace('+', ''), 10) || 0;
+          textSpan.textContent = '+' + (count + 1);
+        }
+      });
+    });
+  })();
+</script></main>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../core/engine.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

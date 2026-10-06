@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary":"#ffffff","secondary-container":"#3966fe","surface-tint":"#455e91","primary-fixed-dim":"#aec6ff","on-secondary-container":"#fffbff","on-error-container":"#93000a","on-tertiary-fixed":"#271900","tertiary-container":"#3c2800","surface-container-highest":"#f1dfd8","secondary-fixed-dim":"#b7c4ff","inverse-primary":"#aec6ff","tertiary-fixed-dim":"#f8bd4d","on-background":"#231915","surface-container-high":"#f7e4dd","on-primary-container":"#7a93ca","on-primary-fixed-variant":"#2c4678","tertiary-fixed":"#ffdeaa","on-tertiary-container":"#be8a1b","surface-variant":"#f1dfd8","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary":"#0d4be4","primary-fixed":"#d8e2ff","error":"#ba1a1a","surface-bright":"#fff8f6","outline":"#747780","outline-variant":"#c4c6d0","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#5f4100","on-secondary-fixed":"#001452","primary":"#00163a","primary-container":"#0b2a5b","on-surface-variant":"#44474f","surface-container-low":"#fff1ec","on-surface":"#231915","background":"#fff8f6","on-secondary-fixed-variant":"#0038b7","secondary-fixed":"#dde1ff","surface-container":"#fdeae3","surface":"#fff8f6","surface-dim":"#e9d6cf","surface-container-lowest":"#ffffff","on-error":"#ffffff","tertiary":"#221500","on-primary-fixed":"#001a42","inverse-surface":"#392e2a","error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"2rem","space-xl":"2.5rem","gutter-mobile":"0.75rem","space-lg":"1.5rem"},"fontFamily":{"display-hero":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"label-bold":["Kantumruy Pro"],"badge-arcade":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Top Marquee Ticker -->
+<div class="w-full bg-secondary-container text-on-secondary-container border-b-[3px] border-primary py-space-xs px-margin overflow-hidden flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-on-secondary-container">LIVE ARENA FEED</span>
+</div>
+<div class="flex items-center gap-space-lg text-xs font-label-bold overflow-x-auto whitespace-nowrap">
+<span class="flex items-center gap-1">⚡ Bak Touk HS Grade 12 just hit a 14-streak in Physics!</span>
+<span class="opacity-50">✦</span>
+<span class="flex items-center gap-1">🏆 CADT STEM Clash finals starting in 03:40</span>
+<span class="opacity-50">✦</span>
+<span class="flex items-center gap-1">🔥 1,420 High Schoolers Battling Right Now</span>
+<span class="opacity-50">✦</span>
+<span class="flex items-center gap-1">🇰🇭 MoEYS Aligned Syllabus 2024-2025</span>
+</div>
+<div class="hidden md:flex items-center gap-1 font-badge-arcade text-[11px] bg-primary text-tertiary-fixed-dim px-2 py-0.5 rounded border border-primary">
+      CAMBODIA SERVERS: 18ms
+    </div>
+</div>
+<!-- Main Container -->
+<div class="max-w-7xl mx-auto w-full px-margin-mobile lg:px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- 1. Quick Class Join Hero Banner -->
+<section class="w-full">
+<div class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md lg:p-space-lg shadow-[6px_6px_0px_#00163a] relative">
+<!-- Category & System Badge Floating Pill -->
+<div class="absolute -top-4 left-space-lg flex items-center gap-space-xs">
+<span class="bg-tertiary-fixed-dim text-on-tertiary-fixed font-badge-arcade text-badge-arcade uppercase px-3 py-1 rounded-full border-[2px] border-primary shadow-[2px_2px_0px_#00163a]">
+            🕹️ High School Quiz Arena
+          </span>
+<span class="hidden sm:inline-block bg-surface-container-high text-primary font-label-bold text-xs px-2.5 py-1 rounded-full border-[2px] border-primary">
+            ភាសាខ្មែរ &amp; English
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center mt-space-xs">
+<!-- Left Battle Entry Box -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-secondary font-badge-arcade text-xs tracking-widest uppercase">FAST CLASSROOM ACCESS</span>
+<span class="text-xs text-on-surface-variant font-body-sm">| ចូលរួមការប្រកួត</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary leading-tight">
+                Enter Class PIN to Battle!
+              </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Compete live with your classmates, conquer Khmer curriculum bosses, and claim top rank on the national scoreboard.
+              </p>
+</div>
+<!-- Mode Selector Switches -->
+<div class="flex items-center gap-space-sm bg-surface-container-high p-1.5 rounded-xl border-[2px] border-primary w-fit">
+<button class="px-space-md py-1.5 rounded-lg font-label-bold text-label-bold transition-all bg-secondary text-on-secondary shadow-[2px_2px_0px_#00163a]" id="btn-mode-team" onclick="setMode('team')">
+                ⚔️ Team Battle (VS)
+              </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-bold text-label-bold transition-all text-primary hover:bg-surface-container" id="btn-mode-solo" onclick="setMode('solo')">
+                🎯 Solo Practice (ទោល)
+              </button>
+</div>
+<!-- PIN Form Arcade Controller -->
+<form class="flex flex-col sm:flex-row items-stretch gap-space-sm" onsubmit="handleJoinGame(event)">
+<div class="relative flex-1">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[26px]">dialpad</span>
+</div>
+<input class="w-full h-16 pl-12 pr-4 bg-surface-container-low border-[3px] border-primary rounded-2xl text-primary font-display-hero text-headline-md tracking-[4px] uppercase text-center focus:outline-none focus:bg-surface-container-lowest focus:shadow-[4px_4px_0px_#00163a] transition-all" id="game-pin-input" maxlength="7" placeholder="849 - 201" required="" type="text" value="849201"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 text-[11px] font-badge-arcade bg-surface-container text-on-surface-variant px-2 py-0.5 rounded border border-outline-variant">
+                  6 DIGITS
+                </span>
+</div>
+<!-- Big Tactile Button -->
+<button class="h-16 px-space-xl bg-secondary-container hover:bg-secondary text-on-secondary-container font-headline-md text-headline-md rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center justify-center gap-2 group whitespace-nowrap" type="submit">
+<span>ENTER BATTLE</span>
+<span class="material-symbols-outlined text-[28px] group-hover:translate-x-1 transition-transform">bolt</span>
+</button>
+</form>
+<!-- Quick helper chips -->
+<div class="flex flex-wrap items-center gap-space-sm text-xs font-body-sm text-on-surface-variant">
+<span class="font-label-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Instant Sync
+              </span>
+<span>•</span>
+<span>No account needed for players</span>
+<span>•</span>
+<a class="text-secondary font-label-bold hover:underline" href="class-pin.html">Where is my Class PIN? (ជំនួយ)</a>
+</div>
+</div>
+<!-- Right Mascot Spotlight Card -->
+<div class="lg:col-span-5 flex flex-col items-center justify-center">
+<div class="w-full bg-surface-container border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] relative overflow-hidden flex flex-col items-center">
+<!-- Geometric Accent Background Banner -->
+<div class="w-full bg-primary-container text-tertiary-fixed-dim text-[8px] py-1 px-2 rounded-lg border-2 border-primary text-center font-badge-arcade tracking-[3px] uppercase mb-2">
+                ❖ ARENA GUARDIAN : RUSHY THE ELEPHANT ❖
+              </div>
+<!-- Mascot Comic Speech Bubble -->
+<div class="relative bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-sm shadow-[3px_3px_0px_#00163a] mb-2 max-w-xs text-center z-10">
+<p class="font-body-md font-bold text-primary text-sm leading-snug">
+                  "ត្រៀមខ្លួនប្រកួតហើយឬនៅ?"
+                </p>
+<p class="font-body-sm text-xs text-on-surface-variant font-medium mt-0.5">
+                  Ready to conquer the Angkor Boss today? Grab your seat! ⚡
+                </p>
+<!-- Tail pointer for bubble -->
+<div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-4 h-4 bg-surface-container-lowest border-r-[3px] border-b-[3px] border-primary rotate-45"></div>
+</div>
+<!-- Rushy Mascot Graphic -->
+<div class="relative w-48 h-48 sm:w-56 sm:h-56 mt-1 flex items-center justify-center">
+<div class="absolute inset-0 bg-secondary-fixed rounded-full border-[3px] border-primary opacity-60 scale-95"></div>
+<img alt="Rushy the baby elephant mascot with navy cap and gold lightning bolt" class="relative z-10 w-full h-full object-contain drop-shadow-md hover:rotate-3 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9X6D62CnFy9UXJdt21hvK-kgB3zrx1m7VHXa8nZCgHXQa4LVA_v0znQ9jNAc0DMP2o7yKCXiNa8IUw56RxeVtEqQaK_sUTeA2HDVGBTsVJxcM_eajnj65ZZvLtSk2haKWkckscKEI1kTvi10g-NEaBeEVphk-eEBQXkp0yfqZTrpJkoYSBcHrx9DCLtQ9aTat2FhXhNGmb0h08RJVrt-So91aMQltdjVTgFcMUHhnSqsZc8yaxmB4"/>
+</div>
+<!-- Mascot Stat Ribbon -->
+<div class="mt-2 w-full flex items-center justify-between bg-surface-container-lowest px-3 py-1.5 rounded-xl border-[2px] border-primary text-xs">
+<span class="font-label-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">workspace_premium</span>
+                  LVL 99 Boss Guardian
+                </span>
+<span class="font-badge-arcade text-secondary tracking-wider">ANGKOR ARENA</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Select Battle Arena Difficulty Tier -->
+<section class="w-full flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="bg-primary text-on-primary font-badge-arcade text-[11px] px-2 py-0.5 rounded border border-primary uppercase">
+              LEVEL SELECT
+            </span>
+<span class="text-xs font-label-bold text-on-surface-variant">ជ្រើសរើសកម្រិតលំបាក</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">
+            Choose Your Arena Tier
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Curated directly from national Cambodian High School test banks. Earn double or triple XP by challenging harder temple guardians.
+        </p>
+</div>
+<!-- 3 Arcade Battle Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- TIER 1: Bayon Round (Easy) -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md flex flex-col justify-between shadow-[6px_6px_0px_#00163a] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#00163a] transition-all">
+<div>
+<!-- Tier Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-surface-container text-primary font-badge-arcade text-badge-arcade px-2.5 py-1 rounded-lg border-[2px] border-primary uppercase">
+                TIER 01 • EASY
+              </span>
+<span class="flex items-center gap-1 bg-surface-container-high text-primary font-label-bold text-xs px-2 py-0.5 rounded border border-primary">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 15s / Q
+              </span>
+</div>
+<!-- Title & Khmer Subtitle -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center border-[2px] border-primary text-primary">
+<span class="material-symbols-outlined text-[30px]">sentiment_satisfied</span>
+</div>
+<div>
+<h3 class="font-title-card text-title-card text-primary leading-tight">Bayon Round</h3>
+<span class="font-label-bold text-xs text-on-surface-variant">កម្រិតដំបូង (Foundation)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Foundation revision &amp; Grade 10-12 review. Friendly classroom warm-up with 54 face-smiling towers to build student momentum.
+            </p>
+<!-- Multiplier & Badge -->
+<div class="bg-surface-container-low p-2.5 rounded-xl border-[2px] border-primary flex items-center justify-between mb-space-md">
+<span class="font-body-sm text-xs text-on-surface-variant">XP Multiplier:</span>
+<span class="font-badge-arcade text-primary text-sm bg-surface-container-lowest px-2 py-0.5 rounded border border-primary">1.0x MULTIPLIER</span>
+</div>
+<!-- Topic Tags -->
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="text-[11px] font-label-bold bg-surface-container px-2 py-0.5 rounded border border-outline-variant text-primary">General Science</span>
+<span class="text-[11px] font-label-bold bg-surface-container px-2 py-0.5 rounded border border-outline-variant text-primary">Khmer Vocab</span>
+<span class="text-[11px] font-label-bold bg-surface-container px-2 py-0.5 rounded border border-outline-variant text-primary">Basic Algebra</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-surface-container hover:bg-surface-container-high text-primary font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" onclick="selectTier('Bayon Round')">
+<span>Play Bayon Match</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- TIER 2: Ta Prohm Round (Medium) - Featured -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md flex flex-col justify-between shadow-[6px_6px_0px_#00163a] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#00163a] transition-all relative ring-2 ring-secondary/20">
+<!-- Featured Tag -->
+<div class="absolute -top-3.5 right-6 bg-secondary text-on-secondary font-badge-arcade text-[11px] px-3 py-0.5 rounded-full border-[2px] border-primary shadow-[2px_2px_0px_#00163a] uppercase">
+            POPULAR IN CLASSROOMS
+          </div>
+<div>
+<!-- Tier Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-badge-arcade text-badge-arcade px-2.5 py-1 rounded-lg border-[2px] border-primary uppercase">
+                TIER 02 • MEDIUM
+              </span>
+<span class="flex items-center gap-1 bg-surface-container-high text-primary font-label-bold text-xs px-2 py-0.5 rounded border border-primary">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 10s / Q
+              </span>
+</div>
+<!-- Title & Khmer Subtitle -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center border-[2px] border-primary text-on-secondary-container">
+<span class="material-symbols-outlined text-[30px]">nature</span>
+</div>
+<div>
+<h3 class="font-title-card text-title-card text-primary leading-tight">Ta Prohm Round</h3>
+<span class="font-label-bold text-xs text-on-surface-variant">កម្រិតមធ្យម (Tree Roots)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Rapid speed trivia featuring tree-root puzzle obstacles. Timed sprint across Khmer Literature, STEM, National History &amp; Physics.
+            </p>
+<!-- Multiplier & Badge -->
+<div class="bg-surface-container-low p-2.5 rounded-xl border-[2px] border-primary flex items-center justify-between mb-space-md">
+<span class="font-body-sm text-xs text-on-surface-variant">XP Multiplier:</span>
+<span class="font-badge-arcade text-secondary text-sm bg-surface-container-lowest px-2 py-0.5 rounded border border-primary">2.0x BOOST</span>
+</div>
+<!-- Topic Tags -->
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="text-[11px] font-label-bold bg-surface-container px-2 py-0.5 rounded border border-outline-variant text-primary">BacII Prep</span>
+<span class="text-[11px] font-label-bold bg-surface-container px-2 py-0.5 rounded border border-outline-variant text-primary">Grade 12 Physics</span>
+<span class="text-[11px] font-label-bold bg-surface-container px-2 py-0.5 rounded border border-outline-variant text-primary">Khmer History</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-secondary-container hover:bg-secondary text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" onclick="selectTier('Ta Prohm Round')">
+<span>Launch Ta Prohm</span>
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+</div>
+<!-- TIER 3: Angkor Boss (Hard) -->
+<div class="bg-primary-container text-on-primary border-[3px] border-primary rounded-3xl p-space-md flex flex-col justify-between shadow-[6px_6px_0px_#00163a] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#00163a] transition-all">
+<div>
+<!-- Tier Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="bg-tertiary-fixed-dim text-on-tertiary-fixed font-badge-arcade text-badge-arcade px-2.5 py-1 rounded-lg border-[2px] border-primary uppercase">
+                TIER 03 • BOSS RAID
+              </span>
+<span class="flex items-center gap-1 bg-primary text-tertiary-fixed-dim font-label-bold text-xs px-2 py-0.5 rounded border border-primary">
+<span class="material-symbols-outlined text-[15px]">timer</span> 7s / RAPID
+              </span>
+</div>
+<!-- Title & Khmer Subtitle -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim flex items-center justify-center border-[2px] border-primary text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[30px]">military_tech</span>
+</div>
+<div>
+<h3 class="font-title-card text-title-card text-on-primary leading-tight">Angkor Boss</h3>
+<span class="font-label-bold text-xs text-primary-fixed">កម្រិតកំពូល (Sudden Death)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed mb-space-md">
+              The Ultimate Arena Battle! Boss HP bar drained through simultaneous collective correct student answers. Sudden death mechanics!
+            </p>
+<!-- Multiplier & Badge -->
+<div class="bg-primary p-2.5 rounded-xl border-[2px] border-primary-container flex items-center justify-between mb-space-md">
+<span class="font-body-sm text-xs text-primary-fixed">XP Multiplier:</span>
+<span class="font-badge-arcade text-tertiary-fixed-dim text-sm bg-primary-container px-2 py-0.5 rounded border border-primary">3.0x TRIPLE XP</span>
+</div>
+<!-- Topic Tags -->
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="text-[11px] font-label-bold bg-primary text-on-primary px-2 py-0.5 rounded border border-primary/50">Olympiad Math</span>
+<span class="text-[11px] font-label-bold bg-primary text-on-primary px-2 py-0.5 rounded border border-primary/50">Chemistry Honors</span>
+<span class="text-[11px] font-label-bold bg-primary text-on-primary px-2 py-0.5 rounded border border-primary/50">Projector Mode</span>
+</div>
+</div>
+<button class="w-full py-2.5 bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-on-tertiary-fixed font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" onclick="selectTier('Angkor Boss')">
+<span>Challenge Boss</span>
+<span class="material-symbols-outlined text-[20px]">swords</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 3. Live Classroom Battle Preview & Quick Host Hub -->
+<section class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Live Battles Active Stream (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md lg:p-space-lg shadow-[6px_6px_0px_#00163a] flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b-[2px] border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
+<h3 class="font-headline-md text-headline-md text-primary">Live Classroom Duels</h3>
+</div>
+<span class="font-badge-arcade text-secondary text-xs bg-surface-container px-2.5 py-1 rounded-full border border-primary">
+            UPDATED SECONDS AGO
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Battle Item 1 -->
+<div class="p-space-sm bg-surface-container-low hover:bg-surface-container rounded-2xl border-[2px] border-primary flex items-center justify-between gap-space-sm transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center font-display-hero text-sm border-[2px] border-primary">
+                A1
+              </div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">CADT Tech Innovators - STEM Clash</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Room #402 • 38 Students • Round 8/12</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="hidden sm:inline-block font-badge-arcade text-xs text-secondary-container bg-surface-container-lowest px-2 py-1 rounded border border-outline-variant">
+                BOSS HP: 42%
+              </span>
+<a class="p-1.5 bg-surface-container-lowest border-[2px] border-primary rounded-lg text-primary hover:bg-surface-container-high shadow-[2px_2px_0px_#00163a]" href="#">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</a>
+</div>
+</div>
+<!-- Battle Item 2 -->
+<div class="p-space-sm bg-surface-container-low hover:bg-surface-container rounded-2xl border-[2px] border-primary flex items-center justify-between gap-space-sm transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-display-hero text-sm border-[2px] border-primary">
+                BT
+              </div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">Bak Touk High School - Team Red vs Blue</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Grade 11 Literature • 44 Students • Tie-breaker</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="hidden sm:inline-block font-badge-arcade text-xs text-error bg-surface-container-lowest px-2 py-1 rounded border border-outline-variant">
+                1,850 - 1,840
+              </span>
+<a class="p-1.5 bg-surface-container-lowest border-[2px] border-primary rounded-lg text-primary hover:bg-surface-container-high shadow-[2px_2px_0px_#00163a]" href="#">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</a>
+</div>
+</div>
+<!-- Battle Item 3 -->
+<div class="p-space-sm bg-surface-container-low hover:bg-surface-container rounded-2xl border-[2px] border-primary flex items-center justify-between gap-space-sm transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center font-display-hero text-sm border-[2px] border-primary">
+                AU
+              </div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">AUB Scholars Grade 12 Math League</h4>
+<p class="font-body-sm text-xs text-on-surface-variant">Calculus &amp; Vectors • 26 Students • Question 15/15</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="hidden sm:inline-block font-badge-arcade text-xs text-primary bg-surface-container-lowest px-2 py-1 rounded border border-outline-variant">
+                FINAL LAP
+              </span>
+<a class="p-1.5 bg-surface-container-lowest border-[2px] border-primary rounded-lg text-primary hover:bg-surface-container-high shadow-[2px_2px_0px_#00163a]" href="#">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-xs font-label-bold text-on-surface-variant">
+<span>Displaying 3 of 48 active classroom arenas</span>
+<a class="text-secondary hover:underline flex items-center gap-0.5" href="../student/leaderboard.html">
+            View Live Public Spectator Hall
+            <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Teacher Host Action Box (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-high border-[3px] border-primary rounded-3xl p-space-md lg:p-space-lg shadow-[6px_6px_0px_#00163a] flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="bg-primary text-on-primary font-badge-arcade text-badge-arcade uppercase px-2.5 py-0.5 rounded-lg border border-primary">
+              FOR EDUCATORS
+            </span>
+<span class="text-xs text-on-surface-variant font-label-bold">គ្រូបង្រៀន</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight mb-space-xs">
+            Host or Create a Battle Arena
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Launch a game on your projector screen in less than 30 seconds. Automatic grading, live analytics, and instant student engagement.
+          </p>
+<!-- Feature Pills -->
+<div class="grid grid-cols-2 gap-2 mb-space-md">
+<div class="p-2 bg-surface-container-lowest rounded-xl border-[2px] border-primary text-xs flex items-center gap-1.5 font-label-bold text-primary">
+<span class="material-symbols-outlined text-secondary text-[18px]">smart_display</span>
+              Projector Grid
+            </div>
+<div class="p-2 bg-surface-container-lowest rounded-xl border-[2px] border-primary text-xs flex items-center gap-1.5 font-label-bold text-primary">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">auto_stories</span>
+              MoEYS Quizzes
+            </div>
+<div class="p-2 bg-surface-container-lowest rounded-xl border-[2px] border-primary text-xs flex items-center gap-1.5 font-label-bold text-primary">
+<span class="material-symbols-outlined text-secondary text-[18px]">analytics</span>
+              PDF Export
+            </div>
+<div class="p-2 bg-surface-container-lowest rounded-xl border-[2px] border-primary text-xs flex items-center gap-1.5 font-label-bold text-primary">
+<span class="material-symbols-outlined text-error text-[18px]">group_add</span>
+              Up to 150 Players
+            </div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm">
+<a class="flex-1 py-3 px-space-md bg-primary hover:bg-primary-container text-on-primary font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all text-center flex items-center justify-center gap-1.5" href="../teacher/start-game.html">
+<span class="material-symbols-outlined text-[20px]">co_present</span>
+<span>Host Game (គ្រូ)</span>
+</a>
+<a class="py-3 px-space-md bg-surface-container-lowest hover:bg-surface-container text-primary font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all text-center flex items-center justify-center gap-1.5" href="../teacher/flashcard-creator.html">
+<span class="material-symbols-outlined text-[20px]">post_add</span>
+<span>Create Deck</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. Classroom Projector & Mobile Ready Guarantee -->
+<section class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md lg:p-space-lg shadow-[6px_6px_0px_#00163a] mb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="bg-secondary text-on-secondary font-badge-arcade text-[11px] px-2 py-0.5 rounded border border-primary uppercase">
+              HARDWARE COMPATIBILITY
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">
+            Engineered for Low-Lumen Projectors &amp; Budget Smartphones
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Cambodian classrooms face bright equatorial sunlight and aging school projectors. ReanRush pairs thick 3px solid ink-navy boundaries with shape-coded answer quadrants so no student gets left behind due to glare or small mobile screens.
+          </p>
+<div class="flex items-center gap-space-md pt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">wb_sunny</span>
+<span class="font-label-bold text-xs text-primary">Anti-Glare Nude Pink Ground (#F6E3DC)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px]">shapes</span>
+<span class="font-label-bold text-xs text-primary">4-Color Geometric Shapes</span>
+</div>
+</div>
+</div>
+<!-- Visual Demo of Answer Quadrants -->
+<div class="lg:col-span-7 bg-surface-container p-space-md rounded-2xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a]">
+<div class="flex items-center justify-between mb-space-sm pb-2 border-b-[2px] border-primary/20">
+<span class="font-label-bold text-xs text-primary uppercase tracking-wider">Projector Answer HUD Preview (4 Quadrants)</span>
+<span class="font-badge-arcade text-[11px] bg-primary text-on-primary px-2 py-0.5 rounded">HIGH VISIBILITY</span>
+</div>
+<!-- Answer Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Red Triangle -->
+<div class="p-space-sm bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[3px_3px_0px_#00163a] flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error text-on-error flex items-center justify-center border-[2px] border-primary shrink-0">
+<span class="font-bold text-base">▲</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-xs text-primary">Triangle / ត្រីកោណ</span>
+<span class="font-body-sm text-xs text-on-surface-variant truncate">Newton's First Law</span>
+</div>
+</div>
+<!-- Blue Circle -->
+<div class="p-space-sm bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[3px_3px_0px_#00163a] flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center border-[2px] border-primary shrink-0">
+<span class="font-bold text-base">●</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-xs text-primary">Circle / រង្វង់</span>
+<span class="font-body-sm text-xs text-on-surface-variant truncate">Kepler's Planetary Orbit</span>
+</div>
+</div>
+<!-- Gold Square -->
+<div class="p-space-sm bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[3px_3px_0px_#00163a] flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center border-[2px] border-primary shrink-0">
+<span class="font-bold text-base">■</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-xs text-primary">Square / ការេ</span>
+<span class="font-body-sm text-xs text-on-surface-variant truncate">Conservation of Momentum</span>
+</div>
+</div>
+<!-- Green Star -->
+<div class="p-space-sm bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[3px_3px_0px_#00163a] flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-[#2FA84F] text-on-primary flex items-center justify-center border-[2px] border-primary shrink-0">
+<span class="font-bold text-base">★</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-bold text-xs text-primary">Star / ផ្កាយ</span>
+<span class="font-body-sm text-xs text-on-surface-variant truncate">Einstein's Relativity</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive JavaScript logic for mode switching & notifications -->
+<script>
+    let currentMode = 'team';
+
+    function setMode(mode) {
+      currentMode = mode;
+      const teamBtn = document.getElementById('btn-mode-team');
+      const soloBtn = document.getElementById('btn-mode-solo');
+      
+      if (mode === 'team') {
+        teamBtn.className = 'px-space-md py-1.5 rounded-lg font-label-bold text-label-bold transition-all bg-secondary text-on-secondary shadow-[2px_2px_0px_#00163a]';
+        soloBtn.className = 'px-space-md py-1.5 rounded-lg font-label-bold text-label-bold transition-all text-primary hover:bg-surface-container';
+      } else {
+        soloBtn.className = 'px-space-md py-1.5 rounded-lg font-label-bold text-label-bold transition-all bg-secondary text-on-secondary shadow-[2px_2px_0px_#00163a]';
+        teamBtn.className = 'px-space-md py-1.5 rounded-lg font-label-bold text-label-bold transition-all text-primary hover:bg-surface-container';
+      }
+    }
+
+    function handleJoinGame(event) {
+      event.preventDefault();
+      const pin = document.getElementById('game-pin-input').value.trim();
+      if (!pin) return;
+      
+      const audioToast = document.createElement('div');
+      audioToast.className = 'fixed bottom-6 right-6 z-50 bg-secondary-container text-on-secondary-container border-[3px] border-primary px-space-md py-space-sm rounded-2xl shadow-[6px_6px_0px_#00163a] flex items-center gap-2 font-headline-md text-title-card animate-bounce';
+      audioToast.innerHTML = '<span class="material-symbols-outlined text-[24px]">sports_esports</span> Joining Room PIN ' + pin + ' in ' + currentMode.toUpperCase() + ' mode...';
+      document.body.appendChild(audioToast);
+      
+      setTimeout(() => {
+        audioToast.remove();
+      }, 3000);
+    }
+
+    function selectTier(tierName) {
+      const audioToast = document.createElement('div');
+      audioToast.className = 'fixed bottom-6 right-6 z-50 bg-primary text-on-primary border-[3px] border-primary-container px-space-md py-space-sm rounded-2xl shadow-[6px_6px_0px_#00163a] flex items-center gap-2 font-headline-md text-title-card';
+      audioToast.innerHTML = '<span class="material-symbols-outlined text-[24px] text-tertiary-fixed-dim">check_circle</span> Selected ' + tierName + '! Loading questions...';
+      document.body.appendChild(audioToast);
+      
+      setTimeout(() => {
+        audioToast.remove();
+      }, 2500);
+    }
+  </script>
+</div></main>
+
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

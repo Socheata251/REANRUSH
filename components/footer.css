@@ -1,0 +1,4 @@
+.site-footer { padding: 25px 16px; color: var(--white); background: var(--navy); border-top: var(--line); text-align: center; }
+.site-footer p { margin: 4px 0; }
+.footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 10px; }
+.footer-links a { color: var(--white); font-weight: 700; }

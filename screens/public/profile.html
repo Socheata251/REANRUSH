@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>ReanRush - Classroom Battle Arena</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#001a42", "surface-dim": "#e9d6cf", "surface-container-highest": "#f1dfd8", "on-surface-variant": "#44474f", "on-error-container": "#93000a", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#2c4678", "error": "#ba1a1a", "secondary-fixed-dim": "#b7c4ff", "primary-container": "#0b2a5b", "on-secondary-fixed": "#001452", "surface-container-high": "#f7e4dd", "surface-container": "#fdeae3", "tertiary-fixed-dim": "#f8bd4d", "outline-variant": "#c4c6d0", "on-secondary-fixed-variant": "#0038b7", "tertiary-container": "#3c2800", "on-tertiary-fixed": "#271900", "secondary": "#0d4be4", "error-container": "#ffdad6", "inverse-surface": "#392e2a", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#aec6ff", "outline": "#747780", "on-secondary-container": "#fffbff", "surface-variant": "#f1dfd8", "surface": "#fff8f6", "on-tertiary-container": "#be8a1b", "tertiary-fixed": "#ffdeaa", "surface-container-low": "#fff1ec", "on-tertiary-fixed-variant": "#5f4100", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#dde1ff", "primary": "#00163a", "background": "#fff8f6", "on-background": "#231915", "on-primary": "#ffffff", "surface-bright": "#fff8f6", "on-primary-container": "#7a93ca", "tertiary": "#221500", "on-surface": "#231915", "secondary-container": "#3966fe", "primary-fixed": "#d8e2ff", "surface-tint": "#455e91", "inverse-on-surface": "#ffede7", "inverse-primary": "#aec6ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin": "2rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg-mobile": [ "\"Baloo 2\"" ], "title-card": [ "\"Baloo 2\"" ], "label-bold": [ "Kantumruy Pro" ], "badge-arcade": [ "\"Baloo 2\"" ], "body-md": [ "Kantumruy Pro" ], "headline-md": [ "\"Baloo 2\"" ], "headline-lg": [ "\"Baloo 2\"" ], "body-lg": [ "Kantumruy Pro" ], "display-hero-mobile": [ "\"Baloo 2\"" ], "display-hero": [ "\"Baloo 2\"" ], "body-sm": [ "Kantumruy Pro" ] }, "fontSize": { "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "fontWeight": "700" } ], "title-card": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "label-bold": [ "14px", { "lineHeight": "18px", "fontWeight": "700" } ], "badge-arcade": [ "13px", { "lineHeight": "16px", "fontWeight": "800" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "fontWeight": "800" } ], "display-hero": [ "56px", { "lineHeight": "64px", "fontWeight": "800" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ] } } } }</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-lg space-y-space-lg">
+<!-- Top Profile Hero Banner & Role Switcher -->
+<section class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] p-space-md sm:p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-container/15 text-secondary border-[2px] border-primary-container font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-[18px]">sports_esports</span>
+<span>BATTLE PASS SEASON 04 • ANGKOR CLASH</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          User Profile &amp; Battle Pass <span class="text-secondary">/</span> <span class="font-body-lg text-body-lg font-bold">ប្រវត្តិរូប &amp; ប័ណ្ណប្រកួត</span>
+</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+          Switch role view to preview dashboard permissions, classroom ranks, and battle badges across the unified ReanRush system.
+        </p>
+</div>
+<!-- Role Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container rounded-xl p-1.5 border-[3px] border-primary-container shadow-[2px_2px_0px_#0b2a5b]" id="role-tab-group">
+<button class="role-btn active-role inline-flex items-center gap-1.5 px-space-md py-space-xs rounded-lg font-label-bold text-label-bold bg-secondary text-on-secondary border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] transition-all" data-role="student" onclick="switchRole('student')" type="button">
+<span>🎓</span> Student <span class="text-[12px] opacity-90">(សិស្ស)</span>
+</button>
+<button class="role-btn inline-flex items-center gap-1.5 px-space-md py-space-xs rounded-lg font-label-bold text-label-bold bg-surface-container-lowest text-primary hover:bg-surface-bright transition-all" data-role="teacher" onclick="switchRole('teacher')" type="button">
+<span>👨‍🏫</span> Teacher Host <span class="text-[12px] opacity-80">(គ្រូបង្រៀន)</span>
+</button>
+<button class="role-btn inline-flex items-center gap-1.5 px-space-md py-space-xs rounded-lg font-label-bold text-label-bold bg-surface-container-lowest text-primary hover:bg-surface-bright transition-all" data-role="admin" onclick="switchRole('admin')" type="button">
+<span>🛡️</span> School Admin <span class="text-[12px] opacity-80">(រដ្ឋបាល)</span>
+</button>
+</div>
+</section>
+<!-- Main Content Arena Grid (Left Studio / Right Dynamic Perspective) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Identity & Avatar Studio Card -->
+<aside class="lg:col-span-4 space-y-space-md">
+<!-- Primary Identity Card -->
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] p-space-md sm:p-space-lg flex flex-col items-center text-center relative overflow-hidden">
+<!-- Category / Verification Pill -->
+<div class="absolute -top-1 left-1/2 -translate-x-1/2 bg-tertiary-fixed text-primary px-space-md py-0.5 rounded-full border-[2px] border-primary-container font-badge-arcade text-badge-arcade shadow-[2px_2px_0px_#0b2a5b] whitespace-nowrap">
+            ★ MOEYS VERIFIED #STU-99214 ★
+          </div>
+<!-- Mascot / Avatar Showcase Frame -->
+<div class="mt-4 relative group">
+<div class="w-36 h-36 sm:w-40 sm:h-40 rounded-2xl bg-surface-container border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] overflow-hidden flex items-center justify-center p-2">
+<img class="w-full h-full object-contain" data-alt="Playful cute cartoon elephant mascot named Rushy wearing a navy baseball cap with a gold lightning bolt, raising a happy trunk against a soft clean background in bold neo-brutalist cartoon game vector art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjJ_2cPDFh49WHM6eQWzQhBbfPtB2NJnAX2J_n7uXBBxZ4QkCaWncztS6LRo68iQCsOoNqbGdLA99Yf6ITOlm38QO84VT_dXEg0peJ6VKO47s4PK1f04JMt4IrE5eVmRQ9tLIDkiXSRB-Dpn6hEP9nQZUrUKzgCnY8DdnmVneDlXeaorJV9OIaG5h1OAloFj0q0cnfvqCajPcddHaBUJtKeMjIXFwrHuGuUSaH9NDvecIWSicrKPU_"/>
+</div>
+<!-- Online status orb -->
+<span class="absolute -bottom-1.5 -right-1.5 w-7 h-7 rounded-full bg-secondary-container border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] flex items-center justify-center text-on-secondary text-[12px] font-bold">
+              ✓
+            </span>
+</div>
+<!-- Identity Texts -->
+<div class="mt-space-md space-y-1 w-full">
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">
+              Sokha Chan
+            </h2>
+<div class="font-body-lg text-body-lg font-bold text-secondary-container">
+              ចាន់ សុខា <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">(@sokha_rush25)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface bg-surface-container-low py-1 px-space-sm rounded-lg border-[2px] border-primary-container mt-1">
+              🏛️ Grade 12 STEM • Sisowath High School <br/><span class="text-[12px] text-on-surface-variant font-semibold">(វិទ្យាល័យព្រះស៊ីសុវត្ថិ)</span>
+</p>
+</div>
+<!-- Level & XP Meter -->
+<div class="w-full mt-space-md p-space-sm bg-surface-container rounded-xl border-[2px] border-primary-container text-left">
+<div class="flex items-center justify-between text-label-bold font-label-bold text-primary mb-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">military_tech</span>
+                Level 24 • Angkor Master
+              </span>
+<span class="text-secondary font-bold text-body-sm">84%</span>
+</div>
+<div class="w-full h-3.5 bg-surface-container-lowest rounded-full border-[2px] border-primary-container overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim border-r-[2px] border-primary-container transition-all duration-500" style="width: 84%;"></div>
+</div>
+<div class="flex justify-between items-center text-[12px] font-label-bold text-on-surface-variant mt-1">
+<span>8,420 XP</span>
+<span>10,000 XP (To Grandmaster)</span>
+</div>
+</div>
+<!-- Quick Equip Badges -->
+<div class="w-full mt-space-md flex flex-wrap justify-center gap-1.5">
+<span class="px-space-xs py-0.5 bg-error-container text-on-error-container rounded-md border-[2px] border-primary-container font-label-bold text-body-sm flex items-center gap-1 shadow-[2px_2px_0px_#0b2a5b]">
+              🔥 14-Day Streak
+            </span>
+<span class="px-space-xs py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded-md border-[2px] border-primary-container font-label-bold text-body-sm flex items-center gap-1 shadow-[2px_2px_0px_#0b2a5b]">
+              ⚡ Lightning Buzzer (0.6s)
+            </span>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-primary rounded-md border-[2px] border-primary-container font-label-bold text-body-sm flex items-center gap-1 shadow-[2px_2px_0px_#0b2a5b]">
+              🛡️ Team A Captain
+            </span>
+</div>
+<!-- Rushy Mascot Advice Bubble -->
+<div class="w-full mt-space-md bg-tertiary-fixed/40 p-space-sm rounded-xl border-[2px] border-primary-container text-left relative flex items-start gap-2 shadow-[2px_2px_0px_#0b2a5b]">
+<span class="text-2xl select-none">🐘</span>
+<div class="font-body-sm text-body-sm text-primary leading-snug">
+<strong class="font-bold">Rushy says:</strong> "You're only 2 boss raids away from unlocking the <strong class="text-secondary">Golden Kroma cape</strong>! Keep pressing that buzzer!"
+            </div>
+</div>
+<!-- Customizer CTA -->
+<button class="w-full mt-space-md py-space-sm px-space-md bg-secondary text-on-secondary rounded-xl font-headline-md text-title-card border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] hover:shadow-[6px_6px_0px_#0b2a5b] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0px_#0b2a5b] transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+<span>Customize Avatar &amp; Gear <span class="font-body-sm text-body-sm">(តុបតែង)</span></span>
+</button>
+</div>
+<!-- Quick Classroom Network Box -->
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] p-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-primary-container pb-2 mb-3">
+<span class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary">domain</span>
+              School &amp; Squad
+            </span>
+<span class="px-2 py-0.5 bg-secondary-fixed rounded text-xs font-bold text-primary">Phnom Penh</span>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Classroom ID:</span>
+<span class="font-bold text-primary">ROOM-SIS-12B</span>
+</li>
+<li class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Homeroom Teacher:</span>
+<span class="font-bold text-primary">Kem Vichea (គឹម វិជ្ជា)</span>
+</li>
+<li class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Cambodia League:</span>
+<span class="font-bold text-secondary">Division 1 (Top 5%)</span>
+</li>
+</ul>
+</div>
+</aside>
+<!-- Right Column: Interactive Role Dynamic Views -->
+<section class="lg:col-span-8 space-y-space-lg">
+<!-- VIEW A: STUDENT PERSPECTIVE (Default Active) -->
+<div class="role-view space-y-space-lg" id="view-student">
+<!-- 3 Arcade KPI Metric Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter">
+<!-- Win Rate Tile -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">BATTLE WIN RATE</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center border-[2px] border-primary-container text-primary">
+<span class="material-symbols-outlined text-[20px]">emoji_events</span>
+</span>
+</div>
+<div class="my-2">
+<div class="font-display-hero text-headline-lg text-primary leading-none">78.4%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">42 Wins / 54 Live Duels</p>
+</div>
+<div class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+4.2% this semester</span>
+</div>
+</div>
+<!-- BACII Readiness Tile -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">BACII EXAM READINESS</span>
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center border-[2px] border-primary-container text-primary">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</span>
+</div>
+<div class="my-2">
+<div class="font-display-hero text-headline-lg text-primary leading-none">86%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Physics &amp; Math Focused</p>
+</div>
+<div class="inline-flex items-center gap-1 font-label-bold text-label-bold text-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Grade A Projected</span>
+</div>
+</div>
+<!-- Mistake Vault Tile -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">MISTAKE VAULT</span>
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center border-[2px] border-primary-container text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</span>
+</div>
+<div class="my-2">
+<div class="font-display-hero text-headline-lg text-primary leading-none">148</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Questions Avenged</p>
+</div>
+<div class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary-container">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+<span>12 Revenge Decks Done</span>
+</div>
+</div>
+</div>
+<!-- Active Enrolled Classes & Teachers -->
+<div class="bg-surface-container-lowest p-space-md sm:p-space-lg rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b]">
+<div class="flex items-center justify-between mb-space-md">
+<div class="space-y-0.5">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">class</span>
+                  Enrolled Classes &amp; Live PIN Arenas
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active semester curriculum synced with MoEYS standardized testing</p>
+</div>
+<span class="hidden sm:inline-block px-space-sm py-1 bg-surface-container rounded-lg border-[2px] border-primary-container text-xs font-bold text-primary">
+                2 Live Arenas Today
+              </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Class Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low border-[3px] border-primary-container shadow-[3px_3px_0px_#0b2a5b] space-y-3">
+<div class="flex items-start justify-between">
+<div>
+<span class="px-2 py-0.5 bg-secondary-fixed text-primary rounded font-badge-arcade text-badge-arcade border border-primary-container">PIN #882-901</span>
+<h4 class="font-headline-md text-title-card text-primary mt-1">Grade 12 Physics Sprint</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bak Touk High • Lokkru Vichea Kem</p>
+</div>
+<span class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary flex items-center justify-center border-[2px] border-primary-container">
+<span class="material-symbols-outlined">network_ping</span>
+</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-label-bold pt-2 border-t-[2px] border-primary-container">
+<span class="text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">timer</span> Today @ 2:00 PM
+                  </span>
+<a class="px-3 py-1 bg-surface-container-lowest text-primary rounded-lg border-[2px] border-primary-container hover:bg-primary hover:text-on-primary transition-all" href="../student/join-pin.html">Join Lobby</a>
+</div>
+</div>
+<!-- Class Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low border-[3px] border-primary-container shadow-[3px_3px_0px_#0b2a5b] space-y-3">
+<div class="flex items-start justify-between">
+<div>
+<span class="px-2 py-0.5 bg-tertiary-fixed text-primary rounded font-badge-arcade text-badge-arcade border border-primary-container">PIN #441-219</span>
+<h4 class="font-headline-md text-title-card text-primary mt-1">Khmer Literature Arena</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sisowath High • Neakkru Bopha Seng</p>
+</div>
+<span class="w-10 h-10 rounded-xl bg-tertiary-fixed-dim text-primary flex items-center justify-center border-[2px] border-primary-container">
+<span class="material-symbols-outlined">auto_stories</span>
+</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-label-bold pt-2 border-t-[2px] border-primary-container">
+<span class="text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 94% Attendance
+                  </span>
+<a class="px-3 py-1 bg-surface-container-lowest text-primary rounded-lg border-[2px] border-primary-container hover:bg-primary hover:text-on-primary transition-all" href="../student/flashcards.html">Review Deck</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Unlocked Trophies & Cambodian Arena Badges -->
+<div class="bg-surface-container-lowest p-space-md sm:p-space-lg rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b]">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container">workspace_premium</span>
+                Arena Trophies &amp; Heritage Badges
+              </h3>
+<span class="font-label-bold text-label-bold text-secondary cursor-pointer hover:underline">View All (18/24)</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<!-- Trophy 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-xl border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-2xl mb-2">
+                  🏛️
+                </div>
+<span class="font-headline-md text-body-sm text-primary font-bold">Bayon Conqueror</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Cleared 50 History Duels</span>
+</div>
+<!-- Trophy 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-xl border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-2xl mb-2">
+                  ⚡
+                </div>
+<span class="font-headline-md text-body-sm text-primary font-bold">Ta Prohm Speed Demon</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">&lt; 1.0s Response Time</span>
+</div>
+<!-- Trophy 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-xl border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-error-container flex items-center justify-center border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-2xl mb-2">
+                  🐉
+                </div>
+<span class="font-headline-md text-body-sm text-primary font-bold">Angkor Boss Slayer</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Defeated Mega Quiz Golem</span>
+</div>
+<!-- Trophy 4 -->
+<div class="bg-surface-container-low p-space-sm rounded-xl border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] text-2xl mb-2">
+                  🎯
+                </div>
+<span class="font-headline-md text-body-sm text-primary font-bold">4-in-a-Row Perfect</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Zero errors in Team Duel</span>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW B: TEACHER HOST PERSPECTIVE -->
+<div class="role-view hidden space-y-space-lg" id="view-teacher">
+<div class="p-space-md sm:p-space-lg bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-primary-container pb-3">
+<div>
+<span class="px-2 py-0.5 bg-tertiary-fixed text-primary rounded font-badge-arcade text-badge-arcade border border-primary-container">INSTRUCTOR PRIVILEGES</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Teacher Host Privileges (សិទ្ធិគ្រូបង្រៀន)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Classroom orchestration, rapid AI deck generation, and BACII real-time telemetry.</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-secondary">cast_for_education</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container border-[2px] border-primary-container">
+<span class="font-headline-md text-title-card text-primary block">60 Students</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Simultaneous per PIN room</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container border-[2px] border-primary-container">
+<span class="font-headline-md text-title-card text-primary block">Gemini 1.5 Flash</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AI MoEYS Deck Builder (Active)</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container border-[2px] border-primary-container">
+<span class="font-headline-md text-title-card text-primary block">CSV Gradebook</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">One-click school export</span>
+</div>
+</div>
+<div class="p-space-md bg-secondary-fixed/50 rounded-xl border-[2px] border-primary-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="space-y-1">
+<h4 class="font-headline-md text-title-card text-primary">Need to host a classroom battle now?</h4>
+<p class="font-body-sm text-body-sm text-on-surface">Generate a 6-digit game PIN and beam directly onto the projector screen.</p>
+</div>
+<a class="px-space-md py-space-sm bg-secondary text-on-secondary rounded-xl font-headline-md text-body-md border-[2px] border-primary-container shadow-[3px_3px_0px_#0b2a5b] hover:shadow-[4px_4px_0px_#0b2a5b] whitespace-nowrap" href="../teacher/dashboard.html">
+                Launch Teacher Console →
+              </a>
+</div>
+</div>
+</div>
+<!-- VIEW C: SCHOOL ADMIN ACCESS -->
+<div class="role-view hidden space-y-space-lg" id="view-admin">
+<div class="p-space-md sm:p-space-lg bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-primary-container pb-3">
+<div>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container rounded font-badge-arcade text-badge-arcade border border-primary-container">ADMIN ACCESS</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">School Administrator Access (សិទ្ធិរដ្ឋបាល)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sisowath High School Campus Governance &amp; Edge Network Telemetry</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-error">admin_panel_settings</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container border-[2px] border-primary-container">
+<span class="font-label-bold text-label-bold text-on-surface-variant">CAMPUS CAPACITY</span>
+<span class="font-headline-md text-title-card text-primary block mt-1">1,420 Students</span>
+<span class="text-xs text-on-surface-variant">48 Certified Teachers</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container border-[2px] border-primary-container">
+<span class="font-label-bold text-label-bold text-on-surface-variant">ACTIVE CLUSTERS</span>
+<span class="font-headline-md text-title-card text-primary block mt-1">14 Rooms Live</span>
+<span class="text-xs text-secondary font-bold">CADT Low-Latency Edge Proxy</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container border-[2px] border-primary-container">
+<span class="font-label-bold text-label-bold text-on-surface-variant">CURRICULUM SYNC</span>
+<span class="font-headline-md text-title-card text-primary block mt-1">MoEYS 2025</span>
+<span class="text-xs text-on-surface-variant">Grade 10-12 BACII Repos</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-high rounded-xl border-[2px] border-primary-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-primary font-bold">Campus Single Sign-On (SSO) Status: Active</span>
+<button class="px-space-md py-1 bg-surface-container-lowest text-primary rounded-lg border-[2px] border-primary-container font-label-bold text-label-bold hover:bg-primary hover:text-on-primary" type="button">
+                Manage Campus License
+              </button>
+</div>
+</div>
+</div>
+<!-- Role Previews Summary Container (Always visible quick overview cards) -->
+<div class="bg-surface-container-low rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] p-space-md sm:p-space-lg">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary">hub</span>
+<h3 class="font-headline-md text-title-card text-primary">Multi-Role Entitlements Associated with this Account</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md bg-surface-container-lowest rounded-xl border-[2px] border-primary-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-body-md text-primary font-bold">👨‍🏫 Teacher Host Privileges</span>
+<span class="px-2 py-0.5 rounded text-xs font-bold bg-secondary-fixed text-primary">Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Host rooms up to 60 students, access AI question deck generator with 100 daily prompts, and export classroom gradebooks.</p>
+<button class="font-label-bold text-label-bold text-secondary hover:underline flex items-center gap-1" onclick="switchRole('teacher')" type="button">
+                Preview Teacher Host Console <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl border-[2px] border-primary-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-body-md text-primary font-bold">🛡️ School Admin Observer</span>
+<span class="px-2 py-0.5 rounded text-xs font-bold bg-tertiary-fixed text-primary">Sisowath HS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monitor live arena health across CADT edge nodes, review campus student safety metrics, and audit grade distribution curves.</p>
+<button class="font-label-bold text-label-bold text-secondary hover:underline flex items-center gap-1" onclick="switchRole('admin')" type="button">
+                Preview Admin Dashboard <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Section: Security, Integrations & Preferences -->
+<section class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] p-space-md sm:p-space-lg space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-primary-container pb-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">tune</span>
+            Security, Integrations &amp; Preferences
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage single sign-on connections, auditory battle haptics, and account credentials.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Connected Accounts -->
+<div class="space-y-2.5">
+<span class="font-label-bold text-label-bold text-primary block">Connected Accounts</span>
+<div class="p-space-sm bg-surface-container-low rounded-xl border-[2px] border-primary-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<div class="text-left leading-tight">
+<span class="font-label-bold text-body-sm text-primary block">MoEYS SSO</span>
+<span class="text-[12px] text-on-surface-variant">Connected • STU-99214</span>
+</div>
+</div>
+<span class="text-xs font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded border border-primary-container">Active</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl border-[2px] border-primary-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">send</span>
+<div class="text-left leading-tight">
+<span class="font-label-bold text-body-sm text-primary block">Telegram Bot</span>
+<span class="text-[12px] text-on-surface-variant">@sokha_alerts</span>
+</div>
+</div>
+<span class="text-xs font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded border border-primary-container">Linked</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl border-[2px] border-primary-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container">account_balance</span>
+<div class="text-left leading-tight">
+<span class="font-label-bold text-body-sm text-primary block">ACLEDA Bank</span>
+<span class="text-[12px] text-on-surface-variant">Student Battle Wallet</span>
+</div>
+</div>
+<span class="text-xs font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded border border-primary-container">Verified</span>
+</div>
+</div>
+<!-- Gameplay & Sound Settings -->
+<div class="space-y-2.5">
+<span class="font-label-bold text-label-bold text-primary block">Arena Audio &amp; Display</span>
+<label class="p-space-sm bg-surface-container-low rounded-xl border-[2px] border-primary-container flex items-center justify-between cursor-pointer">
+<div class="leading-tight">
+<span class="font-label-bold text-body-sm text-primary block">Arcade Sound FX</span>
+<span class="text-[12px] text-on-surface-variant">Buzzer chimes &amp; countdown</span>
+</div>
+<input checked="" class="w-5 h-5 accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<label class="p-space-sm bg-surface-container-low rounded-xl border-[2px] border-primary-container flex items-center justify-between cursor-pointer">
+<div class="leading-tight">
+<span class="font-label-bold text-body-sm text-primary block">Color &amp; Shape Answers</span>
+<span class="text-[12px] text-on-surface-variant">Projector high-contrast mode</span>
+</div>
+<input checked="" class="w-5 h-5 accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<label class="p-space-sm bg-surface-container-low rounded-xl border-[2px] border-primary-container flex items-center justify-between cursor-pointer">
+<div class="leading-tight">
+<span class="font-label-bold text-body-sm text-primary block">Khmer Script Font Boost</span>
+<span class="text-[12px] text-on-surface-variant">Extra large Kantumruy Pro</span>
+</div>
+<input checked="" class="w-5 h-5 accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+</div>
+<!-- Account Actions -->
+<div class="space-y-2.5 flex flex-col justify-end">
+<span class="font-label-bold text-label-bold text-primary block">Account Maintenance</span>
+<button class="w-full py-space-sm px-space-md bg-surface-container-lowest text-primary rounded-xl font-label-bold text-body-sm border-[2px] border-primary-container shadow-[3px_3px_0px_#0b2a5b] hover:bg-surface-container hover:shadow-[4px_4px_0px_#0b2a5b] transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Edit Profile Info (កែសម្រួល)</span>
+</button>
+<button class="w-full py-space-sm px-space-md bg-surface-container-lowest text-primary rounded-xl font-label-bold text-body-sm border-[2px] border-primary-container shadow-[3px_3px_0px_#0b2a5b] hover:bg-surface-container hover:shadow-[4px_4px_0px_#0b2a5b] transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Change Password (ប្តូរពាក្យសម្ងាត់)</span>
+</button>
+<button class="w-full py-space-sm px-space-md bg-error text-on-error rounded-xl font-label-bold text-body-sm border-[2px] border-primary-container shadow-[3px_3px_0px_#0b2a5b] hover:shadow-[4px_4px_0px_#0b2a5b] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_#0b2a5b] transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Log Out (ចាកចេញ)</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  function switchRole(roleName) {
+    // Hide all views
+    document.querySelectorAll('.role-view').forEach(function(view) {
+      view.classList.add('hidden');
+    });
+
+    // Show target view
+    const targetView = document.getElementById('view-' + roleName);
+    if (targetView) {
+      targetView.classList.remove('hidden');
+    }
+
+    // Toggle button style
+    document.querySelectorAll('.role-btn').forEach(function(btn) {
+      if (btn.dataset.role === roleName) {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary');
+        btn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-[2px_2px_0px_#0b2a5b]', 'border-[2px]');
+      } else {
+        btn.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-[2px_2px_0px_#0b2a5b]', 'border-[2px]');
+        btn.classList.add('bg-surface-container-lowest', 'text-primary');
+      }
+    });
+  }
+</script></main>
+
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

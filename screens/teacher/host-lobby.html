@@ -1,0 +1,711 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary":"#ffffff","secondary-container":"#3966fe","surface-tint":"#455e91","primary-fixed-dim":"#aec6ff","on-secondary-container":"#fffbff","on-error-container":"#93000a","on-tertiary-fixed":"#271900","tertiary-container":"#3c2800","surface-container-highest":"#f1dfd8","secondary-fixed-dim":"#b7c4ff","inverse-primary":"#aec6ff","tertiary-fixed-dim":"#f8bd4d","on-background":"#231915","surface-container-high":"#f7e4dd","on-primary-container":"#7a93ca","on-primary-fixed-variant":"#2c4678","tertiary-fixed":"#ffdeaa","on-tertiary-container":"#be8a1b","surface-variant":"#f1dfd8","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary":"#0d4be4","primary-fixed":"#d8e2ff","error":"#ba1a1a","surface-bright":"#fff8f6","outline":"#747780","outline-variant":"#c4c6d0","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#5f4100","on-secondary-fixed":"#001452","primary":"#00163a","primary-container":"#0b2a5b","on-surface-variant":"#44474f","surface-container-low":"#fff1ec","on-surface":"#231915","background":"#fff8f6","on-secondary-fixed-variant":"#0038b7","secondary-fixed":"#dde1ff","surface-container":"#fdeae3","surface":"#fff8f6","surface-dim":"#e9d6cf","surface-container-lowest":"#ffffff","on-error":"#ffffff","tertiary":"#221500","on-primary-fixed":"#001a42","inverse-surface":"#392e2a","error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"2rem","space-xl":"2.5rem","gutter-mobile":"0.75rem","space-lg":"1.5rem"},"fontFamily":{"display-hero":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"label-bold":["Kantumruy Pro"],"badge-arcade":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Living Ambient Pattern & Wrapper -->
+<div class="w-full bg-surface-container py-space-md lg:py-space-lg px-margin-mobile lg:px-margin select-none">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- 1. Top Match Header & Status Control Strip -->
+<section class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md lg:p-space-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<!-- Deck Info & Live Indicator -->
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-tertiary-fixed-dim text-on-tertiary-fixed rounded-full border-2 border-primary font-badge-arcade text-badge-arcade shadow-[2px_2px_0px_#00163a]">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+              LIVE LOBBY • កំពុងរង់ចាំ
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-primary text-on-primary rounded-full border-2 border-primary font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">school</span>
+              BACII Prep Grade 12
+            </span>
+<span class="px-2.5 py-0.5 bg-secondary-fixed text-primary font-label-bold text-xs rounded border border-primary">
+              15 Questions • 3 Tiers
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1 flex items-center gap-2">
+            Physics &amp; Electromagnetism Clash
+            <span class="hidden sm:inline-block font-body-sm text-body-sm font-normal text-on-surface-variant">
+              (រូបវិទ្យា &amp; អគ្គិសនីមេដែក)
+            </span>
+</h1>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 font-bold text-secondary">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span id="player-count-indicator">28</span> / 35 Players Connected
+            </span>
+<span>•</span>
+<span class="text-xs">Class: 12B - CADT High School Outreach Hub</span>
+</div>
+</div>
+<!-- Settings Quick Toggles (Arcade Switchers) -->
+<div class="flex flex-wrap items-center gap-2 w-full lg:w-auto justify-start lg:justify-end pt-2 lg:pt-0 border-t-2 lg:border-t-0 border-primary/20">
+<!-- Sound Toggle -->
+<button class="px-3 py-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-bold text-xs rounded-xl border-2 border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center gap-1.5 transition-all" id="sfx-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary">volume_up</span>
+<span>SFX: <b id="sfx-status">ON</b></span>
+</button>
+<!-- Shuffle Toggle -->
+<button class="px-3 py-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-bold text-xs rounded-xl border-2 border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center gap-1.5 transition-all" id="shuffle-btn">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">shuffle</span>
+<span>Shuffle: <b>ON</b></span>
+</button>
+<!-- Nicknames Filter Toggle -->
+<button class="px-3 py-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-bold text-xs rounded-xl border-2 border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center gap-1.5 transition-all" id="filter-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">shield</span>
+<span>Safe Names</span>
+</button>
+<!-- Fullscreen Projector Action -->
+<button class="px-4 py-2 bg-secondary text-on-secondary font-title-card text-title-card rounded-xl border-2 border-primary shadow-[3px_3px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center gap-2 transition-all" onclick="document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen()">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+<span class="hidden sm:inline">Projector Fullscreen</span>
+</button>
+</div>
+</section>
+<!-- 2. Giant Classroom Join Gateway Banner (Optimized for Back-of-Classroom Visibility) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-stretch">
+<!-- Huge PIN Display Card -->
+<div class="lg:col-span-8 bg-surface-container-lowest border-[3px] border-primary rounded-3xl shadow-[8px_8px_0px_#00163a] p-space-md lg:p-space-lg flex flex-col justify-between relative overflow-hidden">
+<!-- Background Khmer Ornament Accent Graphic -->
+<div class="absolute -right-8 -bottom-8 opacity-10 pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[180px]">bolt</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 z-10">
+<div>
+<p class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+                STUDENT CONNECT GATEWAY • ច្រកចូលសិស្ស
+              </p>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5">
+                Join from any phone or laptop:
+              </h2>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary-fixed text-primary rounded-xl border-2 border-primary font-label-bold text-label-bold self-start">
+<span>URL:</span>
+<span class="underline decoration-2 text-secondary font-black tracking-wider text-base">reanrush.kh/pin</span>
+</div>
+</div>
+<!-- Massive Game PIN Field -->
+<div class="my-space-md py-space-md px-space-lg bg-primary rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#0b2a5b] flex flex-col sm:flex-row items-center justify-between gap-space-md z-10">
+<div class="text-center sm:text-left">
+<span class="text-tertiary-fixed-dim font-badge-arcade text-badge-arcade uppercase tracking-widest block">ROOM GAME PIN</span>
+<div class="font-display-hero text-display-hero text-on-primary tracking-[0.25em] font-extrabold select-all leading-none my-1 drop-shadow-[0_2px_0_#000]">
+                849 201
+              </div>
+<span class="text-primary-fixed font-body-sm text-body-sm flex items-center gap-1 justify-center sm:justify-start">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">lightbulb</span>
+                Shout out this 6-digit code or project on whiteboard
+              </span>
+</div>
+<!-- Copy Quick Button -->
+<button class="px-space-md py-space-sm bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-on-tertiary-fixed font-title-card text-title-card rounded-xl border-2 border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center gap-2 transition-all" id="copy-pin-btn" onclick="navigator.clipboard.writeText('849201'); alert('PIN Copied!');">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+<span>Copy PIN</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant font-label-bold z-10">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              Auto-sync enabled (WebSockets 60Hz)
+            </span>
+<span class="text-primary font-bold">MoEYS STEM Curriculum Aligned 🇰🇭</span>
+</div>
+</div>
+<!-- High-Res Instant QR Code Box -->
+<div class="lg:col-span-4 bg-surface-container-lowest border-[3px] border-primary rounded-3xl shadow-[8px_8px_0px_#00163a] p-space-md flex flex-col items-center justify-center text-center relative">
+<span class="absolute top-3 left-4 font-badge-arcade text-badge-arcade bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded border border-primary">
+            FAST SCAN
+          </span>
+<div class="mt-4 mb-2 p-3 bg-surface rounded-2xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a]">
+<!-- Stylized Crisp Vector QR Code -->
+<svg class="w-36 h-36 lg:w-44 lg:h-44 text-primary" fill="currentColor" viewBox="0 0 100 100">
+<!-- Corner Top Left Position Marker -->
+<rect fill="none" height="28" rx="4" stroke="currentColor" stroke-width="4" width="28" x="5" y="5"></rect>
+<rect fill="currentColor" height="16" rx="2" width="16" x="11" y="11"></rect>
+<!-- Corner Top Right Position Marker -->
+<rect fill="none" height="28" rx="4" stroke="currentColor" stroke-width="4" width="28" x="67" y="5"></rect>
+<rect fill="currentColor" height="16" rx="2" width="16" x="73" y="11"></rect>
+<!-- Corner Bottom Left Position Marker -->
+<rect fill="none" height="28" rx="4" stroke="currentColor" stroke-width="4" width="28" x="5" y="67"></rect>
+<rect fill="currentColor" height="16" rx="2" width="16" x="11" y="73"></rect>
+<!-- Timing Dots & Payload Emulation -->
+<rect height="6" rx="1" width="6" x="38" y="10"></rect>
+<rect height="6" rx="1" width="6" x="48" y="10"></rect>
+<rect height="6" rx="1" width="6" x="58" y="10"></rect>
+<rect height="6" rx="1" width="6" x="38" y="24"></rect>
+<rect height="6" rx="1" width="6" x="52" y="24"></rect>
+<!-- Center Battle Icon inside QR -->
+<circle cx="50" cy="50" fill="#0B2A5B" r="14"></circle>
+<polygon fill="#F8BD4D" points="50,40 56,54 44,54"></polygon>
+<circle cx="50" cy="52" fill="#FFFFFF" r="3"></circle>
+<rect height="6" rx="1" width="6" x="10" y="38"></rect>
+<rect height="6" rx="1" width="6" x="10" y="52"></rect>
+<rect height="6" rx="1" width="6" x="24" y="45"></rect>
+<!-- QR Data Matrix Dots -->
+<rect height="6" rx="1" width="8" x="70" y="38"></rect>
+<rect height="8" rx="1" width="6" x="84" y="38"></rect>
+<rect height="6" rx="1" width="6" x="70" y="48"></rect>
+<rect height="6" rx="1" width="10" x="80" y="52"></rect>
+<rect height="8" rx="1" width="8" x="38" y="68"></rect>
+<rect height="8" rx="1" width="8" x="52" y="68"></rect>
+<rect height="6" rx="1" width="6" x="68" y="68"></rect>
+<rect height="8" rx="1" width="10" x="80" y="68"></rect>
+<rect height="8" rx="1" width="12" x="42" y="82"></rect>
+<rect height="8" rx="1" width="8" x="62" y="82"></rect>
+<rect height="8" rx="1" width="14" x="76" y="82"></rect>
+</svg>
+</div>
+<h3 class="font-title-card text-title-card text-primary font-bold">
+            Scan with Phone Camera
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            ស្កេនដើម្បីចូលរួមភ្លាមៗ • No App Install Required
+          </p>
+</div>
+</section>
+<!-- 3. Battle Mode Selector (Tactile Neo-Brutalist Segmented Tabs) -->
+<section class="flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<label class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">swords</span>
+            SELECT ARENA BATTLE MODE • ជ្រើសរើសរបៀបប្រកួត
+          </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-bold">Current: Team Split Battle</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Mode 1: Team Battle (Active) -->
+<div class="cursor-pointer bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex flex-col justify-between transition-all ring-4 ring-secondary-container/40">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-container border-2 border-primary flex items-center justify-center text-on-secondary shadow-[3px_3px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">groups</span>
+</div>
+<span class="px-2.5 py-0.5 bg-tertiary-fixed-dim text-on-tertiary-fixed rounded-md border border-primary font-badge-arcade text-badge-arcade uppercase">
+                RECOMMENDED
+              </span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-card text-title-card text-primary font-bold flex items-center gap-1.5">
+                Team Battle / ប្រកួតជាក្រុម
+                <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Splits classroom into two rival squads. Real-time tug-of-war score gauge for maximum collective energy.
+              </p>
+</div>
+</div>
+<!-- Mode 2: Individual Solo -->
+<div class="cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low border-[3px] border-primary rounded-2xl shadow-[4px_4px_0px_#00163a] p-space-md flex flex-col justify-between transition-all active:translate-x-1 active:translate-y-1 active:shadow-none">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border-2 border-primary flex items-center justify-center text-primary shadow-[3px_3px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">person</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded border border-primary/40 font-badge-arcade text-[11px] uppercase">
+                FREE-FOR-ALL
+              </span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-card text-title-card text-primary font-bold">
+                Individual / ប្រកួតទោល
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Solo leaderboard climb. Fast answers earn speed bonuses. Ideal for quick diagnostic quizzes.
+              </p>
+</div>
+</div>
+<!-- Mode 3: Angkor Boss Raid -->
+<div class="cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low border-[3px] border-primary rounded-2xl shadow-[4px_4px_0px_#00163a] p-space-md flex flex-col justify-between transition-all active:translate-x-1 active:translate-y-1 active:shadow-none">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim border-2 border-primary flex items-center justify-center text-on-tertiary-fixed shadow-[3px_3px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">smart_toy</span>
+</div>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container rounded border border-primary/40 font-badge-arcade text-[11px] uppercase">
+                CO-OP RAID
+              </span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-card text-title-card text-primary font-bold">
+                Angkor Boss Raid / មេធំ
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                The entire classroom unites to deplete a 1,000,000 HP Angkor Titan. Every correct answer strikes a combo!
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Two Dynamic Team Rosters (Side-by-Side Arena Face-Off) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md relative items-start">
+<!-- TEAM A ROSTER (Bak Touk Tigers - Green Pod) -->
+<div class="lg:col-span-6 bg-surface-container-lowest border-[3px] border-primary rounded-3xl shadow-[6px_6px_0px_#00163a] overflow-hidden flex flex-col">
+<!-- Team Header -->
+<div class="bg-[#2FA84F] border-b-[3px] border-primary p-space-md flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-surface-container-lowest border-2 border-primary text-[#2FA84F] flex items-center justify-center shadow-[3px_3px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div>
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-white/90">SQUAD 01</span>
+<h3 class="font-title-card text-title-card font-extrabold leading-none">
+                  TEAM A: BAK TOUK TIGERS
+                </h3>
+<span class="text-xs font-bold text-white/80">ក្រុមខ្លា បាក់ទូក</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="px-3 py-1 bg-surface-container-lowest text-[#2FA84F] font-badge-arcade text-badge-arcade rounded-full border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+                14 / 14 Players
+              </span>
+<span class="text-[11px] font-label-bold text-white/90">Power: 94% Ready</span>
+</div>
+</div>
+<!-- Controls Sub-Bar -->
+<div class="px-space-md py-2 bg-surface-container-low border-b-2 border-primary/20 flex items-center justify-between">
+<span class="font-body-sm text-xs font-bold text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#2FA84F]"></span>
+              Active Ready Roster
+            </span>
+<button class="px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-bold text-xs rounded-lg border border-primary shadow-[2px_2px_0px_#00163a] flex items-center gap-1 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+              Auto-Balance
+            </button>
+</div>
+<!-- Player Chips Grid (Scrollable Arena Window) -->
+<div class="p-space-md grid grid-cols-2 sm:grid-cols-3 gap-2.5 max-h-[340px] overflow-y-auto">
+<!-- Student Chip 1 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#2FA84F] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                S
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Sokha_Speed</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚡ 980 XP</span>
+</div>
+</div>
+<!-- Student Chip 2 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                D
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Dara_Khmer</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🛡️ LVL 12</span>
+</div>
+</div>
+<!-- Student Chip 3 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                B
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Bopha_STEM</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🔬 Ace</span>
+</div>
+</div>
+<!-- Student Chip 4 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                C
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Chenda_Star</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🌟 Pro</span>
+</div>
+</div>
+<!-- Student Chip 5 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#2FA84F] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                V
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Vannak_Pro</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚡ 850 XP</span>
+</div>
+</div>
+<!-- Student Chip 6 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                R
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Rithy_Ampere</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🔋 Physics</span>
+</div>
+</div>
+<!-- Student Chip 7 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                P
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Piseth_Newton</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🍎 Gravity</span>
+</div>
+</div>
+<!-- Student Chip 8 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#2FA84F] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                C
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Chanty_Volt</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚡ High-V</span>
+</div>
+</div>
+<!-- Student Chip 9 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                M
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Makara_Kh</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🎯 1st Chair</span>
+</div>
+</div>
+<!-- Student Chip 10 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                K
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Kalyan_Smart</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">📚 Formula</span>
+</div>
+</div>
+<!-- Student Chip 11 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#2FA84F] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                T
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Theara_Ray</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">💡 Laser</span>
+</div>
+</div>
+<!-- Student Chip 12 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                B
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Bunroeun_Watt</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚡ 740 XP</span>
+</div>
+</div>
+<!-- Student Chip 13 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                P
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Panha_Logic</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🧠 Quick</span>
+</div>
+</div>
+<!-- Student Chip 14 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                S
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Sovann_Gold</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🏆 Anchor</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Arcade Lightning VS Badge (Desktop Center Float) -->
+<div class="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary border-[3px] border-primary shadow-[4px_4px_0px_#E2A93B] flex items-center justify-center text-tertiary-fixed-dim transform -rotate-12 animate-pulse">
+<span class="font-display-hero text-[28px] font-black leading-none">VS</span>
+</div>
+<span class="mt-1 px-2 py-0.5 bg-tertiary-fixed-dim text-on-tertiary-fixed font-badge-arcade text-[10px] rounded-full border border-primary uppercase shadow-[2px_2px_0px_#00163a]">
+            CLASH
+          </span>
+</div>
+<!-- TEAM B ROSTER (CADT Rhinos - Red Pod) -->
+<div class="lg:col-span-6 bg-surface-container-lowest border-[3px] border-primary rounded-3xl shadow-[6px_6px_0px_#00163a] overflow-hidden flex flex-col">
+<!-- Team Header -->
+<div class="bg-[#D9382B] border-b-[3px] border-primary p-space-md flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-surface-container-lowest border-2 border-primary text-[#D9382B] flex items-center justify-center shadow-[3px_3px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">sports_mma</span>
+</div>
+<div>
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-wider text-white/90">SQUAD 02</span>
+<h3 class="font-title-card text-title-card font-extrabold leading-none">
+                  TEAM B: CADT RHINOS
+                </h3>
+<span class="text-xs font-bold text-white/80">ក្រុមកុយរមាស CADT</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="px-3 py-1 bg-surface-container-lowest text-[#D9382B] font-badge-arcade text-badge-arcade rounded-full border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+                14 / 14 Players
+              </span>
+<span class="text-[11px] font-label-bold text-white/90">Power: 96% Ready</span>
+</div>
+</div>
+<!-- Controls Sub-Bar -->
+<div class="px-space-md py-2 bg-surface-container-low border-b-2 border-primary/20 flex items-center justify-between">
+<span class="font-body-sm text-xs font-bold text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#D9382B]"></span>
+              Active Ready Roster
+            </span>
+<button class="px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-bold text-xs rounded-lg border border-primary shadow-[2px_2px_0px_#00163a] flex items-center gap-1 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+              Auto-Balance
+            </button>
+</div>
+<!-- Player Chips Grid (Scrollable Arena Window) -->
+<div class="p-space-md grid grid-cols-2 sm:grid-cols-3 gap-2.5 max-h-[340px] overflow-y-auto">
+<!-- Student Chip 1 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#D9382B] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                K
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Kosal_Ohm</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">Ω Resistance</span>
+</div>
+</div>
+<!-- Student Chip 2 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                S
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Sreyleak_Atom</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚛️ Nucleus</span>
+</div>
+</div>
+<!-- Student Chip 3 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                S
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Samnang_Fast</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🚀 990 XP</span>
+</div>
+</div>
+<!-- Student Chip 4 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                T
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Thida_Quantum</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🌌 Wave</span>
+</div>
+</div>
+<!-- Student Chip 5 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#D9382B] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                M
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Mony_Physics</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🧲 Flux Pro</span>
+</div>
+</div>
+<!-- Student Chip 6 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                V
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Vibol_Spark</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚡ 880 XP</span>
+</div>
+</div>
+<!-- Student Chip 7 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                N
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Narith_Photon</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">☀️ C-Light</span>
+</div>
+</div>
+<!-- Student Chip 8 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#D9382B] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                N
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Neary_Tesla</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🧲 Induction</span>
+</div>
+</div>
+<!-- Student Chip 9 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                R
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Rotana_Circuit</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🔌 Direct Current</span>
+</div>
+</div>
+<!-- Student Chip 10 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                P
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Pheakdey_Core</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🔋 Solenoid</span>
+</div>
+</div>
+<!-- Student Chip 11 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-[#D9382B] text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                S
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Sokun_Apex</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🎯 910 XP</span>
+</div>
+</div>
+<!-- Student Chip 12 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                H
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Heng_Faraday</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">⚡ Lenz Law</span>
+</div>
+</div>
+<!-- Student Chip 13 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                B
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Bora_Pulse</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">📶 810 XP</span>
+</div>
+</div>
+<!-- Student Chip 14 -->
+<div class="p-2 bg-surface-container-low border-2 border-primary rounded-xl flex items-center gap-2 shadow-[2px_2px_0px_#00163a] hover:bg-surface-container-highest transition-colors">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-xs border border-primary shrink-0">
+                S
+              </div>
+<div class="truncate">
+<p class="font-label-bold text-xs text-primary truncate">Samath_Kh</p>
+<span class="text-[10px] text-on-surface-variant block leading-tight">🏆 Cap</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Host Control Deck & Rushy Mascot Cheer Card -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center mt-space-sm">
+<!-- Rushy Mascot Companion Banner -->
+<div class="lg:col-span-5 bg-surface-container-lowest border-[3px] border-primary rounded-3xl shadow-[6px_6px_0px_#00163a] p-space-md flex items-center gap-space-md relative overflow-hidden">
+<!-- Mascot Character Image -->
+<div class="relative w-24 h-24 lg:w-28 lg:h-28 shrink-0 bg-surface-container-low rounded-2xl border-2 border-primary shadow-[3px_3px_0px_#00163a] overflow-hidden flex items-center justify-center">
+<img alt="Rushy Mascot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-primary text-tertiary-fixed-dim font-badge-arcade text-[10px] rounded border border-primary">
+              LVL 99
+            </span>
+</div>
+<!-- Speech Bubble Dialog -->
+<div class="flex-1 flex flex-col justify-center">
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-secondary uppercase">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+              Rushy Arena Guardian
+            </div>
+<div class="mt-1 p-2.5 bg-surface-container rounded-xl border-2 border-primary shadow-[2px_2px_0px_#00163a] relative">
+<p class="font-label-bold text-xs text-primary leading-snug">
+                "Rally your squad! Bayon Round starts with a 15-second warm up question!"
+              </p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5 font-semibold">
+                ត្រៀមខ្លួនហើយឬនៅ? ជុំបាយ័នជិតចាប់ផ្តើមហើយ! 🇰🇭
+              </p>
+</div>
+</div>
+</div>
+<!-- Master Start Battle Trigger & Auxiliary Room Controls -->
+<div class="lg:col-span-7 flex flex-col items-stretch gap-space-sm">
+<!-- Big Start Battle Arcade Button -->
+<button class="w-full py-4 lg:py-5 px-space-lg bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-primary font-headline-lg text-headline-lg rounded-2xl border-[3px] border-primary shadow-[8px_8px_0px_#00163a] hover:shadow-[10px_10px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[8px] active:translate-y-[8px] active:shadow-none transition-all flex flex-col sm:flex-row items-center justify-center gap-3 text-center" id="start-battle-trigger">
+<span class="material-symbols-outlined text-[36px] text-primary animate-bounce">swords</span>
+<div class="flex flex-col items-center sm:items-start leading-none">
+<span class="tracking-tight uppercase">⚔️ START BATTLE NOW!</span>
+<span class="font-label-bold text-label-bold text-on-tertiary-fixed mt-1">
+                ចាប់ផ្តើមការប្រកួត (28/35 Connected - Ready)
+              </span>
+</div>
+<span class="material-symbols-outlined text-[32px] text-primary hidden sm:inline-block">arrow_forward</span>
+</button>
+<!-- Room Action Sub-Bar -->
+<div class="flex flex-wrap items-center justify-between gap-2 px-1">
+<div class="flex items-center gap-2">
+<!-- Lock Room -->
+<button class="px-3 py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-bold text-xs rounded-xl border-2 border-primary shadow-[2px_2px_0px_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+                Lock Room
+              </button>
+<!-- Kick Inactive -->
+<button class="px-3 py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-bold text-xs rounded-xl border-2 border-primary shadow-[2px_2px_0px_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[16px] text-error">person_remove</span>
+                Kick Inactive
+              </button>
+<!-- Random Re-shuffle -->
+<button class="px-3 py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-bold text-xs rounded-xl border-2 border-primary shadow-[2px_2px_0px_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[16px] text-secondary">casino</span>
+                Re-Shuffle Teams
+              </button>
+</div>
+<!-- Host Status Tag -->
+<span class="font-body-sm text-xs text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+              Host: Lokkru Sophea (CADT Instructor)
+            </span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Simple Host Lobby Audio & Control State Micro-Interactions
+  const sfxBtn = document.getElementById('sfx-btn');
+  const sfxStatus = document.getElementById('sfx-status');
+  if (sfxBtn && sfxStatus) {
+    let sfxOn = true;
+    sfxBtn.addEventListener('click', () => {
+      sfxOn = !sfxOn;
+      sfxStatus.textContent = sfxOn ? 'ON' : 'OFF';
+      sfxBtn.querySelector('.material-symbols-outlined').textContent = sfxOn ? 'volume_up' : 'volume_off';
+    });
+  }
+
+  // Visual simulation for Starting Battle
+  const startBtn = document.getElementById('start-battle-trigger');
+  if (startBtn) {
+    startBtn.addEventListener('click', () => {
+      const originalText = startBtn.innerHTML;
+      startBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[36px] animate-spin">autorenew</span>
+        <div class="flex flex-col items-center leading-none">
+          <span class="tracking-tight uppercase">LAUNCHING ARENA...</span>
+          <span class="font-label-bold text-label-bold text-on-tertiary-fixed mt-1">កំពុងរៀបចំសំណួរ...</span>
+        </div>
+      `;
+      setTimeout(() => {
+        alert('🚀 Arena Initialized! Projector shifting to Question 01: Bayon Tier.');
+        startBtn.innerHTML = originalText;
+      }, 900);
+    });
+  }
+</script></main>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

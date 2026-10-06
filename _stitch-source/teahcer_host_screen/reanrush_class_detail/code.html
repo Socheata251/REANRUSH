@@ -1,0 +1,834 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>ReanRush - Classroom Quiz Battle</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.khmer-diamond-ribbon{background-color:#f8bd4d;background-image:radial-gradient(#0b2a5b 18%,transparent 19%),radial-gradient(#0b2a5b 18%,transparent 19%);background-position:0 0,6px 6px;background-size:12px 12px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#dde1ff","on-secondary":"#ffffff","background":"#fff8f6","inverse-on-surface":"#ffede7","outline-variant":"#c4c6d0","surface-container":"#fdeae3","on-secondary-fixed":"#001452","tertiary-fixed":"#ffdeaa","secondary-fixed-dim":"#b7c4ff","on-primary-fixed":"#001a42","error":"#ba1a1a","inverse-primary":"#aec6ff","secondary-container":"#3966fe","on-primary-container":"#7a93ca","on-tertiary-fixed":"#271900","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-surface-variant":"#44474f","primary-fixed":"#d8e2ff","on-primary":"#ffffff","on-primary-fixed-variant":"#2c4678","on-tertiary-fixed-variant":"#5f4100","outline":"#747780","tertiary":"#221500","on-secondary-container":"#fffbff","inverse-surface":"#392e2a","on-surface":"#231915","on-tertiary-container":"#be8a1b","tertiary-container":"#3c2800","primary-container":"#0b2a5b","on-tertiary":"#ffffff","surface":"#fff8f6","primary-fixed-dim":"#aec6ff","on-secondary-fixed-variant":"#0038b7","on-error-container":"#93000a","primary":"#00163a","surface-variant":"#f1dfd8","surface-bright":"#fff8f6","surface-container-highest":"#f1dfd8","surface-container-high":"#f7e4dd","surface-dim":"#e9d6cf","on-error":"#ffffff","on-background":"#231915","secondary":"#0d4be4","surface-tint":"#455e91","tertiary-fixed-dim":"#f8bd4d","surface-container-low":"#fff1ec"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"body-md":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"headline-lg-mobile":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"label-bold":["Kantumruy Pro"],"display-hero":["\"Baloo 2\""],"title-card":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"headline-md":["\"Baloo 2\""],"badge-arcade":["\"Baloo 2\""]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container border-b-[3px] border-primary shadow-[0_4px_0_0_#00163a]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b2a5b
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFj_B7suWsM3D673uc4I1p2wo5yhcloIyIY7N_4EEkiYch_f_ZmL0Of-pnZbwnJ9wHtqzMpGc0NJZWY9r4SZQYDVdLiI92Z_EuEaKnpi3zmw_WFkzlNPXo_pgKex6X3IpzNXUExwGw9qs1HrKNBmdP2Mg4jrxFpZn6MclyLHHy_pZFkPe9H1j_iCgRnaB8H-JkO75xjZa47CDpIMi_K-I6JeUZ_0jgCWz34zQ5hsMG0oEZjTrfsXDv9Q"><span class="font-headline-md text-headline-md text-on-primary tracking-wide hidden sm:inline-block">ReanRush</span><nav class="hidden lg:flex items-center gap-space-xs ml-space-md" data-active-classes="bg-secondary text-on-secondary shadow-[2px_2px_0_0_#00163a]"><a aria-current="page" class="font-label-bold px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all bg-secondary text-on-secondary shadow-[2px_2px_0_0_#00163a]" data-path="classes" href="#">Classes</a><a class="font-label-bold text-label-bold text-primary-fixed hover:text-on-primary px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all" data-path="games" href="#">Games</a><a class="font-label-bold text-label-bold text-primary-fixed hover:text-on-primary px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all" data-path="blog" href="#">Blog</a><a class="font-label-bold text-label-bold text-primary-fixed hover:text-on-primary px-space-md py-space-xs rounded-xl border-[2px] border-transparent hover:border-primary-fixed transition-all" data-path="pricing" href="#">Pricing</a></nav></div><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-highest px-space-md py-space-xs rounded-xl border-[3px] border-primary shadow-[3px_3px_0_0_#00163a]"><span class="font-badge-arcade text-badge-arcade text-primary uppercase">PIN</span><span class="font-label-bold text-label-bold text-primary tracking-widest">#4089</span></div><button class="bg-secondary text-on-secondary font-label-bold text-label-bold px-space-md py-space-xs rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[3px_3px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hidden sm:inline-flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[18px]">play_arrow</span>Join Game</button><a class="bg-surface-container-lowest text-primary font-label-bold text-label-bold px-space-md py-space-xs rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[3px_3px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all inline-block" data-path="signup" href="#">Sign up</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-[2px] border-primary-fixed shadow-[2px_2px_0_0_#00163a]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full h-2 khmer-diamond-ribbon border-t-[2px] border-b-[2px] border-primary"></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Sub-Header Breadcrumb & Top Bar -->
+<section class="w-full bg-surface-container-low border-b-[3px] border-primary px-margin-mobile sm:px-gutter py-space-sm">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<a class="inline-flex items-center gap-space-xs font-label-bold text-label-bold text-primary hover:text-secondary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_back</span>
+<span>Back to All Classes / ត្រឡប់ទៅថ្នាក់ទាំងអស់</span>
+</a>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-[#2FA84F] border-[1.5px] border-primary"></span>
+<span class="font-badge-arcade text-badge-arcade text-primary uppercase">Academic Year 2024-2025 • Term 2</span>
+</div>
+</div>
+</section>
+<!-- Class Hero & Battle Control Banner -->
+<section class="w-full bg-surface px-margin-mobile sm:px-gutter py-space-md lg:py-space-lg border-b-[3px] border-primary">
+<div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-stretch gap-space-lg">
+<!-- Left: Class Title, Badges & Meta -->
+<div class="flex-1 flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-lg border-[2px] border-primary shadow-[2px_2px_0_0_#00163a]">
+              PREAH SISOWATH HIGH SCHOOL
+            </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-badge-arcade text-badge-arcade px-space-sm py-0.5 rounded-lg border-[2px] border-primary shadow-[2px_2px_0_0_#00163a]">
+              BACII ACCELERATOR
+            </span>
+<span class="bg-surface-container-highest text-primary font-label-bold text-body-sm px-space-sm py-0.5 rounded-lg border-[2px] border-primary">
+              🏛️ Phnom Penh
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight leading-tight mt-1">
+            Grade 12-A • BACII Physics Squad
+            <span class="block font-headline-md text-headline-md text-secondary">(ថ្នាក់ទី ១២-ក • រូបវិទ្យាត្រៀមបាក់ឌុប)</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1">
+<span class="inline-flex items-center gap-1 font-label-bold text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">person_celebrate</span>
+              Teacher: <span class="underline decoration-secondary decoration-2 underline-offset-2">Lokkru Sokha Chem</span>
+</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">group</span>
+              38 Students Enrolled
+            </span>
+<span>•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">bolt</span>
+              42 Tournaments Played
+            </span>
+</p>
+</div>
+<!-- Quick Battle Launcher Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-2">
+<button class="bg-[#2FA84F] hover:bg-[#278d42] text-white font-headline-md text-title-card px-space-lg py-space-sm rounded-xl border-[3px] border-primary shadow-[5px_5px_0_0_#00163a] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0_0_#00163a] active:translate-x-[5px] active:translate-y-[5px] active:shadow-none transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[26px]">flash_on</span>
+<span>Start Live Class Battle</span>
+<span class="font-badge-arcade text-badge-arcade bg-primary text-white px-2 py-0.5 rounded ml-1">FIGHT!</span>
+</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+            Assign Quiz Drill
+          </button>
+<button class="bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold p-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" title="Class Settings" type="button">
+<span class="material-symbols-outlined text-[22px]">settings</span>
+</button>
+</div>
+</div>
+<!-- Right: Class PIN & Access Deck -->
+<div class="w-full lg:w-[380px] bg-surface-container-lowest rounded-2xl border-[3px] border-primary shadow-[6px_6px_0_0_#00163a] p-space-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[140px] text-primary">qr_code_2</span>
+</div>
+<div class="flex items-center justify-between border-b-[2px] border-surface-container-highest pb-space-xs mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<span class="font-headline-md text-title-card text-primary">Class Access Deck</span>
+</div>
+<span class="font-badge-arcade text-badge-arcade bg-[#2FA84F] text-white px-2 py-0.5 rounded border border-primary">LIVE READY</span>
+</div>
+<div class="bg-surface-container-low rounded-xl border-[2px] border-primary p-space-sm mb-space-sm flex items-center justify-between">
+<div>
+<div class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">CLASSROOM CODE / លេខកូដថ្នាក់</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-widest leading-none mt-1">RUSH-849</div>
+</div>
+<button class="bg-tertiary-fixed text-primary font-label-bold text-label-bold px-space-sm py-space-xs rounded-lg border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] hover:bg-tertiary-fixed-dim transition-colors" onclick="navigator.clipboard?.writeText('RUSH-849'); this.innerText='COPIED!';" type="button">
+            Copy PIN
+          </button>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-bold text-body-sm py-space-xs px-space-xs rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] flex items-center justify-center gap-1 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">link</span>
+<span>Invite Link</span>
+</button>
+<button class="bg-primary text-white hover:bg-primary-container font-label-bold text-body-sm py-space-xs px-space-xs rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] flex items-center justify-center gap-1 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">cast</span>
+<span>Projector QR</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Navigation Neo-Brutalist Tab Bar -->
+<section class="w-full bg-surface-container-high border-b-[3px] border-primary sticky top-20 z-40">
+<div class="max-w-[1280px] mx-auto px-margin-mobile sm:px-gutter flex items-center gap-space-xs overflow-x-auto py-2">
+<!-- Tab 1: Active -->
+<button class="bg-surface-container-lowest text-primary font-headline-md text-title-card px-space-lg py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-secondary text-[22px]">group</span>
+<span>Students / សិស្ស</span>
+<span class="bg-secondary text-white font-badge-arcade text-badge-arcade px-2 py-0.5 rounded-full border border-primary ml-1">38</span>
+</button>
+<!-- Tab 2: Inactive -->
+<button class="bg-transparent hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary font-headline-md text-title-card px-space-lg py-2.5 rounded-xl border-[3px] border-transparent hover:border-primary transition-all flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[22px]">menu_book</span>
+<span>Homework &amp; Quizzes / កិច្ចការផ្ទះ</span>
+<span class="bg-surface-container-highest text-primary font-badge-arcade text-badge-arcade px-2 py-0.5 rounded-full border border-primary ml-1">4 Active</span>
+</button>
+<!-- Tab 3: Inactive -->
+<button class="bg-transparent hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary font-headline-md text-title-card px-space-lg py-2.5 rounded-xl border-[3px] border-transparent hover:border-primary transition-all flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[22px]">monitoring</span>
+<span>Reports &amp; Analytics / របាយការណ៍ពិន្ទុ</span>
+</button>
+<!-- Tab 4: Inactive -->
+<button class="bg-transparent hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary font-headline-md text-title-card px-space-md py-2.5 rounded-xl border-[3px] border-transparent hover:border-primary transition-all flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[22px]">military_tech</span>
+<span>Badges &amp; Vault</span>
+</button>
+</div>
+</section>
+<!-- Main Roster Content Area -->
+<main class="w-full max-w-[1280px] mx-auto px-margin-mobile sm:px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- 3 High-Impact KPI Arena Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- KPI 1: Average Streak -->
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary shadow-[5px_5px_0_0_#00163a] p-space-md flex items-center justify-between relative overflow-hidden">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">
+<span>🔥 CLASS AVERAGE STREAK</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-primary leading-none flex items-baseline gap-2">
+<span>8.4</span>
+<span class="font-title-card text-title-card text-[#D9382B]">DAYS ACTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="text-[#2FA84F] font-label-bold">+18%</span> compared to last exam drill
+          </p>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed border-[2px] border-primary shadow-[3px_3px_0_0_#00163a] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#D9382B] text-[34px]">local_fire_department</span>
+</div>
+</div>
+<!-- KPI 2: Homework Completion -->
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary shadow-[5px_5px_0_0_#00163a] p-space-md flex items-center justify-between relative overflow-hidden">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">
+<span>⚡ HOMEWORK COMPLETION RATE</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-secondary leading-none flex items-baseline gap-2">
+<span>94.2%</span>
+<span class="font-title-card text-title-card text-primary font-bold">(36/38)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Target: 90% for BACII Grade A bonus
+          </p>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed border-[2px] border-primary shadow-[3px_3px_0_0_#00163a] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[34px]">task_alt</span>
+</div>
+</div>
+<!-- KPI 3: Class Squad MVP -->
+<div class="bg-surface-container-lowest rounded-2xl border-[3px] border-primary shadow-[5px_5px_0_0_#00163a] p-space-md flex items-center justify-between relative overflow-hidden">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1 font-badge-arcade text-badge-arcade text-on-surface-variant uppercase">
+<span>👑 SQUAD MVP OF THE WEEK</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary leading-tight">
+            Sokha Chan (ចាន់ សុខា)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="bg-tertiary-fixed text-primary px-1.5 py-0.5 rounded font-bold border border-primary">15d Streak</span> • 18,400 XP Battle Points
+          </p>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-[#f8bd4d] border-[2px] border-primary shadow-[3px_3px_0_0_#00163a] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[34px]">workspace_premium</span>
+</div>
+</div>
+</div>
+<!-- Search, Filter & Quick Batch Bar -->
+<div class="bg-surface-container rounded-2xl border-[3px] border-primary shadow-[5px_5px_0_0_#00163a] p-space-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[22px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-container-lowest border-[3px] border-primary rounded-xl font-body-md text-body-md text-primary placeholder:text-outline focus:outline-none focus:shadow-[4px_4px_0_0_#00163a] transition-all" placeholder="Search student by name, Khmer name, or @nickname..." type="text">
+</div>
+<!-- Filters & Sort -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<!-- Streak Filter Pills -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl border-[2px] border-primary">
+<button class="bg-secondary text-white font-badge-arcade text-badge-arcade px-3 py-1 rounded-lg border border-primary shadow-[1px_1px_0_0_#00163a]" type="button">
+            ALL (38)
+          </button>
+<button class="bg-transparent hover:bg-surface-container text-primary font-badge-arcade text-badge-arcade px-3 py-1 rounded-lg transition-colors flex items-center gap-1" type="button">
+<span>🔥 7+ DAYS</span>
+<span class="bg-[#2FA84F] text-white text-[11px] px-1 rounded-full">24</span>
+</button>
+<button class="bg-transparent hover:bg-surface-container text-primary font-badge-arcade text-badge-arcade px-3 py-1 rounded-lg transition-colors flex items-center gap-1" type="button">
+<span>⚡ TODAY ACTIVE</span>
+</button>
+<button class="bg-transparent hover:bg-surface-container text-[#BA1A1A] font-badge-arcade text-badge-arcade px-3 py-1 rounded-lg transition-colors flex items-center gap-1" type="button">
+<span>⚠️ AT RISK</span>
+<span class="bg-[#BA1A1A] text-white text-[11px] px-1 rounded-full">4</span>
+</button>
+</div>
+<!-- Sort Select Button -->
+<div class="relative">
+<button class="bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-label-bold px-space-md py-2.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+<span>Streak: High to Low</span>
+<span class="material-symbols-outlined text-[18px]">arrow_drop_down</span>
+</button>
+</div>
+<button class="bg-secondary-fixed text-primary font-label-bold text-label-bold px-space-sm py-2.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] hover:bg-secondary-fixed-dim transition-colors flex items-center gap-1" title="Export Student Performance Roster" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="hidden sm:inline">Export</span>
+</button>
+</div>
+</div>
+<!-- Student Roster & Streak Arena Table (Neo-Brutalist Layout) -->
+<div class="w-full bg-surface-container-lowest rounded-2xl border-[3px] border-primary shadow-[8px_8px_0_0_#00163a] overflow-hidden">
+<!-- Table Header Ribbon -->
+<div class="w-full h-1.5 khmer-diamond-ribbon border-b-[2px] border-primary"></div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[900px]">
+<thead>
+<tr class="bg-primary-container text-white border-b-[3px] border-primary font-headline-md text-title-card">
+<th class="py-space-md px-space-md w-16 text-center">RANK</th>
+<th class="py-space-md px-space-md">STUDENT NAME &amp; ID</th>
+<th class="py-space-md px-space-md">BATTLE NICKNAME &amp; CLASS RANK</th>
+<th class="py-space-md px-space-md">DAILY STREAK (កម្រិតតស៊ូ)</th>
+<th class="py-space-md px-space-md text-center">BATTLES</th>
+<th class="py-space-md px-space-md text-center">WIN RATE</th>
+<th class="py-space-md px-space-md">LAST ACTIVE</th>
+<th class="py-space-md px-space-md text-right">COACH ACTION</th>
+</tr>
+</thead>
+<tbody class="divide-y-[2px] divide-primary/20 font-body-md text-body-md">
+<!-- Student Row #1: Sokha Chan (Top MVP) -->
+<tr class="hover:bg-tertiary-fixed/20 transition-colors">
+<td class="py-space-md px-space-md text-center">
+<div class="w-9 h-9 mx-auto rounded-xl bg-tertiary-fixed border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] flex items-center justify-center font-headline-md text-title-card text-primary">
+                  🥇
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-secondary-fixed border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    SC
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Sokha Chan</span>
+<span class="font-label-bold text-body-sm text-secondary">/ ចាន់ សុខា</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1049 • Group A Lead</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@sokha_rush</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-[#2FA84F] bg-[#2FA84F]/10 px-2 py-0.5 rounded border border-[#2FA84F]">
+<span class="material-symbols-outlined text-[14px]">shield</span> Emerald Captain
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-[#2FA84F] text-white px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">15 DAYS</span>
+<span class="font-badge-arcade text-[11px] bg-primary text-white px-1.5 py-0.2 rounded ml-1">MAX 🔥</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-[#2FA84F] w-full"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                42
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-[#2FA84F]/15 text-[#2FA84F] font-headline-md text-body-lg px-2.5 py-1 rounded-lg border border-[#2FA84F] font-bold">
+                  88%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-bold text-[#2FA84F]">
+<span class="w-2 h-2 rounded-full bg-[#2FA84F]"></span> 10m ago
+                </div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-tertiary-fixed hover:bg-tertiary-fixed-dim text-primary font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">thumb_up</span>
+<span>Kudos / លើកទឹកចិត្ត</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #2: Piseth Nuon -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md text-center">
+<div class="w-9 h-9 mx-auto rounded-xl bg-surface-container-highest border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] flex items-center justify-center font-headline-md text-title-card text-primary">
+                  🥈
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-primary-fixed border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    PN
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Piseth Nuon</span>
+<span class="font-label-bold text-body-sm text-secondary">/ នួន ពិសិដ្ឋ</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1082 • Group A</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@piseth_bolt</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary">
+<span class="material-symbols-outlined text-[14px]">science</span> Formula Wizard
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-[#2FA84F] text-white px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">12 DAYS</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-[#2FA84F] w-4/5"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                39
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-[#2FA84F]/15 text-[#2FA84F] font-headline-md text-body-lg px-2.5 py-1 rounded-lg border border-[#2FA84F] font-bold">
+                  84%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 1h ago
+                </div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Kudos</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #3: Bopha Tep -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md text-center">
+<div class="w-9 h-9 mx-auto rounded-xl bg-surface-container-high border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] flex items-center justify-center font-headline-md text-title-card text-primary">
+                  🥉
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed-dim border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    BT
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Bopha Tep</span>
+<span class="font-label-bold text-body-sm text-secondary">/ ទេព បុប្ផា</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1031 • Group B Lead</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@bopha_ph</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-[#9e6a00] bg-tertiary-fixed/30 px-2 py-0.5 rounded border border-[#9e6a00]">
+<span class="material-symbols-outlined text-[14px]">temple_buddhist</span> Ta Prohm Master
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-[#2FA84F] text-white px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">11 DAYS</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-[#2FA84F] w-3/4"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                36
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-[#2FA84F]/15 text-[#2FA84F] font-headline-md text-body-lg px-2.5 py-1 rounded-lg border border-[#2FA84F] font-bold">
+                  81%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-[#2FA84F]"></span> Today
+                </div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Kudos</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #4: Dara Seng -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-on-surface-variant">
+                #4
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-error-container border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    DS
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Dara Seng</span>
+<span class="font-label-bold text-body-sm text-secondary">/ សេង ដារ៉ា</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1102 • Group B</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@dara_cad</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-[#BA1A1A] bg-error-container px-2 py-0.5 rounded border border-[#BA1A1A]">
+<span class="material-symbols-outlined text-[14px]">diamond</span> Ruby Raider
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-secondary text-white px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">9 DAYS</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-secondary w-3/5"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                31
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-secondary/10 text-secondary font-headline-md text-body-lg px-2.5 py-1 rounded-lg border border-secondary font-bold">
+                  77%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+                Yesterday
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Kudos</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #5: Sreynich Heng -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-on-surface-variant">
+                #5
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-surface-container-highest border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    SH
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Sreynich Heng</span>
+<span class="font-label-bold text-body-sm text-secondary">/ ហេង ស្រីនិច</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1014 • Group A</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@srey_elec</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Circuit Queen
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-secondary text-white px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">8 DAYS</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-secondary w-1/2"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                28
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-secondary/10 text-secondary font-headline-md text-body-lg px-2.5 py-1 rounded-lg border border-secondary font-bold">
+                  75%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+                2h ago
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Kudos</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #6: Vichea Kem -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-on-surface-variant">
+                #6
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    VK
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Vichea Kem</span>
+<span class="font-label-bold text-body-sm text-secondary">/ ខែម វិជ្ជា</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1065 • Group B</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@vichea_k</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-primary bg-tertiary-fixed px-2 py-0.5 rounded border border-primary">
+<span class="material-symbols-outlined text-[14px]">psychology</span> Quantum Rush
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-[#f8bd4d] text-primary px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">6 DAYS</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-[#f8bd4d] w-2/5"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                24
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="text-primary font-headline-md text-body-lg px-2.5 py-1 rounded-lg font-bold">
+                  71%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+                Yesterday
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Kudos</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #7: Thida Lim (Needs Attention) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-on-surface-variant">
+                #7
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-surface-dim border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-primary shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    TL
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Thida Lim</span>
+<span class="font-label-bold text-body-sm text-secondary">/ លីម ធិតា</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SIS-2025-1022 • Group A</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@thida_stem</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded border border-outline">
+<span class="material-symbols-outlined text-[14px]">school</span> BACII Striver
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-surface-container-highest text-primary px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">local_fire_department</span>
+<span class="font-headline-md text-title-card leading-none">2 DAYS</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-outline w-1/6"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-primary">
+                16
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="text-on-surface-variant font-headline-md text-body-lg px-2.5 py-1 font-bold">
+                  62%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+                3d ago
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-secondary-fixed hover:bg-secondary-fixed-dim text-on-secondary-fixed font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Nudge / រំលឹក</span>
+</button>
+</td>
+</tr>
+<!-- Student Row #8: Rothana Keo (Streak Lost / Red Alert) -->
+<tr class="bg-error-container/20 hover:bg-error-container/30 transition-colors">
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-error">
+                #8
+              </td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-error-container border-[2px] border-primary overflow-hidden flex items-center justify-center font-headline-md text-title-card text-error shrink-0 shadow-[2px_2px_0_0_#00163a]">
+                    RK
+                  </div>
+<div>
+<div class="font-headline-md text-title-card text-primary flex items-center gap-1.5">
+<span>Rothana Keo</span>
+<span class="font-label-bold text-body-sm text-secondary">/ កែវ រតនា</span>
+</div>
+<div class="font-body-sm text-body-sm text-error font-medium">ID: SIS-2025-1090 • ⚠️ Inactive for 5 days</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-label-bold text-body-md text-primary">@roth_rush</div>
+<div class="inline-flex items-center gap-1 font-badge-arcade text-badge-arcade text-error bg-white px-2 py-0.5 rounded border border-error">
+<span class="material-symbols-outlined text-[14px]">explore</span> Rookie Explorer
+                </div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5 bg-[#BA1A1A] text-white px-2.5 py-1 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] w-fit">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-headline-md text-title-card leading-none">0 DAYS</span>
+<span class="font-badge-arcade text-[10px] bg-white text-error px-1 rounded ml-1">STREAK LOST</span>
+</div>
+<div class="w-36 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-error w-0"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center font-headline-md text-title-card text-on-surface-variant">
+                11
+              </td>
+<td class="py-space-md px-space-md text-center">
+<span class="bg-error/10 text-error font-headline-md text-body-lg px-2.5 py-1 rounded-lg border border-error font-bold">
+                  54%
+                </span>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-error font-bold">
+                5d ago
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="bg-error hover:bg-[#93000a] text-white font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">sports_martial_arts</span>
+<span>Send Revenge Deck</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Bottom Footer Controls -->
+<div class="bg-surface-container-low px-space-md py-space-sm border-t-[3px] border-primary flex flex-wrap items-center justify-between gap-space-sm font-body-sm text-body-sm">
+<div class="text-on-surface-variant">
+          Showing <span class="font-label-bold text-primary">8</span> of <span class="font-label-bold text-primary">38</span> enrolled Physics students
+        </div>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center font-bold text-primary opacity-50 cursor-not-allowed" type="button">
+            &lt;
+          </button>
+<button class="w-8 h-8 rounded-lg bg-secondary text-white border-[2px] border-primary flex items-center justify-center font-headline-md text-title-card" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center font-headline-md text-title-card text-primary hover:bg-surface-container" type="button">
+            2
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center font-headline-md text-title-card text-primary hover:bg-surface-container" type="button">
+            3
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest border-[2px] border-primary flex items-center justify-center font-bold text-primary hover:bg-surface-container" type="button">
+            &gt;
+          </button>
+</div>
+</div>
+</div>
+<!-- Secondary Preview Modules: Homework Progress & Mascot Coach Advice -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Pending Homework Quizzes (8 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl border-[3px] border-primary shadow-[6px_6px_0_0_#00163a] p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between border-b-[2px] border-primary pb-space-xs mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">assignment_turned_in</span>
+<h2 class="font-headline-md text-headline-md text-primary">Live Quizzes &amp; Homework Drills</h2>
+</div>
+<a class="font-label-bold text-body-sm text-secondary hover:underline" href="#">View All 4 Tasks →</a>
+</div>
+<!-- Assignment 1 -->
+<div class="bg-surface-container-low rounded-xl border-[2px] border-primary p-space-sm mb-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary text-white border-[2px] border-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">electric_bolt</span>
+</div>
+<div>
+<div class="font-headline-md text-title-card text-primary leading-tight">BACII Electromagnetism Drill #04</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-0.5">
+<span class="text-error font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Due Tomorrow, 8:00 PM
+                  </span>
+<span>•</span>
+<span>15 Questions</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-1">
+<span class="font-badge-arcade text-badge-arcade bg-[#2FA84F] text-white px-2 py-0.5 rounded border border-primary">
+                32 / 38 SUBMITTED
+              </span>
+<div class="w-28 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-[#2FA84F] w-[84%]"></div>
+</div>
+</div>
+</div>
+<!-- Assignment 2 -->
+<div class="bg-surface-container-low rounded-xl border-[2px] border-primary p-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-primary border-[2px] border-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">waves</span>
+</div>
+<div>
+<div class="font-headline-md text-title-card text-primary leading-tight">Wave Optics &amp; Interference Test</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-0.5">
+<span>Due in 3 days (Friday)</span>
+<span>•</span>
+<span>20 Questions</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-1">
+<span class="font-badge-arcade text-badge-arcade bg-secondary text-white px-2 py-0.5 rounded border border-primary">
+                19 / 38 SUBMITTED
+              </span>
+<div class="w-28 h-2 bg-surface-container-highest rounded-full border border-primary overflow-hidden">
+<div class="h-full bg-secondary w-1/2"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t-[2px] border-dashed border-primary/30 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Class Average Score: <strong class="text-primary font-bold">81.4 / 100 XP</strong></span>
+<button class="bg-primary hover:bg-primary-container text-white font-label-bold text-body-sm px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0_0_#00163a] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" type="button">
+            + New Homework Deck
+          </button>
+</div>
+</div>
+<!-- Rushy Mascot Coach Advice Box (5 Cols) -->
+<div class="lg:col-span-5 bg-tertiary-fixed/30 rounded-2xl border-[3px] border-primary shadow-[6px_6px_0_0_#00163a] p-space-md flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between border-b-[2px] border-primary pb-space-xs mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#BA1A1A] text-[20px]">psychology</span>
+<span class="font-headline-md text-title-card text-primary">Rushy's Coach Advice</span>
+</div>
+<span class="font-badge-arcade text-badge-arcade bg-tertiary-fixed text-primary px-2 py-0.5 rounded border border-primary">
+            AI TACTICIAN
+          </span>
+</div>
+<div class="flex items-center gap-space-md my-auto">
+<!-- Mascot Image: Rushy the Elephant in Lightning Cap -->
+<div class="w-28 h-28 sm:w-32 sm:h-32 shrink-0 bg-white rounded-2xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] overflow-hidden flex items-center justify-center p-1">
+<img alt="Rushy the energetic blue baby elephant wearing a navy lightning bolt baseball cap smiling and cheering" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+</div>
+<div class="flex flex-col gap-1">
+<div class="bg-surface-container-lowest rounded-xl border-[2px] border-primary p-space-sm shadow-[2px_2px_0_0_#00163a] relative">
+<p class="font-body-md text-body-md text-primary leading-snug">
+                "Keeping student streaks alive increases <strong>BACII pass rates by 34%</strong>! Send a quick nudge to <strong>4 students</strong> before tonight's 8:00 PM cutoff!"
+              </p>
+</div>
+<div class="font-badge-arcade text-[11px] text-on-surface-variant uppercase mt-1">
+              PRO TIP: LOKKRU SOKHA CHEM'S SQUAD RANKS #3 NATIONWIDE
+            </div>
+</div>
+</div>
+<div class="mt-space-md flex gap-space-xs">
+<button class="flex-1 bg-secondary text-white font-label-bold text-body-sm py-2 px-space-sm rounded-xl border-[2px] border-primary shadow-[3px_3px_0_0_#00163a] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_0_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Nudge All 4 At-Risk</span>
+</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-bold text-body-sm py-2 px-space-md rounded-xl border-[2px] border-primary shadow-[3px_3px_0_0_#00163a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+            Dismiss
+          </button>
+</div>
+</div>
+</div>
+</main>
+</div></main><footer class="w-full bg-primary-container text-on-primary border-t-[3px] border-primary mt-space-xl"><div class="w-full h-2 khmer-diamond-ribbon border-b-[2px] border-primary"></div><div class="max-w-[1280px] mx-auto px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs text-center md:text-left"><div class="flex items-center justify-center md:justify-start gap-space-sm"><span class="font-headline-md text-headline-md text-tertiary-fixed">ReanRush Arena</span><span class="font-badge-arcade text-badge-arcade bg-tertiary-fixed text-primary px-space-xs py-0.5 rounded border border-primary font-bold">EDU-KH</span></div><p class="font-body-sm text-body-sm text-primary-fixed-dim">Student project at AUB and CADT • High School Arcade Learning</p></div><div class="flex items-center gap-space-md"><div class="bg-surface-container-lowest text-primary px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0_0_#00163a] flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-tertiary-fixed font-headline-md text-title-card">A</div><div class="flex flex-col"><span class="font-badge-arcade text-badge-arcade text-primary uppercase">Official Sponsor</span><span class="font-label-bold text-label-bold text-primary">ACLEDA Bank Plc.</span></div></div></div></div><div class="w-full bg-primary py-space-sm border-t-[2px] border-primary-container"><div class="max-w-[1280px] mx-auto px-gutter text-center font-body-sm text-body-sm text-primary-fixed">© 2025 ReanRush. Engineered for Cambodian high schools &amp; collaborative classroom tournaments.</div></div></footer></body></html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "inverse-surface": "#392e2a", "on-secondary": "#ffffff", "secondary-fixed-dim": "#b7c4ff", "primary": "#00163a", "primary-container": "#0b2a5b", "secondary-container": "#3966fe", "surface-container-highest": "#f1dfd8", "primary-fixed": "#d8e2ff", "secondary": "#0d4be4", "on-tertiary-fixed": "#271900", "surface-container": "#fdeae3", "on-surface-variant": "#44474f", "surface-tint": "#455e91", "surface-dim": "#e9d6cf", "surface-bright": "#fff8f6", "outline": "#747780", "on-primary-fixed": "#001a42", "surface-variant": "#f1dfd8", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#0038b7", "outline-variant": "#c4c6d0", "inverse-primary": "#aec6ff", "tertiary-fixed-dim": "#f8bd4d", "on-tertiary-fixed-variant": "#5f4100", "tertiary": "#221500", "background": "#fff8f6", "on-error": "#ffffff", "surface": "#fff8f6", "surface-container-low": "#fff1ec", "error": "#ba1a1a", "tertiary-container": "#3c2800", "error-container": "#ffdad6", "on-tertiary-container": "#be8a1b", "on-surface": "#231915", "on-secondary-fixed": "#001452", "tertiary-fixed": "#ffdeaa", "on-primary-container": "#7a93ca", "on-primary-fixed-variant": "#2c4678", "primary-fixed-dim": "#aec6ff", "surface-container-high": "#f7e4dd", "on-tertiary": "#ffffff", "inverse-on-surface": "#ffede7", "surface-container-lowest": "#ffffff", "on-secondary-container": "#fffbff", "secondary-fixed": "#dde1ff", "on-background": "#231915" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter-mobile": "0.75rem", "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, fontFamily: { "display-hero": ["\"Baloo 2\""], "label-bold": ["Kantumruy Pro"], "body-sm": ["Kantumruy Pro"], "headline-lg-mobile": ["\"Baloo 2\""], "title-card": ["\"Baloo 2\""], "badge-arcade": ["\"Baloo 2\""], "headline-md": ["\"Baloo 2\""], "display-hero-mobile": ["\"Baloo 2\""], "body-lg": ["Kantumruy Pro"], "headline-lg": ["\"Baloo 2\""], "body-md": ["Kantumruy Pro"] }, fontSize: { "display-hero": ["56px", { lineHeight: "64px", fontWeight: "800" }], "label-bold": ["14px", { lineHeight: "18px", fontWeight: "700" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "32px", fontWeight: "700" }], "title-card": ["20px", { lineHeight: "28px", fontWeight: "600" }], "badge-arcade": ["13px", { lineHeight: "16px", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "700" }], "display-hero-mobile": ["36px", { lineHeight: "42px", fontWeight: "800" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }], "headline-lg": ["36px", { lineHeight: "44px", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } }</script></head><body data-root=".." class="bg-surface-container font-body-md text-on-surface flex flex-col min-h-screen"><main class="flex-1 flex flex-col relative w-full pt-16 px-margin-mobile pb-16 bg-surface-container"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Lobby Status Bar -->
+<div class="flex items-center justify-between px-3 py-2 bg-surface-container-highest rounded-xl shadow-[4px_4px_0px_#0b2a5b] border-[3px] border-primary-container">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-badge-arcade text-badge-arcade text-primary-container tracking-wider uppercase">PIN: 849-201</span>
+</div>
+<div class="flex items-center gap-1.5 bg-primary-container px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed">group</span>
+<span class="font-label-bold text-label-bold text-white tracking-tight">28/35 IN LOBBY</span>
+</div>
+</div>
+<!-- Step Directive -->
+<div class="text-center px-1">
+<div class="inline-block px-3 py-1 bg-tertiary-fixed rounded-full shadow-[2px_2px_0px_#0b2a5b] border-[2px] border-primary-container mb-1">
+<p class="font-badge-arcade text-[11px] text-on-tertiary-fixed tracking-widest uppercase">STAGE 03 • FINAL SQUAD SELECTION</p>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+      CHOOSE YOUR SQUAD <span class="text-on-surface-variant font-title-card text-[20px] font-normal block sm:inline">/ ជ្រើសរើសក្រុម</span>
+</h2>
+</div>
+<!-- Squad Battle Stack -->
+<div class="flex flex-col gap-3 relative">
+<!-- Team A Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0b2a5b] p-4 transition-all duration-150 relative overflow-hidden" id="card-team-a">
+<!-- Top Pill Ribbon -->
+<div class="flex items-center justify-between gap-2 mb-2.5">
+<div class="px-2.5 py-1 rounded-md bg-[#2FA84F] border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+<span class="font-badge-arcade text-[12px] text-white tracking-wider uppercase">SQUAD 01 : TEAM A</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-lg border-[2px] border-primary-container">
+<span class="material-symbols-outlined text-[16px] text-[#2FA84F]">bolt</span>
+<span class="font-badge-arcade text-[12px] text-primary-container">92% READY</span>
+</div>
+</div>
+<!-- Mascot Mini Illustration & Title -->
+<div class="flex items-start justify-between gap-2 mb-3">
+<div class="min-w-0">
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">BAK TOUK TIGERS</h3>
+<p class="font-label-bold text-label-bold text-on-surface-variant">ខ្លាក្រហាត់ បាក់ទូក</p>
+</div>
+<div class="w-12 h-12 shrink-0 rounded-xl bg-surface-container border-[2px] border-primary-container flex items-center justify-center shadow-[2px_2px_0px_#0b2a5b] text-[#2FA84F]">
+<span class="material-symbols-outlined text-[28px]">pets</span>
+</div>
+</div>
+<!-- Capacity & Meter -->
+<div class="space-y-1.5 mb-3">
+<div class="flex justify-between items-center text-primary-container font-label-bold text-[13px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-[#2FA84F]">person_check</span>
+            Roster Status
+          </span>
+<span class="font-badge-arcade text-[14px]">14 / 16 PLAYERS</span>
+</div>
+<div class="w-full h-3.5 bg-surface-container rounded-full border-[2px] border-primary-container p-[1px] overflow-hidden">
+<div class="h-full bg-[#2FA84F] rounded-full w-[87.5%] transition-all duration-300"></div>
+</div>
+</div>
+<!-- Live Roster Pill Tags -->
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-secondary-fixed border-[2px] border-primary-container font-label-bold text-[11px] text-primary shadow-[1px_1px_0px_#0b2a5b]">
+<span class="material-symbols-outlined text-[13px] text-secondary">star</span> Sokha_Speed (You!)
+        </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">Dara_Khmer</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">Bopha_STEM</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">+11 more</span>
+</div>
+<!-- Tactile Action Button -->
+<button class="w-full py-2.5 px-4 bg-[#2FA84F] text-white rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2" id="btn-team-a" onclick="selectTeam('A')">
+<span class="material-symbols-outlined text-[20px] text-white" id="icon-team-a">check_circle</span>
+<span class="font-headline-md text-[17px] tracking-wide" id="label-team-a">JOINED TEAM A / ចូលរួមក្រុម A</span>
+</button>
+</div>
+<!-- Center VS Badge Overlay Divider -->
+<div class="flex items-center justify-center my-[-8px] z-10">
+<div class="px-4 py-1 bg-tertiary-fixed text-primary-container rounded-full border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#D9382B] animate-pulse">flash_on</span>
+<span class="font-badge-arcade text-[13px] tracking-widest uppercase text-primary">SQUAD CLASH</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-container animate-pulse">flash_on</span>
+</div>
+</div>
+<!-- Team B Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0b2a5b] p-4 transition-all duration-150 relative overflow-hidden" id="card-team-b">
+<!-- Top Pill Ribbon -->
+<div class="flex items-center justify-between gap-2 mb-2.5">
+<div class="px-2.5 py-1 rounded-md bg-[#D9382B] border-[2px] border-primary-container shadow-[2px_2px_0px_#0b2a5b] flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+<span class="font-badge-arcade text-[12px] text-white tracking-wider uppercase">SQUAD 02 : TEAM B</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-lg border-[2px] border-primary-container">
+<span class="material-symbols-outlined text-[16px] text-[#D9382B]">bolt</span>
+<span class="font-badge-arcade text-[12px] text-primary-container">94% READY</span>
+</div>
+</div>
+<!-- Title & Mascot -->
+<div class="flex items-start justify-between gap-2 mb-3">
+<div class="min-w-0">
+<h3 class="font-headline-md text-headline-md text-primary leading-tight truncate">CADT RHINOS</h3>
+<p class="font-label-bold text-label-bold text-on-surface-variant">ក្របីដែក CADT</p>
+</div>
+<div class="w-12 h-12 shrink-0 rounded-xl bg-surface-container border-[2px] border-primary-container flex items-center justify-center shadow-[2px_2px_0px_#0b2a5b] text-[#D9382B]">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+</div>
+<!-- Capacity & Meter -->
+<div class="space-y-1.5 mb-3">
+<div class="flex justify-between items-center text-primary-container font-label-bold text-[13px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-[#D9382B]">person_check</span>
+            Roster Status
+          </span>
+<span class="font-badge-arcade text-[14px]">14 / 16 PLAYERS</span>
+</div>
+<div class="w-full h-3.5 bg-surface-container rounded-full border-[2px] border-primary-container p-[1px] overflow-hidden">
+<div class="h-full bg-[#D9382B] rounded-full w-[87.5%] transition-all duration-300"></div>
+</div>
+</div>
+<!-- Live Roster Pill Tags -->
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">Kosal_Ohm</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">Sreyleak_Atom</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">Samnang_Fast</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container border-[1.5px] border-primary-container font-body-sm text-[11px] text-on-surface">+11 more</span>
+</div>
+<!-- Tactile Action Button -->
+<button class="w-full py-2.5 px-4 bg-surface-container-lowest text-primary-container rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2 hover:bg-surface-container" id="btn-team-b" onclick="selectTeam('B')">
+<span class="material-symbols-outlined text-[20px] text-[#D9382B]" id="icon-team-b">add_circle</span>
+<span class="font-headline-md text-[17px] tracking-wide" id="label-team-b">SWITCH TO TEAM B / ផ្ទេរទៅក្រុម B</span>
+</button>
+</div>
+</div>
+<!-- Auto-Balance Toggle & Fairness Indicator -->
+<div class="bg-surface-container-lowest border-[3px] border-primary-container rounded-xl p-3 shadow-[4px_4px_0px_#0b2a5b] flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container border-[2px] border-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-primary-container">balance</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-bold text-label-bold text-primary truncate leading-tight">Auto-Balance / ចែកក្រុមស្វ័យប្រវត្តិ</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Prevents stacked teams for fair scoring</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="balance-toggle" type="checkbox">
+<div class="w-12 h-7 bg-surface-container-highest border-[2px] border-primary-container rounded-full peer peer-checked:bg-secondary-container transition-colors shadow-[2px_2px_0px_#0b2a5b]"></div>
+<div class="absolute left-1 top-1 w-5 h-5 bg-surface-container-lowest border-[2px] border-primary-container rounded-full transition-transform peer-checked:translate-x-5 shadow-[1px_1px_0px_#0b2a5b]"></div>
+</label>
+</div>
+<!-- Player Status Call-To-Action (Big Ready Button) -->
+<div class="pt-1">
+<button class="w-full py-4 px-4 bg-tertiary-fixed text-primary rounded-2xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0b2a5b] hover:shadow-[8px_8px_0px_#0b2a5b] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex flex-col items-center justify-center gap-0.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px] text-primary animate-bounce">swords</span>
+<span class="font-headline-md text-headline-md tracking-wider">I'M READY TO BATTLE!</span>
+</div>
+<span class="font-label-bold text-[13px] text-on-tertiary-fixed opacity-90">ខ្ញុំរួចរាល់ហើយ • Waiting for Host Lokkru</span>
+</button>
+</div>
+<!-- Mascot Presence (Rushy Elephant Floating Banner) -->
+<div class="flex items-center gap-3 p-3 bg-surface-container-lowest border-[3px] border-primary-container rounded-2xl shadow-[4px_4px_0px_#0b2a5b]">
+<div class="w-12 h-12 shrink-0 rounded-xl bg-surface-container border-[2px] border-primary-container p-0.5 overflow-hidden shadow-[2px_2px_0px_#0b2a5b]">
+<img class="w-full h-full object-cover" data-alt="Playful baby elephant mascot named Rushy wearing a navy baseball cap with a gold lightning bolt badge, giving a cheery wave with its trunk up, 3D cartoon style, soft studio lighting, neo-brutalist friendly arcade aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0UJKsW2_TH6oQHS6ultcuYyCckjdosKL9ibQWC-IHTdB0xrsHI2VVT32u0MHi6Dea8XBUCbYDWPx_GW02XL-fxJCFLwEllcomVsvMtSVcHtVLEF9lJ_8z4CKYficfRo0k1d_vByd6XOouI_4N9VHDjlBzth4DvjGFVvAslSKvaPeKz_74bP_eMK242EGQT7904JUdlfJKMOMWbS0_s5kQMOQ8ZhiW9jftzC_YcAvRIFHbhRr3Y__k">
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-badge-arcade text-[12px] text-secondary tracking-wide uppercase">RUSHY INTEL</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</div>
+<p class="font-body-sm text-[12px] text-primary-container leading-tight">
+        "Host <strong class="font-label-bold text-primary">Lokkru Sophea</strong> is about to launch Round 1 Bayon arena!"
+      </p>
+</div>
+</div>
+</div>
+<script>
+  function selectTeam(team) {
+    const cardA = document.getElementById('card-team-a');
+    const cardB = document.getElementById('card-team-b');
+    const btnA = document.getElementById('btn-team-a');
+    const btnB = document.getElementById('btn-team-b');
+    const iconA = document.getElementById('icon-team-a');
+    const iconB = document.getElementById('icon-team-b');
+    const labelA = document.getElementById('label-team-a');
+    const labelB = document.getElementById('label-team-b');
+
+    if (team === 'A') {
+      // Team A Selected
+      btnA.className = "w-full py-2.5 px-4 bg-[#2FA84F] text-white rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2";
+      iconA.textContent = "check_circle";
+      iconA.className = "material-symbols-outlined text-[20px] text-white";
+      labelA.textContent = "JOINED TEAM A / ចូលរួមក្រុម A";
+
+      btnB.className = "w-full py-2.5 px-4 bg-surface-container-lowest text-primary-container rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2 hover:bg-surface-container";
+      iconB.textContent = "add_circle";
+      iconB.className = "material-symbols-outlined text-[20px] text-[#D9382B]";
+      labelB.textContent = "SWITCH TO TEAM B / ផ្ទេរទៅក្រុម B";
+    } else {
+      // Team B Selected
+      btnB.className = "w-full py-2.5 px-4 bg-[#D9382B] text-white rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2";
+      iconB.textContent = "check_circle";
+      iconB.className = "material-symbols-outlined text-[20px] text-white";
+      labelB.textContent = "JOINED TEAM B / ចូលរួមក្រុម B";
+
+      btnA.className = "w-full py-2.5 px-4 bg-surface-container-lowest text-primary-container rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0b2a5b] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2 hover:bg-surface-container";
+      iconA.textContent = "add_circle";
+      iconA.className = "material-symbols-outlined text-[20px] text-[#2FA84F]";
+      labelA.textContent = "SWITCH TO TEAM A / ផ្ទេរទៅក្រុម A";
+    }
+  }
+</script></main>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../core/game-state.js"></script>
+<script src="team.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

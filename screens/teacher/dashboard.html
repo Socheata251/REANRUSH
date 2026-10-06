@@ -1,0 +1,626 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary": "#ffffff",
+          "error-container": "#ffdad6",
+          "surface-bright": "#fff8f6",
+          "inverse-primary": "#aec6ff",
+          "on-error-container": "#93000a",
+          "tertiary": "#221500",
+          "on-tertiary": "#ffffff",
+          "surface-container": "#fdeae3",
+          "on-secondary-container": "#fffbff",
+          "surface-container-high": "#f7e4dd",
+          "on-surface": "#231915",
+          "primary-fixed-dim": "#aec6ff",
+          "surface-container-low": "#fff1ec",
+          "inverse-on-surface": "#ffede7",
+          "on-secondary-fixed": "#001452",
+          "surface": "#fff8f6",
+          "outline": "#747780",
+          "surface-variant": "#f1dfd8",
+          "secondary-fixed-dim": "#b7c4ff",
+          "surface-tint": "#455e91",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "background": "#fff8f6",
+          "primary": "#00163a",
+          "on-tertiary-fixed-variant": "#5f4100",
+          "primary-fixed": "#d8e2ff",
+          "error": "#ba1a1a",
+          "on-primary-container": "#7a93ca",
+          "secondary-fixed": "#dde1ff",
+          "secondary": "#0d4be4",
+          "surface-container-highest": "#f1dfd8",
+          "on-surface-variant": "#44474f",
+          "surface-dim": "#e9d6cf",
+          "outline-variant": "#c4c6d0",
+          "on-primary-fixed-variant": "#2c4678",
+          "on-tertiary-fixed": "#271900",
+          "on-tertiary-container": "#be8a1b",
+          "on-primary-fixed": "#001a42",
+          "primary-container": "#0b2a5b",
+          "on-background": "#231915",
+          "tertiary-fixed": "#ffdeaa",
+          "surface-container-lowest": "#ffffff",
+          "inverse-surface": "#392e2a",
+          "secondary-container": "#3966fe",
+          "tertiary-container": "#3c2800",
+          "tertiary-fixed-dim": "#f8bd4d",
+          "on-secondary-fixed-variant": "#0038b7"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter-mobile": "0.75rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "2rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": ["\"Baloo 2\""],
+          "body-sm": ["Kantumruy Pro"],
+          "body-md": ["Kantumruy Pro"],
+          "headline-lg": ["\"Baloo 2\""],
+          "badge-arcade": ["\"Baloo 2\""],
+          "headline-md": ["\"Baloo 2\""],
+          "display-hero-mobile": ["\"Baloo 2\""],
+          "title-card": ["\"Baloo 2\""],
+          "display-hero": ["\"Baloo 2\""],
+          "label-bold": ["Kantumruy Pro"],
+          "body-lg": ["Kantumruy Pro"]
+        },
+        "fontSize": {
+          "headline-lg-mobile": ["26px", {"lineHeight": "32px", "fontWeight": "700"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "700"}],
+          "badge-arcade": ["13px", {"lineHeight": "16px", "fontWeight": "800"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+          "display-hero-mobile": ["36px", {"lineHeight": "42px", "fontWeight": "800"}],
+          "title-card": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "display-hero": ["56px", {"lineHeight": "64px", "fontWeight": "800"}],
+          "label-bold": ["14px", {"lineHeight": "18px", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}]
+        }
+      }
+    }
+  }</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@100..900&amp;family=Kantumruy+Pro:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-on-surface" data-root=".."  data-layout="teacher"><div class="pl-64"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Dynamic Top Sub-Bar: Teacher Greeting & Fast Battle Launcher -->
+<div class="p-margin flex flex-col gap-space-lg">
+<!-- Hero Header Banner with Arcade Tactile Styling -->
+<div class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-lg shadow-[6px_6px_0px_#00163a] flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg relative overflow-hidden">
+<!-- Phka Chan Decorative Ribbon Background Accent -->
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-secondary/10 pointer-events-none -z-0"></div>
+<div class="flex items-start sm:items-center gap-space-md z-10">
+<div class="relative shrink-0">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-surface-container border-[3px] border-primary shadow-[4px_4px_0px_#00163a] flex items-center justify-center overflow-hidden">
+<img alt="Rushy the Elephant Mascot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+</div>
+<div class="absolute -bottom-1 -right-1 bg-tertiary-fixed-dim text-primary border-[2px] border-primary rounded-full px-1.5 py-0.5 font-badge-arcade text-[10px] uppercase font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">bolt</span>PRO
+          </div>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed border-[2px] border-primary font-label-bold text-label-bold">
+              CADT Grade 12 • STEM Battle League
+            </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-bold text-[12px]">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+              Live Arena Session #402
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">
+            Welcome back, Kru Rathana! ⚡
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium">
+            សូមស្វាគមន៍មកកាន់សង្វៀន ReanRush • Ready to rally your 48 classroom contenders?
+          </p>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex flex-wrap items-center gap-space-sm z-10 shrink-0">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">qr_code_scanner</span>
+          Display PIN
+        </button>
+<button class="bg-secondary text-on-secondary font-headline-md text-title-card px-space-lg py-space-sm rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center gap-space-xs group" type="button">
+<span class="material-symbols-outlined text-[24px] group-hover:rotate-90 transition-transform">add_circle</span>
+<span>+ Create New Game <span class="font-normal opacity-90 text-[14px]">/ បង្កើតល្បែងថ្មី</span></span>
+</button>
+</div>
+</div>
+<!-- 3 High-Impact Neo-Brutalist Stat Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Total Decks -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-badge-arcade uppercase tracking-wider text-primary opacity-80">
+              Total Quizzes / កម្រងសំណួរ
+            </span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-hero text-headline-lg text-primary">24</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-semibold">Active Decks</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed border-[2px] border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[26px]">view_carousel</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t-[2px] border-primary/10 flex items-center justify-between text-body-sm font-label-bold">
+<span class="inline-flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +3 new this week
+          </span>
+<span class="text-on-surface-variant">5 BACII certified</span>
+</div>
+</div>
+<!-- Card 2: Student Combatants -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-badge-arcade uppercase tracking-wider text-primary opacity-80">
+              Total Players / សិស្សចូលរួម
+            </span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-hero text-headline-lg text-primary">1,420</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-semibold">Students</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed border-[2px] border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t-[2px] border-primary/10 flex items-center justify-between text-body-sm font-label-bold">
+<span class="inline-flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> 98% Completion Rate
+          </span>
+<span class="text-on-surface-variant">4.9/5 Rating</span>
+</div>
+</div>
+<!-- Card 3: Class Streak -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-2xl p-space-md shadow-[4px_4px_0px_#00163a] flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-badge-arcade uppercase tracking-wider text-primary opacity-80">
+              Class Streak / ភាពខ្លាំងជាប់ៗគ្នា
+            </span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-hero text-headline-lg text-primary">14 Days</span>
+<span class="text-xl">🔥</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border-[2px] border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[26px] text-tertiary-fixed-dim">workspace_premium</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t-[2px] border-primary/10 flex items-center justify-between text-body-sm font-label-bold">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-primary font-bold border border-primary text-[12px]">
+            Level 5 Arena Master
+          </span>
+<span class="text-on-surface-variant">Top 3% Nationwide</span>
+</div>
+</div>
+</div>
+<!-- Quiz Battle Deck Explorer Section -->
+<div class="flex flex-col gap-space-md mt-space-sm">
+<!-- Section Controls: Title, Search, Filters -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-xs">
+<div>
+<h2 class="font-headline-lg text-headline-md text-primary flex items-center gap-space-xs">
+<span>My Quiz Battle Decks</span>
+<span class="text-on-surface-variant font-normal text-title-card">/ កម្រងសំណួរប្រកួតប្រជែង</span>
+</h2>
+<p class="font-body-md text-body-sm text-on-surface-variant">
+            Equip questions with 3-Tier Boss mechanics: Bayon (Easy) • Ta Prohm (Medium) • Angkor Boss (Hard)
+          </p>
+</div>
+<!-- Filter Pill Chips & Search Input -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Quick Search -->
+<div class="relative min-w-[240px]">
+<input class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-xl px-space-md py-space-xs text-body-sm text-primary placeholder:text-on-surface-variant/70 focus:outline-none focus:shadow-[4px_4px_0px_#00163a] transition-all" placeholder="Search decks or subject..." type="text">
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-primary text-[18px]">search</span>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1">
+<button class="bg-primary text-on-primary font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a]">
+              All (6)
+            </button>
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all">
+              Grade 12 BACII
+            </button>
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all">
+              Physics &amp; STEM
+            </button>
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-high font-headline-md text-badge-arcade px-space-md py-1.5 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] transition-all">
+              Khmer Literature
+            </button>
+</div>
+</div>
+</div>
+<!-- Quiz Cards Neo-Brutalist Grid (5 Complete High-Fidelity Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg">
+<!-- CARD 1: Physics BACII -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-y-1 transition-all flex flex-col justify-between group">
+<div>
+<!-- Card Header Illustration / Banner -->
+<div class="w-full h-36 rounded-2xl bg-secondary-container border-[3px] border-primary relative flex items-center justify-between px-space-md overflow-hidden">
+<!-- Decorative Geometry -->
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-primary/20 pointer-events-none"></div>
+<div class="z-10 flex flex-col">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed-dim text-primary border-[2px] border-primary font-badge-arcade uppercase text-[11px] self-start shadow-[2px_2px_0px_#00163a]">
+                  BACII Prep • National Exam
+                </span>
+<span class="font-headline-lg text-title-card text-on-secondary mt-1 tracking-tight">
+                  PHYSICS ELECTROMAGNETISM
+                </span>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest border-[3px] border-primary shadow-[3px_3px_0px_#00163a] flex items-center justify-center text-secondary z-10 shrink-0">
+<span class="material-symbols-outlined text-[36px]">bolt</span>
+</div>
+</div>
+<!-- Content Info -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[16px]">quiz</span> 25 Questions
+                </span>
+<span class="text-on-surface-variant font-label-bold text-[12px] bg-surface-container-high px-2 py-0.5 rounded-md border border-primary/20">
+                  Last played 2h ago
+                </span>
+</div>
+<h3 class="font-headline-lg text-headline-md text-primary mt-1 line-clamp-1">
+                Grade 12 Physics: Electromagnetism &amp; Optics
+              </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant font-semibold mt-0.5">
+                រូបវិទ្យា ថ្នាក់ទី១២: អគ្គិសនី ដែនម៉ាញេទិច និងអុបទិច
+              </p>
+<!-- 3-Tier Arena Breakdown Pill Strip -->
+<div class="mt-space-sm p-2 rounded-xl bg-surface-container border-[2px] border-primary/40 flex items-center justify-between text-[11px] font-label-bold">
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>R1: Bayon (8Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>R2: Ta Prohm (10Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>R3: Boss (7Q)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons Quad-Touch -->
+<div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Host Live Battle
+            </button>
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Khmer Literature -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-y-1 transition-all flex flex-col justify-between group">
+<div>
+<!-- Banner -->
+<div class="w-full h-36 rounded-2xl bg-surface-container-highest border-[3px] border-primary relative flex items-center justify-between px-space-md overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-primary/10 pointer-events-none"></div>
+<div class="z-10 flex flex-col">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed border-[2px] border-primary font-badge-arcade uppercase text-[11px] self-start shadow-[2px_2px_0px_#00163a]">
+                  National Exam • Classic Literature
+                </span>
+<span class="font-headline-lg text-title-card text-primary mt-1 tracking-tight">
+                  KHMER LITERATURE CLASSICS
+                </span>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest border-[3px] border-primary shadow-[3px_3px_0px_#00163a] flex items-center justify-center text-primary z-10 shrink-0">
+<span class="material-symbols-outlined text-[36px]">auto_stories</span>
+</div>
+</div>
+<!-- Content -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[16px]">quiz</span> 30 Questions
+                </span>
+<span class="text-on-surface-variant font-label-bold text-[12px] bg-surface-container-high px-2 py-0.5 rounded-md border border-primary/20">
+                  Played yesterday
+                </span>
+</div>
+<h3 class="font-headline-lg text-headline-md text-primary mt-1 line-clamp-1">
+                Khmer Literature: Koulab Pailin &amp; Tum Teav
+              </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant font-semibold mt-0.5">
+                អក្សរសិល្ប៍ខ្មែរ: រឿងកុលាបប៉ៃលិន និងទុំទាវ (វិភាគតួអង្គ)
+              </p>
+<!-- 3-Tier Arena Breakdown Pill Strip -->
+<div class="mt-space-sm p-2 rounded-xl bg-surface-container border-[2px] border-primary/40 flex items-center justify-between text-[11px] font-label-bold">
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>R1: Bayon (10Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>R2: Ta Prohm (12Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>R3: Boss (8Q)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Buttons -->
+<div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Host Live Battle
+            </button>
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Chemistry BACII -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-y-1 transition-all flex flex-col justify-between group">
+<div>
+<!-- Banner -->
+<div class="w-full h-36 rounded-2xl bg-surface-container-high border-[3px] border-primary relative flex items-center justify-between px-space-md overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-primary/10 pointer-events-none"></div>
+<div class="z-10 flex flex-col">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-primary border-[2px] border-primary font-badge-arcade uppercase text-[11px] self-start shadow-[2px_2px_0px_#00163a]">
+                  STEM Lab • Grade 12
+                </span>
+<span class="font-headline-lg text-title-card text-primary mt-1 tracking-tight">
+                  CHEMISTRY ORGANIC REDOX
+                </span>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest border-[3px] border-primary shadow-[3px_3px_0px_#00163a] flex items-center justify-center text-primary z-10 shrink-0">
+<span class="material-symbols-outlined text-[36px]">science</span>
+</div>
+</div>
+<!-- Content -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[16px]">quiz</span> 20 Questions
+                </span>
+<span class="text-on-surface-variant font-label-bold text-[12px] bg-surface-container-high px-2 py-0.5 rounded-md border border-primary/20">
+                  Shared to 3 Classes
+                </span>
+</div>
+<h3 class="font-headline-lg text-headline-md text-primary mt-1 line-clamp-1">
+                Chemistry BACII: Organic Chains &amp; Redox
+              </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant font-semibold mt-0.5">
+                គីមីវិទ្យា: សមាសធាតុសរីរាង្គ អេស្ទែ និងប្រតិកម្មរ៉េដុក
+              </p>
+<!-- 3-Tier Arena Breakdown Pill Strip -->
+<div class="mt-space-sm p-2 rounded-xl bg-surface-container border-[2px] border-primary/40 flex items-center justify-between text-[11px] font-label-bold">
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>R1: Bayon (6Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>R2: Ta Prohm (8Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>R3: Boss (6Q)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Buttons -->
+<div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Host Live Battle
+            </button>
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Khmer Empire & ASEAN History -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-y-1 transition-all flex flex-col justify-between group">
+<div>
+<!-- Banner -->
+<div class="w-full h-36 rounded-2xl bg-tertiary-fixed border-[3px] border-primary relative flex items-center justify-between px-space-md overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-primary/10 pointer-events-none"></div>
+<div class="z-10 flex flex-col">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-primary border-[2px] border-primary font-badge-arcade uppercase text-[11px] self-start shadow-[2px_2px_0px_#00163a]">
+                  Social Studies • Culture
+                </span>
+<span class="font-headline-lg text-title-card text-primary mt-1 tracking-tight">
+                  KHMER EMPIRE &amp; HERITAGE
+                </span>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest border-[3px] border-primary shadow-[3px_3px_0px_#00163a] flex items-center justify-center text-primary z-10 shrink-0">
+<span class="material-symbols-outlined text-[36px]">temple_buddhist</span>
+</div>
+</div>
+<!-- Content -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[16px]">quiz</span> 18 Questions
+                </span>
+<span class="text-on-surface-variant font-label-bold text-[12px] bg-surface-container-high px-2 py-0.5 rounded-md border border-primary/20">
+                  Featured in Discover
+                </span>
+</div>
+<h3 class="font-headline-lg text-headline-md text-primary mt-1 line-clamp-1">
+                ASEAN &amp; Khmer Empire History
+              </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant font-semibold mt-0.5">
+                ប្រវត្តិសាស្ត្រខ្មែរ: សម័យអង្គរ រជ្ជកាលព្រះបាទជ័យវរ្ម័នទី៧
+              </p>
+<!-- 3-Tier Arena Breakdown Pill Strip -->
+<div class="mt-space-sm p-2 rounded-xl bg-surface-container border-[2px] border-primary/40 flex items-center justify-between text-[11px] font-label-bold">
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>R1: Bayon (6Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>R2: Ta Prohm (7Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>R3: Boss (5Q)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Buttons -->
+<div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Host Live Battle
+            </button>
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<!-- CARD 5: General English Speed Grammar Rush -->
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-md shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-y-1 transition-all flex flex-col justify-between group">
+<div>
+<!-- Banner -->
+<div class="w-full h-36 rounded-2xl bg-primary border-[3px] border-primary relative flex items-center justify-between px-space-md overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 rounded-full bg-secondary/30 pointer-events-none"></div>
+<div class="z-10 flex flex-col">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary border-[2px] border-primary-fixed-dim font-badge-arcade uppercase text-[11px] self-start shadow-[2px_2px_0px_#00163a]">
+                  Speed Challenge • IELTS 6.5
+                </span>
+<span class="font-headline-lg text-title-card text-on-primary mt-1 tracking-tight">
+                  SPEED GRAMMAR RUSH
+                </span>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest border-[3px] border-primary shadow-[3px_3px_0px_#00163a] flex items-center justify-center text-secondary z-10 shrink-0">
+<span class="material-symbols-outlined text-[36px]">timer</span>
+</div>
+</div>
+<!-- Content -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[16px]">quiz</span> 22 Questions
+                </span>
+<span class="text-on-surface-variant font-label-bold text-[12px] bg-surface-container-high px-2 py-0.5 rounded-md border border-primary/20">
+                  Rapid-fire Mode
+                </span>
+</div>
+<h3 class="font-headline-lg text-headline-md text-primary mt-1 line-clamp-1">
+                General English Speed Grammar Rush
+              </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant font-semibold mt-0.5">
+                ភាសាអង់គ្លេស: Tenses, Modals &amp; Relative Clauses
+              </p>
+<!-- 3-Tier Arena Breakdown Pill Strip -->
+<div class="mt-space-sm p-2 rounded-xl bg-surface-container border-[2px] border-primary/40 flex items-center justify-between text-[11px] font-label-bold">
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>R1: Bayon (7Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>R2: Ta Prohm (10Q)</span>
+</div>
+<span class="text-primary/30">•</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>R3: Boss (5Q)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Buttons -->
+<div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Host Live Battle
+            </button>
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<!-- NEW DECK GENERATOR ARCADE TILE -->
+<div class="bg-surface-container/60 border-[3px] border-dashed border-primary rounded-3xl p-space-lg flex flex-col items-center justify-center text-center gap-space-sm hover:bg-surface-container-lowest hover:border-solid hover:shadow-[6px_6px_0px_#00163a] transition-all cursor-pointer min-h-[360px] group">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-on-secondary border-[3px] border-primary shadow-[4px_4px_0px_#00163a] flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">add</span>
+</div>
+<div class="flex flex-col mt-2">
+<span class="font-headline-lg text-title-card text-primary">Import or Craft Deck</span>
+<span class="font-body-md text-body-sm text-on-surface-variant font-semibold">បង្កើតកម្រងសំណួរថ្មី</span>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-2 max-w-[220px]">
+              Upload CSV, convert Quizlet links, or draft questions with AI BACII generator.
+            </p>
+</div>
+<button class="mt-2 bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-2 rounded-xl border-[2px] border-primary shadow-[2px_2px_0px_#00163a] group-hover:bg-primary group-hover:text-on-primary transition-colors" type="button">
+            Fast Builder ⚡
+          </button>
+</div>
+</div>
+</div>
+<!-- Classroom Live Arena Leaderboard Snippet Footer -->
+<div class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-3xl p-space-lg shadow-[6px_6px_0px_#00163a] flex flex-col lg:flex-row items-center justify-between gap-space-md mt-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim border-[3px] border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[28px]">trophy</span>
+</div>
+<div>
+<h4 class="font-headline-lg text-title-card text-primary">Arena Leaderboard Spotlight: Team Hanuman Leading!</h4>
+<p class="font-body-md text-body-sm text-on-surface-variant">
+            Class 12-A scored 14,280 points in yesterday's Physics duel. Next challenge starts in 45 minutes.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="bg-primary text-on-primary font-headline-md text-badge-arcade uppercase px-space-md py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">sports_esports</span>
+          Launch Battle Arena Mode
+        </button>
+</div>
+</div>
+</div>
+</div></main></div>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

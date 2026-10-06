@@ -1,0 +1,5 @@
+.score-panel { max-width: 720px; }
+.score-tabs { display: flex; gap: 10px; margin-bottom: 16px; }
+.leaderboard-list { display: grid; gap: 10px; padding-left: 40px; }
+.leaderboard-list li { padding: 12px 14px; background: var(--nude); border: 2px solid var(--navy); border-radius: 9px; font-weight: 700; }
+.score-value { float: right; color: var(--blue); font-family: 'Baloo 2', sans-serif; }

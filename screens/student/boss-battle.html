@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Kantumruy+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary":"#ffffff","secondary-container":"#3966fe","surface-tint":"#455e91","primary-fixed-dim":"#aec6ff","on-secondary-container":"#fffbff","on-error-container":"#93000a","on-tertiary-fixed":"#271900","tertiary-container":"#3c2800","surface-container-highest":"#f1dfd8","secondary-fixed-dim":"#b7c4ff","inverse-primary":"#aec6ff","tertiary-fixed-dim":"#f8bd4d","on-background":"#231915","surface-container-high":"#f7e4dd","on-primary-container":"#7a93ca","on-primary-fixed-variant":"#2c4678","tertiary-fixed":"#ffdeaa","on-tertiary-container":"#be8a1b","surface-variant":"#f1dfd8","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary":"#0d4be4","primary-fixed":"#d8e2ff","error":"#ba1a1a","surface-bright":"#fff8f6","outline":"#747780","outline-variant":"#c4c6d0","inverse-on-surface":"#ffede7","on-tertiary-fixed-variant":"#5f4100","on-secondary-fixed":"#001452","primary":"#00163a","primary-container":"#0b2a5b","on-surface-variant":"#44474f","surface-container-low":"#fff1ec","on-surface":"#231915","background":"#fff8f6","on-secondary-fixed-variant":"#0038b7","secondary-fixed":"#dde1ff","surface-container":"#fdeae3","surface":"#fff8f6","surface-dim":"#e9d6cf","surface-container-lowest":"#ffffff","on-error":"#ffffff","tertiary":"#221500","on-primary-fixed":"#001a42","inverse-surface":"#392e2a","error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"2rem","space-xl":"2.5rem","gutter-mobile":"0.75rem","space-lg":"1.5rem"},"fontFamily":{"display-hero":["\"Baloo 2\""],"headline-lg-mobile":["\"Baloo 2\""],"headline-md":["\"Baloo 2\""],"body-sm":["Kantumruy Pro"],"label-bold":["Kantumruy Pro"],"badge-arcade":["\"Baloo 2\""],"display-hero-mobile":["\"Baloo 2\""],"body-md":["Kantumruy Pro"],"title-card":["\"Baloo 2\""],"body-lg":["Kantumruy Pro"],"headline-lg":["\"Baloo 2\""]},"fontSize":{"display-hero":["56px",{"lineHeight":"64px","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-bold":["14px",{"lineHeight":"18px","fontWeight":"700"}],"badge-arcade":["13px",{"lineHeight":"16px","fontWeight":"800"}],"display-hero-mobile":["36px",{"lineHeight":"42px","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-card":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body data-root=".." class="bg-surface font-body-md text-on-surface antialiased" data-page="boss-battle"><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Interactive Audio & State Controller (Micro-Interactions) -->
+<script>
+    function triggerAnswer(optionId) {
+      const bossHpBar = document.getElementById('boss-hp-fill');
+      const bossDamagePop = document.getElementById('boss-damage-pop');
+      const streakCount = document.getElementById('class-streak-count');
+      const answerButtons = document.querySelectorAll('.answer-choice-btn');
+      
+      // Visual depression & selection feedback
+      answerButtons.forEach(btn => {
+        btn.classList.remove('ring-4', 'ring-primary', 'scale-[0.98]');
+      });
+      const selected = document.getElementById('opt-' + optionId);
+      if (selected) {
+        selected.classList.add('ring-4', 'ring-primary', 'scale-[0.98]');
+      }
+
+      // Pop damage indicator
+      if (bossDamagePop) {
+        bossDamagePop.classList.remove('opacity-0', '-translate-y-2');
+        bossDamagePop.classList.add('opacity-100', 'translate-y-0', 'scale-110');
+        setTimeout(() => {
+          bossDamagePop.classList.add('opacity-0', '-translate-y-2');
+          bossDamagePop.classList.remove('opacity-100', 'translate-y-0', 'scale-110');
+        }, 1200);
+      }
+
+      // Animate HP Bar slightly
+      if (bossHpBar) {
+        bossHpBar.style.width = '39.8%';
+      }
+      if (streakCount) {
+        streakCount.innerText = '🔥 25x Class Streak! METEOR READY!';
+      }
+    }
+  </script>
+<!-- Canvas Container with Neo-Brutalist Frame -->
+<div class="w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-md flex flex-col gap-space-md">
+<!-- 1. Top Raid Status Bar & Round Header -->
+<header class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Left: Badge & Live Metadata -->
+<div class="flex flex-col sm:flex-row items-center sm:items-start lg:items-center gap-space-sm w-full lg:w-auto">
+<div class="bg-primary text-on-primary px-space-md py-1.5 rounded-xl border-2 border-primary flex items-center gap-2 shadow-[2px_2px_0px_#00163a]">
+<span class="text-tertiary-fixed-dim text-lg leading-none">👑</span>
+<div class="flex flex-col">
+<span class="font-badge-arcade text-badge-arcade tracking-wider uppercase text-tertiary-fixed-dim leading-none">CO-OP RAID BOSS</span>
+<span class="font-label-bold text-[12px] text-on-primary leading-tight">វគ្គប្រយុទ្ធមេធំ • TIER 3</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs text-center sm:text-left">
+<div class="bg-surface-container-high px-space-sm py-1 rounded-lg border-2 border-primary font-label-bold text-label-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+<span>BACII STEM Prep • Physics</span>
+</div>
+<div class="bg-surface-container-high px-space-sm py-1 rounded-lg border-2 border-primary font-label-bold text-label-bold text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">meeting_room</span>
+<span class="font-bold">Room #BK-902</span>
+</div>
+<div class="bg-surface-container-low px-space-sm py-1 rounded-lg border-2 border-primary font-label-bold text-[12px] text-primary flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span>35/35 Active Fighters (100%)</span>
+</div>
+</div>
+</div>
+<!-- Right: Phka Chan Ornament & Rapid Countdown Timer -->
+<div class="flex items-center justify-between sm:justify-end gap-space-md w-full lg:w-auto">
+<div class="hidden xl:flex items-center text-tertiary-fixed-dim text-[11px] tracking-[4px] select-none bg-primary px-space-sm py-2 rounded-lg border-2 border-primary">
+          ❖ ❖ ❖
+        </div>
+<!-- Co-op Countdown Dial -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest border-2 border-primary rounded-xl px-space-sm py-1 shadow-[3px_3px_0px_#00163a]">
+<div class="text-right">
+<p class="font-badge-arcade text-[10px] uppercase tracking-wider text-error leading-none font-bold">URGENT TIMER</p>
+<p class="font-label-bold text-[11px] text-on-surface-variant leading-none">ពេលនៅសល់</p>
+</div>
+<div class="relative w-12 h-12 rounded-full bg-tertiary-fixed-dim border-[3px] border-primary flex items-center justify-center shadow-[2px_2px_0px_#00163a] animate-bounce">
+<span class="font-display-hero-mobile text-headline-md text-primary leading-none">08s</span>
+</div>
+</div>
+</div>
+</header>
+<!-- 2. Epic Angkor Boss Stage Card -->
+<section class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md lg:p-space-lg relative overflow-hidden">
+<!-- Khmer Diamond Pattern Top Ribbon Accent -->
+<div class="w-full h-2 bg-primary rounded-md overflow-hidden flex items-center justify-center mb-space-md">
+<div class="w-full flex justify-around text-tertiary-fixed-dim text-[8px] tracking-[6px] select-none leading-none">
+          ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖
+        </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Boss Avatar & Artifact Visual -->
+<div class="lg:col-span-4 flex flex-col items-center text-center relative">
+<!-- Floating Damage Pop Indicator -->
+<div class="absolute -top-3 z-30 transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none bg-error text-on-error font-badge-arcade text-lg px-space-md py-1 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a]" id="boss-damage-pop">
+            💥 -45,000 HP CRIT!
+          </div>
+<div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-2xl bg-surface-container-high border-[3px] border-primary shadow-[6px_6px_0px_#00163a] p-2 flex items-center justify-center overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent z-10 pointer-events-none"></div>
+<img class="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105" data-alt="Stylized neo-brutalist 3D video game character of an ancient Angkor stone temple guardian yaksha giant with friendly expressive eyes, ornate gold Khmer kbach crown, glowing turquoise mystical runes etched into ancient sandstone armor, crisp dark navy outlines, vibrant arcade lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGd0Q91EaLPiU_2WzCYItqgVLQkyI5ySn2iO2jFqqUo-qtkF45J_2KjE3CoripiGBDenEqGNhcmyj4MJptOmHpHjupoYSeTrQDwcGBEkhyna-2JswgzFh6VHXupDzwVlm2rgpda0F322SXFCenOQoRLbMHZ8YyL1O8oo5ReYOecSy-QAfgZqLn-xVRmz1hXe4XOhJQNo-bK1jJ2Plh-574Zmbedmg1Ih3KgFaIPvpGC-GzGGUPnPh">
+<div class="absolute bottom-2 left-2 z-20 bg-primary text-tertiary-fixed-dim px-2 py-0.5 rounded-md border border-primary font-badge-arcade text-[11px] uppercase tracking-wider">
+              LVL 99 BOSS
+            </div>
+<div class="absolute top-2 right-2 z-20 w-7 h-7 rounded-full bg-error border-2 border-primary flex items-center justify-center text-on-error font-badge-arcade text-[12px] shadow-[2px_2px_0px_#00163a]">
+              ☠
+            </div>
+</div>
+<div class="mt-space-sm flex flex-col items-center">
+<h2 class="font-headline-md text-headline-md text-primary leading-tight">
+              ANGKOR STONE GUARDIAN
+            </h2>
+<p class="font-title-card text-[15px] text-on-surface-variant font-bold">
+              យក្សយាមប្រាសាទអង្គរ • (COLOSSAL RUNIC TANK)
+            </p>
+</div>
+</div>
+<!-- Boss Health, Weakness & Attack Gauge -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<!-- Boss HP Header & Live Value -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[28px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<div>
+<span class="font-badge-arcade text-[12px] uppercase tracking-wider text-error block leading-none font-bold">TEMPLE BOSS HEALTH</span>
+<span class="font-label-bold text-label-bold text-primary font-bold">កម្រិតឈាមមេធំ</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 font-display-hero-mobile text-[26px] text-primary">
+<span class="text-error font-extrabold tracking-tight">420,500</span>
+<span class="text-outline text-title-card font-semibold">/ 1,000,000 HP (42%)</span>
+</div>
+</div>
+<!-- Massive HP Bar with Neo-Brutalist Frame -->
+<div class="w-full h-8 bg-surface-container-high border-[3px] border-primary rounded-xl overflow-hidden p-1 shadow-[4px_4px_0px_#00163a] relative">
+<div class="h-full bg-gradient-to-r from-error via-tertiary-fixed-dim to-error rounded-lg border-r-2 border-primary transition-all duration-700 relative overflow-hidden" id="boss-hp-fill" style="width: 42.05%;">
+<!-- Striped arcade light texture -->
+<div class="absolute inset-0 opacity-25 bg-[repeating-linear-gradient(45deg,#00163a,#00163a_10px,transparent_10px,transparent_20px)]"></div>
+</div>
+</div>
+<!-- Boss Status Buffs & Raid Mechanics Badges -->
+<div class="flex flex-wrap items-center gap-space-xs mt-1">
+<div class="bg-tertiary-fixed px-space-sm py-1 rounded-lg border-2 border-primary font-label-bold text-[12px] text-tertiary flex items-center gap-1 shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">bolt</span>
+<span>⚡ Shocked (2.5x Weakness to Electric / Heat)</span>
+</div>
+<div class="bg-surface-container-high px-space-sm py-1 rounded-lg border-2 border-primary font-label-bold text-[12px] text-primary flex items-center gap-1 shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[16px] text-error">swords</span>
+<span>Last Hit: -45,000 HP</span>
+</div>
+<div class="bg-secondary-fixed px-space-sm py-1 rounded-lg border-2 border-primary font-label-bold text-[12px] text-primary flex items-center gap-1 shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span>Shield Integrity: 12%</span>
+</div>
+</div>
+<!-- Damage Multiplier Subtitle -->
+<div class="bg-surface-container-low border-2 border-primary rounded-xl p-space-sm flex items-center justify-between gap-space-sm mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">info</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">
+<strong class="font-label-bold text-primary">Co-op Raid Rule:</strong> Every correct class answer deals <span class="font-bold text-error">5,000 - 15,000 DMG</span>. Reach 10+ streak to trigger the Class Meteor Strike!
+              </p>
+</div>
+<span class="hidden sm:inline-block font-badge-arcade text-[11px] bg-primary text-tertiary-fixed-dim px-2 py-0.5 rounded border border-primary uppercase">Co-op Mode</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Whole Class Collective Score & Assault Meter + 4. Rushy Class Pet Mentor Box -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Class Super Combo Bar (8 Cols) -->
+<section class="lg:col-span-8 bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div>
+<h3 class="font-title-card text-title-card text-primary leading-tight">
+                CLASS COMBINED POWER • កម្លាំងរួមគ្នាទូទាំងថ្នាក់
+              </h3>
+<p class="font-label-bold text-[12px] text-on-surface-variant">Classroom Raid Co-op Meter • All 35 Students Combined</p>
+</div>
+</div>
+<!-- Class Combo Streak -->
+<div class="bg-tertiary-fixed-dim text-on-tertiary-fixed font-badge-arcade text-badge-arcade px-space-md py-1 rounded-xl border-2 border-primary shadow-[3px_3px_0px_#00163a] flex items-center gap-1.5 self-start sm:self-auto" id="class-streak-count">
+            🔥 24x Class Streak! METEOR READY!
+          </div>
+</div>
+<!-- Combined Energy Assault Track -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-bold text-label-bold">
+<span class="text-primary font-bold">579,500 / 1,000,000 TOTAL RAID POINTS</span>
+<span class="text-secondary font-bold">58% TO STAGE VICTORY</span>
+</div>
+<div class="w-full h-6 bg-surface-container-high border-[3px] border-primary rounded-xl overflow-hidden p-0.5 shadow-[3px_3px_0px_#00163a]">
+<div class="h-full bg-gradient-to-r from-secondary-container via-secondary to-tertiary-fixed-dim rounded-lg transition-all duration-500" style="width: 58%;"></div>
+</div>
+</div>
+<!-- Squad Contribution Breakdown Pills (Uniting rival squads into 1 co-op raid) -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-1 border-t-2 border-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-bold text-[12px] text-primary">Squad Synergy:</span>
+<span class="bg-[#2FA84F] text-on-primary px-space-sm py-0.5 rounded-lg border-2 border-primary font-label-bold text-[12px] shadow-[2px_2px_0px_#00163a]">
+              Team A: 295,000 DMG
+            </span>
+<span class="bg-secondary-container text-on-primary px-space-sm py-0.5 rounded-lg border-2 border-primary font-label-bold text-[12px] shadow-[2px_2px_0px_#00163a]">
+              Team B: 284,500 DMG
+            </span>
+</div>
+<div class="font-label-bold text-[12px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-[#2FA84F]">check_circle</span>
+<span>🛡️ EVERYONE FIGHTS TOGETHER! • យើងទាំងអស់គ្នារួមកម្លាំងគ្នា!</span>
+</div>
+</div>
+</section>
+<!-- 4. Class Pet & Mascot Motivation Box: Rushy the Elephant (4 Cols) -->
+<section class="lg:col-span-4 bg-surface-container-high border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex flex-col justify-between gap-space-sm relative">
+<div class="flex items-start gap-space-sm">
+<!-- Mascot Avatar with Navy Cap -->
+<div class="relative flex-shrink-0">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest border-[3px] border-primary shadow-[3px_3px_0px_#00163a] overflow-hidden flex items-center justify-center p-1">
+<img class="w-full h-full object-cover rounded-xl" data-alt="Playful cheerful cartoon elephant mascot named Rushy wearing a dark navy baseball cap with a gold lightning bolt badge, cute expressive eyes, cheering on high school students, chunky vector arcade art style with solid navy outlines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgku7sVCWom1hkck7gYdlPtxu7CPBV1Gwpp8RLd9FkbzTo0Y_14jueYesNrkQ0vJ98EZin4EEkOn11qDeqUyALw-3RSREjCW3XNqNCF2mJLnBvpuj3QY8ew0_ZQv23Q3YyXznuLC2k3COzh_vjePq23MS2lZq1jKM2im6jZ_b1xXFsSeQ8ulrb5ETuJwnIER1lkiN14Pj-VxhQTBZ-kr8xpVIiUQKOUa1kpIxNFrB8_vcXBWMi9tSW">
+</div>
+<div class="absolute -bottom-1 -right-1 bg-tertiary-fixed-dim text-primary rounded-full w-6 h-6 border-2 border-primary flex items-center justify-center font-bold text-[10px]">
+              ⚡
+            </div>
+</div>
+<!-- Pet Speech Bubble -->
+<div class="flex-1 bg-surface-container-lowest border-2 border-primary rounded-xl p-space-sm shadow-[3px_3px_0px_#00163a] relative">
+<p class="font-label-bold text-[11px] text-secondary font-bold uppercase tracking-wider">Rushy • Class Mascot Mentor</p>
+<p class="font-body-sm text-[13px] text-on-surface leading-snug mt-0.5">
+              "Keep pushing, Class 12B! The Angkor Boss is down to 42% HP! One more round will crack the ancient shield! 🐘⚡💥"
+            </p>
+<p class="font-body-sm text-[12px] text-on-surface-variant font-medium mt-1">
+              "រួមគ្នាតស៊ូ ជ័យជម្នះនៅជិតដល់ហើយ!"
+            </p>
+</div>
+</div>
+<!-- Active Pet Group Buff Badge -->
+<div class="w-full bg-[#2FA84F]/15 border-2 border-primary rounded-xl px-space-sm py-1 flex items-center justify-between text-[#00163a]">
+<div class="flex items-center gap-1.5 font-label-bold text-[12px]">
+<span class="material-symbols-outlined text-[18px] text-[#2FA84F]">verified_user</span>
+<span>+15% Group Shield Activated</span>
+</div>
+<span class="font-badge-arcade text-[10px] bg-[#2FA84F] text-on-primary px-1.5 py-0.5 rounded border border-primary uppercase">BUFF ON</span>
+</div>
+</section>
+</div>
+<!-- 5. Center Question Card (STEM High School Physics) -->
+<main class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[8px_8px_0px_#00163a] p-space-md lg:p-space-xl relative">
+<!-- Overlapping Floating Tag Badge -->
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed-dim text-on-tertiary-fixed border-[2px] border-primary rounded-xl px-space-md py-1 shadow-[3px_3px_0px_#00163a] -mt-8 sm:-mt-10 mb-space-sm">
+<span class="font-badge-arcade text-badge-arcade uppercase tracking-wider">BACII SPECIAL RAID QUESTION #12</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-bold text-label-bold font-bold text-error">+10,000 RAID XP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary hidden sm:inline-block"></span>
+<span class="font-label-bold text-[12px] hidden sm:inline-block font-bold">HARD • កម្រិតពិបាក</span>
+</div>
+<!-- Bilingual Question Statement -->
+<div class="flex flex-col gap-space-sm">
+<!-- English Prompt -->
+<h3 class="font-headline-md text-headline-md text-primary leading-snug">
+          According to the <span class="underline decoration-secondary-container decoration-4">First Law of Thermodynamics</span>, if <strong class="text-secondary font-bold">500 J</strong> of heat is added to a closed gas system and the gas does <strong class="text-error font-bold">200 J</strong> of work on its surroundings, what is the change in internal energy (<span class="font-mono font-bold">ΔU</span>)?
+        </h3>
+<!-- Khmer Bilingual Translation -->
+<p class="font-body-lg text-body-lg text-on-surface-variant font-medium leading-relaxed bg-surface-container-low border-2 border-primary/20 rounded-xl p-space-sm">
+          យោងតាមច្បាប់ទី១ នៃទែម៉ូឌីណាមិច ប្រសិនបើកម្តៅ <span class="font-bold text-primary">500 J</span> ត្រូវបានផ្តល់ឱ្យប្រព័ន្ធឧស្ម័នបិទជិត ហើយឧស្ម័នធ្វើកិច្ចការ <span class="font-bold text-primary">200 J</span> ទៅលើមជ្ឈដ្ឋានក្រៅ តើបម្រែបម្រួលថាមពលក្នុង (<span class="font-bold">ΔU</span>) ស្មើនឹងប៉ុន្មាន?
+        </p>
+<!-- Thermodynamics Physics Schematic Diagram & Formula Panel -->
+<div class="mt-space-xs bg-surface-container-high border-2 border-primary rounded-xl p-space-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center border-2 border-primary font-bold">
+<span class="material-symbols-outlined text-[24px]">calculate</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-primary">Thermodynamics Formula Guide / រូបមន្តគន្លឹះ</p>
+<div class="flex items-center gap-2 mt-0.5">
+<code class="font-title-card text-title-card text-secondary font-bold bg-surface-container-lowest px-2 py-0.5 rounded border border-primary">ΔU = Q - W</code>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(where Q = Heat Energy added, W = Work done by system)</span>
+</div>
+</div>
+</div>
+<!-- Mini Inline Graphic Schematic -->
+<div class="flex items-center gap-3 bg-surface-container-lowest border-2 border-primary rounded-lg px-3 py-1.5 shadow-[2px_2px_0px_#00163a]">
+<div class="text-center">
+<span class="font-label-bold text-[11px] text-secondary font-bold block">HEAT IN (Q)</span>
+<span class="font-badge-arcade text-[14px] text-secondary font-bold">+500 J ➔</span>
+</div>
+<div class="w-8 h-8 rounded bg-surface-container-high border-2 border-primary flex items-center justify-center text-primary font-bold text-xs">
+              GAS
+            </div>
+<div class="text-center">
+<span class="font-label-bold text-[11px] text-error font-bold block">WORK (W)</span>
+<span class="font-badge-arcade text-[14px] text-error font-bold">➔ +200 J</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. Four Large Tactile Answer Buttons (Color Quadrants with High Vis Shapes) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-lg">
+<!-- OPTION A (Correct Choice) -->
+<button class="answer-choice-btn group w-full text-left bg-surface-container-lowest hover:bg-[#D9382B]/10 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-150 border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex items-center justify-between gap-space-sm cursor-pointer" id="opt-A" onclick="triggerAnswer('A')">
+<div class="flex items-center gap-space-md">
+<!-- Shape Avatar (Red Triangle) -->
+<div class="w-12 h-12 rounded-xl bg-[#D9382B] border-2 border-primary flex items-center justify-center text-on-primary shadow-[2px_2px_0px_#00163a] flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="text-xl font-black">▲</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-arcade text-[12px] uppercase tracking-wider text-[#D9382B] font-bold">OPTION A</span>
+<span class="font-title-card text-[22px] text-primary font-extrabold group-hover:text-[#D9382B] transition-colors">ΔU = +300 J</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant font-medium">(500 J - 200 J = +300 J)</span>
+</div>
+</div>
+<!-- Live Classroom Voter Gauge -->
+<div class="flex flex-col items-end">
+<span class="bg-[#2FA84F] text-on-primary font-badge-arcade text-[12px] px-2 py-0.5 rounded-lg border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+              26 Votes (74%)
+            </span>
+<span class="font-label-bold text-[11px] text-on-surface-variant mt-1 font-bold">Class Majority</span>
+</div>
+</button>
+<!-- OPTION B -->
+<button class="answer-choice-btn group w-full text-left bg-surface-container-lowest hover:bg-[#3B68FF]/10 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-150 border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex items-center justify-between gap-space-sm cursor-pointer" id="opt-B" onclick="triggerAnswer('B')">
+<div class="flex items-center gap-space-md">
+<!-- Shape Avatar (Blue Circle) -->
+<div class="w-12 h-12 rounded-xl bg-[#3B68FF] border-2 border-primary flex items-center justify-center text-on-primary shadow-[2px_2px_0px_#00163a] flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="text-2xl font-black leading-none">●</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-arcade text-[12px] uppercase tracking-wider text-[#3B68FF] font-bold">OPTION B</span>
+<span class="font-title-card text-[22px] text-primary font-extrabold group-hover:text-[#3B68FF] transition-colors">ΔU = +700 J</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant font-medium">(500 J + 200 J)</span>
+</div>
+</div>
+<!-- Live Classroom Voter Gauge -->
+<div class="flex flex-col items-end">
+<span class="bg-surface-container-high text-primary font-badge-arcade text-[12px] px-2 py-0.5 rounded-lg border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+              4 Votes
+            </span>
+<span class="font-label-bold text-[11px] text-on-surface-variant mt-1">Pending</span>
+</div>
+</button>
+<!-- OPTION C -->
+<button class="answer-choice-btn group w-full text-left bg-surface-container-lowest hover:bg-[#E2A93B]/20 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-150 border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex items-center justify-between gap-space-sm cursor-pointer" id="opt-C" onclick="triggerAnswer('C')">
+<div class="flex items-center gap-space-md">
+<!-- Shape Avatar (Gold Square) -->
+<div class="w-12 h-12 rounded-xl bg-[#E2A93B] border-2 border-primary flex items-center justify-center text-primary shadow-[2px_2px_0px_#00163a] flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="text-xl font-black">■</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-arcade text-[12px] uppercase tracking-wider text-tertiary-container font-bold">OPTION C</span>
+<span class="font-title-card text-[22px] text-primary font-extrabold group-hover:text-on-tertiary-container transition-colors">ΔU = -300 J</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant font-medium">(Negative energy shift)</span>
+</div>
+</div>
+<!-- Live Classroom Voter Gauge -->
+<div class="flex flex-col items-end">
+<span class="bg-surface-container-high text-primary font-badge-arcade text-[12px] px-2 py-0.5 rounded-lg border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+              3 Votes
+            </span>
+<span class="font-label-bold text-[11px] text-on-surface-variant mt-1">Pending</span>
+</div>
+</button>
+<!-- OPTION D -->
+<button class="answer-choice-btn group w-full text-left bg-surface-container-lowest hover:bg-[#2FA84F]/10 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-150 border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex items-center justify-between gap-space-sm cursor-pointer" id="opt-D" onclick="triggerAnswer('D')">
+<div class="flex items-center gap-space-md">
+<!-- Shape Avatar (Green Star) -->
+<div class="w-12 h-12 rounded-xl bg-[#2FA84F] border-2 border-primary flex items-center justify-center text-on-primary shadow-[2px_2px_0px_#00163a] flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="text-2xl font-black leading-none">★</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-arcade text-[12px] uppercase tracking-wider text-[#2FA84F] font-bold">OPTION D</span>
+<span class="font-title-card text-[22px] text-primary font-extrabold group-hover:text-[#2FA84F] transition-colors">ΔU = +200 J</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant font-medium">(Work equivalent only)</span>
+</div>
+</div>
+<!-- Live Classroom Voter Gauge -->
+<div class="flex flex-col items-end">
+<span class="bg-surface-container-high text-primary font-badge-arcade text-[12px] px-2 py-0.5 rounded-lg border-2 border-primary shadow-[2px_2px_0px_#00163a]">
+              2 Votes
+            </span>
+<span class="font-label-bold text-[11px] text-on-surface-variant mt-1">Pending</span>
+</div>
+</button>
+</div>
+<!-- Action Footer Strip inside Question Box -->
+<div class="mt-space-lg pt-space-md border-t-2 border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">bolt</span>
+<span class="font-label-bold text-label-bold text-primary">
+            ⚡ Quick Vote Tip: Click answer to synchronize phone buzzer with projector!
+          </span>
+</div>
+<div class="font-badge-arcade text-[12px] text-secondary font-bold uppercase tracking-wider">
+          Class Meteor Strike at 100% Consensus ☄️
+        </div>
+</div>
+</main>
+<!-- 7. Bottom Classroom Controls & Real-Time Live Feed -->
+<footer class="w-full bg-surface-container-lowest border-[3px] border-primary rounded-2xl shadow-[6px_6px_0px_#00163a] p-space-md flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Live Event Ticker Feed -->
+<div class="flex items-center gap-space-sm w-full lg:w-3/5 overflow-hidden">
+<div class="bg-primary text-tertiary-fixed-dim px-2.5 py-1 rounded-lg border-2 border-primary font-badge-arcade text-[11px] uppercase tracking-wider flex items-center gap-1 flex-shrink-0">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+          LIVE FEED
+        </div>
+<div class="flex items-center gap-space-sm overflow-x-auto no-scrollbar py-1 text-on-surface whitespace-nowrap">
+<div class="bg-surface-container-high border-2 border-primary rounded-lg px-space-sm py-1 font-label-bold text-[12px] flex items-center gap-1">
+<span class="text-secondary font-bold">⚡ Sokha_Speed</span>
+<span class="text-on-surface-variant">hit for 12,500 CRIT!</span>
+</div>
+<div class="bg-surface-container-high border-2 border-primary rounded-lg px-space-sm py-1 font-label-bold text-[12px] flex items-center gap-1">
+<span class="text-[#2FA84F] font-bold">🛡️ CADT Rhinos</span>
+<span class="text-on-surface-variant">deployed Class Shield</span>
+</div>
+<div class="bg-surface-container-high border-2 border-primary rounded-lg px-space-sm py-1 font-label-bold text-[12px] flex items-center gap-1">
+<span class="text-error font-bold">🔥 Bak Touk Tigers</span>
+<span class="text-on-surface-variant">triggered 2x Co-op Surge</span>
+</div>
+</div>
+</div>
+<!-- Instructor / Projector Controls -->
+<div class="flex items-center justify-end gap-space-sm w-full lg:w-2/5">
+<!-- Projector Mode Toggle -->
+<button class="inline-flex items-center justify-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">tv</span>
+<span class="text-sm">Projector Mode</span>
+</button>
+<!-- Sound FX Button -->
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center cursor-pointer" title="Sound Effects">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+<!-- Pause Battle Button -->
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest hover:bg-error-container text-error border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center cursor-pointer" title="Pause Battle">
+<span class="material-symbols-outlined text-[20px]">pause</span>
+</button>
+<!-- Finish Raid Master Button -->
+<button class="inline-flex items-center justify-center gap-1.5 px-space-md py-1.5 bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">sports_martial_arts</span>
+<span class="text-sm">Raid Score</span>
+</button>
+</div>
+</footer>
+</div>
+</div></main>
+<script src="../../core/guard.js"></script>
+<script src="../../core/jquery-3.7.1.min.js"></script>
+<script src="../../core/store.js"></script>
+<script src="../../core/data.js"></script>
+<script src="../../components/toast.js"></script>
+<script src="../../core/engine.js"></script>
+<script src="../../components/layout.js"></script>
+<script src="../../core/main.js"></script>
+</body></html>

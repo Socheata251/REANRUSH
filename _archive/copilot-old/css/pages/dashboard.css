@@ -1,0 +1,4 @@
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.stat-card { display: grid; gap: 6px; }.stat-card strong { font: 800 1.7rem 'Baloo 2', sans-serif; }
+.section-heading { margin: 34px 0 16px; }.dashboard-actions { margin-top: 24px; }
+@media (max-width: 580px) { .stat-grid { grid-template-columns: 1fr; } }

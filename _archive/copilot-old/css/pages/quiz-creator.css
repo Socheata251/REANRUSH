@@ -1,0 +1,2 @@
+.question-heading { justify-content: space-between; }
+.question-row { padding: 14px; background: var(--nude); border: 2px solid var(--navy); border-radius: 9px; }

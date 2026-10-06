@@ -1,0 +1,104 @@
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="home" href="index.html"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8pW0JscbppE"><span class="font-title-card text-title-card text-on-primary tracking-wide hidden sm:inline-block">ReanRush</span></a><nav class="hidden lg:flex items-center gap-space-sm ml-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-label-bold rounded-lg border-2 border-primary"><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="games" href="../student/join-pin.html">Games</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="blog" href="blog.html">Blog</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="pricing" href="pricing.html">Pricing</a><a class="px-space-md py-space-xs font-label-bold text-label-bold text-primary-fixed hover:text-on-primary transition-colors" data-path="class-pin" href="../student/join-pin.html"><span class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-1.5 py-0.5 rounded text-[11px] font-bold border border-primary">PIN</span>Class PIN</a></nav></div><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="arena-lobby" href="../student/join-pin.html">Join Game</a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-surface-container-lowest text-primary-container font-title-card text-title-card rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="sign-up" href="signup.html">Sign up</a>
+<div class="mt-6 pt-5 border-t-[2px] border-primary/20 text-center flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+<span class="font-body-md text-on-surface-variant font-medium">Already a player? / មានគណនីរួចហើយ?</span>
+<a class="font-title-card text-title-card text-secondary hover:text-secondary-container underline underline-offset-4 decoration-2 decoration-primary font-bold" href="login.html" onclick="event.preventDefault(); alert('Redirecting to ReanRush Arena Login...');">
+          Log in (ចូលគណនី) →
+        </a>
+</div>
+</div>
+<!-- Bottom Arcade Micro-badge -->
+<div class="mt-4 flex items-center justify-center gap-2 text-on-surface-variant text-xs font-label-bold">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">stars</span>
+<span>Engineered for CADT, AUB, &amp; All Cambodian High Schools</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">stars</span>
+</div>
+</div>
+<!-- Notification Toast Modal Container -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-message">
+<div class="bg-surface-container-lowest border-[3px] border-primary rounded-xl px-5 py-3 shadow-[6px_6px_0px_#00163a] flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed-dim border-2 border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">sports_esports</span>
+</span>
+<div>
+<p class="font-title-card text-primary text-sm leading-tight" id="toast-title">Success!</p>
+<p class="font-body-sm text-xs text-on-surface-variant" id="toast-desc">Welcome to ReanRush Arena</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectRole(role) {
+    const studentBtn = document.getElementById('btn-role-student');
+    const teacherBtn = document.getElementById('btn-role-teacher');
+    const idHint = document.getElementById('role-id-hint');
+
+    if (role === 'student') {
+      studentBtn.className = "flex-1 py-2 px-3 rounded-xl font-title-card text-[15px] sm:text-title-card flex items-center justify-center gap-2 border-[2px] border-primary bg-secondary-container text-on-secondary-container shadow-[2px_2px_0px_#00163a] transition-all";
+      teacherBtn.className = "flex-1 py-2 px-3 rounded-xl font-title-card text-[15px] sm:text-title-card flex items-center justify-center gap-2 border-[2px] border-transparent bg-transparent text-primary hover:bg-surface-container-high transition-all";
+      idHint.textContent = "MoEYS / School domain";
+    } else {
+      teacherBtn.className = "flex-1 py-2 px-3 rounded-xl font-title-card text-[15px] sm:text-title-card flex items-center justify-center gap-2 border-[2px] border-primary bg-secondary-container text-on-secondary-container shadow-[2px_2px_0px_#00163a] transition-all";
+      studentBtn.className = "flex-1 py-2 px-3 rounded-xl font-title-card text-[15px] sm:text-title-card flex items-center justify-center gap-2 border-[2px] border-transparent bg-transparent text-primary hover:bg-surface-container-high transition-all";
+      idHint.textContent = "Teacher Staff ID / MoEYS Gov Email";
+    }
+  }
+
+  function togglePasswordVisibility() {
+    const pwdInput = document.getElementById('password-input');
+    const icon = document.getElementById('eye-icon');
+    if (pwdInput.type === 'password') {
+      pwdInput.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      pwdInput.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function handlePasswordStrength(val) {
+    const bar = document.getElementById('strength-bar');
+    const label = document.getElementById('strength-label');
+    
+    if (!val || val.length === 0) {
+      bar.style.width = '8%';
+      bar.className = 'h-full bg-outline rounded-full transition-all duration-300';
+      label.textContent = 'Unshielded';
+      label.className = 'font-badge-arcade text-outline uppercase tracking-wider';
+    } else if (val.length < 6) {
+      bar.style.width = '33%';
+      bar.className = 'h-full bg-error rounded-full transition-all duration-300';
+      label.textContent = 'Weak Armor';
+      label.className = 'font-badge-arcade text-error uppercase tracking-wider';
+    } else if (val.length < 10) {
+      bar.style.width = '66%';
+      bar.className = 'h-full bg-tertiary-fixed-dim rounded-full transition-all duration-300';
+      label.textContent = 'Gold Shield';
+      label.className = 'font-badge-arcade text-on-tertiary-container uppercase tracking-wider';
+    } else {
+      bar.style.width = '100%';
+      bar.className = 'h-full bg-[#2FA84F] rounded-full transition-all duration-300';
+      label.textContent = 'Max Power Armor!';
+      label.className = 'font-badge-arcade text-[#2FA84F] uppercase tracking-wider font-extrabold';
+    }
+  }
+
+  function showToast(title, desc) {
+    const toast = document.getElementById('toast-message');
+    document.getElementById('toast-title').textContent = title;
+    document.getElementById('toast-desc').textContent = desc;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+
+  function triggerGoogleNotice() {
+    showToast("Google Auth Ready", "Linking with MoEYS School Google Workspace...");
+  }
+
+  function simulateAccountCreated() {
+    showToast("Level 1 Unlocked! 🎉", "Welcome to ReanRush! Launching battle lobby...");
+  }
+</script></main><footer class="w-full bg-primary-container text-on-primary"><div class="w-full h-2.5 bg-primary overflow-hidden flex items-center justify-center"><div class="w-full flex justify-around text-tertiary-fixed-dim text-[9px] tracking-[6px] select-none leading-none">❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="ReanRush Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UutalnQoduZYBueLm3vyGymd3OhMAP8MIb9G7DGB2zOljx9hqbcXRAwYH-9wOoo8YAfYfY7tDtH1bRLc56tGIYnky5efgedaEmXCkJD4dsoSqwoc6wHsJ6AhPOi0euBSmKrbtaHNs0cTAUawWa438ooX1e8bL7gsh7W7m_c6_gA6u72P4FNfiTOXXvxWrdKiSq1ksPiJSo8MLvfbWzxtCN_r4FFgLEcN3ceZ1PnDx-QpvY8pW0JscbppE"><span class="font-headline-md text-headline-md text-on-primary">ReanRush</span></div><p class="font-body-sm text-body-sm text-on-primary-container">High-octane quiz battles engineered for Cambodian high school classrooms. Fueling academic competition and collaborative learning.</p><div class="mt-space-sm p-space-sm bg-primary border-[3px] border-primary-container rounded-xl shadow-[3px_3px_0px_#00163a]"><p class="font-badge-arcade text-badge-arcade text-tertiary-fixed-dim tracking-wider uppercase">ACADEMIC PRIDE</p><p class="font-body-sm text-body-sm text-on-primary font-bold">Student project at AUB and CADT</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Youth innovation empowering digital education.</p></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Curriculum &amp; Platform</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Khmer Curriculum Quiz Bank</li><li class="text-primary-fixed">Teacher Dashboard</li><li class="text-primary-fixed">Live Arena Battles</li><li class="text-primary-fixed">National Leaderboards</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Safety &amp; Community</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="text-primary-fixed">Student Safety Guidelines</li><li class="text-primary-fixed">Classroom Code of Conduct</li><li class="text-primary-fixed">Educator Community</li><li class="text-primary-fixed">Regional Tournaments</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-card text-title-card text-tertiary-fixed-dim">Education Sponsor</h4><div class="p-space-md bg-surface-container-lowest border-[3px] border-primary rounded-xl shadow-[4px_4px_0px_#00163a] text-center flex flex-col items-center justify-center gap-space-xs"><div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center border-2 border-primary"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]">account_balance</span></div><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">ACLEDA BANK</span><span class="font-badge-arcade text-badge-arcade text-on-surface-variant uppercase tracking-wider text-[11px]">Official Fintech Sponsor</span></div></div></div><div class="pt-space-md border-t-[2px] border-primary/60 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-primary-fixed">Copyright © 2025 ReanRush. Made for Cambodian high school learners.</p><p class="font-body-sm text-body-sm text-on-primary-container text-xs">Designed with Neo-Brutalist Arcade Precision.</p></div></div></footer></body></html>

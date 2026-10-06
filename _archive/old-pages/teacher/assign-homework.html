@@ -1,0 +1,512 @@
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-primary-container border-b-[3px] border-primary"><div class="h-20 w-full max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="classes" href="dashboard.html"><img alt="Adorable playful 3D cartoon baby elephant mascot named Rushy, wearing a tilted dark navy blue baseball cap with a bright gold lightning bolt emblem on the front. Friendly smiling expression with cheerful big cartoon eyes, waving its cute trunk enthusiastically, clean bold vector style illustration, studio lighting with sharp navy outlines, solid bright white background, vibrant game mascot character design suitable for student educational battle game." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U"><span class="font-display-hero text-title-card text-on-primary tracking-tight">ReanRush</span></a><nav class="hidden xl:flex items-center gap-space-xs ml-space-md" data-active-classes="bg-secondary-container text-on-secondary-container shadow-[2px_2px_0px_#00163a]"><a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-all font-label-bold bg-secondary-container text-on-secondary-container shadow-[2px_2px_0px_#00163a]" data-path="classes" href="class-detail.html">Classes</a><a class="px-space-md py-space-xs rounded-lg text-primary-fixed-dim hover:text-on-primary hover:bg-primary transition-all font-label-bold text-label-bold" data-path="games" href="discover.html">Games</a><a class="px-space-md py-space-xs rounded-lg text-primary-fixed-dim hover:text-on-primary hover:bg-primary transition-all font-label-bold text-label-bold" data-path="flashcard-maker" href="flashcard-creator.html">Flashcard Maker</a><a class="px-space-md py-space-xs rounded-lg text-primary-fixed-dim hover:text-on-primary hover:bg-primary transition-all font-label-bold text-label-bold" data-path="blog" href="../public/blog.html">Blog</a><a class="px-space-md py-space-xs rounded-lg text-primary-fixed-dim hover:text-on-primary hover:bg-primary transition-all font-label-bold text-label-bold" data-path="pricing" href="../public/pricing.html">Pricing</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-space-xs bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-xs rounded-full border-[2px] border-primary font-badge-arcade text-badge-arcade shadow-[2px_2px_0px_#00163a]"><span class="material-symbols-outlined text-[16px]">tag</span><span>PIN #4089</span></div><a class="px-space-md py-space-xs bg-secondary-container text-on-secondary-container border-[3px] border-primary rounded-xl font-headline-md text-label-bold shadow-[4px_4px_0px_#00163a] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="join-game" href="start-game.html">Join Game</a><a class="hidden md:inline-flex px-space-md py-space-xs bg-surface-container-lowest text-primary border-[3px] border-primary rounded-xl font-headline-md text-label-bold shadow-[4px_4px_0px_#00163a] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" data-path="signup" href="../public/signup.html">Sign up</a>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<a class="inline-flex items-center gap-space-xs font-label-bold text-label-bold text-primary hover:text-secondary transition-colors w-fit group" data-path="classes" href="class-detail.html">
+<span class="material-symbols-outlined text-[20px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span>Back to Classes / ត្រឡប់ទៅថ្នាក់រៀន</span>
+</a>
+<section class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] space-y-space-md relative">
+<div class="flex items-center justify-between border-b-[2px] border-surface-variant pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-badge-arcade text-badge-arcade border border-primary">1</span>
+<div>
+<h2 class="font-headline-md text-title-card text-primary">Choose Deck or Quiz <span class="font-body-md text-body-sm font-normal text-on-surface-variant">/ ជ្រើសរើសកម្រងសំណួរ ឬប័ណ្ណ</span></h2>
+</div>
+</div>
+<a class="font-label-bold text-body-sm text-secondary hover:underline flex items-center gap-1" href="discover.html">
+<span>+ Discover Library</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Search & Filter Bar -->
+<div class="flex flex-col sm:flex-row gap-space-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface rounded-xl border-[3px] border-primary-container font-body-md text-body-sm text-primary focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search by topic, grade, or MoEYS chapter..." type="text" value="BACII Physics">
+</div>
+<div class="flex gap-1 bg-surface-container p-1 rounded-xl border-[2px] border-primary-container">
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary font-badge-arcade text-badge-arcade" type="button">All (ទាំងអស់)</button>
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-variant text-on-surface font-badge-arcade text-badge-arcade" type="button">Quizzes</button>
+<button class="px-space-sm py-1 rounded-lg hover:bg-surface-variant text-on-surface font-badge-arcade text-badge-arcade" type="button">Cards</button>
+</div>
+</div>
+<!-- Deck List Radio Grid -->
+<div class="space-y-space-sm" id="deck-selection-group">
+<!-- Deck 1 (Active/Selected) -->
+<label class="block cursor-pointer">
+<input checked="" class="peer sr-only" name="selected_deck" type="radio">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface-container-lowest peer-checked:bg-primary-fixed/20 peer-checked:border-secondary-container shadow-[4px_4px_0px_#0B2A5B] transition-all relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-badge-arcade text-[11px] border border-primary-container">PHYSICS • ដែនម៉ាញ៉េទិច</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-[11px] border border-primary-container">GRADE 12 (BACII)</span>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface font-badge-arcade text-[11px]">16 Questions</span>
+</div>
+<h3 class="font-headline-md text-title-card text-primary pt-1">
+                      BACII Physics: Electromagnetism &amp; Induction
+                    </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Faraday's Law, magnetic flux, Lorentz force diagrams, and official past national exam exercises.
+                    </p>
+</div>
+<div class="w-7 h-7 rounded-full border-[3px] border-primary-container flex items-center justify-center bg-secondary-container text-on-secondary-container shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px] font-bold">check</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-variant flex items-center justify-between text-body-sm font-label-bold text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">verified</span> MoEYS High School Standard</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-primary font-badge-arcade text-[10px]">Ta Prohm (Medium)</span>
+</div>
+</div>
+</label>
+<!-- Deck 2 -->
+<label class="block cursor-pointer">
+<input class="peer sr-only" name="selected_deck" type="radio">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface-container-lowest peer-checked:bg-primary-fixed/20 peer-checked:border-secondary-container shadow-[4px_4px_0px_#0B2A5B] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-badge-arcade text-[11px] border border-primary-container">CHEMISTRY • គីមីវិទ្យា</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-[11px] border border-primary-container">GRADE 12</span>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface font-badge-arcade text-[11px]">20 Questions</span>
+</div>
+<h3 class="font-headline-md text-title-card text-primary pt-1">
+                      Organic Chemistry: Hydrocarbons &amp; Esters
+                    </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      IUPAC nomenclature, functional group identification, and saponification balancing.
+                    </p>
+</div>
+<div class="w-7 h-7 rounded-full border-[3px] border-primary-container bg-surface-container shrink-0 mt-1"></div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-variant flex items-center justify-between text-body-sm font-label-bold text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">science</span> Lab Simulation Deck</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-badge-arcade text-[10px]">Angkor Boss (Hard)</span>
+</div>
+</div>
+</label>
+<!-- Deck 3 -->
+<label class="block cursor-pointer">
+<input class="peer sr-only" name="selected_deck" type="radio">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface-container-lowest peer-checked:bg-primary-fixed/20 peer-checked:border-secondary-container shadow-[4px_4px_0px_#0B2A5B] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-tertiary-fixed-dim font-badge-arcade text-[11px] border border-primary-container">LITERATURE • អក្សរសាស្ត្រ</span>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface font-badge-arcade text-[11px]">GRADE 10</span>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface font-badge-arcade text-[11px]">15 Cards</span>
+</div>
+<h3 class="font-headline-md text-title-card text-primary pt-1">
+                      Khmer Literature: Kolab Pailin (កុលាបប៉ៃលិន)
+                    </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Character analysis of Chao Chet, historical backdrop, and moral themes by Nhok Them.
+                    </p>
+</div>
+<div class="w-7 h-7 rounded-full border-[3px] border-primary-container bg-surface-container shrink-0 mt-1"></div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-variant flex items-center justify-between text-body-sm font-label-bold text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">menu_book</span> Flashcard Review</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-badge-arcade text-[10px]">Bayon (Easy)</span>
+</div>
+</div>
+</label>
+</div>
+</section>
+<!-- Step 2: Choose Target Class -->
+<section class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-surface-variant pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-badge-arcade text-badge-arcade border border-primary">2</span>
+<h2 class="font-headline-md text-title-card text-primary">Choose Target Squad <span class="font-body-md text-body-sm font-normal text-on-surface-variant">/ ជ្រើសរើសថ្នាក់រៀន</span></h2>
+</div>
+<span class="font-badge-arcade text-badge-arcade text-secondary">1 Squad Selected</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Class 1 (Selected) -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" type="checkbox">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface-container-lowest peer-checked:bg-secondary-container/10 peer-checked:border-secondary shadow-[4px_4px_0px_#0B2A5B] flex flex-col justify-between h-full transition-all">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-badge-arcade text-badge-arcade text-secondary">RUSH-849</span>
+<div class="w-5 h-5 rounded border-[2px] border-primary-container bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div class="font-headline-md text-body-lg text-primary pt-1">Grade 12-A</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Physics Squad</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-surface-variant flex items-center justify-between text-body-sm font-label-bold">
+<span class="text-primary font-bold">38 Students</span>
+<span class="text-secondary font-badge-arcade text-[11px]">ACTIVE</span>
+</div>
+</div>
+</label>
+<!-- Class 2 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface-container-lowest peer-checked:bg-secondary-container/10 peer-checked:border-secondary shadow-[4px_4px_0px_#0B2A5B] hover:translate-x-[-2px] hover:translate-y-[-2px] flex flex-col justify-between h-full transition-all">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-badge-arcade text-badge-arcade text-outline">RUSH-512</span>
+<div class="w-5 h-5 rounded border-[2px] border-primary-container bg-surface"></div>
+</div>
+<div class="font-headline-md text-body-lg text-primary pt-1">Grade 12-B</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Chemistry Squad</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-surface-variant flex items-center justify-between text-body-sm font-label-bold text-on-surface-variant">
+<span>42 Students</span>
+<span class="font-badge-arcade text-[11px]">Bak Touk</span>
+</div>
+</div>
+</label>
+<!-- Class 3 -->
+<label class="cursor-pointer">
+<input class="peer sr-only" type="checkbox">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface-container-lowest peer-checked:bg-secondary-container/10 peer-checked:border-secondary shadow-[4px_4px_0px_#0B2A5B] hover:translate-x-[-2px] hover:translate-y-[-2px] flex flex-col justify-between h-full transition-all">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-badge-arcade text-badge-arcade text-outline">RUSH-204</span>
+<div class="w-5 h-5 rounded border-[2px] border-primary-container bg-surface"></div>
+</div>
+<div class="font-headline-md text-body-lg text-primary pt-1">Grade 11-A</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Advanced Math</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-surface-variant flex items-center justify-between text-body-sm font-label-bold text-on-surface-variant">
+<span>36 Students</span>
+<span class="font-badge-arcade text-[11px]">Sisowath</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Select all Grade 12 Sections toggle -->
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-xl border-[2px] border-primary-container">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">groups</span>
+<span class="font-label-bold text-body-sm text-primary">Select All Grade 12 Sections (គ្រប់ថ្នាក់ទី១២ ទាំងពីរ)</span>
+</div>
+<button class="px-space-sm py-1 bg-surface-container-lowest hover:bg-tertiary-fixed text-primary font-badge-arcade text-badge-arcade rounded-lg border-[2px] border-primary-container shadow-[2px_2px_0px_#0B2A5B] transition-transform active:translate-x-0.5 active:translate-y-0.5" type="button">
+              Select Both (80 Students)
+            </button>
+</div>
+</section>
+<!-- Step 3: Deadline & Scheduling -->
+<section class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-surface-variant pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-badge-arcade text-badge-arcade border border-primary">3</span>
+<h2 class="font-headline-md text-title-card text-primary">Deadline &amp; Cutoff <span class="font-body-md text-body-sm font-normal text-on-surface-variant">/ កាលបរិច្ឆេទផុតកំណត់</span></h2>
+</div>
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-badge-arcade rounded border border-primary-container">COUNTDOWN ACTIVE</span>
+</div>
+<!-- Quick Presets -->
+<div class="space-y-space-xs">
+<label class="font-label-bold text-body-sm text-on-surface-variant block">Quick Presets / ជ្រើសរើសរហ័ស:</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<button class="py-2 px-space-xs bg-surface hover:bg-surface-container text-primary font-badge-arcade text-badge-arcade rounded-lg border-[2px] border-primary-container" type="button">
+                Tomorrow (ស្អែក)
+              </button>
+<button class="py-2 px-space-xs bg-surface hover:bg-surface-container text-primary font-badge-arcade text-badge-arcade rounded-lg border-[2px] border-primary-container" type="button">
+                3 Days (៣ ថ្ងៃ)
+              </button>
+<button class="py-2 px-space-xs bg-secondary-container text-on-secondary-container font-badge-arcade text-badge-arcade rounded-lg border-[2px] border-primary-container shadow-[2px_2px_0px_#0B2A5B]" type="button">
+                ★ End of Week
+              </button>
+<button class="py-2 px-space-xs bg-surface hover:bg-surface-container text-primary font-badge-arcade text-badge-arcade rounded-lg border-[2px] border-primary-container" type="button">
+                Custom (ផ្ទាល់)
+              </button>
+</div>
+</div>
+<!-- Inputs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="space-y-1">
+<label class="font-label-bold text-body-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_month</span>
+<span>Due Date (ថ្ងៃផុតកំណត់)</span>
+</label>
+<div class="relative">
+<input class="w-full px-space-md py-2.5 bg-surface rounded-xl border-[3px] border-primary-container font-body-md text-body-sm text-primary focus:outline-none focus:bg-surface-container-lowest" type="text" value="Oct 26, 2025 (Sunday / ថ្ងៃអាទិត្យ)">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary cursor-pointer">edit_calendar</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-bold text-body-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>Cutoff Time (ម៉ោងផុតកំណត់)</span>
+</label>
+<div class="relative">
+<input class="w-full px-space-md py-2.5 bg-surface rounded-xl border-[3px] border-primary-container font-body-md text-body-sm text-primary focus:outline-none focus:bg-surface-container-lowest" type="text" value="08:00 PM (យប់)">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary cursor-pointer">timer</span>
+</div>
+</div>
+</div>
+<!-- Late Submission Toggle -->
+<div class="p-space-sm bg-surface rounded-xl border-[2px] border-primary-container flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">history_toggle_off</span>
+<div>
+<div class="font-label-bold text-body-sm text-primary">Allow late submissions with 50% XP penalty</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant">អនុញ្ញាតឱ្យសិស្សបញ្ជូនយឺតដោយកាត់ពិន្ទុ XP ពាក់កណ្តាល (Max 24h grace period)</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-12 h-7 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-[2px] after:border-primary-container after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-secondary-container border-[2px] border-primary-container"></div>
+</label>
+</div>
+</section>
+<!-- Step 4: Attempts & Mastery Rules -->
+<section class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-surface-variant pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-badge-arcade text-badge-arcade border border-primary">4</span>
+<h2 class="font-headline-md text-title-card text-primary">Attempts &amp; Mastery Rules <span class="font-body-md text-body-sm font-normal text-on-surface-variant">/ ចំនួនលើកនៃការសាកល្បង</span></h2>
+</div>
+<span class="font-badge-arcade text-badge-arcade text-on-tertiary-container">MASTERY GOAL: 80%</span>
+</div>
+<div class="space-y-space-sm">
+<label class="font-label-bold text-body-sm text-primary block">Allowed Attempts per Student (កំណត់ចំនួនដងធ្វើ):</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer">
+<input class="peer sr-only" name="attempts" type="radio">
+<div class="p-space-sm rounded-xl border-[3px] border-primary-container bg-surface peer-checked:bg-secondary-container/10 peer-checked:border-secondary shadow-[3px_3px_0px_#0B2A5B] text-center transition-all">
+<div class="font-headline-md text-body-lg text-primary">1 Attempt</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant">ម្តងគត់ (Test Mode)</div>
+</div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="attempts" type="radio">
+<div class="p-space-sm rounded-xl border-[3px] border-primary-container bg-surface peer-checked:bg-secondary-container/15 peer-checked:border-secondary-container shadow-[4px_4px_0px_#0B2A5B] text-center relative transition-all">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 px-2 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-[10px] rounded-full border border-primary-container">RECOMMENDED</span>
+<div class="font-headline-md text-body-lg text-primary">3 Attempts</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant">៣ ដង (Drill + Mastery)</div>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="attempts" type="radio">
+<div class="p-space-sm rounded-xl border-[3px] border-primary-container bg-surface peer-checked:bg-secondary-container/10 peer-checked:border-secondary shadow-[3px_3px_0px_#0B2A5B] text-center transition-all">
+<div class="font-headline-md text-body-lg text-primary">Unlimited</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant">មិនកំណត់ (Calm Revision)</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Mastery Target Slider Box -->
+<div class="p-space-md bg-surface rounded-xl border-[2px] border-primary-container space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-body-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary">local_fire_department</span>
+<span>Minimum Passing Benchmark for Squad Streak Shield:</span>
+</span>
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-badge-arcade text-badge-arcade rounded">80% Accuracy</span>
+</div>
+<div class="w-full bg-surface-container-high h-3 rounded-full border-[2px] border-primary-container overflow-hidden">
+<div class="bg-secondary-container h-full w-[80%] rounded-full"></div>
+</div>
+<div class="flex justify-between font-body-sm text-[12px] text-on-surface-variant">
+<span>60% Passing</span>
+<span>75% Good</span>
+<span class="font-bold text-primary">80% Mastery Shield 🔥</span>
+<span>95% Boss Level</span>
+</div>
+</div>
+</section>
+<!-- Step 5: Game Mode Toggle -->
+<section class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] space-y-space-md">
+<div class="flex items-center justify-between border-b-[2px] border-surface-variant pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-badge-arcade text-badge-arcade border border-primary">5</span>
+<h2 class="font-headline-md text-title-card text-primary">Game Mode Format <span class="font-body-md text-body-sm font-normal text-on-surface-variant">/ ទម្រង់នៃការបំពេញ</span></h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Mode 1: Practice Mode -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="game_mode" type="radio">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface peer-checked:bg-secondary-container/10 peer-checked:border-secondary shadow-[4px_4px_0px_#0B2A5B] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all h-full flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface font-badge-arcade text-[11px] border border-primary-container">SELF-PACED</span>
+<span class="material-symbols-outlined text-outline">menu_book</span>
+</div>
+<h3 class="font-headline-md text-title-card text-primary">Practice Mode</h3>
+<div class="font-body-sm text-body-sm text-secondary font-semibold">ទម្រង់អនុវត្តស្ងប់ស្ងាត់</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Calm, self-paced review. Instant explanations, audio hints, and no harsh ticking clock. Best for flashcards and initial MoEYS chapter comprehension.
+                  </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-variant text-[12px] font-label-bold text-on-surface-variant">
+                  Standard XP • No timer penalties
+                </div>
+</div>
+</label>
+<!-- Mode 2: Battle & Score Mode (Active) -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="game_mode" type="radio">
+<div class="p-space-md rounded-xl border-[3px] border-primary-container bg-surface peer-checked:bg-secondary-container/15 peer-checked:border-secondary-container shadow-[6px_6px_0px_#0B2A5B] transition-all h-full flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-7 -top-7 w-20 h-20 bg-tertiary-fixed rotate-45 border-b-[2px] border-primary-container flex items-end justify-center pb-1">
+<span class="font-badge-arcade text-[10px] text-on-tertiary-fixed font-bold">HOT</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-badge-arcade text-[11px] border border-primary-container">TIMED ARCADE</span>
+<span class="material-symbols-outlined text-secondary-container">swords</span>
+</div>
+<h3 class="font-headline-md text-title-card text-primary">Score &amp; Battle Mode</h3>
+<div class="font-body-sm text-body-sm text-secondary font-semibold">ទម្រង់ប្រកួតយកពិន្ទុ (30s Clock)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    High-stakes arcade drill. Earn double XP, squad leaderboard streak multipliers, and instant Mistake Vault logging for review.
+                  </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-variant text-[12px] font-label-bold text-primary flex items-center justify-between">
+<span>+450 XP Max Bounty</span>
+<span class="font-badge-arcade text-badge-arcade text-error">Leaderboard Sync</span>
+</div>
+</div>
+</label>
+</div>
+</section>
+<!-- Step 6: Bottom Action Bar -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2.5 bg-surface text-primary border-[3px] border-primary-container rounded-xl font-headline-md text-label-bold shadow-[3px_3px_0px_#0B2A5B] hover:translate-x-[-1px] hover:translate-y-[-1px] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+              Cancel (បោះបង់)
+            </button>
+<button class="flex-1 sm:flex-none px-space-md py-2.5 bg-surface text-primary border-[3px] border-primary-container rounded-xl font-headline-md text-label-bold shadow-[3px_3px_0px_#0B2A5B] hover:translate-x-[-1px] hover:translate-y-[-1px] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all" type="button">
+              Save Draft (រក្សាទុក)
+            </button>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-3 bg-secondary-container text-on-secondary-container border-[3px] border-primary-container rounded-xl font-display-hero text-body-lg shadow-[6px_6px_0px_#0B2A5B] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_#0B2A5B] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center justify-center gap-2" type="button">
+<span>🚀 Deploy Mission to 38 Students</span>
+</button>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Live Preview & Coach Advice (40%) -->
+<div class="lg:col-span-5 xl:col-span-5 space-y-space-lg lg:sticky lg:top-24">
+<!-- Live Student Mission Card Preview -->
+<div class="bg-surface-container-lowest rounded-xl border-[3px] border-primary-container shadow-[8px_8px_0px_#0B2A5B] overflow-hidden">
+<!-- Student Preview Top Bar -->
+<div class="bg-primary-container text-on-primary px-space-md py-space-xs flex items-center justify-between border-b-[3px] border-primary-container">
+<span class="font-badge-arcade text-[12px] tracking-wider text-tertiary-fixed">STUDENT VIEW • កាតកិច្ចការសិស្ស</span>
+<span class="inline-flex items-center gap-1 font-body-sm text-[12px] text-primary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              Live Sync
+            </span>
+</div>
+<!-- Card Header & Badge -->
+<div class="p-space-md bg-surface-container-low border-b-[2px] border-primary-container relative">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 bg-tertiary-fixed text-on-tertiary-fixed border border-primary-container rounded font-badge-arcade text-[11px] shadow-[2px_2px_0px_#0B2A5B]">
+                ⚡ DUE IN 3 DAYS (នៅសល់ ៣ ថ្ងៃ)
+              </span>
+<span class="font-badge-arcade text-badge-arcade text-secondary">WEEK 8 MISSION</span>
+</div>
+<h3 class="font-display-hero text-title-card text-primary leading-tight">
+              BACII Physics: Electromagnetism &amp; Induction
+            </h3>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+<span>MoEYS Curriculum Standard • Grade 12</span>
+</div>
+</div>
+<!-- Target Squad Info Strip -->
+<div class="px-space-md py-space-xs bg-surface border-b-[2px] border-primary-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+<span class="font-label-bold text-body-sm text-primary">Grade 12-A • Physics Squad</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-badge-arcade text-[11px]">38 Learners</span>
+</div>
+<!-- Attributes 2x2 Grid -->
+<div class="p-space-md grid grid-cols-2 gap-space-sm bg-surface-container-lowest">
+<div class="p-space-xs rounded-lg border-[2px] border-primary-container bg-surface space-y-0.5">
+<div class="font-badge-arcade text-[11px] text-on-surface-variant uppercase">Game Mode</div>
+<div class="font-headline-md text-body-sm text-primary flex items-center gap-1">
+<span>Battle Drill</span>
+<span class="text-error">⚔️</span>
+</div>
+<div class="font-body-sm text-[11px] text-outline">Timed 30s / question</div>
+</div>
+<div class="p-space-xs rounded-lg border-[2px] border-primary-container bg-surface space-y-0.5">
+<div class="font-badge-arcade text-[11px] text-on-surface-variant uppercase">Attempts</div>
+<div class="font-headline-md text-body-sm text-primary">3 Tries Max</div>
+<div class="font-body-sm text-[11px] text-outline">សាកល្បងបាន ៣ ដង</div>
+</div>
+<div class="p-space-xs rounded-lg border-[2px] border-primary-container bg-surface space-y-0.5">
+<div class="font-badge-arcade text-[11px] text-on-surface-variant uppercase">XP Bounty</div>
+<div class="font-headline-md text-body-sm text-secondary flex items-center gap-1">
+<span>+450 XP</span>
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+</div>
+<div class="font-body-sm text-[11px] text-outline">+1 Day Streak Shield</div>
+</div>
+<div class="p-space-xs rounded-lg border-[2px] border-primary-container bg-surface space-y-0.5">
+<div class="font-badge-arcade text-[11px] text-on-surface-variant uppercase">Deadline</div>
+<div class="font-headline-md text-body-sm text-primary">Sun, Oct 26</div>
+<div class="font-body-sm text-[11px] text-outline">8:00 PM Cutoff</div>
+</div>
+</div>
+<!-- Mock CTA for Student -->
+<div class="p-space-md bg-surface-container-low border-t-[2px] border-primary-container space-y-space-xs">
+<button class="w-full py-2.5 bg-secondary-container text-on-secondary-container border-[3px] border-primary-container rounded-xl font-headline-md text-body-sm shadow-[4px_4px_0px_#0B2A5B] flex items-center justify-center gap-2 pointer-events-none opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Start Drill / ចាប់ផ្តើមធ្វើ (3 Tries Left)</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-center font-body-sm text-[11px] text-on-surface-variant pt-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">send</span>
+<span>Auto-delivers to student phones &amp; Telegram bot alerts</span>
+</div>
+</div>
+</div>
+<!-- Coach Rushy Teaching Strategy Box -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border-[3px] border-primary-container shadow-[6px_6px_0px_#0B2A5B] space-y-space-sm relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-16 h-16 shrink-0 rounded-xl bg-surface-container border-[2px] border-primary-container p-1 shadow-[3px_3px_0px_#0B2A5B] relative overflow-hidden">
+<img alt="Coach Rushy the elephant mascot wearing his signature navy cap with gold lightning bolt" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-[10px] rounded border border-primary">TEACHER TIP</span>
+<span class="font-headline-md text-body-sm text-primary">Coach Rushy's Strategy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+                "Setting <strong>3 attempts</strong> with a Sunday 8:00 PM cutoff gives students time to review errors in their <em>Mistake Vault</em>! Classes running weekly drills see a <strong>+42% win rate</strong> in regional quiz tournaments! 🐘⚡"
+              </p>
+</div>
+</div>
+<!-- Telegram Automated Reminder Strip -->
+<div class="p-space-sm bg-surface rounded-xl border-[2px] border-primary-container flex items-center justify-between gap-space-xs mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">notifications_active</span>
+<span class="font-body-sm text-[12px] text-primary">Telegram reminder 2 hours before cutoff:</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-high rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-[2px] after:border-primary-container after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary border-[2px] border-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Quick Summary Stats Widget -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-lowest rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0B2A5B]">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-[12px]">
+<span>Class Avg. Finish</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+</div>
+<div class="font-display-hero text-headline-md text-primary mt-1">94.2%</div>
+<div class="font-body-sm text-[11px] text-secondary font-semibold">Grade 12-A historical</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-xl border-[3px] border-primary-container shadow-[4px_4px_0px_#0B2A5B]">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-[12px]">
+<span>Active Streak</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">local_fire_department</span>
+</div>
+<div class="font-display-hero text-headline-md text-primary mt-1">14 Days</div>
+<div class="font-body-sm text-[11px] text-outline">Squad Shield safe</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-primary-container text-on-primary mt-space-xl border-t-[3px] border-primary"><div class="w-full bg-tertiary-container border-b-[2px] border-primary overflow-hidden py-1 px-margin flex items-center justify-center select-none text-tertiary-fixed-dim text-xs tracking-[0.4em] font-bold"><span>❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖ ❖</span></div><div class="max-w-[1280px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start"><div class="md:col-span-5 space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-display-hero text-headline-md text-on-primary">ReanRush</span><span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-badge-arcade text-badge-arcade border border-primary">BATTLE ARENA</span></div><p class="text-primary-fixed-dim font-body-sm text-body-sm leading-relaxed max-w-sm">High-octane arcade quiz battle platform designed for classroom competition and interactive mastery across high schools in Cambodia.</p><div class="bg-surface-container-lowest text-primary p-space-md rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] max-w-sm"><div class="flex items-center justify-between gap-space-sm mb-space-xs"><span class="font-badge-arcade text-badge-arcade text-on-tertiary-container uppercase tracking-wider">Official Educational Sponsor</span><span class="material-symbols-outlined text-secondary text-[20px]">verified</span></div><div class="font-headline-md text-title-card text-primary">ACLEDA Bank Plc.</div><p class="text-on-surface-variant font-body-sm text-body-sm mt-1">Powering STEM quiz tournaments &amp; digital literacy infrastructure nationwide.</p></div></div><div class="md:col-span-4 space-y-space-sm"><span class="font-headline-md text-title-card text-tertiary-fixed block">Khmer Curriculum</span><ul class="space-y-space-xs font-body-md text-body-sm"><li class="flex items-center gap-space-xs text-primary-fixed-dim hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">school</span>Grade 10-12 MoEYS Science Track</li><li class="flex items-center gap-space-xs text-primary-fixed-dim hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">menu_book</span>Social Science &amp; Khmer Literature</li><li class="flex items-center gap-space-xs text-primary-fixed-dim hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">calculate</span>National BacII Mathematics Challenge</li><li class="flex items-center gap-space-xs text-primary-fixed-dim hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">translate</span>Khmer-English Academic Vocab Sprint</li></ul></div><div class="md:col-span-3 space-y-space-sm"><span class="font-headline-md text-title-card text-tertiary-fixed block">Academic Roots</span><div class="p-space-md bg-primary rounded-xl border-[2px] border-outline text-primary-fixed-dim text-body-sm font-body-sm space-y-space-xs"><p class="text-on-primary font-label-bold text-label-bold">Student Innovation Project</p><p>Co-engineered by student scholars at <span class="text-tertiary-fixed font-semibold">American University of Phnom Penh (AUPP/AUB)</span> &amp; <span class="text-tertiary-fixed font-semibold">Cambodia Academy of Digital Technology (CADT)</span>.</p></div><div class="pt-space-xs text-primary-fixed-dim font-body-sm text-body-sm">© 2024 ReanRush. Built for Cambodian learners.</div></div></div></div></footer></body></html>
