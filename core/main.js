@@ -31,6 +31,12 @@ $(function () {
     window.setTimeout(function () { location.href = next; }, 450);
   });
 
+  // Placeholder links (href="#") do not jump to the top; they show a short message until the page exists.
+  $(document).on('click', 'a[href="#"]', function (event) {
+    event.preventDefault();
+    window.showToast('Coming soon');
+  });
+
   $(document).on('click', '[data-answer]', function () {
     var correct = $(this).attr('data-answer') === 'correct';
     $('[data-answer]').prop('disabled', true);

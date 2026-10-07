@@ -2,6 +2,7 @@
 // One place to edit: change the link lists below and all pages in that role update.
 (function () {
   'use strict';
+  var layoutScript = document.currentScript;
 
   // Logo picture. Swap this file for your own logo (path works from the root and from /screens/<role>/).
   var IMG_BASE = /\/(public|student|teacher|admin)\/[^\/]*$/.test(window.location.pathname) ? '../../images/' : 'images/';
@@ -440,6 +441,34 @@
     return ps.nodeType === 3 ? ps : lastTextNode(ps);
   }
 
+  // ---- Translation list (core/i18n.js) ----
+  // Texts that are only English or only Khmer are looked up here: [english, khmer].
+  // Use '' on one side to hide that text in the other language.
+  var dictMap = null;
+  var dictVersion = 0;
+  function normText(s) { return String(s).replace(/\s+/g, ' ').trim(); }
+  function dictParts(core) {
+    if (!dictMap) {
+      dictMap = {};
+      var list = (window.ReanRushI18n && window.ReanRushI18n.entries) || [];
+      list.forEach(function (e) {
+        var en = normText(e[0] || ''), km = normText(e[1] || '');
+        var parts = { en: en, km: km };
+        if (en) dictMap[en] = parts;
+        if (km) dictMap[km] = parts;
+      });
+    }
+    return dictMap[normText(core)] || null;
+  }
+  // core/i18n.js is loaded here, so no page needs an extra script tag.
+  (function loadDictionary() {
+    var s = document.createElement('script');
+    var src = layoutScript && layoutScript.src ? layoutScript.src.replace(/components\/layout\.js.*$/, 'core/i18n.js') : '../../core/i18n.js';
+    s.src = src;
+    s.onload = function () { dictMap = null; dictVersion++; if (langStarted) applyLang(); };
+    (document.head || document.documentElement).appendChild(s);
+  })();
+
   var textStore = new WeakMap();
   var applying = false;
   var langObserver = null;
@@ -455,6 +484,11 @@
       if (slashKh) parts = { en: '', km: slashKh[1].trim() };
       rec = { lead: lead, trail: trail, parts: parts, shown: cur, slashOnly: !!slashKh };
       textStore.set(node, rec);
+    }
+    if (!rec.parts && !rec.slashOnly && rec.dictVer !== dictVersion) {
+      rec.dictVer = dictVersion;
+      var dp = rec.shown.trim() ? dictParts(rec.shown) : null;
+      if (dp) rec.parts = dp;
     }
     if (rec.slashOnly) {
       // Hide the English text that came right before "/ ខ្មែរ" when Khmer is selected.
@@ -481,11 +515,11 @@
     var key = 'data-i18n-' + attr;
     var orig = el.hasAttribute(key) ? el.getAttribute(key) : el.getAttribute(attr);
     if (!el.hasAttribute(key)) {
-      var parts0 = splitText((orig || '').trim());
+      var parts0 = splitText((orig || '').trim()) || dictParts(orig || '');
       if (!parts0) return;
       el.setAttribute(key, orig);
     }
-    var parts = splitText(orig.trim());
+    var parts = splitText(orig.trim()) || dictParts(orig);
     if (parts) el.setAttribute(attr, lang === 'km' ? parts.km : parts.en);
   }
 
