@@ -30,7 +30,10 @@
   var pageRole = currentPageRole();
   if (!pageRole) return;
 
-  if (readRole() !== pageRole) {
+  var role = readRole();
+  // Student pages are open to guests (PIN code, QR scan, home). Teacher and admin still need login.
+  var allowed = pageRole === 'student' ? (role === '' || role === 'student') : role === pageRole;
+  if (!allowed) {
     window.location.replace('../public/login.html');
     return;
   }

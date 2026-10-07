@@ -646,9 +646,13 @@
 
     if (logoutBtn) {
       logoutBtn.addEventListener('click', () => {
-        const confirmLogout = confirm('Are you sure you want to log out from Sokha Chan (Gr. 12)?');
+        let who = '';
+        try { who = (JSON.parse(localStorage.getItem('user') || 'null') || {}).name || ''; } catch (e) {}
+        const confirmLogout = confirm('Are you sure you want to log out' + (who ? ' from ' + who : '') + '?');
         if (confirmLogout) {
           showToast('Logging out of arena...', true);
+          try { localStorage.removeItem('role'); localStorage.removeItem('user'); } catch (e) {}
+          setTimeout(() => { window.location.href = 'login.html'; }, 600);
         }
       });
     }

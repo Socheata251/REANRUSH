@@ -505,6 +505,17 @@
       }
     });
   }
+
+  // Students and guests only see the student profile (no teacher/admin tabs).
+  (function () {
+    var role = '';
+    try { role = String(localStorage.getItem('role') || '').toLowerCase(); } catch (e) {}
+    if (role === 'host') role = 'teacher';
+    if (role === 'teacher' || role === 'admin') { switchRole(role); return; }
+    var tab = document.querySelector('.role-btn');
+    if (tab && tab.parentElement) tab.parentElement.style.display = 'none';
+    Array.prototype.forEach.call(document.querySelectorAll('button[onclick^="switchRole"]'), function (b) { b.style.display = 'none'; });
+  })();
 </script></main>
 
 <script src="../../core/jquery-3.7.1.min.js"></script>

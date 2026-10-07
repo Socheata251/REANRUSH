@@ -69,17 +69,17 @@
           "gutter": "1.5rem"
         },
         "fontFamily": {
-          "headline-lg-mobile": ["\"Baloo 2\""],
-          "body-sm": ["Kantumruy Pro"],
-          "body-md": ["Kantumruy Pro"],
-          "headline-lg": ["\"Baloo 2\""],
-          "badge-arcade": ["\"Baloo 2\""],
-          "headline-md": ["\"Baloo 2\""],
-          "display-hero-mobile": ["\"Baloo 2\""],
-          "title-card": ["\"Baloo 2\""],
-          "display-hero": ["\"Baloo 2\""],
-          "label-bold": ["Kantumruy Pro"],
-          "body-lg": ["Kantumruy Pro"]
+          "headline-lg-mobile": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "body-sm": ["Kantumruy Pro", "system-ui", "sans-serif"],
+          "body-md": ["Kantumruy Pro", "system-ui", "sans-serif"],
+          "headline-lg": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "badge-arcade": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "headline-md": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "display-hero-mobile": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "title-card": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "display-hero": ["\"Baloo 2\"", "system-ui", "sans-serif"],
+          "label-bold": ["Kantumruy Pro", "system-ui", "sans-serif"],
+          "body-lg": ["Kantumruy Pro", "system-ui", "sans-serif"]
         },
         "fontSize": {
           "headline-lg-mobile": ["26px", {"lineHeight": "32px", "fontWeight": "700"}],
@@ -108,7 +108,7 @@
 <div class="flex items-start sm:items-center gap-space-md z-10">
 <div class="relative shrink-0">
 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-surface-container border-[3px] border-primary shadow-[4px_4px_0px_#00163a] flex items-center justify-center overflow-hidden">
-<img alt="Rushy the Elephant Mascot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XMwns6Q29PwdA8ica7nYTuia52jOcymWZKvKPuWhPRH62UuqXvdQkBJH7LwM31byk5S49h0ApQLphx1hn1YLVwUlE7bMROZljdy_dMstTFZBPqXgkT52hiAzz0KEUNWuQ1ct0N6YTGkE_Su4IxLb2f35o63ogeO2wLNqGxEPC9dv7W_dMZ76oHhKwnNPNkD_bqziQ2zjJXOUZUHcj4iYp9v5vJGIUXlz7MqntMOpr2TpDQqSyV77F8V6U">
+<img alt="Rushy the Elephant Mascot" class="w-full h-full object-cover" src="../../images/rushy-mascot-534cceebad.jpg">
 </div>
 <div class="absolute -bottom-1 -right-1 bg-tertiary-fixed-dim text-primary border-[2px] border-primary rounded-full px-1.5 py-0.5 font-badge-arcade text-[10px] uppercase font-bold flex items-center gap-0.5">
 <span class="material-symbols-outlined text-[12px]">bolt</span>PRO
@@ -134,11 +134,11 @@
 </div>
 <!-- Quick Action Controls -->
 <div class="flex flex-wrap items-center gap-space-sm z-10 shrink-0">
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-space-xs" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-space-md py-space-sm rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-space-xs" type="button" data-go="host-lobby.html">
 <span class="material-symbols-outlined text-[20px] text-secondary">qr_code_scanner</span>
           Display PIN
         </button>
-<button class="bg-secondary text-on-secondary font-headline-md text-title-card px-space-lg py-space-sm rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center gap-space-xs group" type="button">
+<button class="bg-secondary text-on-secondary font-headline-md text-title-card px-space-lg py-space-sm rounded-2xl border-[3px] border-primary shadow-[6px_6px_0px_#00163a] hover:shadow-[8px_8px_0px_#00163a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all flex items-center gap-space-xs group" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[24px] group-hover:rotate-90 transition-transform">add_circle</span>
 <span>+ Create New Game <span class="font-normal opacity-90 text-[14px]">/ បង្កើតល្បែងថ្មី</span></span>
 </button>
@@ -311,11 +311,11 @@
 </div>
 <!-- Action Buttons Quad-Touch -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button" data-go="quiz-creator.html">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -375,11 +375,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button" data-go="quiz-creator.html">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -439,11 +439,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button" data-go="quiz-creator.html">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -503,11 +503,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button" data-go="quiz-creator.html">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -567,11 +567,11 @@
 </div>
 <!-- Buttons -->
 <div class="mt-space-md pt-space-sm border-t-[2px] border-primary/10 flex items-center gap-space-xs">
-<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<button class="flex-1 bg-secondary text-on-secondary font-headline-md text-badge-arcade uppercase py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               Host Live Battle
             </button>
-<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button">
+<button class="bg-surface-container-lowest text-primary font-headline-md text-badge-arcade uppercase px-3 py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:bg-surface-container-high active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center justify-center" type="button" data-go="quiz-creator.html">
 <span class="material-symbols-outlined text-[18px]">edit_note</span>
 </button>
 </div>
@@ -608,7 +608,7 @@
 </div>
 </div>
 <div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
-<button class="bg-primary text-on-primary font-headline-md text-badge-arcade uppercase px-space-md py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-1" type="button">
+<button class="bg-primary text-on-primary font-headline-md text-badge-arcade uppercase px-space-md py-2.5 rounded-xl border-[3px] border-primary shadow-[4px_4px_0px_#00163a] hover:shadow-[6px_6px_0px_#00163a] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all flex items-center gap-1" type="button" data-go="start-game.html">
 <span class="material-symbols-outlined text-[18px]">sports_esports</span>
           Launch Battle Arena Mode
         </button>
